@@ -1,0 +1,81 @@
+\chapter{Requisitos}
+\section{Requisitos funcionales}
+\begin{longtable}{@{} l l p{0.62\textwidth} l @{}}
+\toprule
+ID & Categoría & Requisito Funcional & MVP / Extra \\
+\midrule
+\endfirsthead
+% no repetir encabezado en páginas siguientes:
+\endhead
+RF001 & Gestión de Usuarios  & Permitir la creación de una cuenta (username, contraseña, correo).                     & MVP         \\
+RF002 & Gestión de Usuarios  & Enviar un correo de verificación para vincular y validar la cuenta.                    & MVP         \\
+RF003 & Gestión de Usuarios  & Permitir el inicio y cierre de sesión.                                                 & MVP         \\
+RF004 & Gestión de Usuarios  & Permitir al usuario vincular su almacenamiento con Google Drive.                       & Extra         \\
+RF005 & Gestión de Perfiles  & Permitir al usuario crear su perfil (idiomas que domina/aprende, biografía).           & MVP         \\
+RF006 & Gestión de Perfiles  & Permitir la edición de los datos del perfil (excepto el nombre de usuario y el email). & MVP         \\
+RF006 & Gestión de Perfiles  & Permitir un cambio de la contraseña.                                                   & MVP         \\
+RF006 & Gestión de Perfiles  & Permitir la recuperación de la contraseña.                                             & MVP         \\
+RF007 & Gestión de Perfiles  & Permitir la visualización del perfil propio y el de otros usuarios.                    & MVP         \\
+RF008 & Gestión de Usuarios  & Permitir la eliminación de la cuenta.                                                  & MVP         \\
+RF009 & Gestión de Perfiles  & Permitir compartir el perfil a través de un enlace.                                    & MVP         \\
+RF010 & Gestión de Amistades & Permitir la búsqueda de otros usuarios por nombre de usuario.                          & MVP         \\
+RF011 & Gestión de Amistades & Mostrar sugerencias de amistad basadas en los idiomas que domina y aprende.            & MVP         \\
+RF012 & Gestión de Amistades & Permitir enviar solicitudes de amistad.                                                & MVP         \\
+RF013 & Gestión de Amistades & Permitir recibir y gestionar (aceptar/rechazar) solicitudes de amistad.                & MVP         \\
+RF014 & Gestión de Amistades & Permitir eliminar a un amigo de la lista de sus amigos agregados.                      & MVP         \\
+RF015 & Cartas y Diarios     & Permitir crear un nuevo diario o carpeta.                                              & MVP         \\
+RF016 & Cartas y Diarios     & Permitir escribir una nueva carta (fecha, título, idioma, contenido).                  & MVP         \\
+RF017 & Cartas y Diarios     & Permitir editar una carta mientras no haya sido enviada.                               & MVP         \\
+RF018 & Cartas y Diarios     & Permitir enviar una carta a uno o dos amigos.                                          & MVP         \\
+RF019 & Cartas y Diarios     & Permitir visualizar todas las cartas propias.                                          & MVP         \\
+RF020 & Cartas y Diarios     & Permitir adjuntar fotos, un audio, stickers o GIFs a las cartas.                       & Extra       \\
+RF021 & Cartas y Diarios     & Permitir conversión de texto en imágenes a carta.                                      & Extra       \\
+RF022 & Cartas y Diarios     & Permitir exportar una carta (corregida o no) a formato PDF.                            & Extra       \\
+RF023 & Corrección           & Permitir recibir cartas (peticiones de corrección) de amigos.                          & MVP         \\
+RF024 & Corrección           & Permitir corregir una carta.                                                           & MVP         \\
+RF025 & Corrección           & Permitir añadir comentarios finales a la corrección.                                   & MVP         \\
+RF026 & Corrección           & Permitir adjuntar un audio a la corrección (pronunciación).                            & Extra       \\
+RF027 & Corrección           & Permitir guardar y enviar la corrección al amigo.                                      & MVP         \\
+RF028 & Corrección           & Permitir acceder al historial de todas las correcciones realizadas.                    & MVP         \\
+RF029 & Corrección           & Permitir recibir y ver las correcciones de cartas enviadas.                            & MVP         \\
+RF030 & Corrección           & Permitir validar las correcciones recibidas (otorgar 'like' o 'dislike').              & Extra       \\
+RF031 & Gamificación         & Permitir consultar estadísticas de cualquier perfil (valoraciones, cartas corregidas). & MVP         \\
+RF032 & Gamificación         & Mostrar un podio con los usuarios de mejores estadísticas.                             & MVP         \\
+RF033 & Gamificación         & Permitir la creación de retos semanales/mensuales personalizados.                      & Extra       \\
+RF033 & Gamificación         & Sugerir diferentes temas para la redacción.                                            & Extra       \\
+RF035 & Gamificación         & Asignar logros o insignias por metas alcanzadas.                                       & Extra       \\
+RF037 & Herramientas         & Permitir enviar flashcards (palabras o frases) a un amigo.                             & Extra       \\
+RF038 & Herramientas         & Permitir al usuario repasar las flashcards recibidas.                                  & Extra       \\
+\bottomrule
+\caption{Requisitos funcionales}\label{tab:requisitos}\\
+\end{longtable}
+
+
+\section{Requisitos no funcionales}
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{} l l X l @{}}
+\toprule
+ID & Categoría & Requisito Funcional\\
+\midrule
+\textbf{ID} & \textbf{Categoría} & \textbf{Descripción / Métrica} \\
+    RNF001 & Rendimiento & El 90\% de las solicitudes clave deben responder en \textbf{$< 2$ segundos}. \\
+    RNF002 & Rendimiento & Soportar un mínimo de \textbf{100 usuarios concurrentes} activos. \\
+    RNF003 & Rendimiento & La arquitectura debe permitir \textbf{escalado horizontal} para el crecimiento. \\
+    RNF004 & Usabilidad & Mantener una \textbf{apariencia y navegación coherentes} (React UI). \\
+    RNF005 & Usabilidad & Ser \textbf{completamente funcional} en dispositivos de escritorio y móviles. \\
+    RNF006 & Usabilidad & El proceso de corrección debe ser \textbf{visual y funcionalmente intuitivo}. \\
+    RNF007 & Seguridad & Usar \textbf{JWT} y/o \textbf{Google Sign-In} para autenticación. \\
+    RNF008 & Seguridad & Todas las comunicaciones deben usar \textbf{HTTPS}. \\
+    RNF009 & Seguridad & Implementar validaciones en \textbf{MongDB} para la integridad de datos. \\
+    RNF010 & Seguridad & Implementar medidas para prevenir ataques como \textbf{CSRF y XSS}. \\
+    RNF011 & Tecnología & Usar \textbf{React, Node.js/Express, MongoDB, Google Cloud API y Google Sign-In}. \\
+    RNF012 & Mantenibilidad & Seguir \textbf{patrones de diseño} y guías de estilo para el mantenimiento. \\
+    RNF013 & Disponibilidad & Garantizar una disponibilidad del \textbf{99.5\%} del tiempo. \\
+    RNF014 & Disponibilidad & Proporcionar \textbf{mensajes de error claros} y registrar logs internos. \\
+\bottomrule
+\end{tabularx}
+\caption{Requisitos no funcionales}
+\label{tab:requisitos}
+\end{table}

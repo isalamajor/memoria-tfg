@@ -1,0 +1,63 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Estado del arte}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Tecnologías para el Desarrollo de Aplicaciones Web}{2}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Frontend}{2}{subsection.2.1.1}%
+\contentsline {subsubsection}{HTML: la estructura de la web}{2}{subsection.2.1.1}%
+\contentsline {subsubsection}{CSS: El diseño y la presentación}{3}{figure.caption.6}%
+\contentsline {subsubsection}{JavaScript: La interactividad y la lógica}{4}{figure.caption.8}%
+\contentsline {subsection}{\numberline {2.1.2}Frameworks de Javascript}{5}{subsection.2.1.2}%
+\contentsline {subsubsection}{React}{6}{subsection.2.1.2}%
+\contentsline {subsubsection}{Next}{6}{figure.caption.11}%
+\contentsline {subsubsection}{Vue}{7}{figure.caption.12}%
+\contentsline {subsubsection}{Angular}{7}{figure.caption.13}%
+\contentsline {subsection}{\numberline {2.1.3}Backend}{8}{subsection.2.1.3}%
+\contentsline {subsubsection}{Node.js}{8}{subsection.2.1.3}%
+\contentsline {subsubsection}{Python con Django}{9}{figure.caption.15}%
+\contentsline {subsubsection}{Java con SpringBoot}{10}{figure.caption.17}%
+\contentsline {subsubsection}{PHP y Laravel}{10}{figure.caption.19}%
+\contentsline {subsubsection}{Ruby on Rails}{11}{figure.caption.21}%
+\contentsline {subsubsection}{Golang y Gin}{12}{figure.caption.23}%
+\contentsline {subsection}{\numberline {2.1.4}Creación y consumo de APIs}{13}{subsection.2.1.4}%
+\contentsline {subsubsection}{Axios}{13}{subsection.2.1.4}%
+\contentsline {subsubsection}{FetchAPI}{14}{figure.caption.26}%
+\contentsline {subsubsection}{Postman}{14}{figure.caption.27}%
+\contentsline {subsubsection}{Imsomnia}{15}{figure.caption.28}%
+\contentsline {subsubsection}{cURL}{15}{figure.caption.29}%
+\contentsline {subsection}{\numberline {2.1.5}Base de datos}{16}{subsection.2.1.5}%
+\contentsline {subsubsection}{Bases de datos relacionales}{16}{subsection.2.1.5}%
+\contentsline {paragraph}{MySQL}{16}{subsection.2.1.5}%
+\contentsline {paragraph}{PostgreSQL}{17}{figure.caption.31}%
+\contentsline {paragraph}{Maria DB}{17}{figure.caption.32}%
+\contentsline {subsubsection}{No relacionales}{18}{figure.caption.33}%
+\contentsline {paragraph}{MongoDB}{18}{figure.caption.33}%
+\contentsline {paragraph}{Firebase}{18}{figure.caption.34}%
+\contentsline {paragraph}{Cassandra}{19}{figure.caption.35}%
+\contentsline {subsection}{\numberline {2.1.6}Computación en la nube}{19}{subsection.2.1.6}%
+\contentsline {subsubsection}{Amazon Web Services}{20}{subsection.2.1.6}%
+\contentsline {subsubsection}{Microsoft Azure}{20}{figure.caption.37}%
+\contentsline {subsubsection}{Google Cloud Platform}{21}{figure.caption.38}%
+\contentsline {subsection}{\numberline {2.1.7}Inteligencia Artificial Generativa para el programador}{21}{subsection.2.1.7}%
+\contentsline {subsubsection}{ChatGPT}{22}{subsection.2.1.7}%
+\contentsline {subsubsection}{Gemini}{22}{figure.caption.40}%
+\contentsline {subsubsection}{Codex}{23}{figure.caption.41}%
+\contentsline {subsubsection}{Github Copilot}{23}{figure.caption.42}%
+\contentsline {section}{\numberline {2.2}Metodología}{24}{section.2.2}%
+\contentsline {subsubsection}{\textbf {Metodología en Cascada}}{24}{section.2.2}%
+\contentsline {subsubsection}{Metodología Incremental}{24}{section.2.2}%
+\contentsline {subsubsection}{Metodología RAD}{24}{section.2.2}%
+\contentsline {subsubsection}{\textbf {Metodología Agile}}{25}{section.2.2}%
+\contentsline {subsubsection}{\textbf {Metodología Kanban}}{26}{figure.caption.45}%
+\contentsline {subsubsection}{\textbf {Metodología Lean}}{26}{figure.caption.46}%
+\contentsline {chapter}{\numberline {3}Negocio}{27}{chapter.3}%
+\contentsline {subsubsection}{HiNative}{27}{chapter.3}%
+\contentsline {subsubsection}{Lang-8}{27}{figure.caption.47}%
+\contentsline {subsubsection}{Tandem}{28}{figure.caption.48}%
+\contentsline {subsubsection}{Grammarly}{28}{figure.caption.49}%
+\contentsline {subsubsection}{Duolingo}{29}{figure.caption.50}%
+\contentsline {subsubsection}{Conclusión}{29}{figure.caption.51}%
+\contentsline {section}{\numberline {3.1}Justificación de la Elección Tecnológica}{30}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Requisitos}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Requisitos funcionales}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Requisitos no funcionales}{32}{section.4.2}%
+\contentsfinish 
