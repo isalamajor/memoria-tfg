@@ -2374,6 +2374,15 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">referencias.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">rgpd</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">lopdgdd</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">lssice</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">lpi</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">vscode</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">firefox</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">mongodb_compass</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">postman</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">github</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

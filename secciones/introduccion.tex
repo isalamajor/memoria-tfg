@@ -1,1 +1,107 @@
 \chapter{Introduction}
+Hoy en día, la implementación de la tecnología juega un papel esencial en el ámbito educativo y social, hasta el punto en que se ha convertido en una de las herramientas más populares en numerosos campos, entre ellos el aprendizaje de idiomas y la comunicación entre personas de diferentes países. En este contexto, la creación de una aplicación web de intercambio de idiomas se presenta como una solución innovadora y efectiva para practicar la expresión mediante la corrección colaborativa entre usuarios.
+
+Sin embargo, las aplicaciones de intercambio de idiomas existentes se centran, en muchos casos, en el chat instantáneo, en videollamadas o en ejercicios preparados. Sin embargo, la práctica de la expresión escrita suele quedar en un segundo plano, a pesar de ser una habilidad fundamental tanto en contextos académicos como profesionales. La corrección detallada de textos requiere tiempo y estructura, lo cual construye una base sólida a la hora de aprender un nuevo idioma.
+
+El objetivo de este Trabajo de Fin de Grado es el de diseñar y desarrollar una aplicación web que permita la gestión integral de textos escritos por usuarios que desean practicar idiomas, así como el envío de dichos textos a otros usuarios para su corrección y devolución; y que sirva como herramienta para conectar usuarios de todas partes del mundo. Se trata de una plataforma que busca ser eficiente, práctica y agradable de usar; que optimize el aprendizaje y sirva como una herramienta personal, cercana y social. Al basarse en la redacción, este sistema se presta para ser un lugar donde expresarse, compartir (o simplemente articular) ideas, y abrir paso a la imaginación y a la colección de entradas escritas por uno mismo que no solo podrán servir para la práctica de un idioma sino para conectar y colaborar con otros usuarios.
+
+En definitiva, se busca ofrecer una solución tecnológica que fomente el aprendizaje de idiomas mediante la escritura y la corrección entre pares, mejorando la calidad de la práctica escrita y facilitando la conexión entre personas con intereses lingüísticos comunes.
+
+\section{Motivación}
+Desarrollar una aplicación de intercambio de idiomas centrada en la redacción y corrección de textos resulta especialmente interesante por varios motivos.
+
+En primer lugar, responde a una necesidad real de muchos estudiantes de idiomas que buscan practicar la escritura y recibir correcciones de hablantes más avanzados o nativos, sin depender exclusivamente de profesores o academias. Presentar esta práctica en formato de red social lo hace considerablemente más atractivo para las nuevas generaciones, ya que ésta se torna más amena, interactiva y personal.
+
+En segundo lugar, el proyecto permite aplicar y consolidar conocimientos técnicos adquiridos durante el grado, utilizando tecnologías actuales del ecosistema JavaScript como React, Next.js, Node.js, Express, Mongoose y MongoDB. Dichas tecnologías serán presentadas y estudiadas en más profundidad más adelante en este documento, y su uso e implementación supone una oportunidad para trabajar con una arquitectura moderna, orientada a servicios y preparada para escalar.
+
+Por último, la motivación también es personal: crear una herramienta que no solo tenga valor académico, sino que pueda ser utilizada por usuarios reales, generando comunidad y facilitando el aprendizaje colaborativo de idiomas, que es uno de mis principales intereses personales.
+
+\section{Objetivos}
+
+Los objetivos principales de este proyecto son los de desarrollar una aplicación web que resulte útil para usuarios que desean practicar idiomas mediante la escritura y la corrección colaborativa. De esta manera se pretende mejorar el proceso de aprendizaje, proporcionando una forma estructurada de enviar textos, recibir correcciones y gestionar las relaciones con otros usuarios.
+
+Los objetivos de este Trabajo de Fin de Grado son los siguientes:
+
+\begin{itemize}
+    \item Diseñar e implementar un sistema de autenticación de usuarios que incluya registro, inicio de sesión y recuperación de contraseña.
+
+    \item Desarrollar una bandeja de cartas enviadas y recibidas, con posibilidad de ver el estado de corrección y filtrar por diferentes campos para mejor accesibilidad.
+
+    \item Implementar un sistema de relaciones entre usuarios que permita enviar y aceptar solicitudes de amistad, así como gestionar la lista de contactos y explorar usarios nuevos que agregar.
+
+    \item Crear una página de perfil de usuario con datos editables y opciones de cambio de contraseña y borrado de cuenta.
+
+    \item Diseñar una interfaz para crear y editar cartas, y enviarlas a amigos para su corrección.
+
+    \item Desarrollar una página específica para corregir cartas recibidas y reenviarlas al autor con las modificaciones pertinentes.
+
+    \item Garantizar una arquitectura limpia, mantenible y escalable, utilizando buenas prácticas y un diseño óptimo.
+
+    \item Ofrecer una experiencia de usuario agradable e intuitiva.
+\end{itemize}
+
+\section{Marco regulador}
+Al tratarse de una aplicación que gestiona datos personales de usuarios (correo electrónico, nombre, idioma, datos de perfil, etc.), el proyecto debe tener en cuenta el marco regulador vigente en España y en la Unión Europea:
+
+\begin{itemize}
+    \item Reglamento General de Protección de Datos (RGPD): normativa europea que establece las reglas para el tratamiento de datos personales de los ciudadanos de la UE. La aplicación debe garantizar la confidencialidad, integridad y disponibilidad de los datos, así como ofrecer mecanismos para el ejercicio de derechos (acceso, rectificación, supresión, etc.). Por tanto, es necesario el consentimiento explícito del usuario para la recopilación y uso de sus datos por el software. \cite{rgpd}.
+
+    \item Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD): adapta el RGPD al ordenamiento jurídico español desarrollando en mayor profundidad varios de sus puntos y concretando obligaciones adicionales. Profundiza, por ejemplo, en el establecimiento de reglas sobre las autoridades competentes en esta área o el tratamiento de datos de personas fallecidas. \cite{lopdgdd}.
+
+    \item Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSICE): regula la prestación de servicios por vía electrónica, incluyendo aspectos como el acceso por parte del usuario a los datos de identificación del responsable del software, condiciones de uso y posibles comunicaciones comerciales. \cite{lssice}.
+
+    \item Ley de Propiedad Intelectual: relevante en caso de reutilización de contenidos, textos de ejemplo o recursos de terceros dentro de la aplicación. En este caso es necesario el consentimiento del autor o autores para su utilización. \cite{lpi}.
+\end{itemize}
+
+El diseño y despliegue de la aplicación debe tener en cuenta estos marcos legales, especialmente en lo relativo al tratamiento de datos personales, almacenamiento en la base de datos, opciones de borrado de cuenta, y uso de recursos de terceros.
+
+
+\section{Medios empleados}
+
+Los elementos de \textbf{hardware} son las partes físicas de un sistema informático, que se utiliza para el desarrollo de proyectos de amplia variedad. En el caso de este Trabajo de Fin de Grado, se ha empleado el siguiente dispositivo:
+
+\begin{itemize}
+    \item Ordenador portátil personal: equipo utilizado para el desarrollo de la aplicación y sus servicios, además de pruebas locales y documentación. Estas son sus características:
+    \begin{itemize}
+        \item Modelo: LG Gram 16Z90P
+        \item Sistema operativo: Microsoft Windows 10 Home
+        \item Procesador: 11th Intel Core i7-1165G7 2.80GHz
+        \item Memoria RAM: 16 GB
+        \item Tarjeta gráfica: Intel Iris Xe Graphics
+    \end{itemize}
+\end{itemize}
+
+Los elementos de \textbf{software} son los programas informáticos que otorgan carácter funcional al hardware, en este caso para hacer posible el desarrollo del proyecto. Los elementos de software utilizados son los siguientes:
+
+\begin{itemize}
+    \item Visual Studio Code \cite{vscode}: entorno de desarrollo integrado para la programación del front-end y back-end, así como para la redacción de la memoria utilizando el sistema de composición de textos LaTeX.
+
+    \item Firefox Developer Edition \cite{firefox}: navegador web utilizado como motor de búsqueda para la investigación de la información aquí presentada (legislación, tecnologías, metodologías, etc.), documentación y resolución de dudas para el desarrollo, y para la ejecución y prueba de la aplicación.
+
+    \item MongoDB Compass \cite{mongodb_compass}: programa que ofrece una interfaz que facilita la gestión y consulta de los datos de la base de datos.
+
+    \item Postman \cite{postman}: herramienta para verificar el correcto funcionamiento de las rutas de la API.
+
+    \item GitHub \cite{github}: herramienta de control de versiones y guardado del proyecto que permite mantener el historial y copias de seguridad del código, además de compartirlo de forma práctica.
+\end{itemize}
+
+
+\section{Estructura del documento}
+
+Esta memoria se estructura en siete capítulos además del índice de contenidos, figuras y tablas:
+
+\begin{itemize}
+    \item \textbf{Capítulo 1 – Introducción}: en esta sección se introduce el contexto de este documento y del proyecto, se expone la motivación para su realización, los objetivos que ésta persigue, el marco regulador que encuadra el contexto legislativo en que se desarrolla este software y los medios tanto físicos como digitales empleados, además del apartado actual que incluye la explicación de los apartados que componen el documento.
+
+    \item \textbf{Capítulo 2 – Estado del arte}: esta capítulo cuenta con tres secciones. En la primera y la más extensa, se hace un recorrido por las tecnologías presentes y más utilizadas actualmente para el desarrollo de aplicaciones web, pasando por los campos de frontend, entornos de trabajo, backend, creación y consumo de APIs, bases de datos, computación en la nube, e inteligencia artificial generativa para la programación. En la segunda sección, se exponen algunas de las metodologías principales para el desarrollo de un proyecto de software. Por último, la tercera sección presenta varios ejemplos de negocio que podrían ser similares a la aplicación aquí desarrollada y por tanto actuar como competencia.
+
+    \item \textbf{Capítulo 3 – Análisis del caso práctico}: requisitos funcionales y no funcionales, casos de uso, historias de usuario (login, cartas, amigos, perfil, correcciones, etc.).
+
+    \item \textbf{Capítulo 4 – Diseño e implementación}: arquitectura de la aplicación, diseño de la base de datos, estructura de carpetas, principales componentes de front-end y endpoints de back-end.
+
+    \item \textbf{Capítulo 5 – Gestión del proyecto}: planificación temporal (sprints), herramientas de organización (Trello, GitHub Projects, etc.), estimación de esfuerzo y posibles costes.
+
+    \item \textbf{Capítulo 6 – Pruebas y validación}: pruebas de aceptación, pruebas funcionales de las principales características (registro, envío de cartas, corrección, gestión de amigos, etc.).
+
+    \item \textbf{Capítulo 7 – Conclusiones y trabajos futuros}: valoración personal, logros alcanzados, limitaciones encontradas y posibles mejoras o ampliaciones de la aplicación.
+\end{itemize}

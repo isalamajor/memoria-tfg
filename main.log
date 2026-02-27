@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.27)  24 FEB 2026 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.27)  27 FEB 2026 12:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.tex
+**C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.tex
 (c:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-24>
@@ -728,7 +728,7 @@ Now handling font encoding PU ...
    defining Unicode char U+2423 (decimal 9251)
    defining Unicode char U+FEFF (decimal 65279)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 53.
+Package hyperref Info: Option `colorlinks' set `true' on input line 54.
  (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip59
@@ -1331,47 +1331,47 @@ Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./main.aux
+ (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.aux
 
 LaTeX Warning: Label `tab:requisitos' multiply defined.
 
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 204.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 204.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 205.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 205.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 204.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 204.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 205.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 205.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 204.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 204.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 205.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 205.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 204.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 204.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 205.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 205.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
  (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count477
@@ -1425,12 +1425,12 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 204.
-(./main.out) (./main.out)
+Package hyperref Info: Link coloring ON on input line 205.
+(C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.out) (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-LaTeX Encoding Info:    Redeclaring text command \k (encoding T1) on input line 204.
+LaTeX Encoding Info:    Redeclaring text command \k (encoding T1) on input line 205.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
@@ -1457,53 +1457,53 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 204.
-Package biblatex Info: Reference segment=0 on input line 204.
-LaTeX Font Info:    Trying to load font information for T1+txss on input line 211.
+ (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.bbl)
+Package biblatex Info: Reference section=0 on input line 205.
+Package biblatex Info: Reference segment=0 on input line 205.
+LaTeX Font Info:    Trying to load font information for T1+txss on input line 212.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 211.
-<imagenes/logo_UC3M.png, id=70, 456.2865pt x 45.99pt>
+(Font)              scaled to size 11.39996pt on input line 212.
+<imagenes/logo_UC3M.png, id=118, 456.2865pt x 45.99pt>
 File: imagenes/logo_UC3M.png Graphic file (type png)
 <use imagenes/logo_UC3M.png>
-Package pdftex.def Info: imagenes/logo_UC3M.png  used on input line 215.
+Package pdftex.def Info: imagenes/logo_UC3M.png  used on input line 216.
 (pdftex.def)             Requested size: 455.24408pt x 45.88531pt.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 218.
+(Font)              scaled to size 16.41594pt on input line 219.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 16.41594pt on input line 222.
+(Font)              scaled to size 16.41594pt on input line 223.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 226.
+(Font)              scaled to size 23.63593pt on input line 227.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 230.
-<imagenes/creativecommons.png, id=72, 338.76563pt x 118.19156pt>
+(Font)              scaled to size 19.70294pt on input line 231.
+<imagenes/creativecommons.png, id=120, 338.76563pt x 118.19156pt>
 File: imagenes/creativecommons.png Graphic file (type png)
 <use imagenes/creativecommons.png>
-Package pdftex.def Info: imagenes/creativecommons.png  used on input line 241.
+Package pdftex.def Info: imagenes/creativecommons.png  used on input line 242.
 (pdftex.def)             Requested size: 119.50148pt x 41.69228pt.
 LaTeX Font Info:    Font shape `T1/txss/b/n' in size <12> not available
-(Font)              Font shape `T1/txss/bx/n' tried instead on input line 242.
+(Font)              Font shape `T1/txss/bx/n' tried instead on input line 243.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 11.39996pt on input line 242.
+(Font)              scaled to size 11.39996pt on input line 243.
 
 
 [1
 
-{c:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc} <./imagenes/logo_UC3M.png> <./imagenes/creativecommons.png>]
+{c:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc} <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/logo_UC3M.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/creativecommons.png>]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.254 \begin{abstract}
+l.255 \begin{abstract}
                        [1]
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 254.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 255.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <14.4> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 254.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 255.
 
 
 [3]
@@ -1512,14 +1512,14 @@ LaTeX Font Info:    Font shape `T1/txr/b/n' in size <14.4> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.272 \chapter
+l.273 \chapter
               *{Dedication} [1]
 
 [5
 
 ]
 
-[6] (./main.toc)
+[6] (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1529,7 +1529,7 @@ l.272 \chapter
 
 ]
 
-[8] (./main.lof
+[8] (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.lof
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
@@ -1561,7 +1561,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 [10]
 
-[11] (./main.lot)
+[11] (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
@@ -1571,24 +1571,33 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 ]
 
-[13]
+[13] (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/secciones/introduccion.tex
 Chapter 1.
-(./secciones/estado_del_arte.tex
+
 
 [1
 
 
 ]
-Chapter 2.
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 12.
-(c:/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txr.fd
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 26.
+ (c:/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
 
-[2
+[2]
+
+[3]
+
+[4]) (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/secciones/estado_del_arte.tex
+
+[5]
+Chapter 2.
+
+
+[6
 
 ]
-<./imagenes/HTML5-logo.png, id=278, 1104.125pt x 602.25pt>
+<./imagenes/HTML5-logo.png, id=384, 1104.125pt x 602.25pt>
 File: ./imagenes/HTML5-logo.png Graphic file (type png)
 <use ./imagenes/HTML5-logo.png>
 Package pdftex.def Info: ./imagenes/HTML5-logo.png  used on input line 25.
@@ -1597,324 +1606,322 @@ LaTeX Font Info:    Trying to load font information for T1+txtt on input line 35
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
-<imagenes/tailwind.png, id=279, 903.375pt x 501.875pt>
+<imagenes/tailwind.png, id=385, 903.375pt x 501.875pt>
 File: imagenes/tailwind.png Graphic file (type png)
 <use imagenes/tailwind.png>
 Package pdftex.def Info: imagenes/tailwind.png  used on input line 42.
 (pdftex.def)             Requested size: 153.64064pt x 85.35826pt.
 
 
-[3 <./imagenes/HTML5-logo.png>]
-<./imagenes/css-logo.png, id=286, 1457.445pt x 2057.6875pt>
+[7 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/HTML5-logo.png>]
+<./imagenes/css-logo.png, id=392, 1457.445pt x 2057.6875pt>
 File: ./imagenes/css-logo.png Graphic file (type png)
 <use ./imagenes/css-logo.png>
 Package pdftex.def Info: ./imagenes/css-logo.png  used on input line 55.
 (pdftex.def)             Requested size: 60.44502pt x 85.35826pt.
 
 
-[4 <./imagenes/tailwind.png> <./imagenes/css-logo.png>]
-<./imagenes/javascript-logo.png, id=293, 225.84375pt x 225.84375pt>
+[8 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/tailwind.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/css-logo.png>]
+<./imagenes/javascript-logo.png, id=399, 225.84375pt x 225.84375pt>
 File: ./imagenes/javascript-logo.png Graphic file (type png)
 <use ./imagenes/javascript-logo.png>
 Package pdftex.def Info: ./imagenes/javascript-logo.png  used on input line 69.
 (pdftex.def)             Requested size: 85.35973pt x 85.35826pt.
-<imagenes/typescript.jpg, id=294, 369.38pt x 368.37625pt>
+<imagenes/typescript.jpg, id=400, 369.38pt x 368.37625pt>
 File: imagenes/typescript.jpg Graphic file (type jpg)
 <use imagenes/typescript.jpg>
 Package pdftex.def Info: imagenes/typescript.jpg  used on input line 78.
 (pdftex.def)             Requested size: 85.58687pt x 85.35826pt.
 
 
-[5 <./imagenes/javascript-logo.png> <./imagenes/typescript.jpg>]
-<./imagenes/react-logo.jpg, id=300, 1204.5pt x 667.49374pt>
+[9 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/javascript-logo.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/typescript.jpg>]
+<./imagenes/react-logo.jpg, id=406, 1204.5pt x 667.49374pt>
 File: ./imagenes/react-logo.jpg Graphic file (type jpg)
 <use ./imagenes/react-logo.jpg>
 Package pdftex.def Info: ./imagenes/react-logo.jpg  used on input line 97.
 (pdftex.def)             Requested size: 154.01741pt x 85.35826pt.
-<./imagenes/next-logo.jpg, id=301, 1284.8pt x 857.2025pt>
+<./imagenes/next-logo.jpg, id=407, 1284.8pt x 857.2025pt>
 File: ./imagenes/next-logo.jpg Graphic file (type jpg)
 <use ./imagenes/next-logo.jpg>
 Package pdftex.def Info: ./imagenes/next-logo.jpg  used on input line 108.
 (pdftex.def)             Requested size: 127.91899pt x 85.35826pt.
 
 
-[6 <./imagenes/react-logo.jpg>]
-<./imagenes/vue-logo.png, id=307, 501.875pt x 301.125pt>
+[10 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/react-logo.jpg>]
+<./imagenes/vue-logo.png, id=412, 501.875pt x 301.125pt>
 File: ./imagenes/vue-logo.png Graphic file (type png)
 <use ./imagenes/vue-logo.png>
 Package pdftex.def Info: ./imagenes/vue-logo.png  used on input line 120.
 (pdftex.def)             Requested size: 142.26239pt x 85.35826pt.
-<./imagenes/angular.png, id=308, 1204.5pt x 1204.5pt>
+<./imagenes/angular.png, id=413, 1204.5pt x 1204.5pt>
 File: ./imagenes/angular.png Graphic file (type png)
 <use ./imagenes/angular.png>
 Package pdftex.def Info: ./imagenes/angular.png  used on input line 131.
 (pdftex.def)             Requested size: 85.35284pt x 85.35826pt.
 
 
-[7 <./imagenes/next-logo.jpg> <./imagenes/vue-logo.png>]
-<./imagenes/node.png, id=314, 1204.5pt x 737.75626pt>
+[11 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/next-logo.jpg> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/vue-logo.png>]
+<./imagenes/node.png, id=419, 1204.5pt x 737.75626pt>
 File: ./imagenes/node.png Graphic file (type png)
 <use ./imagenes/node.png>
 Package pdftex.def Info: ./imagenes/node.png  used on input line 150.
 (pdftex.def)             Requested size: 139.35083pt x 85.35826pt.
 
 
-[8 <./imagenes/angular.png>]
-<imagenes/python.png, id=320, 3854.4pt x 2168.1pt>
+[12 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/angular.png>]
+<imagenes/python.png, id=426, 3854.4pt x 2168.1pt>
 File: imagenes/python.png Graphic file (type png)
 <use imagenes/python.png>
 Package pdftex.def Info: imagenes/python.png  used on input line 162.
 (pdftex.def)             Requested size: 151.73839pt x 85.35826pt.
-<imagenes/django.png, id=321, 1204.5pt x 419.5675pt>
+<imagenes/django.png, id=427, 1204.5pt x 419.5675pt>
 File: imagenes/django.png Graphic file (type png)
 <use imagenes/django.png>
 Package pdftex.def Info: imagenes/django.png  used on input line 172.
 (pdftex.def)             Requested size: 245.04942pt x 85.35826pt.
 
 
-[9 <./imagenes/node.png> <./imagenes/python.png>]
-<./imagenes/java.jpg, id=328, 436.63126pt x 244.915pt>
+[13 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/node.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/python.png>]
+<./imagenes/java.jpg, id=434, 436.63126pt x 244.915pt>
 File: ./imagenes/java.jpg Graphic file (type jpg)
 <use ./imagenes/java.jpg>
 Package pdftex.def Info: ./imagenes/java.jpg  used on input line 183.
 (pdftex.def)             Requested size: 152.1703pt x 85.35826pt.
-<imagenes/spring-boot.png, id=329, 602.25pt x 316.18124pt>
+<imagenes/spring-boot.png, id=435, 602.25pt x 316.18124pt>
 File: imagenes/spring-boot.png Graphic file (type png)
 <use imagenes/spring-boot.png>
 Package pdftex.def Info: imagenes/spring-boot.png  used on input line 189.
 (pdftex.def)             Requested size: 162.58209pt x 85.35826pt.
-<imagenes/php.png, id=330, 1204.5pt x 650.43pt>
+<imagenes/php.png, id=436, 1204.5pt x 650.43pt>
 File: imagenes/php.png Graphic file (type png)
 <use imagenes/php.png>
 Package pdftex.def Info: imagenes/php.png  used on input line 200.
 (pdftex.def)             Requested size: 158.06082pt x 85.35826pt.
 
 
-[10 <./imagenes/django.png> <./imagenes/java.jpg> <./imagenes/spring-boot.png>]
-<imagenes/Laravel.jpg, id=337, 903.375pt x 451.6875pt>
+[14 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/django.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/java.jpg> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/spring-boot.png>]
+<imagenes/Laravel.jpg, id=443, 903.375pt x 451.6875pt>
 File: imagenes/Laravel.jpg Graphic file (type jpg)
 <use imagenes/Laravel.jpg>
 Package pdftex.def Info: imagenes/Laravel.jpg  used on input line 206.
 (pdftex.def)             Requested size: 170.70569pt x 85.35826pt.
-<imagenes/ruby.png, id=338, 401.5pt x 245.91875pt>
+<imagenes/ruby.png, id=444, 401.5pt x 245.91875pt>
 File: imagenes/ruby.png Graphic file (type png)
 <use imagenes/ruby.png>
 Package pdftex.def Info: imagenes/ruby.png  used on input line 217.
 (pdftex.def)             Requested size: 139.35695pt x 85.35826pt.
-<imagenes/Ruby2.png, id=339, 481.8pt x 240.9pt>
+<imagenes/Ruby2.png, id=445, 481.8pt x 240.9pt>
 File: imagenes/Ruby2.png Graphic file (type png)
 <use imagenes/Ruby2.png>
 Package pdftex.def Info: imagenes/Ruby2.png  used on input line 223.
 (pdftex.def)             Requested size: 170.71304pt x 85.35826pt.
 
 
-[11 <./imagenes/php.png> <./imagenes/Laravel.jpg>]
-<imagenes/go.png, id=345, 1204.5pt x 500.87125pt>
+[15 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/php.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/Laravel.jpg>]
+<imagenes/go.png, id=451, 1204.5pt x 500.87125pt>
 File: imagenes/go.png Graphic file (type png)
 <use imagenes/go.png>
 Package pdftex.def Info: imagenes/go.png  used on input line 234.
 (pdftex.def)             Requested size: 205.25853pt x 85.35826pt.
-<imagenes/gin.jpg, id=346, 189.70876pt x 266.9975pt>
-File: imagenes/gin.jpg Graphic file (type jpg)
-<use imagenes/gin.jpg>
-Package pdftex.def Info: imagenes/gin.jpg  used on input line 240.
-(pdftex.def)             Requested size: 60.65013pt x 85.35826pt.
+<imagenes/gin.png, id=452, 869.2475pt x 652.4375pt>
+File: imagenes/gin.png Graphic file (type png)
+<use imagenes/gin.png>
+Package pdftex.def Info: imagenes/gin.png  used on input line 240.
+(pdftex.def)             Requested size: 113.72237pt x 85.35826pt.
 
 
-[12 <./imagenes/ruby.png> <./imagenes/Ruby2.png> <./imagenes/go.png>]
-<imagenes/axios.png, id=355, 3854.4pt x 2168.1pt>
+[16 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/ruby.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/Ruby2.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/go.png>]
+<imagenes/axios.png, id=460, 3854.4pt x 2168.1pt>
 File: imagenes/axios.png Graphic file (type png)
 <use imagenes/axios.png>
 Package pdftex.def Info: imagenes/axios.png  used on input line 256.
 (pdftex.def)             Requested size: 151.73839pt x 85.35826pt.
-<imagenes/fetch.png, id=356, 1244.65pt x 700.6175pt>
+<imagenes/fetch.png, id=461, 1244.65pt x 700.6175pt>
 File: imagenes/fetch.png Graphic file (type png)
 <use imagenes/fetch.png>
 Package pdftex.def Info: imagenes/fetch.png  used on input line 265.
 (pdftex.def)             Requested size: 151.63057pt x 85.35826pt.
 
 
-[13 <./imagenes/gin.jpg> <./imagenes/axios.png>]
-<./imagenes/postman.png, id=362, 1510.64375pt x 603.25375pt>
+[17 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/gin.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/axios.png>]
+<./imagenes/postman.png, id=467, 1510.64375pt x 603.25375pt>
 File: ./imagenes/postman.png Graphic file (type png)
 <use ./imagenes/postman.png>
 Package pdftex.def Info: ./imagenes/postman.png  used on input line 276.
 (pdftex.def)             Requested size: 213.74763pt x 85.35826pt.
 
 
-[14 <./imagenes/fetch.png>]
-<imagenes/insomnia.png, id=368, 602.25pt x 602.25pt>
+[18 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/fetch.png>]
+<imagenes/insomnia.png, id=474, 451.6875pt x 227.34938pt>
 File: imagenes/insomnia.png Graphic file (type png)
 <use imagenes/insomnia.png>
 Package pdftex.def Info: imagenes/insomnia.png  used on input line 285.
-(pdftex.def)             Requested size: 85.35284pt x 85.35826pt.
-<imagenes/curl.png, id=369, 1003.75pt x 457.71pt>
+(pdftex.def)             Requested size: 169.58916pt x 85.35826pt.
+<imagenes/curl.png, id=475, 1003.75pt x 457.71pt>
 File: imagenes/curl.png Graphic file (type png)
 <use imagenes/curl.png>
 Package pdftex.def Info: imagenes/curl.png  used on input line 294.
 (pdftex.def)             Requested size: 187.17648pt x 85.35826pt.
 
 
-[15 <./imagenes/postman.png> <./imagenes/insomnia.png>]
-<imagenes/mysql.png, id=376, 843.15pt x 361.35pt>
+[19 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/postman.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/insomnia.png>]
+<imagenes/mysql.png, id=482, 843.15pt x 361.35pt>
 File: imagenes/mysql.png Graphic file (type png)
 <use imagenes/mysql.png>
 Package pdftex.def Info: imagenes/mysql.png  used on input line 316.
 (pdftex.def)             Requested size: 199.16951pt x 85.35826pt.
 
 
-[16 <./imagenes/curl.png>]
+[20 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/curl.png>]
 Overfull \hbox (7.14069pt too wide) in paragraph at lines 323--327
 \T1/txr/m/n/12 ple-jas y grandes volúmenes de datos, man-te-niendo siem-pre la in-te-gri-dad rela-cional. Cuando
  []
 
-<imagenes/postgresql.png, id=382, 1927.2pt x 1084.05pt>
+<imagenes/postgresql.png, id=488, 1927.2pt x 1084.05pt>
 File: imagenes/postgresql.png Graphic file (type png)
 <use imagenes/postgresql.png>
 Package pdftex.def Info: imagenes/postgresql.png  used on input line 330.
 (pdftex.def)             Requested size: 151.73839pt x 85.35826pt.
-<imagenes/mariadb.png, id=383, 341.275pt x 175.65625pt>
+<imagenes/mariadb.png, id=489, 341.275pt x 175.65625pt>
 File: imagenes/mariadb.png Graphic file (type png)
 <use imagenes/mariadb.png>
 Package pdftex.def Info: imagenes/mariadb.png  used on input line 339.
 (pdftex.def)             Requested size: 165.84103pt x 85.35826pt.
 
 
-[17 <./imagenes/mysql.png> <./imagenes/postgresql.png>]
-<imagenes/mongo.png, id=390, 843.15pt x 232.61906pt>
+[21 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/mysql.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/postgresql.png>]
+<imagenes/mongo.png, id=496, 843.15pt x 232.61906pt>
 File: imagenes/mongo.png Graphic file (type png)
 <use imagenes/mongo.png>
 Package pdftex.def Info: imagenes/mongo.png  used on input line 352.
 (pdftex.def)             Requested size: 309.38753pt x 85.35826pt.
 
 
-[18 <./imagenes/mariadb.png> <./imagenes/mongo.png>]
-<./imagenes/firebase.png, id=398, 1204.5pt x 330.23375pt>
+[22 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/mariadb.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/mongo.png>]
+<./imagenes/firebase.png, id=503, 1204.5pt x 330.23375pt>
 File: ./imagenes/firebase.png Graphic file (type png)
 <use ./imagenes/firebase.png>
 Package pdftex.def Info: ./imagenes/firebase.png  used on input line 364.
 (pdftex.def)             Requested size: 311.34308pt x 85.35826pt.
-<imagenes/Cassandra_logo.svg.png, id=399, 1204.5pt x 809.0225pt>
+<imagenes/Cassandra_logo.svg.png, id=504, 1204.5pt x 809.0225pt>
 File: imagenes/Cassandra_logo.svg.png Graphic file (type png)
 <use imagenes/Cassandra_logo.svg.png>
 Package pdftex.def Info: imagenes/Cassandra_logo.svg.png  used on input line 375.
 (pdftex.def)             Requested size: 127.07355pt x 85.35826pt.
 
 
-[19 <./imagenes/firebase.png> <./imagenes/Cassandra_logo.svg.png>]
-<imagenes/aws.png, id=406, 642.4pt x 385.44pt>
+[23 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/./imagenes/firebase.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/Cassandra_logo.svg.png>]
+<imagenes/aws.png, id=511, 642.4pt x 385.44pt>
 File: imagenes/aws.png Graphic file (type png)
 <use imagenes/aws.png>
 Package pdftex.def Info: imagenes/aws.png  used on input line 390.
 (pdftex.def)             Requested size: 142.25964pt x 85.35826pt.
-<imagenes/MicrosoftAzure.png, id=407, 402.50375pt x 219.82124pt>
+<imagenes/MicrosoftAzure.png, id=512, 402.50375pt x 219.82124pt>
 File: imagenes/MicrosoftAzure.png Graphic file (type png)
 <use imagenes/MicrosoftAzure.png>
 Package pdftex.def Info: imagenes/MicrosoftAzure.png  used on input line 399.
 (pdftex.def)             Requested size: 156.2941pt x 85.35826pt.
 
 
-[20 <./imagenes/aws.png>]
-<imagenes/GCP.png, id=413, 365.6205pt x 225.6795pt>
+[24 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/aws.png>]
+<imagenes/GCP.png, id=519, 365.6205pt x 225.6795pt>
 File: imagenes/GCP.png Graphic file (type png)
 <use imagenes/GCP.png>
 Package pdftex.def Info: imagenes/GCP.png  used on input line 409.
 (pdftex.def)             Requested size: 138.29007pt x 85.35826pt.
 
 
-[21 <./imagenes/MicrosoftAzure.png> <./imagenes/GCP.png>]
-<imagenes/chatgpt.png, id=420, 803.0pt x 803.0pt>
+[25 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/MicrosoftAzure.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/GCP.png>]
+<imagenes/chatgpt.png, id=526, 803.0pt x 803.0pt>
 File: imagenes/chatgpt.png Graphic file (type png)
 <use imagenes/chatgpt.png>
 Package pdftex.def Info: imagenes/chatgpt.png  used on input line 422.
 (pdftex.def)             Requested size: 85.35284pt x 85.35826pt.
-<imagenes/gemini.png, id=421, 513.92pt x 513.92pt>
+<imagenes/gemini.png, id=527, 385.44pt x 161.10187pt>
 File: imagenes/gemini.png Graphic file (type png)
 <use imagenes/gemini.png>
 Package pdftex.def Info: imagenes/gemini.png  used on input line 431.
-(pdftex.def)             Requested size: 85.35774pt x 85.35826pt.
+(pdftex.def)             Requested size: 204.2293pt x 85.35826pt.
 
 
-[22 <./imagenes/chatgpt.png>]
-<imagenes/codex.png, id=427, 211.79124pt x 239.89626pt>
+[26 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/chatgpt.png>]
+<imagenes/codex.png, id=533, 211.79124pt x 239.89626pt>
 File: imagenes/codex.png Graphic file (type png)
 <use imagenes/codex.png>
 Package pdftex.def Info: imagenes/codex.png  used on input line 440.
 (pdftex.def)             Requested size: 75.3593pt x 85.35826pt.
-<imagenes/github-copilot.jpeg, id=428, 803.0pt x 423.5825pt>
+<imagenes/github-copilot.jpeg, id=534, 803.0pt x 423.5825pt>
 File: imagenes/github-copilot.jpeg Graphic file (type jpg)
 <use imagenes/github-copilot.jpeg>
 Package pdftex.def Info: imagenes/github-copilot.jpeg  used on input line 450.
 (pdftex.def)             Requested size: 161.81018pt x 85.35826pt.
 
 
-[23 <./imagenes/gemini.png> <./imagenes/codex.png>]
+[27 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/gemini.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/codex.png>]
 Overfull \hbox (9.39667pt too wide) in paragraph at lines 458--459
 \T1/txr/m/n/12 evolu-cionado sig-ni-fica-ti-va-mente, desde en-fo-ques rígi-dos y es-truc-tura-dos hasta metodologías
  []
 
 
 
-[24 <./imagenes/github-copilot.jpeg>]
-<imagenes/Scrum.png, id=440, 963.6pt x 536.0025pt>
+[28 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/github-copilot.jpeg>]
+<imagenes/Scrum.png, id=545, 963.6pt x 536.0025pt>
 File: imagenes/Scrum.png Graphic file (type png)
 <use imagenes/Scrum.png>
 Package pdftex.def Info: imagenes/Scrum.png  used on input line 479.
 (pdftex.def)             Requested size: 153.44398pt x 85.35826pt.
-<imagenes/Extreme_Programming.png, id=441, 1204.5pt x 1106.1325pt>
+<imagenes/Extreme_Programming.png, id=546, 1204.5pt x 1106.1325pt>
 File: imagenes/Extreme_Programming.png Graphic file (type png)
 <use imagenes/Extreme_Programming.png>
 Package pdftex.def Info: imagenes/Extreme_Programming.png  used on input line 487.
 (pdftex.def)             Requested size: 92.94344pt x 85.35826pt.
-<imagenes/kanban.png, id=442, 755.82375pt x 445.665pt>
+<imagenes/kanban.png, id=547, 755.82375pt x 445.665pt>
 File: imagenes/kanban.png Graphic file (type png)
 <use imagenes/kanban.png>
 Package pdftex.def Info: imagenes/kanban.png  used on input line 498.
 (pdftex.def)             Requested size: 144.76129pt x 85.35826pt.
 
 
-[25 <./imagenes/Scrum.png> <./imagenes/Extreme_Programming.png>]) (./secciones/negocio.tex
-
-[26 <./imagenes/kanban.png>]
-Chapter 3.
-<imagenes/hinative.png, id=454, 513.92pt x 513.92pt>
+[29 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/Scrum.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/Extreme_Programming.png>]
+<imagenes/hinative.png, id=554, 513.92pt x 513.92pt>
 File: imagenes/hinative.png Graphic file (type png)
 <use imagenes/hinative.png>
-Package pdftex.def Info: imagenes/hinative.png  used on input line 9.
+Package pdftex.def Info: imagenes/hinative.png  used on input line 516.
 (pdftex.def)             Requested size: 85.35774pt x 85.35826pt.
-<imagenes/lang-8.jpg, id=455, 290.5254pt x 290.5254pt>
+
+
+[30 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/kanban.png>]
+<imagenes/lang-8.jpg, id=561, 290.5254pt x 290.5254pt>
 File: imagenes/lang-8.jpg Graphic file (type jpg)
 <use imagenes/lang-8.jpg>
-Package pdftex.def Info: imagenes/lang-8.jpg  used on input line 20.
+Package pdftex.def Info: imagenes/lang-8.jpg  used on input line 527.
 (pdftex.def)             Requested size: 85.35846pt x 85.35826pt.
-
-
-[27
-
- <./imagenes/hinative.png>]
-<imagenes/tandem.png, id=461, 513.92pt x 513.92pt>
+<imagenes/tandem.png, id=562, 513.92pt x 346.29375pt>
 File: imagenes/tandem.png Graphic file (type png)
 <use imagenes/tandem.png>
-Package pdftex.def Info: imagenes/tandem.png  used on input line 28.
-(pdftex.def)             Requested size: 85.35774pt x 85.35826pt.
-<imagenes/grammarly.png, id=462, 513.92pt x 513.92pt>
+Package pdftex.def Info: imagenes/tandem.png  used on input line 535.
+(pdftex.def)             Requested size: 126.67607pt x 85.35826pt.
+
+
+[31 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/hinative.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/lang-8.jpg>]
+<imagenes/grammarly.png, id=568, 513.92pt x 513.92pt>
 File: imagenes/grammarly.png Graphic file (type png)
 <use imagenes/grammarly.png>
-Package pdftex.def Info: imagenes/grammarly.png  used on input line 37.
+Package pdftex.def Info: imagenes/grammarly.png  used on input line 544.
 (pdftex.def)             Requested size: 85.35774pt x 85.35826pt.
-<imagenes/duolingo.png, id=463, 513.92pt x 513.92pt>
+<imagenes/duolingo.png, id=569, 513.92pt x 513.92pt>
 File: imagenes/duolingo.png Graphic file (type png)
 <use imagenes/duolingo.png>
-Package pdftex.def Info: imagenes/duolingo.png  used on input line 46.
+Package pdftex.def Info: imagenes/duolingo.png  used on input line 553.
 (pdftex.def)             Requested size: 85.35774pt x 85.35826pt.
 
 
-[28 <./imagenes/lang-8.jpg> <./imagenes/tandem.png> <./imagenes/grammarly.png>]) (./secciones/justificacion.tex) (./secciones/requisitos.tex
+[32 <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/tandem.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/grammarly.png> <C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/imagenes/duolingo.png>]) (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/secciones/justificacion.tex) (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/secciones/requisitos.tex
 
-[29 <./imagenes/duolingo.png>]
+[33]
 
-[30]
-Chapter 4.
+[34]
+Chapter 3.
 
 Overfull \hbox (73.08919pt too wide) in alignment at lines 3--7
 [] [] [] []
@@ -1945,17 +1952,28 @@ Overfull \hbox (73.08919pt too wide) in alignment at lines 9--51
 [] [] [] []
  []
 
-[31
+[35
 
 ])
 
-[32]
+[36]
 
-[33]
+[37]
+Overfull \hbox (2.36742pt too wide) in paragraph at lines 390--390
+[]\T1/txr/m/n/12 Microsoft. ^^P  Vi-sual stu-dio code.^^Q Ac-ce-dido: 2026-02-27. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
+ []
 
-LaTeX Warning: Empty bibliography on input line 389.
 
-(./main.aux)
+Overfull \hbox (11.51132pt too wide) in paragraph at lines 390--390
+[]\T1/txr/m/n/12 GitHub Inc. ^^P  Github.^^Q Ac-ce-dido: 2026-02-27. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / github .
+ []
+
+
+
+[38
+
+
+] (C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-24>
@@ -1965,23 +1983,23 @@ L3 programming layer <2025-10-24>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D778BE278E08378CCED5B4685012069A;2720.
+(rerunfilecheck)             Checksum: 58CA3E87ABAB5B8D21AAD7EAF83400BA;4112.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28785 strings out of 467746
- 480000 string characters out of 5431099
- 1337658 words of memory out of 5000000
- 56940 multiletter control sequences out of 15000+600000
+ 29063 strings out of 467746
+ 488020 string characters out of 5431099
+ 1338131 words of memory out of 5000000
+ 57190 multiletter control sequences out of 15000+600000
  682185 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,12n,103p,1271b,3917s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (46 pages, 2598216 bytes).
+Output written on C:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.pdf (51 pages, 2776150 bytes).
 PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 704 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 477 words of extra memory for PDF output out of 10000 (max. 10000000)
 

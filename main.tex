@@ -50,6 +50,7 @@ hmargin=3cm
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,
 	linkcolor=black, % links to parts of the document (e.g. index) in black
+	citecolor=black, % citation links in black
 	urlcolor=blue} % links to resources outside the document in blue
 
 % MATH EXPRESSIONS
@@ -323,7 +324,6 @@ hmargin=3cm
 \clearpage
 \pagenumbering{arabic} % numbering with Arabic numerals for the rest of the document.
 
-\chapter{Introduction}
 
 % IMPORTANT: Latex special characters are: # $ % & \ ^ _ { } ~. To avoid mistakes when compiling try writing \ before. For: \ use \textbackslash ; for ^ \textasciitilde and ~ \textasciicircum.
 
@@ -374,8 +374,8 @@ hmargin=3cm
 
 
 % Start writing here----------------------------------------------------
+\input{secciones/introduccion.tex}
 \input{secciones/estado_del_arte}
-\input{secciones/negocio}
 \input{secciones/justificacion}
 \input{secciones/requisitos.tex}
 
