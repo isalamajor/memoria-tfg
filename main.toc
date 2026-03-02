@@ -23,7 +23,7 @@
 \contentsline {subsubsection}{PHP y Laravel}{14}{figure.caption.19}%
 \contentsline {subsubsection}{Ruby on Rails}{15}{figure.caption.21}%
 \contentsline {subsubsection}{Golang y Gin}{16}{figure.caption.23}%
-\contentsline {subsection}{\numberline {2.1.4}Creación y consumo de APIs}{17}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.4}Consumo de APIs}{17}{subsection.2.1.4}%
 \contentsline {subsubsection}{Axios}{17}{subsection.2.1.4}%
 \contentsline {subsubsection}{FetchAPI}{18}{figure.caption.26}%
 \contentsline {subsubsection}{Postman}{18}{figure.caption.27}%
@@ -61,9 +61,17 @@
 \contentsline {subsection}{\numberline {2.3.4}Grammarly}{32}{subsection.2.3.4}%
 \contentsline {subsection}{\numberline {2.3.5}Duolingo}{32}{subsection.2.3.5}%
 \contentsline {subsection}{\numberline {2.3.6}Conclusión}{33}{subsection.2.3.6}%
-\contentsline {section}{\numberline {2.4}Justificación de la Elección Tecnológica}{33}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Requisitos}{35}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Requisitos funcionales}{35}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Requisitos no funcionales}{36}{section.3.2}%
-\contentsline {chapter}{Bibliography}{38}{table.caption.52}%
+\contentsline {chapter}{\numberline {3}Requisitos}{34}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Requisitos funcionales}{34}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Requisitos no funcionales}{35}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Arquitectura}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Stack tecnológico seleccionado}{37}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Modelado de datos}{39}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Colección User (Usuarios)}{41}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Colección Letter (Cartas)}{41}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Colección CorrectedLetter (Cartas Corregidas)}{42}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Colección Follow}{42}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Colección FriendRequest}{43}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Colección VerificationCode}{43}{subsection.4.2.6}%
+\contentsline {chapter}{Bibliography}{44}{subsection.4.2.6}%
 \contentsfinish 
