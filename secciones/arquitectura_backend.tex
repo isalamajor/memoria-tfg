@@ -1,0 +1,141 @@
+\section{Arquitectura del backend}
+
+En esta sección se expone cómo está estructurado el proyecto del servidor, los flujos lógicos que sigue, varios puntos interesantes sobre su funcionamiento, y las diferentes rutas con las que cuenta la API.
+
+\input{secciones/estructura_backend.tex}
+
+
+\subsection{Emails automatizados}
+La función del backend encargada la generación de códigos de verificación y su envío via email al usuario, que se emplea tanto para el registro de una nueva cuenta como para la recuperación de sus credenciales en caso de olvido; es capaz de realizar sus tareas de forma automatizada gracias a un transportador que utiliza el servicio SMTP (Simple Mail Transfer Protocol, un protocolo de red para intercambiar mensajes de correo electrónico) de Gmail. Un transportador es un objeto de configuración donde se define este servicio SMTP y se inyectan las credenciales para utilizarlo, es decir, la cuenta de correo electrónico y su contraseña.
+
+En realidad, ya no se utiliza la contraseña de la cuenta de correo directamente, Google bloqueó eso por ser una práctica poco segura y la sustituyó por Google App Password, códigos de 16 caracteres que se pueden obtener en la configuración de la cuenta de Google y que actúan como las credenciales para usar nuestra cuenta de correo de Gmail mediante código. Estas credenciales se pueden obtener solamente al tener la 2FA (2 Factor Authentication) de Google activada, y se pueden revocar de una aplicación u otra cuando se necesite; manteniendo así las credenciales primarias seguras.
+
+Lo que se envía en estos correos automatizados es una plantilla HTML con el código de verificación generado. De esta forma, el email que reciben los usuarios es visualmente agradable y fácil de entender en un vistazo. Así es como se ve:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{./imagenes/template_email.png}
+    \caption{Email automatizado}
+    \label{fig:email}
+\end{figure}
+
+\subsection{Mecanismo de Autenticación y Autorización}
+Al acceder a la plataforma introduciendo su nombre de usuario o email y contraseña, el usuario recibe un token que contiene información de la sesión como el momento en que inició, el momento de caducidad, y los datos no sensibles del usuario. Se trata de un token JWT (JSON Web Token),  un contenedor de información seguro y compacto que permite verificar la identidad del cliente en cada interacción con la API. El token cuenta con las siguientes partes:
+
+\begin{itemize}
+    \item Header (Cabecera): Contiene los metadatos del token, es decir, el tipo de objeto (en este caso JWT, aunque existen otros) y el algoritmo de firma digital empleado.
+    \item Payload (Carga útil): Es el cuerpo del token y contiene los \textit{claims}, que son cada una de las piezas de información incluidas en el token.
+    \item Signature (Firma): Es el componente que garantiza la integridad del token. Se genera mediante la combinación del \textit{header} y el \textit{payload} codificados, junto con una clave secreta. La firma permite al Back-end detectar un intento de manipulación del token por parte del cliente o de terceros.
+\end{itemize}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=3cm]{./imagenes/jwt.png}
+    \caption{JSON Web Tokens}
+    \label{fig:jwt}
+\end{figure}
+
+
+Este token se envia desde el backend y almacena en el navegador mediante \textit{cookies}, con el objetivo de que el navegador pueda recordar la sesión del usuario. Al cerrar la sesión, esta cookie se elimina. Mediante un middleware, la app de React puede adjuntar automáticamente el token a las solicitudes HTTP que envía al servidor. De esta forma, el servidor es capaz de identificar al usuario y aplicar los permisos correspondientes sin necesidad de consultar una tabla de sesiones activa en la base de datos, lo que optimiza los recursos del sistema.
+
+Sobre el refuerzo de la seguridad de la cookie hay dos puntos interesantes que mencionar. En primer lugar, la cookie es HttpOnly, es decir, no se puede leer mediante Javascript sino que solo puede leerla el navegador. De esta forma, el token está protegido contra ataques maliciosos como \textbf{Cross-Site Scripting (XSS)}, que es una vulnerabilidad en la que un atacante inyecta y ejecutar código malicioso (generalmente de JavaScript) en el navegador de otros usuarios que usan la aplicación.
+
+En segundo lugar, complementando el uso de cookies HttpOnly, se ha implementado el atributo \textbf{SameSite} con el valor \texttt{"Strict"}. Esta configuración es una medida de seguridad crítica para prevenir ataques de tipo \textbf{CSRF (Cross-Site Request Forgery)}, que aprovechan la naturaleza automática de los navegadores, dado que estos adjuntan las cookies de sesión a cualquier petición dirigida al dominio de origen. El atacante podría engañar a un usuario autenticado para que haga clic en un enlace malicioso en una pestaña diferente, y dicho enlace dispararía una petición a nuestra API (por ejemplo, para borrar una carta o cambiar la contraseña). Con la configuración de SameSite, este tipo de ataques son mitigados.
+
+Estas decisiones técnicas refuerzan la robustez del sistema y aseguran que cada acción realizada en este sea legítima y provenga exclusivamente de la interacción directa del usuario con la interfaz oficial, y que el usuario pueda acceder de forma segura a las acciones que requieren su autenticación.
+
+
+\subsection{Almacenamiento de imágenes con Multer}
+
+Para la gestión de imágenes de perfil, se ha implementado la librería \textbf{Multer}, un \textit{middleware} para Node.js diseñado para el manejo de datos \texttt{multipart/form-data}. Esta elección técnica permite procesar la subida de archivos de forma eficiente, integrándose directamente con el sistema de archivos del servidor.
+
+
+La configuración del sistema de \textit{uploads} se divide en tres pilares fundamentales:
+
+\begin{enumerate}
+    \item \textbf{Almacenamiento Persistente (DiskStorage)}: Se utiliza el motor de almacenamiento en disco para definir la ruta de destino (\texttt{./uploads/profile\_pictures}). Una decisión de diseño clave ha sido el renombrado de archivos: en lugar de conservar el nombre original (que podría contener caracteres inválidos o colisionar con otros usuarios), el archivo se renombra utilizando el \textbf{ID único del usuario} extraído del token JWT (\texttt{req.user.id}). Esto garantiza que cada usuario solo posea una imagen activa, sobrescribiendo la anterior automáticamente en caso de actualización.
+
+    \item \textbf{Filtrado de Seguridad (FileFilter)}: Para prevenir la subida de archivos maliciosos (como scripts ejecutables disfrazados), se ha implementado un filtro por \textit{mimetype} y extensión. El sistema solo acepta formatos de imagen estándar (\texttt{JPEG, JPG, PNG}), verificando tanto la extensión del archivo como su tipo MIME real para asegurar la integridad del recurso.
+
+    \item \textbf{Control de Recursos (Limits)}: Se establece una restricción en el tamaño del archivo (fijando un máximo de 5 MB) para evitar ataques de denegación de servicio (DoS) por agotamiento de almacenamiento o ancho de banda, garantizando que el servidor procese únicamente archivos de dimensiones razonables para una imagen de perfil.
+\end{enumerate}
+
+Este módulo se exporta como un \textit{middleware} independiente, lo que permite inyectarlo exclusivamente en las rutas de la API que requieren capacidad de subida, manteniendo el principio de responsabilidad única en el código.
+
+\subsection{Interfaz de Programación de Aplicaciones (API): Rutas y Controladores}
+
+El \textit{Back-end} de la plataforma actúa como una capa de servicios diseñada para que el \textit{Front-end} interactúe con la base de datos de forma segura y eficiente. Esta comunicación se articula mediante una \textbf{API RESTful}, que expone una serie de puntos de entrada o \textit{endpoints} organizados por recursos (usuarios, cartas, correcciones, etc.).
+
+La lógica de interacción se fundamenta en las operaciones \textbf{CRUD} (\textit{Create, Read, Update, Delete}), que representan las acciones esenciales para la gestión de persistencia de datos. En este proyecto, dichas acciones se mapean directamente con los métodos del protocolo \textbf{HTTP}, garantizando una arquitectura estandarizada:
+
+\begin{itemize}
+    \item \textbf{POST (Create)}: Utilizado para la creación de nuevos documentos, como el registro de un usuario o el envío de una nueva carta.
+    \item \textbf{GET (Read)}: Empleado para la recuperación de información, ya sea una lista de recursos o un documento específico identificado por su ID.
+    \item \textbf{PUT / PATCH (Update)}: Destinados a la actualización de registros existentes. Se utiliza \texttt{PUT} para sustituciones integrales y \texttt{PATCH} para modificaciones parciales, como marcar una carta como "leída".
+    \item \textbf{DELETE (Delete)}: Encargado de la eliminación de recursos o, en el caso de las cartas, de la activación del borrado lógico mencionado anteriormente.
+\end{itemize}
+
+Cada ruta definida en el servidor está vinculada a un \textbf{controlador} específico, el cual contiene la lógica final para procesar la solicitud. No obstante, antes de que las peticiones sean derivadas al controlador correspondiente, estas son interceptadas por uno o varios \textbf{middlewares}. La arquitectura que sigue la API aquí desarrollada sigue el siguiente flujo para el procesamiento de preticiones HTTP:
+
+\begin{enumerate}
+    \item \textbf{Middleware de Autenticación}: Antes de alcanzar el controlador, las rutas protegidas ejecutan un \textit{middleware} de seguridad. Este componente intercepta la solicitud, extrae el \textbf{JWT} de la cookie (o cabecera) y verifica su validez. Si el \textit{token} es correcto, el \textit{middleware} decodifica la información del usuario y la inyecta en el objeto de la petición (\texttt{req.user}), permitiendo que el resto del flujo identifique al autor de la acción, es decir, el usuario autenticado en la aplicación.
+
+    \item \textbf{Controlador (Handler)}: Una vez superada la fase de autenticación, la ejecución pasa al \textbf{controlador} específico. El controlardor es la función es la encargada de:
+    \begin{itemize}
+        \item Extraer los parámetros de la consulta (\texttt{params}, \texttt{query} o \texttt{body}).
+        \item Utilizar la identidad del usuario ya validada en \texttt{req.user} para aplicar reglas de negocio.
+        \item Ejecutar las operaciones correspondientes en \textbf{MongoDB} mediante los modelos de \textbf{Mongoose}.
+        \item Devolver una respuesta HTTP con los datos en formato JSON.
+    \end{itemize}
+\end{enumerate}
+
+Esta separación de responsabilidades garantiza que el código de los controladores sea más limpio y que la lógica de protección de rutas sea reutilizable en todo el sistema.
+
+A continuación, se muestra una tabla con todos los métodos que se han desarrollado para esta API y de los que el frontend más adelante se servirá. Estás separados en categorías según el controlador y enrutador que se encarga de ellos: User, Letter, CorrectedLetter y Follow. Podría crearse uno nuevo para los modelos de VerificationCode y FriendRequest, pero por simplicidad se han incluido las pocas funciones de estos en el grupo de User y Follow, respectivamente.
+
+\input{secciones/tabla_rutas.tex}
+
+
+\subsection{Técnicas de optimización}
+
+\subsubsection{Optimización de búsqueda datos}
+La lógica de filtrado se procesa íntegramente en el servidor para garantizar la escalabilidad y mejorar la velocidad de la interfaz liberándola de tareas programacionales. El controlador recibe los términos de búsqueda y ejecuta una consulta optimizada en MongoDB utilizando operadores como \texttt{\$regex} (expresiones regulares) con la opción \texttt{i} (\textit{case-insensitive}). Esto permite devolver únicamente los resultados pertinentes, reduciendo drásticamente el tamaño de los datos transferidos a través de la red en comparación con un filtrado realizado en el lado del cliente sobre la totalidad de los registros.
+
+Además, Para mejorar la usabilidad en la búsqueda y filtrado de cartas, se ha implementado un sistema de comunicación eficiente entre el cliente y el servidor. En lugar de realizar peticiones por cada pulsación de tecla (\textit{keystroke}), lo que derivaría en un consumo excesivo de recursos y latencia en la red, se ha aplicado la técnica de \textbf{Debouncing}. Esta técnica sigue la siguiente lógica:
+
+\begin{itemize}
+    \item \textbf{Control de Eventos}: Cuando el usuario escribe en el campo de búsqueda, se inicia un temporizador interno en el \textit{Front-end}.
+    \item \textbf{Retraso Controlado}: Si el usuario sigue escribiendo antes de que transcurran 500ms (u otro intervalo definido), el temporizador se reinicia.
+    \item \textbf{Petición Asíncrona}: Solo cuando el usuario deja de escribir durante el tiempo estipulado, se dispara la solicitud formal a la API de \textit{Back-end}.
+\end{itemize}
+
+Así, se logra un consumo y envío de recursos mucho más eficiente.
+
+\subsubsection{Procesamiento Avanzado de Datos: Aggregate de MongoDB}
+
+Otra forma de optimización clave utilizada en el desarrollo del backend es el uso del Aggregate o Framework de Agregación de MongoDB. Esta herramienta permite acceder a diferentes colecciones y aplicar filtrados, ordenamientos, uniones (\textit{joins}), proyecciones y paginación en una única operación atómica. Esto evita el procesar grandes volúmenes de datos en la capa de JavaScript o caer en el problema de las \textbf{N+1 consultas} (realizar múltiples peticiones a la base de datos para completar un solo registro). Así, delegamos la carga de procesamiento al motor de la base de datos, manteniendo tiempos de respuesta bajos y escalables.
+
+Un ejemplo real implementado es el \textit{pipeline} para la búsqueda de cartas, donde se obtienen también los detalles de los usuarios que han enviado correcciones. El proceso se divide en las siguientes etapas:
+
+\begin{enumerate}
+    \item \textbf{Pre-filtrado y Paginación}: Primero se selecciona un conjunto reducido de documentos mediante un \texttt{\$match} (autor logueado y carta no eliminada), un \texttt{\$sort} cronológico y las etapas \texttt{\$skip} y \texttt{\$limit} para gestionar la paginación. Realizar esto al inicio asegura que las operaciones posteriores, más costosas, solo se apliquen a los resultados visibles.
+
+    \item \textbf{Resolución de Identidades (\texttt{\$lookup})}: Se aplica un \texttt{\$lookup} (equivalente al \textit{join} de SQL) para unir la colección de cartas con la de usuarios. Esto permite resolver los IDs del array \texttt{sharedWith} y obtener los perfiles reales de los destinatarios.
+
+    \item \textbf{Búsqueda de Correcciones}: Seguidamente, se realiza un segundo cruce con la colección \texttt{CorrectedLetter}. Para cada carta, el sistema busca documentos donde la carta original coincida con la actual y el campo \texttt{sentBack} sea verdadero, agrupando estos resultados en un array interno.
+
+    \item \textbf{Transformación de la Salida (\texttt{\$project})}: Finalmente, se formatea la respuesta final procesando el array de amigos mediante el operador \texttt{\$map} de MongoDB. Este transforma cada elemento verificando si el ID del amigo existe en el array de revisores (usando \texttt{\$in}) y extrayendo el ID específico de la corrección mediante la combinación de \texttt{\$filter} y \texttt{\$arrayElemAt}.
+\end{enumerate}
+
+En conclusión, aunque construir esta lógica requiere mayor tiempo de desarrollo, el uso de \texttt{aggregate} permite una mejora drástica en el rendimiento del sistema reduciendo el tráfico de red entre el servidor y la base de datos.
+
+A continuación se muestra el código de la función que se ha presentado como ejemplo de su uso.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{./imagenes/aggregate3.png}
+    \caption{Consulta optimizada 1}
+    \label{fig:aggregate}
+\end{figure}

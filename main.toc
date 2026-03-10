@@ -61,17 +61,59 @@
 \contentsline {subsection}{\numberline {2.3.4}Grammarly}{32}{subsection.2.3.4}%
 \contentsline {subsection}{\numberline {2.3.5}Duolingo}{32}{subsection.2.3.5}%
 \contentsline {subsection}{\numberline {2.3.6}Conclusión}{33}{subsection.2.3.6}%
-\contentsline {chapter}{\numberline {3}Requisitos}{34}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Requisitos funcionales}{34}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Requisitos no funcionales}{35}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Arquitectura}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Stack tecnológico seleccionado}{37}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Modelado de datos}{39}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Colección User (Usuarios)}{41}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Colección Letter (Cartas)}{41}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Colección CorrectedLetter (Cartas Corregidas)}{42}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Colección Follow}{42}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Colección FriendRequest}{43}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Colección VerificationCode}{43}{subsection.4.2.6}%
-\contentsline {chapter}{Bibliography}{44}{subsection.4.2.6}%
+\contentsline {chapter}{\numberline {3}Análisis y planificación}{34}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Requisitos}{34}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Requisitos funcionales}{34}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Requisitos no funcionales}{37}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Historias de Usuario}{37}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Matriz de Trazabilidad}{38}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Arquitectura}{40}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Stack tecnológico seleccionado}{40}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Modelado de datos}{42}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Colección User (Usuarios)}{44}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Colección Letter (Cartas)}{44}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Colección CorrectedLetter (Cartas Corregidas)}{45}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Colección Follow}{45}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Colección FriendRequest}{46}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Colección VerificationCode}{46}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Arquitectura del backend}{47}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Estructura del backend}{47}{subsection.4.3.1}%
+\contentsline {subsubsection}{Raíz del proyecto}{49}{Item.5}%
+\contentsline {subsubsection}{Carpeta \texttt {database/}}{50}{table.4.1}%
+\contentsline {subsubsection}{Carpeta \texttt {middlewares/}}{50}{table.4.2}%
+\contentsline {subsubsection}{Carpeta \texttt {services/}}{50}{table.4.3}%
+\contentsline {subsubsection}{Carpeta \texttt {controllers/}}{50}{table.4.4}%
+\contentsline {subsubsection}{Carpeta \texttt {routes/}}{51}{table.4.5}%
+\contentsline {subsubsection}{Carpeta \texttt {models/}}{51}{table.4.6}%
+\contentsline {subsubsection}{Carpetas \texttt {templates/} y \texttt {uploads/}}{52}{table.4.7}%
+\contentsline {subsection}{\numberline {4.3.2}Emails automatizados}{52}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Mecanismo de Autenticación y Autorización}{53}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Almacenamiento de imágenes con Multer}{54}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Interfaz de Programación de Aplicaciones (API): Rutas y Controladores}{55}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Técnicas de optimización}{60}{subsection.4.3.6}%
+\contentsline {subsubsection}{Optimización de búsqueda datos}{60}{subsection.4.3.6}%
+\contentsline {subsubsection}{Procesamiento Avanzado de Datos: Aggregate de MongoDB}{61}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}Frontend de la Aplicación}{64}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Stack Tecnológico}{64}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Arquitectura del Proyecto}{64}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Descripción de las Páginas Principales}{65}{subsection.4.4.3}%
+\contentsline {subsubsection}{Página de Inicio y Autenticación}{66}{subsection.4.4.3}%
+\contentsline {subsubsection}{Dashboard Principal (Homepage)}{66}{figure.caption.60}%
+\contentsline {subsubsection}{Creación de Nueva Carta}{68}{Item.16}%
+\contentsline {subsubsection}{Corrección de Cartas}{68}{figure.caption.62}%
+\contentsline {subsubsection}{Visualización de Correcciones Recibidas}{70}{figure.caption.63}%
+\contentsline {subsubsection}{Gestión de Amigos}{70}{figure.caption.64}%
+\contentsline {subsubsection}{Perfil de Usuario}{71}{Item.19}%
+\contentsline {subsection}{\numberline {4.4.4}Aspectos Técnicos Destacados}{72}{subsection.4.4.4}%
+\contentsline {subsubsection}{Gestión de Estado y Contextos}{72}{subsection.4.4.4}%
+\contentsline {subsubsection}{Optimización de Rendimiento}{73}{figure.caption.67}%
+\contentsline {subsubsection}{Diseño Responsivo e Interfaces Animadas}{74}{Item.24}%
+\contentsline {subsubsection}{Sistema de Correcciones de Texto}{74}{Item.24}%
+\contentsline {subsubsection}{Seguridad y Validación}{75}{Item.28}%
+\contentsline {subsubsection}{Componentes Reutilizables}{75}{Item.28}%
+\contentsline {subsubsection}{Calidad del Código}{76}{Item.28}%
+\contentsline {chapter}{\numberline {5}Líneas de Trabajo Futuro y conclusión}{77}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Líneas de Trabajo Futuro y Propuestas de Mejora}{77}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Conclusiones}{77}{section.5.2}%
+\contentsline {chapter}{Bibliography}{79}{section.5.2}%
 \contentsfinish 

@@ -1,0 +1,208 @@
+\subsection{Estructura del backend}
+
+
+Para hacer posible la oferta de servicios robustos y seguros para consumición del frontend, el servidor se divide en las siguientes partes que interactúan y cooperan unas con las otras:
+
+\begin{itemize}
+    \item \textbf{Entrada y configuración}: arranque del servidor, conexión a base de datos y configuración global.
+    \item \textbf{Rutas}: definición de endpoints HTTP.
+    \item \textbf{Controladores}: lógica de negocio de cada módulo funcional.
+    \item \textbf{Modelos}: definición de esquemas y colecciones en MongoDB.
+    \item \textbf{Middlewares}: autenticación y carga de ficheros.
+    \item \textbf{Servicios y plantillas}: utilidades transversales y plantilla de correo de verificación.
+\end{itemize}
+
+Para entender la función de cada una de estas partes, es importante la comprensión del flujo de una solicitud HTTP por la API, cómo esta se recibe, se procesa y es respondida. Una petición HTTP sigue esta secuencia:
+
+\begin{enumerate}
+    \item El cliente consume un endpoint definido en \texttt{routes/}.
+    \item Si la ruta está protegida, se ejecuta \texttt{middlewares/auth.js}. Si el endpoint recibe un archivo se ejecuta \texttt{middlewares/uploads.js}.
+    \item El controlador correspondiente (\texttt{controllers/}) valida datos y aplica reglas de negocio.
+    \item Se consulta o actualiza MongoDB mediante los modelos de \texttt{models/}.
+    \item Se devuelve la respuesta JSON al cliente. Con un código de estado 200 o 201 para éxito, 401 para autenticación fallida, 404 para recurso no encontrado, y otros; y los datos a devolver si los hay, como los datos del perfil de un usuario, los datos de una carta que ha sido creada, etc.
+\end{enumerate}
+
+
+La estructuración y diferenciación de estas partes se consigue mediante la siguiente separación por carpetas de la siguiente forma:
+
+
+\begin{verbatim}
+api-letterex/
+|-- constants.js
+|-- index.js
+|-- package.json
+|-- README.md
+|-- setup.ps1
+|-- start.bat
+|-- controllers/
+|   |-- correctedLetter.js
+|   |-- follow.js
+|   |-- letter.js
+|   `-- user.js
+|-- database/
+|   `-- connection.js
+|-- middlewares/
+|   |-- auth.js
+|   `-- uploads.js
+|-- models/
+|   |-- correctedLetter.js
+|   |-- follow.js
+|   |-- friendRequest.js
+|   |-- letter.js
+|   |-- sharedLetter.js
+|   |-- user.js
+|   `-- verificationCode.js
+|-- routes/
+|   |-- correctedLetter.js
+|   |-- follow.js
+|   |-- letter.js
+|   `-- user.js
+|-- services/
+|   `-- jwt.js
+|-- templates/
+|   `-- verificationCode.html
+`-- uploads/
+    `-- profile_pictures/
+\end{verbatim}
+
+
+Vemos que tenemos ciertos archivos en la raíz del proyecto, y otros varios en las carpetas Controllers, Database, Middlewares, Models, Routers, Services, Templates y Uploads. A continuación se explicará la función de cada uno de estos elementos.
+
+\subsubsection{Raíz del proyecto}
+
+Para comprender la arquitectura del servidor, es importante analizar el mecanismo de seguridad \textbf{CORS (Cross-Origin Resource Sharing)}. En una arquitectura desacoplada como la de este proyecto, el cliente (\textit{Front-end}) y el servidor (\textit{Back-end}) suelen operar en dominios o puertos distintos. Por seguridad, los navegadores modernos aplican la "Política de Mismo Origen" (\textit{Same-Origin Policy}), que prohíbe que un script cargado en un origen acceda a recursos de otro distinto. Con la configuración de \texttt{CORS} se define una lista de dominios autorizados a acceder a la API, así como habilitar el intercambio de credenciales. Esto último es estrictamente necesario para que las cookies \textit{HttpOnly} que transportan el token JWT puedan ser enviadas y recibidas correctamente entre ambas partes.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/cors.png}
+    \caption{Configuración del CORS en la entrada del backend}
+    \label{fig:cors}
+\end{figure}
+
+Este aspecto tan importante se configura en el archivo de entrada del backend, index.js; pero la raíz del proyecto cuenta con otros varios archivos, mostrados junto con este primero en la siguiente tabla.
+
+\begin{longtable}{|p{3.8cm}|p{10.3cm}|}
+\hline
+\textbf{Archivo} & \textbf{Funcionalidad principal} \\
+\hline
+\texttt{index.js} & Es el punto de entrada de la API. Conecta con MongoDB, configura CORS, el parseo de JSON/urlencoded, las cookies, y la carga de rutas, recursos estáticos de imágenes y middlewares globales de errores. \\
+\hline
+\texttt{constants.js} & Define constantes compartidas, en especial el listado de idiomas válidos de la aplicación. \\
+\hline
+\texttt{package.json} & Metadatos del proyecto, dependencias (Express, Mongoose, JWT, Multer, Nodemailer, etc.) y scripts de ejecución. \\
+\hline
+\texttt{README.md} & Documentación de endpoints y uso básico de la API. \\
+\hline
+\texttt{setup.ps1} & Script de arranque en Windows: inicia \texttt{mongod} y monta el servidor. \\
+\hline
+\texttt{start.bat} & Alternativa de arranque por lotes para abrir MongoDB y la API en terminales separadas. \\
+\hline
+\texttt{.env.local} & Variables de entorno (clave secreta JWT, credenciales de correo, URL del frontend, etc.). \\
+\hline
+\end{longtable}
+
+\subsubsection{Carpeta \texttt{database/}}
+
+\begin{longtable}{|p{3.8cm}|p{10.3cm}|}
+\hline
+\textbf{Archivo} & \textbf{Funcionalidad principal} \\
+\hline
+\texttt{connection.js} & Encapsula la conexión asíncrona a MongoDB mediante Mongoose y gestiona errores de conexión. \\
+\hline
+\end{longtable}
+
+\subsubsection{Carpeta \texttt{middlewares/}}
+
+\begin{longtable}{|p{3.8cm}|p{10.3cm}|}
+\hline
+\textbf{Archivo} & \textbf{Funcionalidad principal} \\
+\hline
+\texttt{auth.js} & Middleware de autenticación JWT: lee el token de autenticación desde su cookie, y valida la firma y expiración, además de añadir los datos del payload en la petición para que los controladores puedan acceder a ellos. \\
+\hline
+\texttt{uploads.js} & Configuración de Multer para subir fotos de perfil a \texttt{uploads/profile\_pictures}, validando tipo (JPG/PNG) y tamaño máximo. \\
+\hline
+\end{longtable}
+
+\subsubsection{Carpeta \texttt{services/}}
+
+\begin{longtable}{|p{3.8cm}|p{10.3cm}|}
+\hline
+\textbf{Archivo} & \textbf{Funcionalidad principal} \\
+\hline
+\texttt{jwt.js} & Servicio encargado de la generación y firma de tokens. Centraliza la lógica de cifrado y permite al middleware de autenticación validar la integridad de las peticiones mediante la clave secreta. \\
+\hline
+\end{longtable}
+
+\subsubsection{Carpeta \texttt{controllers/}}
+
+Los controladores implementan la lógica de negocio y el acceso a datos:
+
+\begin{longtable}{|p{3.8cm}|p{10.3cm}|}
+\hline
+\textbf{Archivo} & \textbf{Funcionalidad principal} \\
+\hline
+\texttt{user.js} & Registro/login/logout, perfil y actualización de usuario, cambio/reset de contraseña, subida/borrado/consulta de foto de perfil, validación de nickname/email y flujo de códigos de verificación por correo. \\
+\hline
+\texttt{letter.js} & Gestión completa de cartas: alta, detalle con control de permisos, edición, borrado lógico/físico, listados paginados, búsqueda por título, compartición con límite de revisores y obtención de diarios/estadísticas. \\
+\hline
+\texttt{correctedLetter.js} & Gestión de cartas corregidas: consulta por identificador, actualización de correcciones, envío final al autor, bandeja de recibidas con filtros y métricas por idioma. \\
+\hline
+\texttt{follow.js} & Gestión de relaciones sociales: solicitudes de amistad, aceptación/rechazo, creación/eliminación de relaciones, amigos, no amigos y sugerencias por afinidad de idiomas. \\
+\hline
+\end{longtable}
+
+
+\subsubsection{Carpeta \texttt{routes/}}
+
+Cada archivo de rutas define endpoints y delega la lógica en su controlador correspondiente:
+
+\begin{longtable}{|p{3.8cm}|p{10.3cm}|}
+\hline
+\textbf{Archivo} & \textbf{Responsabilidad} \\
+\hline
+\texttt{user.js} & Endpoints para ofrecer las funcionalidades del controlador de User.  \\
+\hline
+\texttt{letter.js} &Endpoints para ofrecer las funcionalidades del controlador de Letter. \\
+\hline
+\texttt{follow.js} & Endpoints para ofrecer las funcionalidades del controlador de Follow. \\
+\hline
+\texttt{correctedLetter.js} & Endpoints para ofrecer las funcionalidades del controlador de CorrectedLetter. \\
+\hline
+\end{longtable}
+
+
+\subsubsection{Carpeta \texttt{models/}}
+
+\begin{longtable}{|p{3.8cm}|p{10.3cm}|}
+\hline
+\textbf{Archivo} & \textbf{Entidad persistida en MongoDB} \\
+\hline
+\texttt{user.js} & Esquema de usuario: credenciales, idiomas dominados/aprendidos, metadatos de perfil, rol, imagen y fecha de alta. \\
+\hline
+\texttt{letter.js} & Esquema de carta: autor, título, contenido, diario, idioma, destinatarios de compartición y estado de borrado. \\
+\hline
+\texttt{correctedLetter.js} & Esquema de carta corregida: carta original, remitente, revisor, correcciones estructuradas, comentarios y estado de envío. \\
+\hline
+\texttt{follow.js} & Esquema de relación entre dos usuarios para representar amistad/seguimiento mutuo. \\
+\hline
+\texttt{friendRequest.js} & Esquema de solicitud de amistad pendiente entre emisor y receptor. \\
+\hline
+\texttt{verification\-Code.js} & Esquema para códigos de verificación de email con propósito, caducidad y flag de uso; incluye índice TTL para eliminación automática. \\
+\hline
+\end{longtable}
+
+\subsubsection{Carpetas \texttt{templates/} y \texttt{uploads/}}
+
+\begin{longtable}{|p{3.8cm}|p{10.3cm}|}
+\hline
+\textbf{Elemento} & \textbf{Funcionalidad principal} \\
+\hline
+\texttt{templates/\allowbreak verification\-Code.html} & Plantilla HTML del correo de verificación, utilizada por \texttt{controllers/\allowbreak user.js} para envío de códigos OTP. \\
+\hline
+\texttt{uploads/\allowbreak profile\_pictures/} & Almacenamiento local de imágenes de perfil subidas por usuarios. \\
+\hline
+\end{longtable}
+
+
+En definitiva, la organización del backend de Letterex separa de forma clara el enrutado, la lógica de negocio y el acceso a datos.
+Esta estructura facilita el mantenimiento, la escalabilidad y la incorporación de nuevas funcionalidades sin romper la arquitectura existente.

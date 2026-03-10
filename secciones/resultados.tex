@@ -1,0 +1,32 @@
+\chapter{Líneas de Trabajo Futuro y conclusión}
+
+\section{Líneas de Trabajo Futuro y Propuestas de Mejora}
+
+Tras la culminación de la fase de desarrollo actual, se han identificado diversas áreas de optimización que permitirían escalar la plataforma y mejorar la experiencia de usuario final. Estas propuestas se detallan a continuación:
+
+\begin{itemize}
+    \item \textbf{Migración a Almacenamiento en la Nube (Cloud Storage)}: Actualmente, el sistema utiliza el almacenamiento local del servidor mediante \textit{Multer}. Una mejora crítica consistiría en la integración de servicios como \textbf{Amazon S3} o \textbf{Cloudinary}. Esto permitiría una mayor disponibilidad de los recursos multimedia, reduciría la carga del servidor principal y facilitaría el despliegue en arquitecturas \textit{serverless}.
+
+    \item \textbf{Optimización del Estado Global y Rendimiento}: Se propone la implementación de una solución de gestión de estado más robusta, como \textbf{Redux Toolkit} o \textbf{Zustand}, junto con librerías de \textit{data fetching} como \textbf{TanStack Query} (React Query). Esto optimizaría la caché de la aplicación, eliminando tiempos de carga innecesarios entre navegaciones y reduciendo el número de peticiones redundantes a la API.
+
+    \item \textbf{Autenticación de Terceros (OAuth 2.0)}: Con el fin de reducir la fricción en el registro de nuevos usuarios, se plantea la implementación de \textbf{Google Sign-In}. Esto delegaría la seguridad de la autenticación a un proveedor de identidad consolidado, mejorando la confianza del usuario y la tasa de conversión de la plataforma.
+
+    \item \textbf{Enriquecimiento de la Mensajería (Multimedia)}: Evolucionar el sistema de cartas permitiendo adjuntar archivos de audio (\textit{voice notes}) o imágenes dentro del cuerpo del mensaje. Esto potenciaría el aprendizaje lingüístico al permitir que los usuarios practiquen no solo la expresión escrita, sino también la comprensión auditiva y la pronunciación.
+
+    \item \textbf{Finalización del Módulo de Comunidad}: Completar la implementación del \textit{feed} de comunidad, integrando algoritmos de recomendación basados en los intereses lingüísticos y niveles de competencia de los usuarios para fomentar una red social más cohesiva.
+\end{itemize}
+
+
+\section{Conclusiones}
+
+La realización de este Trabajo de Fin de Grado ha representado un hito fundamental en mi formación académica y profesional. El desarrollo de una plataforma de intercambio lingüístico basada en el \textit{stack} \textbf{MERN} me ha permitido aplicar de manera transversal y práctica los conocimientos teóricos adquiridos durante el grado, enfrentándome al reto de construir un ecosistema de software completo, robusto y funcional desde sus cimientos.
+
+A lo largo del proyecto, la consolidación de habilidades técnicas ha ido de la mano con el aprendizaje autónomo. La implementación de medidas de seguridad avanzadas —como la gestión de \textbf{JWT} mediante cookies \textit{HttpOnly} y la protección contra ataques \textbf{XSS} y \textbf{CSRF}— me ha obligado a investigar profundamente los estándares actuales de la industria, comprendiendo que el desarrollo de software no solo consiste en crear funcionalidad, sino en garantizar la integridad y privacidad de los datos del usuario.
+
+
+
+Asimismo, este trabajo ha sido un ejercicio de resiliencia y resolución de problemas. Encontrarme con desafíos técnicos, como la gestión de archivos estáticos con \textbf{Multer} o la sincronización del estado global en \textbf{Next.js}, me ha permitido desarrollar una mentalidad analítica para buscar soluciones eficientes y documentadas. Esta capacidad de "aprender a aprender" es, sin duda, la competencia más valiosa que me llevo hacia mi futura etapa profesional.
+
+Desde el punto de vista de la gestión, la aplicación de la metodología \textbf{Scrum} y el uso de herramientas como \textbf{Trello} han sido determinantes. La necesidad de reajustar los \textit{Sprints} y priorizar un Producto Mínimo Viable (MVP) frente a un alcance inicial más ambicioso —postergando funcionalidades como el \textit{Google Sign-In} o el almacenamiento en la nube— me ha proporcionado una visión realista de la ingeniería de software: un equilibrio constante entre requisitos, tiempo y calidad.
+
+En definitiva, este proyecto no solo ha validado mi capacidad técnica como futuro graduado, sino que ha forjado mi identidad profesional como ingeniero informático, dotándome de la confianza y las herramientas necesarias para abordar los retos tecnológicos del mundo real con una base sólida de rigor, ética y profesionalismo.

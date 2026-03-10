@@ -1,0 +1,70 @@
+\begin{longtable}{|l|p{5cm}|p{8cm}|}
+\hline
+\textbf{Función} & \textbf{Ruta} & \textbf{Descripción} \\
+\hline
+\endhead
+\hline
+\endfoot
+\multicolumn{3}{|c|}{\textbf{User Routes}} \\
+\hline
+POST & /api/users/register & Registrar un nuevo usuario. \newline \textbf{Valores de entrada:} nickname*, email*, password*, master\-Language*, learning\-Language* \newline \textbf{Valores de salida:} status, message, user \\
+POST & /api/users/login & Iniciar sesión. Si las credenciales recibidas son correctas, se crea y envía la cookie de autenticación. \newline \textbf{Valores de entrada:} email* (string, puede ser email o nickname), password* \newline \textbf{Valores de salida:} status, userData, token, cookie authToken \\
+POST & /api/users/logout & Cerrar la sesión. Se limpia la cookie de autenticación. \newline \textbf{Valores de entrada:} ninguno \newline \textbf{Valores de salida:} status, message \\
+GET & /api/users/profile/:id? & Obtener los datos del perfil de usuario cuyo id es especificado en la ruta, o en su defecto (es un parámetro opcional, de ahí el signo de interrogación en la ruta) del usuario autenticado.\newline \textbf{Valores de salida:} status, user \\
+GET & /api/users/list-users/:page? & Listar usuarios con paginación. Si no se recibe el parámetro page, que indica la página que se pide, se entregan los usuarios de la primera página. \newline \textbf{Valores de salida:} status, users, page, itemsPerPage, totalUsers, totalPages \\
+PUT & /api/users/update & Actualizar datos del usuario autenticado. \newline \textbf{Valores de salida:} status, userData \\
+PUT & /api/users/change-password & Cambiar contraseña actual. \newline \textbf{Valores de salida:} status, message \\
+PUT & /api/users/profile-picture & Subir foto de perfil. Se trata de un método PUT porque no solo sube una nueva imagen al sistema de archivos sino que modifica los datos del usuario.\newline \textbf{Valores de salida:} status, userId, profilePicture \\
+DELETE & /api/users/profile-picture & Eliminar foto de perfil. \newline \textbf{Valores de salida:} status, message \\
+GET & /api/users/profile-picture/:id & Obtener foto de perfil de un usuario. En caso de que el parámetetro id no esté especificado, se entrega la del usuario autenticado. \newline \textbf{Valores de salida:} Archivo (imagen) \\
+GET & /api/users/check-nickname/:nickname & Verificar disponibilidad de nickname. \newline \textbf{Valores de salida:} status, inUse: boolean \\
+GET & /api/users/check-email/:email & Verificar si email está registrado. \newline \textbf{Valores de salida:} result, inUse: boolean \\
+POST & /api/users/verification-code & Enviar código de verificación. \newline \textbf{Valores de entrada:} email*, purpose \newline \textbf{Valores de salida:} message \\
+POST & /api/users/check-code & Verificar código de verificación. \newline \textbf{Valores de entrada:} email*, code*, purpose \newline \textbf{Valores de salida:} status, message \\
+PUT & /api/users/reset-password & Restablecer contraseña con código de verificación. \newline \textbf{Valores de salida:} status, message \\
+DELETE & /api/users/delete-account & Eliminar cuenta de usuario. \newline \textbf{Valores de salida:} status, message \\
+\hline
+\hline
+\multicolumn{3}{|c|}{\textbf{Letter Routes}} \\
+\hline
+POST & /api/letters/new & Guardar una carta nueva. \newline \textbf{Valores de entrada:} title*, content*, language*, created\_at*, diary \newline \textbf{Valores de salida:} status, message, letter \\
+GET & /api/letters/view/:letterId & Obtener información y contenido de una carta.\newline \textbf{Valores de salida:} status, letter, sharedWithDetails \\
+PUT & /api/letters/edit/:id & Editar una carta existente. \newline \textbf{Valores de salida:} status, message, letter \\
+PUT & /api/letters/edit-diary & Editar el diario de una carta. \newline \textbf{Valores de salida:} status, message, letter \\
+DELETE & /api/letters/delete/ & Eliminar una o varias cartas. \newline \textbf{Valores de salida:} status, message \\
+GET & /api/letters/list & Listar todas las cartas del usuario. \newline \textbf{Valores de salida:} status, letters, count \\
+GET & /api/letters/list/search & Buscar cartas por título. \newline \textbf{Valores de salida:} status, letters \\
+POST & /api/letters/share/:id & Compartir una carta con otro usuario (uno o varios). \newline \textbf{Valores de entrada:} shared\-With* \newline \textbf{Valores de salida:} \{message, letter, correctedLetters\} \\
+GET & /api/letters/diaries & Listar diarios del usuario. \newline \textbf{Valores de salida:} status, diaries \\
+GET & /api/letters/count/:id? & Contar cartas por idioma. Si no se especifica id en la ruta, se cuentan las del usuario autenticado. \newline \textbf{Valores de salida:} Array de \{language, count\} \\
+\hline
+\hline
+\multicolumn{3}{|c|}{\textbf{Follow Routes}} \\
+\hline
+POST & /api/follow/add/:id & Mandar una solicitud de amistad a un usuario. \newline \textbf{Valores de salida:} status, message \\
+DELETE & /api/follow/unfollow/:id & Dejar de seguir a un usuario. \newline \textbf{Valores de salida:} status, message \\
+GET & /api/follow/request/:id & Verificar si existe solicitud de amistad. \newline \textbf{Valores de salida:} status, exists: boolean \\
+GET & /api/follow/friends & Obtener lista de amigos. \newline \textbf{Valores de salida:} status, count, friends \\
+GET & /api/follow/non-friends & Obtener usuarios no agregados. \newline \textbf{Valores de salida:} status, users, totalUsers, totalPages \\
+GET & /api/follow/non-friends/:filter & Obtener no usuarios no agregados con un filtro por su nickname. \newline \textbf{Valores de salida:} status, users, totalUsers, totalPages \\
+GET & /api/follow/suggested & Obtener usuarios sugeridos. Son usuarios a los que el usuario autenticado no sigue y que tienen idiomas en común con este. \newline \textbf{Valores de salida:} status, suggestedUsers \\
+POST & /api/follow/request/:id & Enviar solicitud de amistad. \newline \textbf{Valores de salida:} status, message, friendRequest \\
+GET & /api/follow/requests & Listar solicitudes de amistad recibidas. \newline \textbf{Valores de salida:} status, requests \\
+POST & /api/follow/accept/:id & Aceptar solicitud de amistad. \newline \textbf{Valores de salida:} status, message \\
+POST & /api/follow/decline/:id & Rechazar solicitud de amistad. \newline \textbf{Valores de salida:} status, message \\
+\hline
+\hline
+\multicolumn{3}{|c|}{\textbf{Corrected Letter Routes}} \\
+\hline
+PATCH & /api/corrected-letters/send-back/:corrected\-Letter\-Id & Mandar de vuelta su autor la carta corregida. \newline \textbf{Valores de salida:} status, message, correctedLetter \\
+GET & /api/corrected-letters/corrections/:original\-Letter\-Id & Obtener correcciones de una carta. \newline \textbf{Valores de salida:} status, corrections \\
+GET & /api/corrected-letters/corrected\-Letter/:corrected\-Letter\-Id & Obtener corrección específica por ID. \newline \textbf{Valores de salida:} status, correctedLetter \\
+GET & /api/corrected-letters/received/ & Obtener cartas recibidas para corregir. \newline \textbf{Valores de salida:} status, correctedLetters, count \\
+GET & /api/corrected-letters/received/search & Buscar cartas recibidas por un filtro "search". \newline \textbf{Valores de salida:} status, correctedLetters \\
+PUT & /api/corrected-letters/update/:corrected\-Letter\-Id & Actualizar correcciones en proceso. Si la carta ya ha sido enviada de vuelta no se puede realizar esta acción. \newline \textbf{Valores de salida:} status, message, correctedLetter \\
+GET & /api/corrected-letters/count/:id? & Contar cartas corregidas por idioma. Si no se especifica el id de usuario en la ruta, se cuentan las del usuario autenticado. \newline \textbf{Valores de salida:} Array de \{language, count\} \\
+DELETE & /api/corrected-letters/:corrected\-Letter\-Id & Eliminar carta corregida. \newline \textbf{Valores de salida:} status, message \\
+\hline
+\caption{Rutas de la API de Letterex}
+\label{tab:rutas-api}
+\end{longtable}

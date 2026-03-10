@@ -1,0 +1,208 @@
+\section{Requisitos}
+
+\subsection{Requisitos funcionales}
+{\small
+\begin{longtable}{@{} l l p{0.45\textwidth} c @{}}
+\toprule
+ID & Categoría & Requisito Funcional & MVP / Extra \\
+\midrule
+\endfirsthead
+% no repetir encabezado en páginas siguientes:
+\endhead
+RF001 & Gestión de Usuarios  & Permitir la creación de una cuenta (username, contraseña, correo).                     & MVP         \\
+RF002 & Gestión de Usuarios  & Enviar un correo de verificación para vincular y validar la cuenta.                    & MVP         \\
+RF003 & Gestión de Usuarios  & Permitir el inicio y cierre de sesión.                                                 & MVP         \\
+RF004 & Gestión de Usuarios  & Permitir al usuario vincular su almacenamiento con Google Drive.                       & Extra         \\
+RF005 & Gestión de Perfiles  & Permitir al usuario crear su perfil (idiomas que domina/aprende, biografía).           & MVP         \\
+RF006 & Gestión de Perfiles  & Permitir la edición de los datos del perfil (excepto el nombre de usuario y el email). & MVP         \\
+RF006 & Gestión de Perfiles  & Permitir un cambio de la contraseña.                                                   & MVP         \\
+RF006 & Gestión de Perfiles  & Permitir la recuperación de la contraseña.                                             & MVP         \\
+RF007 & Gestión de Perfiles  & Permitir la visualización del perfil propio y el de otros usuarios.                    & MVP         \\
+RF008 & Gestión de Usuarios  & Permitir la eliminación de la cuenta.                                                  & MVP         \\
+RF009 & Gestión de Perfiles  & Permitir compartir el perfil a través de un enlace.                                    & MVP         \\
+RF010 & Gestión de Amistades & Permitir la búsqueda de otros usuarios por nombre de usuario.                          & MVP         \\
+RF011 & Gestión de Amistades & Mostrar sugerencias de amistad basadas en los idiomas que domina y aprende.            & MVP         \\
+RF012 & Gestión de Amistades & Permitir enviar solicitudes de amistad.                                                & MVP         \\
+RF013 & Gestión de Amistades & Permitir recibir y gestionar (aceptar/rechazar) solicitudes de amistad.                & MVP         \\
+RF014 & Gestión de Amistades & Permitir eliminar a un amigo de la lista de sus amigos agregados.                      & MVP         \\
+RF015 & Cartas y Diarios     & Permitir crear un nuevo diario o carpeta.                                              & MVP         \\
+RF016 & Cartas y Diarios     & Permitir escribir una nueva carta (fecha, título, idioma, contenido).                  & MVP         \\
+RF017 & Cartas y Diarios     & Permitir editar una carta mientras no haya sido enviada.                               & MVP         \\
+RF018 & Cartas y Diarios     & Permitir enviar una carta a uno o dos amigos.                                          & MVP         \\
+RF019 & Cartas y Diarios     & Permitir visualizar todas las cartas propias.                                          & MVP         \\
+RF020 & Cartas y Diarios     & Permitir adjuntar fotos, un audio, stickers o GIFs a las cartas.                       & Extra       \\
+RF021 & Cartas y Diarios     & Permitir conversión de texto en imágenes a carta.                                      & Extra       \\
+RF022 & Cartas y Diarios     & Permitir exportar una carta (corregida o no) a formato PDF.                            & Extra       \\
+RF023 & Corrección           & Permitir recibir cartas (peticiones de corrección) de amigos.                          & MVP         \\
+RF024 & Corrección           & Permitir corregir una carta.                                                           & MVP         \\
+RF025 & Corrección           & Permitir añadir comentarios finales a la corrección.                                   & MVP         \\
+RF026 & Corrección           & Permitir adjuntar un audio a la corrección (pronunciación).                            & Extra       \\
+RF027 & Corrección           & Permitir guardar y enviar la corrección al amigo.                                      & MVP         \\
+RF028 & Corrección           & Permitir acceder al historial de todas las correcciones realizadas.                    & MVP         \\
+RF029 & Corrección           & Permitir recibir y ver las correcciones de cartas enviadas.                            & MVP         \\
+RF030 & Corrección           & Permitir validar las correcciones recibidas (otorgar 'like' o 'dislike').              & Extra       \\
+RF031 & Gamificación         & Permitir consultar estadísticas de cualquier perfil (valoraciones, cartas corregidas). & Extra       \\
+RF032 & Gamificación         & Mostrar un podio con los usuarios de mejores estadísticas.                             & Extra       \\
+RF033 & Gamificación         & Permitir la creación de retos semanales/mensuales personalizados.                      & Extra       \\
+RF033 & Gamificación         & Sugerir diferentes temas para la redacción.                                            & Extra       \\
+RF035 & Gamificación         & Asignar logros o insignias por metas alcanzadas.                                       & Extra       \\
+RF037 & Herramientas         & Permitir enviar flashcards (palabras o frases) a un amigo.                             & Extra       \\
+RF038 & Herramientas         & Permitir al usuario repasar las flashcards recibidas.                                  & Extra       \\
+\bottomrule
+\caption{Requisitos funcionales}\label{tab:requisitos}\\
+\end{longtable}
+}
+
+\subsection{Requisitos no funcionales}
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{} l l X l @{}}
+\toprule
+ID & Categoría & Requisito Funcional\\
+\midrule
+\textbf{ID} & \textbf{Categoría} & \textbf{Descripción / Métrica} \\
+    RNF001 & Rendimiento & El 90\% de las solicitudes clave deben responder en \textbf{$< 2$ segundos}. \\
+    RNF002 & Rendimiento & Soportar un mínimo de \textbf{100 usuarios concurrentes} activos. \\
+    RNF003 & Rendimiento & La arquitectura debe permitir \textbf{escalado horizontal} para el crecimiento. \\
+    RNF004 & Usabilidad & Mantener una \textbf{apariencia y navegación coherentes} (React UI). \\
+    RNF005 & Usabilidad & Ser \textbf{completamente funcional} en dispositivos de escritorio y móviles. \\
+    RNF006 & Usabilidad & El proceso de corrección debe ser \textbf{visual y funcionalmente intuitivo}. \\
+    RNF007 & Seguridad & Usar \textbf{JWT} y/o \textbf{Google Sign-In} para autenticación. \\
+    RNF008 & Seguridad & Todas las comunicaciones deben usar \textbf{HTTPS}. \\
+    RNF009 & Seguridad & Implementar validaciones en \textbf{MongDB} para la integridad de datos. \\
+    RNF010 & Seguridad & Implementar medidas para prevenir ataques como \textbf{CSRF y XSS}. \\
+    RNF011 & Tecnología & Usar \textbf{React, Node.js/Express, MongoDB, Google Cloud API y Google Sign-In}. \\
+    RNF012 & Mantenibilidad & Seguir \textbf{patrones de diseño} y guías de estilo para el mantenimiento. \\
+    RNF013 & Disponibilidad & Garantizar una disponibilidad del \textbf{99.5\%} del tiempo. \\
+    RNF014 & Disponibilidad & Proporcionar \textbf{mensajes de error claros} y registrar logs internos. \\
+\bottomrule
+\end{tabularx}
+\caption{Requisitos no funcionales}
+\label{tab:requisitos_no_funcionales}
+\end{table}
+
+\section{Historias de Usuario}
+
+\begin{longtable}{@{} p{0.1\textwidth} p{0.95\textwidth} @{}}
+\toprule
+\textbf{ID} & \textbf{Historia de Usuario} \\
+\midrule
+\endfirsthead
+\endhead
+\multicolumn{2}{l|}{\textbf{AUTENTICACIÓN Y GESTIÓN DE USUARIOS}} \\
+HU01 & Como usuario nuevo, quiero crear una cuenta verificada para acceder a la plataforma de forma segura. \\
+HU02 & Como usuario, quiero iniciar sesión en mi cuenta para acceder a mis datos y actividades. \\
+HU03 & Como usuario, quiero cerrar sesión para proteger mi privacidad. \\
+HU04 & Como usuario, quiero recuperar mi contraseña si la olvido. \\
+HU05 & Como usuario, quiero cambiar mi contraseña de forma segura. \\
+HU06 & Como usuario inscrito, quiero eliminar mi cuenta y todos mis datos (GDPR). \\
+
+\multicolumn{2}{l|}{\textbf{GESTIÓN DE PERFIL}} \\
+HU07 & Como estudiante de idiomas, quiero crear mi perfil con mis idiomas nativos y los que aprendo para encontrar compañeros afines. \\
+HU08 & Como usuario, quiero editar los datos de mi perfil (biografía, idiomas, foto) para mantenerlo actualizado. \\
+HU09 & Como usuario, quiero ver mi perfil y la de otros usuarios para conocer sus intereses y estadísticas. \\
+HU10 & Como usuario, quiero compartir un enlace a mi perfil para que otros me encuentren. \\
+
+\multicolumn{2}{l|}{\textbf{GESTIÓN DE AMISTADES}} \\
+HU11 & Como usuario, quiero buscar otros usuarios por nombre de usuario para encontrar gente con intereses similares. \\
+HU12 & Como usuario, quiero recibir sugerencias de amigos basadas en idiomas compartidos para expandir mi red. \\
+HU13 & Como usuario social, quiero enviar solicitudes de amistad para establecer una red de intercambio. \\
+HU14 & Como usuario, quiero gestionar mis solicitudes de amistad recibidas (aceptar/rechazar). \\
+HU15 & Como usuario, quiero ver mi lista de amigos con estadísticas de intercambio. \\
+HU16 & Como usuario, quiero eliminar amigos de mi lista para gestionar mis conexiones. \\
+
+\multicolumn{2}{l|}{\textbf{CARTAS Y DIARIOS}} \\
+HU17 & Como usuario, quiero crear diarios o carpetas para organizar mis cartas. \\
+HU18 & Como estudiante de idiomas, quiero escribir cartas en diferentes idiomas para practicar expresión escrita. \\
+HU19 & Como usuario, quiero editar mis cartas antes de enviarlas para mejorar el contenido. \\
+HU20 & Como usuario, quiero enviar mis cartas a uno o dos amigos para que las corrijan. \\
+HU21 & Como usuario, quiero ver todas mis cartas escritas en un dashboard centralizado. \\
+
+\multicolumn{2}{l|}{\textbf{CORRECCIONES}} \\
+HU22 & Como usuario, quiero recibir cartas de otros amigos que solicitan corrección en mi idioma nativo. \\
+HU23 & Como nativo o experto, quiero corregir las cartas de mis amigos marcando errores y sugiriendo mejoras. \\
+HU24 & Como corrector, quiero añadir comentarios finales a la corrección para proporcionar retroalimentación constructiva. \\
+HU25 & Como corrector, quiero guardar y enviar la corrección para que el amigo la reciba. \\
+HU26 & Como usuario, quiero ver el historial de todas las correcciones que he realizado. \\
+HU27 & Como usuario, quiero recibir y visualizar las correcciones de mis cartas escritas. \\
+HU28 & Como usuario, quiero validar las correcciones recibidas usando likes/dislikes para dar retroalimentación. \\
+
+\multicolumn{2}{l|}{\textbf{GAMIFICACIÓN Y ESTADÍSTICAS (EXTRA)}} \\
+HU29 & Como usuario, quiero ver mis estadísticas (cartas escritas, correcciones realizadas) para medir mi progreso. (EXTRA) \\
+HU30 & Como usuario competitivo, quiero consultar el podio global de usuarios para motivarme. (EXTRA) \\
+HU31 & Como usuario, quiero ver las estadísticas de otros usuarios en sus perfiles. (EXTRA) \\
+
+\bottomrule
+\caption{Definición completa de Historias de Usuario.}
+\end{longtable}
+
+\section{Matriz de Trazabilidad}
+
+Esta matriz asegura que todos los requisitos funcionales MVP estén cubiertos por una o más historias de usuario.
+
+\begin{table}
+\centering
+\small
+\renewcommand{\arraystretch}{1.4}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{RF} & \rotatebox{90}{\textbf{H01}} & \rotatebox{90}{\textbf{H02}} & \rotatebox{90}{\textbf{H03}} & \rotatebox{90}{\textbf{H04}} & \rotatebox{90}{\textbf{H05}} & \rotatebox{90}{\textbf{H06}} & \rotatebox{90}{\textbf{H07}} & \rotatebox{90}{\textbf{H08}} & \rotatebox{90}{\textbf{H09}} & \rotatebox{90}{\textbf{H10}} & \rotatebox{90}{\textbf{H11}} & \rotatebox{90}{\textbf{H12}} & \rotatebox{90}{\textbf{H13}} & \rotatebox{90}{\textbf{H14}} & \rotatebox{90}{\textbf{H15}} & \rotatebox{90}{\textbf{H16}} & \rotatebox{90}{\textbf{H17}} & \rotatebox{90}{\textbf{H18}} & \rotatebox{90}{\textbf{H19}} & \rotatebox{90}{\textbf{H20}} & \rotatebox{90}{\textbf{H21}} & \rotatebox{90}{\textbf{H22}} & \rotatebox{90}{\textbf{H23}} & \rotatebox{90}{\textbf{H24}} & \rotatebox{90}{\textbf{H25}} & \rotatebox{90}{\textbf{H26}} & \rotatebox{90}{\textbf{H27}} & \rotatebox{90}{\textbf{H28}} \\[0.6cm]
+\hline
+RF001 & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF002 & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF003 &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF005 &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF006 &  &  & \checkmark &  & \checkmark &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF007 &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF008 &  &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF009 &  &  &  &  &  & \checkmark &  &  & \checkmark & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF010 &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF011 &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF012 &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF013 &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF014 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF015 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF016 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  &  &  &  \\
+\hline
+RF017 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  &  &  \\
+\hline
+RF018 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  &  \\
+\hline
+RF019 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  &  \\
+\hline
+RF023 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  &  \\
+\hline
+RF024 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  &  \\
+\hline
+RF025 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  &  \\
+\hline
+RF027 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  &  \\
+\hline
+RF028 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  &  \\
+\hline
+RF029 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark &  \\
+\hline
+RF030 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \checkmark \\
+\hline
+\end{tabular}
+
+\caption{Matriz de Trazabilidad: Requisitos Funcionales (filas) vs Historias de Usuario (columnas). Símbolo: \checkmark = Cubierto}
+\label{tab:trazabilidad}
+\end{table}
+

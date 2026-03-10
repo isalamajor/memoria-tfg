@@ -1,0 +1,372 @@
+\section{Frontend de la Aplicación}
+
+El frontend ha sido desarrollado como una aplicación web moderna y responsiva, utilizando las últimas tecnologías del ecosistema React. La interfaz permite a los usuarios escribir cartas en diferentes idiomas, recibir correcciones lingüísticas y establecer conexiones con otros usuarios que comparten intereses similares en el aprendizaje de idiomas.
+
+En esta sección, se presentan las diferentes tecnologías que han intervenido en el desarrollo de esta pieza de software, la arquitectura que sigue el proyecto de frontend, las diferentes páginas que lo componen, y algunos aspectos técnicos destacados como
+
+
+\subsection{Stack Tecnológico}
+
+La aplicación se ha construido utilizando el siguiente stack tecnológico:
+
+\begin{itemize}
+    \item \textbf{Next.js 15}: Framework de React que proporciona renderizado del lado del servidor (SSR), enrutamiento basado en archivos y optimizaciones de rendimiento automáticas.
+    \item \textbf{React 19}: Biblioteca principal para la construcción de interfaces de usuario basadas en componentes.
+    \item \textbf{TypeScript}: Superset tipado de JavaScript que proporciona seguridad de tipos en tiempo de compilación.
+    \item \textbf{Tailwind CSS}: Framework de CSS utility-first para un desarrollo de estilos rápido y consistente.
+    \item \textbf{Framer Motion}: Biblioteca de animaciones para crear transiciones fluidas y experiencias interactivas.
+    \item \textbf{React Quill}: Editor de texto enriquecido basado en Quill.js para la escritura de cartas.
+    \item \textbf{Axios}: Cliente HTTP para comunicación con la API backend.
+    \item \textbf{Material-UI}: Componentes de interfaz de usuario que siguen las directrices de Material Design.
+    \item \textbf{React Leaflet}: Biblioteca para integración de mapas interactivos.
+\end{itemize}
+
+\subsection{Arquitectura del Proyecto}
+
+El proyecto sigue la estructura de \textit{App Router} de Next.js 13+, que organiza las rutas en función de la estructura de directorios. La arquitectura se divide en las siguientes capas:
+
+\begin{itemize}
+    \item \textbf{app/}: Directorio principal que contiene las páginas y rutas de la aplicación.
+    \item \textbf{components/}: Componentes reutilizables de la interfaz de usuario.
+    \item \textbf{services/}: Capa de servicios que encapsula las llamadas a la API.
+    \item \textbf{context/}: Contextos de React para gestión de estado global.
+    \item \textbf{lib/}: Utilidades, tipos TypeScript y constantes.
+    \item \textbf{stylesheets/}: Estilos CSS personalizados complementarios.
+\end{itemize}
+
+La estructura del directorio \texttt{src/} se organiza de la siguiente manera:
+
+\begin{verbatim}
+src/
+|-- app/
+|   |-- page.tsx                    # Pagina de inicio/login
+|   |-- homepage/                   # Dashboard principal
+|   |-- new-letter/                 # Crear nueva carta
+|   |-- edit-letter/[id]/          # Editar carta existente
+|   |-- correct-letter/[id]/       # Corregir carta de otro usuario
+|   |-- view-correction/[id]/      # Ver correccion recibida
+|   |-- friends/                    # Gestion de amigos
+|   +-- profile/[id]/              # Perfil de usuario
+|-- components/
+|   |-- ui/                        # Componentes base reutilizables
+|   |-- animatedForm.tsx           # Formulario de autenticacion
+|   |-- navegation.js              # Navegacion principal
+|   +-- textCorrections.tsx        # Sistema de correcciones
+|-- services/api/
+|   |-- index.js                   # Configuracion base de Axios
+|   |-- letter.js                  # Servicios de cartas
+|   |-- user.ts                    # Servicios de usuarios
+|   +-- follow.js                  # Servicios de seguimiento
++-- context/
+    +-- dialogContext.tsx          # Gestion de dialogos modales
+\end{verbatim}
+
+\subsection{Descripción de las Páginas Principales}
+
+En este apartado se irán mostrando las diferentes páginas que componen la interfaz, que en total son siete: la página de inicio de sesión, la página principal, la página para la creación de una nueva carta, la página de correción de cartas recibidas, la página de visualización de una correción recibida, la página de amigos, y la página de perfil de usuario.
+
+\subsubsection{Página de Inicio y Autenticación}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/ui/login.png}
+    \caption{Página de inicio de sesión y registro}
+    \label{fig:landing}
+\end{figure}
+
+La página de inicio presenta una interfaz atractiva y animada que da la bienvenida a los usuarios. Esta página utiliza el componente \texttt{AnimatedForm} que gestiona tres estados principales:
+
+\begin{itemize}
+    \item \textbf{Vista HOME}: Presenta el propósito de la aplicación con un efecto de escritura animado (typewriter) que muestra frases como ``Write about your passions'', ``Exchange language corrections'' y ``Find people to share and learn''.
+    \item \textbf{Vista LOGIN}: Formulario de inicio de sesión para usuarios existentes.
+    \item \textbf{Vista REGISTER}: Formulario de registro con verificación de email mediante el código enviado a su correo, selección de idioma nativo e idiomas de interés, selección de contraseña y nombre de usuario, y posibilidad de subir una foto de perfil.
+    \item \textbf{Vista FORGOT PASSWORD}: Formulario que permite resetear la contraseña del usuario mediante el código de verificación enviado a su email.
+\end{itemize}
+
+Una característica distintiva de esta página es la animación del logo implementada con \texttt{Framer Motion}, que se desplaza suavemente entre diferentes posiciones según el formulario activo, proporcionando un elemento lúdico y memorable a la experiencia del usuario.
+
+\subsubsection{Dashboard Principal (Homepage)}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/ui/homepage.png}
+    \caption{Página principal}
+    \label{fig:homepage}
+\end{figure}
+
+El dashboard principal es la página central de la aplicación después del inicio de sesión. Está estructurado en dos secciones principales:
+
+\begin{enumerate}
+    \item \textbf{Letters Written} (\texttt{LetterCardBlock}): Muestra las cartas que el usuario ha escrito, organizadas en tarjetas interactivas con un efecto de desliz que revela información adicional al interactuar, y paginadas en tandas de 10 elementos. Permite filtrar por una búsqueda, ordenar las cartas por diarios, y eliminar una o varias cartas de la lista. Clicando en la tarjeta de una carta se accede a la página de visualización o edición de esta, clicando en la tarjeta de usuario corrector que aparece al \textit{hover} (posar el cursor sobre el elemento) se accede a la página de visualización de corrección en caso de haberla, y clicando en el botón \textit{New} de la barra de herramientas se accede a la página para crear una nueva carta.
+    \item \textbf{Letters Received} (\texttt{ReceivedLetterBlock}): Presenta las cartas recibidas de usuarios que solicitan una corrección por parte del usuario actual, paginadas de la misma forma que las anteriores. Permite filtrar por una búsqueda, por usuario que envió la carta, y por si esa carta está pendiente de corregir (no fue corregida y enviada de vuelta todavía). Clicando en la tarjeta de una carta recibida, se accede a la página de correción de dicha carta.
+\end{enumerate}
+
+La interfaz es completamente responsiva, adaptándose a dispositivos móviles mediante un sistema de pestañas que permite alternar entre ambas secciones, mientras que en pantallas más grandes ambas secciones se muestran simultáneamente en disposición horizontal.
+
+El componente \texttt{SidebarDemo} envuelve todo el contenido, proporcionando una barra lateral de navegación persistente con acceso rápido a todas las funcionalidades de la aplicación.
+
+\subsubsection{Creación de Nueva Carta}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/ui/new-letter.png}
+    \caption{Página de creación de cartas}
+    \label{fig:new-letter}
+\end{figure}
+
+La página de creación de cartas proporciona una interfaz completa para escribir nuevas entradas de diario. Los elementos principales incluyen:
+
+\begin{itemize}
+    \item \textbf{Selector de fecha}: Componente \texttt{DateField} personalizado que permite seleccionar la fecha de la carta.
+    \item \textbf{Campo de título}: Input validado para el título de la carta.
+    \item \textbf{Selector de idioma}: Dropdown que permite elegir el idioma en el que se escribe la carta.
+    \item \textbf{Selector de diario}: Permite organizar las cartas en diferentes diarios personales.
+    \item \textbf{Editor de texto enriquecido}: Implementado con \texttt{React Quill}, permite formatear texto con negrita, cursiva, listas, enlaces, etc.
+\end{itemize}
+
+El componente implementa validación en tiempo real de los campos requeridos, mostrando mensajes de error específicos cuando el usuario intenta guardar sin completar todos los campos obligatorios. Los datos de los diarios y los idiomas disponibles se obtienen del \texttt{sessionStorage} y de la API, respectivamente. Desde esta página se envía una carta a los amigos que el usuario desee que la corrigan.
+
+\subsubsection{Corrección de Cartas}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/ui/correct-letter2.png}
+    \caption{Página de corrección de cartas}
+    \label{fig:correct-letter}
+\end{figure}
+
+Esta página permite a los usuarios corregir las cartas escritas por otros en idiomas que dominan.
+
+Se proporciona un sistema de corrección incluye:
+
+\begin{itemize}
+    \item \textbf{Selección de texto}: Los usuarios pueden seleccionar fragmentos específicos del texto original que consideren que contienen errores o se puede matizar.
+    \item \textbf{Marcado de correcciones}: El texto seleccionado se resalta visualmente, y se puede asociar con una corrección sugerida o un comentario explicativo.
+    \item \textbf{Gestión de correcciones}: Las correcciones se almacenan como un array de objetos que contienen:
+    \begin{itemize}
+        \item Índices de inicio y fin del fragmento corregido
+        \item Texto original
+        \item Texto corregido
+    \end{itemize}
+    \item \textbf{Prevención de solapamientos}: El sistema detecta automáticamente si una nueva corrección se solapa con una existente y advierte al usuario.
+    \item \textbf{Comentario general}: Además de las correcciones específicas, el corrector puede dejar un comentario general sobre la carta.
+\end{itemize}
+
+El componente \texttt{TextCorrections} renderiza de forma dinámica el texto con las correcciones aplicadas, mostrando el fragmento original y la corrección sugerida de manera clara y diferenciada mediante estilos visuales distintivos.
+
+\subsubsection{Visualización de Correcciones Recibidas}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/ui/view-correction.png}
+    \caption{Página de visualización de corrección recibida}
+    \label{fig:view-correction}
+\end{figure}
+
+La página de visualización de correcciones presenta al usuario original las correcciones recibidas en sus cartas. La interfaz muestra:
+
+\begin{itemize}
+    \item El texto original con las secciones corregidas resaltadas en color diferenciado.
+    \item Al hacer click o hover sobre una sección corregida, se muestra un tooltip o panel con la corrección sugerida.
+    \item Comentarios generales del corrector sobre la carta.
+    \item Información del corrector (nombre e imagen de perfil), que al click llevan a su página de perfil.
+\end{itemize}
+
+Esta interfaz permite al usuario aprender de sus errores de forma efectiva, clara y visualmente agradable.
+
+\subsubsection{Gestión de Amigos}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/ui/friends-page.png}
+    \caption{Página de amigos}
+    \label{fig:friends}
+\end{figure}
+
+En la página de amigos, el usuario puede gestionar las relaciones sociales dentro de la aplicación. Se divide en tres secciones principales:
+
+\begin{enumerate}
+    \item \textbf{Solicitudes de amistad}: Muestra las solicitudes pendientes recibidas, con opciones para aceptar o rechazar.
+    \item \textbf{Lista de amigos}: Presenta las amistades establecidas con su avatar, nombre y estadísticas como el número de cartas intercambiadas.
+    \item \textbf{Usuarios sugeridos}: Muestra usuarios recomendados basándose en idiomas en común, además de permitir filtrar por nombre de usuario para poder buscar un usuario en concreto que se desee agregar.
+\end{enumerate}
+
+La página implementa paginación para manejar listas grandes de amigos y utiliza estados de carga con spinners para proporcionar feedback visual durante las operaciones de red.
+
+\subsubsection{Perfil de Usuario}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/ui/my-profile.png}
+    \caption{Página de perfil de usuario}
+    \label{fig:profile}
+\end{figure}
+
+La página de perfil muestra información detallada sobre un usuario, incluyendo:
+
+\begin{itemize}
+    \item Foto de perfil, nombre y biografía.
+    \item Idiomas nativos y lenguas que está aprendiendo.
+    \item Estadísticas de cartas escritas, recibidas y corregidas.
+    \item Ubicación geográfica visualizada en un mapa interactivo de \texttt{React Leaflet}.
+    \item Botón para dar la opción de eliminar de la lista de amigos en caso de tener a ese usuario agregado.
+    \item Opciones de configuración (cambiar contraseña o eliminar la cuenta) y de edición de la información del perfil en caso de que sea la página de perfil del propio usuario logeado.
+\end{itemize}
+
+\subsection{Aspectos Técnicos Destacados}
+
+\subsubsection{Gestión de Estado y Contextos}
+
+La aplicación utiliza múltiples estrategias para la gestión de estado:
+
+\begin{itemize}
+    \item \textbf{Session Storage}: Utilizado para persistir datos temporales como selección de idiomas y diarios.
+    \item \textbf{React Hooks} (\texttt{useState}, \texttt{useEffect}, \texttt{useRef}): Para estado local de componentes.
+    \item \textbf{Context API}: guarda el estado del componente para gestionar diálogos modales de forma centralizada, evitando \textit{prop drilling}, en que los componentes se pasan datos de padres a hijos sucesivamente quedando varios hijos intermedios que no los utilizan. Con un proveedor de contexto, la app es capaz de renderizar un solo componente de diálogo que se abre y se cierra con dos funciones a las que cualquier componente puede acceder fácilmente, en este caso mediante un hook personalizado \texttt{useDialog} que devuelve el contexto del diálogo. Por ejemplo, esta función abrirá el diálogo de la figura de su derecha:
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{imagenes/ui/dialogDeleteAll.png}
+        \caption{Código de apertura del diálogo y resultado en la interfaz}
+        \label{fig:dialog}
+    \end{figure}
+
+\end{itemize}
+
+
+\begin{comment}
+
+\subsubsection{Comunicación con la API}
+
+La capa de servicios (\texttt{services/api/}) encapsula toda la lógica de comunicación con el backend, que se implementa con Axios. Cada módulo de servicio exporta funciones asíncronas que manejan configuración de headers de autenticación, manejo de errores HTTP, transformación de datos entre el formato de la API y el formato esperado por los componentes; y validación básica de datos antes del envío.
+
+Este es un ejemplo de estructura de un servicio:
+
+\begin{verbatim}
+// services/api/letter.js
+import api from './index';
+
+export const saveLetter = async (title, content, diary,
+                                  language, date) => {
+  try {
+    const response = await api.post('/letters', {
+      title,
+      content,
+      diary,
+      language,
+      date: date.toString()
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Error saving letter:', error);
+    return null;
+  }
+};
+\end{verbatim}
+\end{comment}
+
+\subsubsection{Optimización de Rendimiento}
+
+Con el objetivo de ofrecer una navegación más rápida por la interfaz, se han implementado varias técnicas de optimización:
+
+\begin{enumerate}
+    \item \textbf{Dynamic Imports}: Componentes pesados como el mapa de la página de perfil se cargan dinámicamente solo cuando son necesarios. Esto es posible gracias a la función \texttt{dynamic} de Next.js, diseñada para optimizar el rendimiento mediante la técnica de \textit{Lazy Loading} o carga perezosa de los componentes, para que el navegador descargue el código de estos componentes no al inicio sino en el momento en que los necesite.
+    \begin{verbatim}
+const ImageUploader = dynamic(
+    () => import("@/components/imageUploader"),
+    { loading: () => <div>Loading...</div> }
+);
+    \end{verbatim}
+
+    \item \textbf{Memoización}: Componentes que renderizan listas grandes utilizan técnicas de memoización para evitar re-renderizados innecesarios.
+
+    \item \textbf{Paginación}: Las listas de items (amigos, cartas) implementan paginación para reducir la cantidad de datos cargados y renderizados simultáneamente. Se cargarán más elementos del servidor solo cuando el usuario lo solicite, por ejemplo, pasando de página en la lista de cartas.
+
+    \item \textbf{Debouncing}: En campos de búsqueda y filtrado, se implementa debouncing para reducir el número de llamadas a la API, como se ha explicado en la sección anterior de arquitectura del backend.
+
+    \item \textbf{Lazy Loading de imágenes}: Las imágenes de perfil se cargan de forma diferida para mejorar el tiempo de carga inicial.
+\end{enumerate}
+
+\subsubsection{Diseño Responsivo e Interfaces Animadas}
+
+Uno de los objetivos al plantear este proyecto es el de ofrecer una experiencia de usuario agradable,Para ello, se ha prestado especial atención a la responsividad de las interfaces, buscando la adaptabilidad de la aplicación a diferentes tamaños de pantalla mediante los siguientes métodos:
+
+\begin{itemize}
+    \item Tailwind CSS con clases responsivas: Utilización intensiva de prefijos como \texttt{sm:}, \texttt{md:}, \texttt{lg:} para adaptar estilos.
+    \item Hooks personalizados: Detección del tamaño de ventana con \texttt{useEffect} y \texttt{window.innerWidth} para ajustar comportamientos.
+    \item Layouts flexibles: Uso de Flexbox y Grid para crear layouts que se adaptan automáticamente.
+    \item Componentes condicionales: Renderizado de componentes diferentes según el tamaño de pantalla (por ejemplo, menú hamburguesa en móvil vs. sidebar en desktop).
+\end{itemize}
+
+Además, la librería \texttt{Framer Motion} se ha utilizado extensamente para crear una experiencia atractiva, fluida y amigable. Se implementan transiciones suaves entre diferentes estados de formularios, animaciones de entrada y salida de componentes, efectos de hover interactivos en tarjetas y botones, animaciones de carga con spinners, y demás.
+
+
+\subsubsection{Sistema de Correcciones de Texto}
+
+El componente \texttt{TextCorrections} implementa un algoritmo sofisticado para renderizar texto con correcciones aplicadas. El proceso incluye:
+
+\begin{enumerate}
+    \item Parseo del texto original: Se divide el texto en fragmentos según las posiciones de corrección.
+    \item Detección de solapamientos: Antes de añadir una nueva corrección, se verifica que no se solape con correcciones existentes mediante comparación de índices.
+    \item Renderizado diferenciado: Cada fragmento se renderiza con estilos diferentes según sea texto sin corregir o texto corregido.
+    \item Interactividad: Los fragmentos corregidos son interactivos, mostrando tooltips con información adicional al pasar el cursor.
+\end{enumerate}
+
+Para hacer esto posible, esta es la estructura de datos que se asocia a una corrección:
+
+\begin{center}
+\begin{minipage}{0.7\textwidth}
+\begin{verbatim}
+interface Correction {
+    id: string;
+    startIndex: number;
+    endIndex: number;
+    originalText: string;
+    correctedText: string;
+}
+\end{verbatim}
+\end{minipage}
+\end{center}
+
+\subsubsection{Seguridad y Validación}
+
+Se implementan múltiples capas de validación:
+
+\begin{itemize}
+    \item \textbf{Validación de formularios}: Validación en tiempo real de campos requeridos con feedback visual inmediato.
+    \item \textbf{Sanitización de entrada}: El contenido HTML generado por React Quill se sanitiza antes de enviarse a la API.
+    \item \textbf{Gestión de tokens}: Los tokens JWT se almacenan de forma segura y se incluyen automáticamente en las peticiones HTTP.
+    \item \textbf{Protección de rutas}: El middleware (\texttt{middleware.ts}) verifica la autenticación antes de permitir el acceso a páginas protegidas.
+    \item \textbf{Validación de tipos}: TypeScript proporciona seguridad de tipos en tiempo de compilación, reduciendo errores.
+\end{itemize}
+
+\subsubsection{Componentes Reutilizables}
+
+La carpeta \texttt{components/ui/} contiene una biblioteca personal de componentes base reutilizables que se utilizan en diferentes páginas y componentes de la aplicación para garantizar  patrones de diseño consistentes y facilitar la implementación de cambios globales en la aplicación (mayor escalabilidad), además de evitar la duplicación de lógica. Cuenta con componentes como:
+
+\begin{itemize}
+    \item \texttt{Button}: Botón con múltiples variantes (primary, secondary, outline) y tamaños.
+    \item \texttt{Input}: Campo de entrada de texto con mensaje de error integrado. También variables como \texttt{InputPass} para contraseñas (con opción de ocultar o mostrar), o \texttt{InputCode} para recibir como entrada los códigos de verificación de forma agradable para el usuario.
+    \item \texttt{Select}: Selector dropdown personalizado con búsqueda.
+    \item \texttt{DateField}: Selector de fechas.
+    \item \texttt{ImageUploader}: un selector de imagen que muestra una imagen previa y permite cambiarla subiendo una nueva del explorador de archivos.
+    \item \texttt{Spinner}: Indicador de carga animado.
+    \item \texttt{Tooltip}: descripción emergente informativa con posicionamiento automático.
+\end{itemize}
+
+Varios de estos componentes están construidos sobre bibliotecas de componentes headless como \texttt{Radix UI} y \texttt{React Aria Components}, lo que garantiza accesibilidad y comportamiento estándar, mientras que se aplican estilos personalizados con Tailwind CSS.
+
+\subsubsection{Calidad del Código}
+
+Algunas de las tecnologías mencionadas al desglosar el stack tecnológico del proyecto de frontend están destinadas a que este mantenga ciertos estándares de calidad. En concreto, se emplean las tres siguientes para llevar a cabo dicha tarea:
+
+\begin{itemize}
+    \item ESLint: Configurado con reglas para mantener consistencia de código, es decir, un estilo limpio y homogéneo entre los distintos componentes, páginas y otros archivos auxiliares. También ayuda a detectar posibles errores en el código o recursos que se declaran pero no se utilizan.
+    \item TypeScript: Proporciona verificación de tipos de datos en tiempo de compilación, lo cual permite detectar incompatibilidades de props en componentes, llamadas a funciones mal tipadas, o en ocasiones el uso incorrecto de estados.
+    \item Prettier: Se trata de un formateador automático de código que se puede configurar como el equipo de desarrollo desee. En este caso, se han configurado reglas para limitar la longitud de línea (\texttt{printWidth: 80}), definir una indentación consistente (\texttt{tabWidth: 2}), forzar el punto y coma al final de las sentencias (\texttt{semi: true}), y estandarizar el uso de comillas dobles (\texttt{singleQuote: false}), entre otras.
+\end{itemize}
+
+
+\begin{comment}
+El resultado es una plataforma completa y funcional que combina aspectos de red social, herramienta educativa y diario personal, proporcionando un valor único a los usuarios interesados en el intercambio lingüístico y cultural.
+\end{comment}

@@ -16,6 +16,7 @@
 
 % Tablas
 \usepackage{booktabs}        % reglas tipográficas (top/mid/bottom)
+\usepackage{comment}
 \usepackage{tabularx}        % columna X para ancho automático
 \usepackage[table]{xcolor}   % colores en tablas
 \rowcolors{2}{gray!15}{white}% filas alternadas (opcional)
@@ -147,7 +148,8 @@ hmargin=3cm
 	singlelinecheck=off,
 	labelsep=period,
 	labelfont=small,
-	font=small
+	font=small,
+	justification=centering
 }
 
 % FOOTNOTES
@@ -376,8 +378,10 @@ hmargin=3cm
 % Start writing here----------------------------------------------------
 \input{secciones/introduccion.tex}
 \input{secciones/estado_del_arte}
-\input{secciones/requisitos.tex}
+\input{secciones/analisis-planificacion.tex}
 \input{secciones/arquitectura.tex}
+\input{secciones/resultados.tex}
+
 %----------
 %	Bibliography
 %----------
