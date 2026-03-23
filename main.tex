@@ -22,7 +22,14 @@
 \rowcolors{2}{gray!15}{white}% filas alternadas (opcional)
 \usepackage{longtable}
 \usepackage{array} % para p{..}
-\renewcommand{\arraystretch}{1.05}
+\usepackage{enumitem} % opciones de espaciado en itemize/enumerate
+\usepackage{placeins} % barreras para evitar que flotantes salten entre secciones
+\usepackage{multirow}
+\usepackage{amssymb} % Para el checkmark
+\usepackage{rotating} % Para rotar los encabezados si es necesario
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{caption}      % Configuración de captions para tablas y figuras
 
 % margins: 2.5 cm top and bottom; 3 cm left and right
 \usepackage[
@@ -124,15 +131,15 @@ hmargin=3cm
 \usepackage{floatrow} % we use this package and its \ ttabbox and \ ffigbox macros to align the table and figure names according to the defined style.
 \usepackage{float} % para usar posicionamiento [H] en figuras
 \usepackage{array} % with this package we can define in the following line a new type of column for tables: custom width and centered content
-\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}m{#1}}
 \DeclareCaptionFormat{upper}{#1#2\uppercase{#3}\par}
 \usepackage{graphicx}
 \graphicspath{{imagenes/}} % Images folder
 
 % Table layout for engineering
 \captionsetup*[table]{
-	format=upper,
-	name=TABLE,
+	%format=upper,
+	name=Tabla,
 	justification=centering,
 	singlelinecheck=false,
 	labelsep=period,
@@ -140,6 +147,8 @@ hmargin=3cm
 	labelfont=small,
 	font=small
 }
+
+\captionsetup{font=small, textfont=it, labelfont=it, margin=10pt}
 
 % Figures layout for engineering
 \captionsetup[figure]{
@@ -380,6 +389,7 @@ hmargin=3cm
 \input{secciones/estado_del_arte}
 \input{secciones/analisis-planificacion.tex}
 \input{secciones/arquitectura.tex}
+\input{secciones/economico.tex}
 \input{secciones/resultados.tex}
 
 %----------

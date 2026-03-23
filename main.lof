@@ -48,20 +48,22 @@
 \contentsline {figure}{\numberline {2.45}{\ignorespaces Logo de Grammarly}}{32}{figure.caption.50}%
 \contentsline {figure}{\numberline {2.46}{\ignorespaces Logo de Duolingo}}{32}{figure.caption.51}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ejemplo de sprint en Trello}}{77}{figure.caption.112}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitectura Fullstack}}{41}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Estructura de Datos}}{43}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Configuración del CORS en la entrada del backend}}{49}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Email automatizado}}{53}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces JSON Web Tokens}}{54}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Consulta optimizada 1}}{63}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Página de inicio de sesión y registro}}{66}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Página principal}}{67}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Página de creación de cartas}}{68}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Página de corrección de cartas}}{69}{figure.caption.63}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Página de visualización de corrección recibida}}{70}{figure.caption.64}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Página de amigos}}{71}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Página de perfil de usuario}}{72}{figure.caption.66}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Código de apertura del diálogo y resultado en la interfaz}}{73}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitectura Fullstack}}{79}{figure.caption.113}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Estructura de Datos}}{81}{figure.caption.114}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Configuración del CORS en la entrada del backend}}{87}{figure.caption.115}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Email automatizado}}{91}{figure.caption.116}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces JSON Web Tokens}}{92}{figure.caption.117}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Consulta optimizada 1}}{101}{figure.caption.118}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Página de inicio de sesión y registro}}{104}{figure.caption.119}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Página principal}}{105}{figure.caption.120}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Página de creación de cartas}}{106}{figure.caption.121}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Página de corrección de cartas}}{107}{figure.caption.122}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Página de visualización de corrección recibida}}{108}{figure.caption.123}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Página de amigos}}{109}{figure.caption.124}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Página de perfil de usuario}}{110}{figure.caption.125}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Código de apertura del diálogo y resultado en la interfaz}}{111}{figure.caption.126}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

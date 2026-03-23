@@ -2,11 +2,70 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Requisitos funcionales}}{35}{table.3.1}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Requisitos no funcionales}}{36}{table.caption.52}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Definición completa de Historias de Usuario.}}{38}{table.3.3}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Matriz de Trazabilidad: Requisitos Funcionales (filas) vs Historias de Usuario (columnas). Símbolo: \text {$\mathsurround \z@ \mathchar "458$}= Cubierto}}{39}{table.caption.53}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces HU-01}}{35}{table.caption.52}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces HU-02}}{36}{table.caption.53}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces HU-03}}{36}{table.caption.54}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces HU-04}}{37}{table.caption.55}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces HU-05}}{37}{table.caption.56}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces HU-06}}{38}{table.caption.57}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces HU-07}}{38}{table.caption.58}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces HU-08}}{39}{table.caption.59}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces HU-09}}{39}{table.caption.60}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces HU-10}}{40}{table.caption.61}%
+\contentsline {table}{\numberline {3.11}{\ignorespaces HU-11}}{40}{table.caption.62}%
+\contentsline {table}{\numberline {3.12}{\ignorespaces HU-12}}{41}{table.caption.63}%
+\contentsline {table}{\numberline {3.13}{\ignorespaces HU-13}}{41}{table.caption.64}%
+\contentsline {table}{\numberline {3.14}{\ignorespaces HU-14}}{42}{table.caption.65}%
+\contentsline {table}{\numberline {3.15}{\ignorespaces HU-15}}{42}{table.caption.66}%
+\contentsline {table}{\numberline {3.16}{\ignorespaces HU-16}}{43}{table.caption.67}%
+\contentsline {table}{\numberline {3.17}{\ignorespaces HU-17}}{43}{table.caption.68}%
+\contentsline {table}{\numberline {3.18}{\ignorespaces HU-18}}{44}{table.caption.69}%
+\contentsline {table}{\numberline {3.19}{\ignorespaces HU-19}}{44}{table.caption.70}%
+\contentsline {table}{\numberline {3.20}{\ignorespaces HU-20}}{45}{table.caption.71}%
+\contentsline {table}{\numberline {3.21}{\ignorespaces HU-21}}{45}{table.caption.72}%
+\contentsline {table}{\numberline {3.22}{\ignorespaces HU-22}}{46}{table.caption.73}%
+\contentsline {table}{\numberline {3.23}{\ignorespaces HU-23}}{46}{table.caption.74}%
+\contentsline {table}{\numberline {3.24}{\ignorespaces HU-24}}{47}{table.caption.75}%
+\contentsline {table}{\numberline {3.25}{\ignorespaces HU-25}}{47}{table.caption.76}%
+\contentsline {table}{\numberline {3.26}{\ignorespaces HU-26}}{48}{table.caption.77}%
+\contentsline {table}{\numberline {3.27}{\ignorespaces HU-27}}{48}{table.caption.78}%
+\contentsline {table}{\numberline {3.28}{\ignorespaces HU-28}}{49}{table.caption.79}%
+\contentsline {table}{\numberline {3.29}{\ignorespaces PA-01}}{50}{table.caption.80}%
+\contentsline {table}{\numberline {3.30}{\ignorespaces PA-02}}{50}{table.caption.81}%
+\contentsline {table}{\numberline {3.31}{\ignorespaces PA-03}}{51}{table.caption.82}%
+\contentsline {table}{\numberline {3.32}{\ignorespaces PA-04}}{52}{table.caption.83}%
+\contentsline {table}{\numberline {3.33}{\ignorespaces PA-05}}{53}{table.caption.84}%
+\contentsline {table}{\numberline {3.34}{\ignorespaces PA-06}}{54}{table.caption.85}%
+\contentsline {table}{\numberline {3.35}{\ignorespaces PA-07}}{54}{table.caption.86}%
+\contentsline {table}{\numberline {3.36}{\ignorespaces PA-08}}{55}{table.caption.87}%
+\contentsline {table}{\numberline {3.37}{\ignorespaces PA-10}}{56}{table.caption.89}%
+\contentsline {table}{\numberline {3.38}{\ignorespaces PA-11}}{57}{table.caption.90}%
+\contentsline {table}{\numberline {3.39}{\ignorespaces PA-12}}{58}{table.caption.91}%
+\contentsline {table}{\numberline {3.40}{\ignorespaces PA-13}}{59}{table.caption.92}%
+\contentsline {table}{\numberline {3.41}{\ignorespaces PA-14}}{60}{table.caption.93}%
+\contentsline {table}{\numberline {3.42}{\ignorespaces PA-15}}{61}{table.caption.94}%
+\contentsline {table}{\numberline {3.43}{\ignorespaces PA-16}}{62}{table.caption.95}%
+\contentsline {table}{\numberline {3.44}{\ignorespaces PA-17}}{63}{table.caption.96}%
+\contentsline {table}{\numberline {3.45}{\ignorespaces PA-18}}{63}{table.caption.97}%
+\contentsline {table}{\numberline {3.46}{\ignorespaces PA-19}}{64}{table.caption.98}%
+\contentsline {table}{\numberline {3.47}{\ignorespaces PA-20}}{65}{table.caption.99}%
+\contentsline {table}{\numberline {3.48}{\ignorespaces PA-21}}{66}{table.caption.100}%
+\contentsline {table}{\numberline {3.49}{\ignorespaces PA-22}}{67}{table.caption.101}%
+\contentsline {table}{\numberline {3.50}{\ignorespaces PA-23}}{68}{table.caption.102}%
+\contentsline {table}{\numberline {3.51}{\ignorespaces PA-24}}{69}{table.caption.103}%
+\contentsline {table}{\numberline {3.52}{\ignorespaces PA-25}}{70}{table.caption.104}%
+\contentsline {table}{\numberline {3.53}{\ignorespaces PA-26}}{70}{table.caption.105}%
+\contentsline {table}{\numberline {3.54}{\ignorespaces PA-27}}{71}{table.caption.106}%
+\contentsline {table}{\numberline {3.55}{\ignorespaces PA-28}}{72}{table.caption.107}%
+\contentsline {table}{\numberline {3.56}{\ignorespaces PA-29}}{73}{table.caption.108}%
+\contentsline {table}{\numberline {3.57}{\ignorespaces PA-30}}{73}{table.caption.109}%
+\contentsline {table}{\numberline {3.58}{\ignorespaces Matriz de trazabilidad}}{74}{table.caption.110}%
+\contentsline {table}{\numberline {3.59}{\ignorespaces Resumen de la planificación por sprints}}{76}{table.caption.111}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.9}{\ignorespaces Rutas de la API de Letterex}}{60}{table.4.9}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Rutas de la API de Letterex}}{98}{table.4.9}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Costes de herramientas}}{116}{table.caption.127}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Costes humanos}}{116}{table.caption.128}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Resumen del coste del prototipo}}{117}{table.caption.129}%
 \addvspace {10\p@ }
 \contentsfinish 

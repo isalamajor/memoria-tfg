@@ -62,58 +62,75 @@
 \contentsline {subsection}{\numberline {2.3.5}Duolingo}{32}{subsection.2.3.5}%
 \contentsline {subsection}{\numberline {2.3.6}Conclusión}{33}{subsection.2.3.6}%
 \contentsline {chapter}{\numberline {3}Análisis y planificación}{34}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Requisitos}{34}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Requisitos funcionales}{34}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Requisitos no funcionales}{37}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Historias de Usuario}{37}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Matriz de Trazabilidad}{38}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Arquitectura}{40}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Stack tecnológico seleccionado}{40}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Modelado de datos}{42}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Colección User (Usuarios)}{44}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Colección Letter (Cartas)}{44}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Colección CorrectedLetter (Cartas Corregidas)}{45}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Colección Follow}{45}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Colección FriendRequest}{46}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Colección VerificationCode}{46}{subsection.4.2.6}%
-\contentsline {section}{\numberline {4.3}Arquitectura del backend}{47}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Estructura del backend}{47}{subsection.4.3.1}%
-\contentsline {subsubsection}{Raíz del proyecto}{49}{Item.5}%
-\contentsline {subsubsection}{Carpeta \texttt {database/}}{50}{table.4.1}%
-\contentsline {subsubsection}{Carpeta \texttt {middlewares/}}{50}{table.4.2}%
-\contentsline {subsubsection}{Carpeta \texttt {services/}}{50}{table.4.3}%
-\contentsline {subsubsection}{Carpeta \texttt {controllers/}}{50}{table.4.4}%
-\contentsline {subsubsection}{Carpeta \texttt {routes/}}{51}{table.4.5}%
-\contentsline {subsubsection}{Carpeta \texttt {models/}}{51}{table.4.6}%
-\contentsline {subsubsection}{Carpetas \texttt {templates/} y \texttt {uploads/}}{52}{table.4.7}%
-\contentsline {subsection}{\numberline {4.3.2}Emails automatizados}{52}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Mecanismo de Autenticación y Autorización}{53}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Almacenamiento de imágenes con Multer}{54}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Interfaz de Programación de Aplicaciones (API): Rutas y Controladores}{55}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Técnicas de optimización}{60}{subsection.4.3.6}%
-\contentsline {subsubsection}{Optimización de búsqueda datos}{60}{subsection.4.3.6}%
-\contentsline {subsubsection}{Procesamiento Avanzado de Datos: Aggregate de MongoDB}{61}{subsection.4.3.6}%
-\contentsline {section}{\numberline {4.4}Frontend de la Aplicación}{64}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Stack Tecnológico}{64}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Arquitectura del Proyecto}{64}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Descripción de las Páginas Principales}{65}{subsection.4.4.3}%
-\contentsline {subsubsection}{Página de Inicio y Autenticación}{66}{subsection.4.4.3}%
-\contentsline {subsubsection}{Dashboard Principal (Homepage)}{66}{figure.caption.60}%
-\contentsline {subsubsection}{Creación de Nueva Carta}{68}{Item.16}%
-\contentsline {subsubsection}{Corrección de Cartas}{68}{figure.caption.62}%
-\contentsline {subsubsection}{Visualización de Correcciones Recibidas}{70}{figure.caption.63}%
-\contentsline {subsubsection}{Gestión de Amigos}{70}{figure.caption.64}%
-\contentsline {subsubsection}{Perfil de Usuario}{71}{Item.19}%
-\contentsline {subsection}{\numberline {4.4.4}Aspectos Técnicos Destacados}{72}{subsection.4.4.4}%
-\contentsline {subsubsection}{Gestión de Estado y Contextos}{72}{subsection.4.4.4}%
-\contentsline {subsubsection}{Optimización de Rendimiento}{73}{figure.caption.67}%
-\contentsline {subsubsection}{Diseño Responsivo e Interfaces Animadas}{74}{Item.24}%
-\contentsline {subsubsection}{Sistema de Correcciones de Texto}{74}{Item.24}%
-\contentsline {subsubsection}{Seguridad y Validación}{75}{Item.28}%
-\contentsline {subsubsection}{Componentes Reutilizables}{75}{Item.28}%
-\contentsline {subsubsection}{Calidad del Código}{76}{Item.28}%
-\contentsline {chapter}{\numberline {5}Líneas de Trabajo Futuro y conclusión}{77}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Líneas de Trabajo Futuro y Propuestas de Mejora}{77}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Conclusiones}{77}{section.5.2}%
-\contentsline {chapter}{Bibliography}{79}{section.5.2}%
+\contentsline {section}{\numberline {3.1}Historias de Usuario}{34}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Investigación y Documentación}{35}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Gestión de Usuarios}{39}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Gestión de Perfiles}{40}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Módulo de Correspondencia}{42}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Módulo de Correcciones}{44}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Funcionalidad Social}{47}{subsection.3.1.6}%
+\contentsline {section}{\numberline {3.2}Pruebas de Aceptación}{50}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Investigación y Documentación}{50}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Gestión de Usuarios}{51}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Gestión de Perfiles}{56}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Módulo de Correspondencia}{61}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Módulo de Correcciones}{66}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Funcionalidad Social}{70}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Matriz de Trazabilidad}{74}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Planificación}{75}{section.3.4}%
+\contentsline {subsubsection}{Resumen de planificación}{76}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Arquitectura}{78}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Stack tecnológico seleccionado}{78}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Modelado de datos}{80}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Colección User (Usuarios)}{82}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Colección Letter (Cartas)}{82}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Colección CorrectedLetter (Cartas Corregidas)}{83}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Colección Follow}{83}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Colección FriendRequest}{84}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Colección VerificationCode}{84}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Arquitectura del backend}{85}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Estructura del backend}{85}{subsection.4.3.1}%
+\contentsline {subsubsection}{Raíz del proyecto}{87}{Item.177}%
+\contentsline {subsubsection}{Carpeta \texttt {database/}}{88}{table.4.1}%
+\contentsline {subsubsection}{Carpeta \texttt {middlewares/}}{88}{table.4.2}%
+\contentsline {subsubsection}{Carpeta \texttt {services/}}{88}{table.4.3}%
+\contentsline {subsubsection}{Carpeta \texttt {controllers/}}{88}{table.4.4}%
+\contentsline {subsubsection}{Carpeta \texttt {routes/}}{89}{table.4.5}%
+\contentsline {subsubsection}{Carpeta \texttt {models/}}{89}{table.4.6}%
+\contentsline {subsubsection}{Carpetas \texttt {templates/} y \texttt {uploads/}}{90}{table.4.7}%
+\contentsline {subsection}{\numberline {4.3.2}Emails automatizados}{90}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Mecanismo de Autenticación y Autorización}{91}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Almacenamiento de imágenes con Multer}{92}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Interfaz de Programación de Aplicaciones (API): Rutas y Controladores}{93}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Técnicas de optimización}{98}{subsection.4.3.6}%
+\contentsline {subsubsection}{Optimización de búsqueda datos}{98}{subsection.4.3.6}%
+\contentsline {subsubsection}{Procesamiento Avanzado de Datos: Aggregate de MongoDB}{99}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}Frontend de la Aplicación}{102}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Stack Tecnológico}{102}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Arquitectura del Proyecto}{102}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Descripción de las Páginas Principales}{103}{subsection.4.4.3}%
+\contentsline {subsubsection}{Página de Inicio y Autenticación}{104}{subsection.4.4.3}%
+\contentsline {subsubsection}{Dashboard Principal (Homepage)}{104}{figure.caption.119}%
+\contentsline {subsubsection}{Creación de Nueva Carta}{106}{Item.188}%
+\contentsline {subsubsection}{Corrección de Cartas}{106}{figure.caption.121}%
+\contentsline {subsubsection}{Visualización de Correcciones Recibidas}{108}{figure.caption.122}%
+\contentsline {subsubsection}{Gestión de Amigos}{108}{figure.caption.123}%
+\contentsline {subsubsection}{Perfil de Usuario}{109}{Item.191}%
+\contentsline {subsection}{\numberline {4.4.4}Aspectos Técnicos Destacados}{110}{subsection.4.4.4}%
+\contentsline {subsubsection}{Gestión de Estado y Contextos}{110}{subsection.4.4.4}%
+\contentsline {subsubsection}{Optimización de Rendimiento}{111}{figure.caption.126}%
+\contentsline {subsubsection}{Diseño Responsivo e Interfaces Animadas}{112}{Item.196}%
+\contentsline {subsubsection}{Sistema de Correcciones de Texto}{112}{Item.196}%
+\contentsline {subsubsection}{Seguridad y Validación}{113}{Item.200}%
+\contentsline {subsubsection}{Componentes Reutilizables}{113}{Item.200}%
+\contentsline {subsubsection}{Calidad del Código}{114}{Item.200}%
+\contentsline {chapter}{\numberline {5}Modelo económico}{115}{chapter.5}%
+\contentsline {subsubsection}{Costes de herramientas}{115}{chapter.5}%
+\contentsline {subsubsection}{Costes humanos}{116}{table.caption.127}%
+\contentsline {subsubsection}{Resumen de costes}{116}{table.caption.128}%
+\contentsline {section}{\numberline {5.1}Marco socio-económico}{117}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Líneas de Trabajo Futuro y conclusión}{119}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Líneas de Trabajo Futuro y Propuestas de Mejora}{119}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Conclusiones}{119}{section.6.2}%
+\contentsline {chapter}{Bibliography}{121}{section.6.2}%
 \contentsfinish 
