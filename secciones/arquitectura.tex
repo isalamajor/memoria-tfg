@@ -1,30 +1,30 @@
-\chapter{Arquitectura}
+\chapter{Arquitectura del Software}
 
-\input{secciones/stack_seleccionado.tex}
+En el panorama actual del desarrollo de software, la construcción de una aplicación como la que se presenta en este Trabajo de Fin de Grado demanda una plataforma que sea no solo funcional, sino también interactiva, escalable y capaz de gestionar datos de forma dinámica. Para atender esta necesidad, este proyecto se ha desarrollado bajo una arquitectura full-stack, un enfoque integral que permite desacoplar la interfaz de usuario (frontend) de la lógica de negocio (backend) que accede y manipula la base de datos. Esta arquitectura se ilustra de forma esquemática en la siguiente figura.
 
-En el panorama actual del desarrollo de software, la construcción de una aplicación como la que se presenta en este Trabajo de Fin de Grado demanda una plataforma que sea no solo funcional, sino también interactiva y capaz de gestionar datos de forma dinámica. Para atender esta necesidad, este proyecto se ha desarrollado bajo una arquitectura Full Stack, un enfoque integral que permite desacoplar la interfaz de usuario (frontend) de la lógica de negocio y flujo de datos (backend) que accede y manipular la base de datos, como se muestra de forma esquemática en la siguiente figura.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{./imagenes/fullstack.drawio.png}
-    \caption{Arquitectura Fullstack}
+    \includegraphics[width=0.9\textwidth]{./imagenes/fullstack.drawio.png}
+    \caption{Arquitectura full-stack}
     \label{fig:fullstack}
 \end{figure}
 
-Al estructurar el backend exclusivamente como una API, se garantiza que el frontend (desarrollado en React) sea una entidad independiente que consume recursos de forma asíncrona, optimizando la carga y la experiencia del usuario. Al decir que es una entidad independiente, se estrapola que esta API podría ser utilizada por otras aplicaciones que se construyan a futuro y quieran acceder a los servicios que la API ofrece. Esta es razón de más para testear los métodos de la API mediante la herramienta de pruebas Postman en lugar de solamente desde nuestro frontend, dado que nos ayudará a comprobar y asegurar el correcto funcionamiento de éstos de forma precisa y documentada.
+Al estructurar el backend exclusivamente como una API, se garantiza que el frontend sea una entidad independiente que consume recursos de forma asíncrona, optimizando la carga y mejorando la experiencia de usuario. Al decir que es una entidad independiente, se estrapola que esta API podría ser utilizada por otras aplicaciones que se construyan a futuro y quieran acceder a los servicios que la API ofrece. Esta es razón de más para testear los métodos de la API mediante la herramienta de pruebas Postman en lugar de solamente desde nuestro frontend, dado que nos ayudará a comprobar y asegurar el correcto funcionamiento de éstos de forma individual, precisa y documentada.
 
-Además, para llevar a cabo esa tarea de optimicazión, se relegará el máximo de tareas lógicas y computacionales posibles al backend para aligerar el frontend. Por ejemplo, si la aplicación de React precisa de un conjunto de datos paginados, es la API la que se encargará de la paginación de estos datos, es decir, de servir estos datos por páginas mediante métodos más precisos en lugar de entregar todos los datos de golpe y dejar que el frontend los pagine, puesto que esto lo ralentizaría.
+Además, para llevar a cabo esa tarea de optimización del frontend, se ha relegado el máximo de tareas lógicas y computacionales posibles al backend. Por ejemplo, si la aplicación de React precisa de un conjunto de datos paginados, es la API la que se encargará de la paginación de estos datos, es decir, de servir estos datos por páginas mediante métodos más precisos en lugar de entregar todos los datos de golpe y dejar que el frontend los pagine, puesto que esto lo ralentizaría.
 
-Esta sección analiza de manera exhaustiva el diseño de este ecosistema, detallando:
+Esta sección analiza el diseño de este ecosistema, detallándolo en estas cuatro secciones:
 
 \begin{itemize}
-
+    \item \textbf{Stack seleccionado}: Justificación del conjunto de tecnologías escogido para el desarrollo de este proyecto de software.
     \item \textbf{Modelado de Datos NoSQL}: El uso de MongoDB y Mongoose para estructurar la información de forma flexible mediante documentos JSON modelados, facilitando el almacenamiento de estructuras de datos.
 
-    \item \textbf{Arquitectura del Back-end (API REST)}: El diseño de los endpoints (cada una de las ubicaciones donde la API recibe llamadas) y controladores que implementan las operaciones CRUD (Create, Read, Update, Delete). Estas operaciones son las que permiten, por ejemplo, la gestión de cartas o la administración de perfiles.
+    \item \textbf{Arquitectura del backend (API REST)}: Se explica la estructura del backend, así como puntos técnicos destacados como la automatización de envío de emails, el mecanismo de autenticación, el almacenamiento de imágenes, y varias técnicas de optimización que se han implementado; y el diseño de los endpoints (cada una de las ubicaciones donde la API recibe llamadas) y controladores que implementan las operaciones para gestionar de los datos.
 
-    \item \textbf{Arquitectura del Front-end (SPA)}: La interacción de React con la API mediante peticiones HTTP usando Axios, permitiendo una navegación fluida sin recargas de página, fundamental para mantener una experiencia de usuario fluida; y la estructura de la interfaz, detallando cómo el uso de componentes, hooks y páginas permite una estructura clara y mantenible.
+    \item \textbf{Arquitectura del frontend (SPA)}: Recoge el listado de tecnologías específicas empleadas para el frontend de la aplicación, la arquitectura del proyecto, las páginas de la interfaz y, de nuevo, las técnicas de optimización aplicadas.
 \end{itemize}
 
-\input{secciones/arquitectura_datos.tex}
+\input{secciones/stack_seleccionado.tex}
+\input{secciones/modelado_datos.tex}
 \input{secciones/arquitectura_backend.tex}
 \input{secciones/arquitectura_frontend.tex}

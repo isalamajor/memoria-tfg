@@ -69,9 +69,20 @@ hmargin=3cm
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
-% English settings
-\usepackage[english]{babel}
-\usepackage[babel, english=american]{csquotes}
+% Spanish settings
+\usepackage[spanish,english]{babel}
+\usepackage[babel, spanish=spanish]{csquotes}
+\addto\captionsspanish{%
+	\renewcommand{\contentsname}{Índice}%
+	\renewcommand{\listfigurename}{Lista de figuras}%
+	\renewcommand{\listtablename}{Lista de tablas}%
+	\renewcommand{\bibname}{Bibliografía}%
+}
+\addto\captionsenglish{%
+	\renewcommand{\contentsname}{Índice}%
+	\renewcommand{\listfigurename}{Lista de figuras}%
+	\renewcommand{\listtablename}{Lista de tablas}%
+}
 \AtBeginEnvironment{quote}{\small}
 
 % Footer settings
@@ -228,23 +239,22 @@ hmargin=3cm
 		\end{figure}
 		\vspace{2.5cm}
 		\begin{Large}
-			University Degree in...\\
-			 2020-2021\\ % Academic year
+			Grado en Ingeniería Informática.\\
+			 2025-2026\\ % Academic year
 			\vspace{2cm}
-			\textsl{Bachelor Thesis}
+			\textsl{Trabajo de Fin de Grado}
 			\bigskip
 
 		\end{Large}
-		 	{\Huge ``Thesis title''}\\
+		 	{\Huge ``Plataforma Colaborativa para el Intercambio y Corrección Lingüística''}\\
 		 	\vspace*{0.5cm}
 	 		\rule{10.5cm}{0.1mm}\\
 			\vspace*{0.9cm}
-			{\LARGE Author's complete name}\\
+			{\LARGE Mª Isabel Hernández Barrio}\\
 			\vspace*{1cm}
 		\begin{Large}
-			1st Tutor complete name\\
-			2nd Tutor complete name\\
-			Place and date\\
+			Jesús Hernando Corrochano\\
+			Madrid, junio de 2026\\
 		\end{Large}
 	\end{center}
 	\vfill
@@ -262,14 +272,20 @@ hmargin=3cm
 %----------
 %	ABSTRACT AND KEYWORDS
 %----------
-\renewcommand\abstractname{\large\bfseries\filcenter\uppercase{Summary}}
 \begin{abstract}
 \thispagestyle{plain}
 \setcounter{page}{3}
 
 	% Write your abstract
+	Nowadays, the digital transformation of education and language learning has become essential for global communication and international activity. In this context, the creation of a specialized web application for language exchange through written correspondence is presented as an innovative solution to bridge the gap between theoretical knowledge and practical, collaborative learning.
 
-	\textbf{Keywords:} % add the keywords
+	The aim of this Final Degree Project is to design and develop a web platform, named Letterex, that facilitates language exchange between users worldwide. The tool seeks to provide an efficient and interactive environment where users can practice writing in foreign languages and receive peer-to-peer corrections. Additionally, the application includes a personal space for users to manage their profiles and build a social network based on shared learning interests.
+
+	The process of designing and developing this application involved a detailed analysis of the specific needs of language learners, as well as the implementation of a modern metodology and tech stack. Built using the MERN stack (MongoDB, Express, React, and Node.js), the platform incorporates features such as a secure authentication system via JWT, a module for creating and organizing letters into diaries, a shared correction interface, and a social recommendation algorithm based on language affinity.
+
+	To sum up, this project aims to offer a technological solution tailored to the requirements of modern language learners, optimizing the writing and correcting process and the improvement of linguistic skills through an active and supportive community.
+
+	\textbf{Keywords:} Language exchange, Web development, MERN stack, Peer-to-peer correction, MongoDB, REST API.
 
 	\vfill
 \end{abstract}
@@ -281,11 +297,12 @@ hmargin=3cm
 %----------
 %	Dedication
 %----------
-\chapter*{Dedication}
+\chapter*{Agradecimientos}
 
 \setcounter{page}{5}
 
 	% Write here
+
 
 	\vfill
 
@@ -325,6 +342,61 @@ hmargin=3cm
 \thispagestyle{fancy}
 
 \newpage % blankpage
+\thispagestyle{empty}
+\mbox{}
+
+\chapter*{Lista de abreviaturas}
+\addcontentsline{toc}{chapter}{Lista de abreviaturas}
+
+\begin{longtable}{p{2.8cm}p{10.2cm}}
+API & Interfaz de Programación de Aplicaciones (Application Programming Interface). \\
+AJAX & Asynchronous JavaScript and XML. \\
+AKS & Azure Kubernetes Service. \\
+AWS & Amazon Web Services. \\
+BOE & Boletín Oficial del Estado. \\
+BSON & Binary JSON. \\
+CORS & Cross-Origin Resource Sharing. \\
+CRA & Cyber Resilience Act (Ley de Ciberresiliencia). \\
+CRUD & Create, Read, Update, Delete. \\
+CSRF & Cross-Site Request Forgery. \\
+CSS & Cascading Style Sheets. \\
+DOM & Document Object Model. \\
+GCP & Google Cloud Platform. \\
+HTML & HyperText Markup Language. \\
+HTTP & HyperText Transfer Protocol. \\
+IA & Inteligencia Artificial. \\
+IEEE & Institute of Electrical and Electronics Engineers. \\
+JSON & JavaScript Object Notation. \\
+JWT & JSON Web Token. \\
+LAMP & Linux, Apache, MySQL y PHP/Python. \\
+LOPDGDD & Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales. \\
+LSSICE & Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico. \\
+MERN & MongoDB, Express, React y Node.js. \\
+MIME & Multipurpose Internet Mail Extensions. \\
+MVCC & Control de Concurrencia Multiversión (Multi-Version Concurrency Control). \\
+NoSQL & Not Only SQL. \\
+ODM & Object Document Mapper. \\
+ORM & Object Relational Mapper. \\
+OTP & One-Time Password. \\
+PDF & Portable Document Format. \\
+REST & Representational State Transfer. \\
+RGPD & Reglamento General de Protección de Datos. \\
+SCRUM & Marco ágil de trabajo basado en iteraciones y sprints. \\
+SEO & Search Engine Optimization. \\
+SMTP & Simple Mail Transfer Protocol. \\
+SPA & Single Page Application. \\
+SQL & Structured Query Language. \\
+SSR & Server-Side Rendering. \\
+TFG & Trabajo de Fin de Grado. \\
+TTL & Time To Live. \\
+UE & Unión Europea. \\
+URL & Uniform Resource Locator. \\
+XML & eXtensible Markup Language. \\
+XP & Extreme Programming. \\
+XSS & Cross-Site Scripting. \\
+\end{longtable}
+
+\newpage % blank page
 \thispagestyle{empty}
 \mbox{}
 
@@ -397,7 +469,7 @@ hmargin=3cm
 %----------
 
 \clearpage
-\addcontentsline{toc}{chapter}{Bibliography}
+\addcontentsline{toc}{chapter}{Bibliografía}
 
 \printbibliography
 

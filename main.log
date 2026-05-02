@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.27)  23 MAR 2026 15:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.27)  2 MAY 2026 14:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1031,7 +1031,18 @@ LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) o
  (c:/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 \bbl@dirlevel=\count334
- (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+ (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex) (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 4295.
+ (c:/texlive/2025/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks44
+\es@quotdepth=\count335
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+)
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 4295.
  (c:/texlive/2025/texmf-dist/tex/generic/babel-english/english.ldf
@@ -1044,13 +1055,13 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language22). Reported on input line 108.
 )) (c:/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count335
-\csq@gtype=\count336
-\csq@glevel=\count337
-\csq@qlevel=\count338
-\csq@maxlvl=\count339
-\csq@tshold=\count340
-\csq@ltx@everypar=\toks44
+\csq@reset=\count336
+\csq@gtype=\count337
+\csq@glevel=\count338
+\csq@qlevel=\count339
+\csq@maxlvl=\count340
+\csq@tshold=\count341
+\csq@ltx@everypar=\toks45
  (c:/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
@@ -1062,7 +1073,7 @@ File: csquotes.cfg
 Package csquotes Info: Option 'babel' depreciated.
 (csquotes)             Using 'autostyle'.
 Package csquotes Info: Enabling multilingual quotes.
-Package csquotes Info: Redefining alias 'english' -> 'english/american'.
+Package csquotes Info: Redefining alias 'spanish' -> 'spanish/spanish'.
 ) (c:/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip70
@@ -1079,7 +1090,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip81
 \f@nch@widthC=\skip82
 \f@nch@widthR=\skip83
-\@temptokenb=\toks45
+\@temptokenb=\toks46
 ) (c:/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box66
@@ -1087,7 +1098,7 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \aftertitleunit=\skip85
 \ttl@plus=\dimen274
 \ttl@minus=\dimen275
-\ttl@toksa=\toks46
+\ttl@toksa=\toks47
 \titlewidth=\dimen276
 \titlewidthlast=\dimen277
 \titlewidthfirst=\dimen278
@@ -1096,13 +1107,13 @@ Package: titletoc 2025/01/04 v2.17 TOC entries
 \ttl@leftsep=\dimen279
 ) (c:/texlive/2025/texmf-dist/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
-\c@float@type=\count341
-\float@exts=\toks47
+\c@float@type=\count342
+\float@exts=\toks48
 \float@box=\box67
 \@floatcapt=\box68
 Package floatrow Info: Modified float package code loaded on input line 455.
 Package floatrow Info: Modified rotfloat package code loaded on input line 473.
-\FR@everyfloat=\toks48
+\FR@everyfloat=\toks49
 \flrow@foot=\insert252
 \FB@wd=\dimen280
 \FBo@wd=\dimen281
@@ -1113,46 +1124,46 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \FBo@max=\skip89
 \FBc@max=\skip90
 \FBf@max=\skip91
-\c@FBl@b=\count342
-\floatbox@depth=\count343
-\c@FRobj=\count344
-\c@FRsobj=\count345
+\c@FBl@b=\count343
+\floatbox@depth=\count344
+\c@FRobj=\count345
+\c@FRsobj=\count346
 \Xhsize=\skip92
 \sXhsize=\skip93
 \Zhsize=\skip94
 \sZhsize=\skip95
 \flrow@rowbox=\box69
 \FR@Zunitlength=\dimen283
-\c@FBcnt=\count346
-\FPOScnt=\count347
+\c@FBcnt=\count347
+\FPOScnt=\count348
 \LTleft=\skip96
 \LTright=\skip97
 \LTleft=\skip98
 \LTright=\skip99
-\flrow@types=\toks49
+\flrow@types=\toks50
 ) (c:/texlive/2025/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count348
+\lst@mode=\count349
 \lst@gtempboxa=\box70
-\lst@token=\toks50
-\lst@length=\count349
+\lst@token=\toks51
+\lst@length=\count350
 \lst@currlwidth=\dimen284
-\lst@column=\count350
-\lst@pos=\count351
+\lst@column=\count351
+\lst@pos=\count352
 \lst@lostspace=\dimen285
 \lst@width=\dimen286
-\lst@newlines=\count352
-\lst@lineno=\count353
+\lst@newlines=\count353
+\lst@lineno=\count354
 \lst@maxwidth=\dimen287
  (c:/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count354
-\lst@skipnumbers=\count355
+\c@lstnumber=\count355
+\lst@skipnumbers=\count356
 \lst@framebox=\box71
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
@@ -1162,53 +1173,53 @@ Package: listings 2024/09/23 1.10c (Carsten Heinz)
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
  (c:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count356
+\lrq@indent=\count357
  (c:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count357
-\c@listtotal=\count358
-\c@listcount=\count359
-\c@liststart=\count360
-\c@liststop=\count361
-\c@citecount=\count362
-\c@citetotal=\count363
-\c@multicitecount=\count364
-\c@multicitetotal=\count365
-\c@instcount=\count366
-\c@maxnames=\count367
-\c@minnames=\count368
-\c@maxitems=\count369
-\c@minitems=\count370
-\c@citecounter=\count371
-\c@maxcitecounter=\count372
-\c@savedcitecounter=\count373
-\c@uniquelist=\count374
-\c@uniquename=\count375
-\c@refsection=\count376
-\c@refsegment=\count377
-\c@maxextratitle=\count378
-\c@maxextratitleyear=\count379
-\c@maxextraname=\count380
-\c@maxextradate=\count381
-\c@maxextraalpha=\count382
-\c@abbrvpenalty=\count383
-\c@highnamepenalty=\count384
-\c@lownamepenalty=\count385
-\c@maxparens=\count386
-\c@parenlevel=\count387
-\blx@tempcnta=\count388
-\blx@tempcntb=\count389
-\blx@tempcntc=\count390
-\c@blx@maxsection=\count391
-\blx@maxsegment@0=\count392
-\blx@notetype=\count393
-\blx@parenlevel@text=\count394
-\blx@parenlevel@foot=\count395
-\blx@sectionciteorder@0=\count396
-\blx@sectionciteorderinternal@0=\count397
-\blx@entrysetcounter=\count398
-\blx@biblioinstance=\count399
+\c@tabx@nest=\count358
+\c@listtotal=\count359
+\c@listcount=\count360
+\c@liststart=\count361
+\c@liststop=\count362
+\c@citecount=\count363
+\c@citetotal=\count364
+\c@multicitecount=\count365
+\c@multicitetotal=\count366
+\c@instcount=\count367
+\c@maxnames=\count368
+\c@minnames=\count369
+\c@maxitems=\count370
+\c@minitems=\count371
+\c@citecounter=\count372
+\c@maxcitecounter=\count373
+\c@savedcitecounter=\count374
+\c@uniquelist=\count375
+\c@uniquename=\count376
+\c@refsection=\count377
+\c@refsegment=\count378
+\c@maxextratitle=\count379
+\c@maxextratitleyear=\count380
+\c@maxextraname=\count381
+\c@maxextradate=\count382
+\c@maxextraalpha=\count383
+\c@abbrvpenalty=\count384
+\c@highnamepenalty=\count385
+\c@lownamepenalty=\count386
+\c@maxparens=\count387
+\c@parenlevel=\count388
+\blx@tempcnta=\count389
+\blx@tempcntb=\count390
+\blx@tempcntc=\count391
+\c@blx@maxsection=\count392
+\blx@maxsegment@0=\count393
+\blx@notetype=\count394
+\blx@parenlevel@text=\count395
+\blx@parenlevel@foot=\count396
+\blx@sectionciteorder@0=\count397
+\blx@sectionciteorderinternal@0=\count398
+\blx@entrysetcounter=\count399
+\blx@biblioinstance=\count400
 \labelnumberwidth=\skip100
 \labelalphawidth=\skip101
 \biblabelsep=\skip102
@@ -1220,9 +1231,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read4
 \blx@bcfout=\write5
 \blx@langwohyphens=\language91
-\c@mincomprange=\count400
-\c@maxcomprange=\count401
-\c@mincompwidth=\count402
+\c@mincomprange=\count401
+\c@maxcomprange=\count402
+\c@mincompwidth=\count403
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -1232,74 +1243,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count403
-\c@savedafterword=\count404
-\c@annotator=\count405
-\c@savedannotator=\count406
-\c@author=\count407
-\c@savedauthor=\count408
-\c@bookauthor=\count409
-\c@savedbookauthor=\count410
-\c@commentator=\count411
-\c@savedcommentator=\count412
-\c@editor=\count413
-\c@savededitor=\count414
-\c@editora=\count415
-\c@savededitora=\count416
-\c@editorb=\count417
-\c@savededitorb=\count418
-\c@editorc=\count419
-\c@savededitorc=\count420
-\c@foreword=\count421
-\c@savedforeword=\count422
-\c@holder=\count423
-\c@savedholder=\count424
-\c@introduction=\count425
-\c@savedintroduction=\count426
-\c@namea=\count427
-\c@savednamea=\count428
-\c@nameb=\count429
-\c@savednameb=\count430
-\c@namec=\count431
-\c@savednamec=\count432
-\c@translator=\count433
-\c@savedtranslator=\count434
-\c@shortauthor=\count435
-\c@savedshortauthor=\count436
-\c@shorteditor=\count437
-\c@savedshorteditor=\count438
-\c@labelname=\count439
-\c@savedlabelname=\count440
-\c@institution=\count441
-\c@savedinstitution=\count442
-\c@lista=\count443
-\c@savedlista=\count444
-\c@listb=\count445
-\c@savedlistb=\count446
-\c@listc=\count447
-\c@savedlistc=\count448
-\c@listd=\count449
-\c@savedlistd=\count450
-\c@liste=\count451
-\c@savedliste=\count452
-\c@listf=\count453
-\c@savedlistf=\count454
-\c@location=\count455
-\c@savedlocation=\count456
-\c@organization=\count457
-\c@savedorganization=\count458
-\c@origlocation=\count459
-\c@savedoriglocation=\count460
-\c@origpublisher=\count461
-\c@savedorigpublisher=\count462
-\c@publisher=\count463
-\c@savedpublisher=\count464
-\c@language=\count465
-\c@savedlanguage=\count466
-\c@origlanguage=\count467
-\c@savedoriglanguage=\count468
-\c@pageref=\count469
-\c@savedpageref=\count470
+\c@afterword=\count404
+\c@savedafterword=\count405
+\c@annotator=\count406
+\c@savedannotator=\count407
+\c@author=\count408
+\c@savedauthor=\count409
+\c@bookauthor=\count410
+\c@savedbookauthor=\count411
+\c@commentator=\count412
+\c@savedcommentator=\count413
+\c@editor=\count414
+\c@savededitor=\count415
+\c@editora=\count416
+\c@savededitora=\count417
+\c@editorb=\count418
+\c@savededitorb=\count419
+\c@editorc=\count420
+\c@savededitorc=\count421
+\c@foreword=\count422
+\c@savedforeword=\count423
+\c@holder=\count424
+\c@savedholder=\count425
+\c@introduction=\count426
+\c@savedintroduction=\count427
+\c@namea=\count428
+\c@savednamea=\count429
+\c@nameb=\count430
+\c@savednameb=\count431
+\c@namec=\count432
+\c@savednamec=\count433
+\c@translator=\count434
+\c@savedtranslator=\count435
+\c@shortauthor=\count436
+\c@savedshortauthor=\count437
+\c@shorteditor=\count438
+\c@savedshorteditor=\count439
+\c@labelname=\count440
+\c@savedlabelname=\count441
+\c@institution=\count442
+\c@savedinstitution=\count443
+\c@lista=\count444
+\c@savedlista=\count445
+\c@listb=\count446
+\c@savedlistb=\count447
+\c@listc=\count448
+\c@savedlistc=\count449
+\c@listd=\count450
+\c@savedlistd=\count451
+\c@liste=\count452
+\c@savedliste=\count453
+\c@listf=\count454
+\c@savedlistf=\count455
+\c@location=\count456
+\c@savedlocation=\count457
+\c@organization=\count458
+\c@savedorganization=\count459
+\c@origlocation=\count460
+\c@savedoriglocation=\count461
+\c@origpublisher=\count462
+\c@savedorigpublisher=\count463
+\c@publisher=\count464
+\c@savedpublisher=\count465
+\c@language=\count466
+\c@savedlanguage=\count467
+\c@origlanguage=\count468
+\c@savedoriglanguage=\count469
+\c@pageref=\count470
+\c@savedpageref=\count471
 \shorthandwidth=\skip108
 \shortjournalwidth=\skip109
 \shortserieswidth=\skip110
@@ -1323,19 +1334,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count471
-\c@textcitetotal=\count472
-\c@textcitemaxnames=\count473
-\c@biburlbigbreakpenalty=\count474
-\c@biburlbreakpenalty=\count475
-\c@biburlnumpenalty=\count476
-\c@biburlucpenalty=\count477
-\c@biburllcpenalty=\count478
+\c@textcitecount=\count472
+\c@textcitetotal=\count473
+\c@textcitemaxnames=\count474
+\c@biburlbigbreakpenalty=\count475
+\c@biburlbreakpenalty=\count476
+\c@biburlnumpenalty=\count477
+\c@biburlucpenalty=\count478
+\c@biburllcpenalty=\count479
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count479
+\c@smartand=\count480
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
@@ -1353,8 +1364,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count480
-\c@bbx:relatedtotal=\count481
+\c@bbx:relatedcount=\count481
+\c@bbx:relatedtotal=\count482
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
@@ -1386,7 +1397,7 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2025-10-24 L3 programming layer (loader) 
  (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count482
+\l__color_backend_stack_int=\count483
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2025-10-24 L3 programming layer (loader) 
@@ -1402,53 +1413,53 @@ Package csquotes Info: ... found 'babel' package.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 216.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 216.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 227.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 227.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 216.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 216.
+LaTeX Font Info:    ... okay on input line 227.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 227.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 227.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 216.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 216.
+LaTeX Font Info:    ... okay on input line 227.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 227.
+LaTeX Font Info:    ... okay on input line 227.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 227.
+LaTeX Font Info:    ... okay on input line 227.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 227.
+LaTeX Font Info:    ... okay on input line 227.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 227.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 227.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 216.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 216.
+LaTeX Font Info:    ... okay on input line 227.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 227.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 227.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 216.
-LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    ... okay on input line 227.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 227.
+LaTeX Font Info:    ... okay on input line 227.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 227.
+LaTeX Font Info:    ... okay on input line 227.
  (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count483
+\scratchcounter=\count484
 \scratchdimen=\dimen288
 \scratchbox=\box72
-\nofMPsegments=\count484
-\nofMParguments=\count485
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count486
+\nofMPsegments=\count485
+\nofMParguments=\count486
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count487
 \MPscratchDim=\dimen289
-\MPnumerator=\count487
-\makeMPintoPDFobject=\count488
-\everyMPtoPDFconversion=\toks52
+\MPnumerator=\count488
+\makeMPintoPDFobject=\count489
+\everyMPtoPDFconversion=\toks53
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1498,23 +1509,28 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 216.
+Package hyperref Info: Link coloring ON on input line 227.
 (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
-LaTeX Encoding Info:    Redeclaring text command \k (encoding T1) on input line 216.
+LaTeX Encoding Info:    Redeclaring text command \k (encoding T1) on input line 227.
  (c:/texlive/2025/texmf-dist/tex/latex/floatrow/fr-longtable.sty
 Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 \flrow@LT@lasthead=\box73
 \flrow@LT@prelastfoot=\box74
-\c@FBLTpage=\count489
+\c@FBLTpage=\count490
 )
-\c@lstlisting=\count490
+\c@lstlisting=\count491
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'spanish'...
+Package biblatex Info: ... file 'spanish.lbx' found.
+ (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
+File: spanish.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1524,36 +1540,42 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 216.
-Package biblatex Info: Reference segment=0 on input line 216.
-LaTeX Font Info:    Trying to load font information for T1+txss on input line 223.
+Package biblatex Info: Reference section=0 on input line 227.
+Package biblatex Info: Reference segment=0 on input line 227.
+LaTeX Font Info:    Trying to load font information for T1+txss on input line 234.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 223.
-<imagenes/logo_UC3M.png, id=273, 456.2865pt x 45.99pt>
+(Font)              scaled to size 11.39996pt on input line 234.
+<imagenes/logo_UC3M.png, id=249, 456.2865pt x 45.99pt>
 File: imagenes/logo_UC3M.png Graphic file (type png)
 <use imagenes/logo_UC3M.png>
-Package pdftex.def Info: imagenes/logo_UC3M.png  used on input line 227.
+Package pdftex.def Info: imagenes/logo_UC3M.png  used on input line 238.
 (pdftex.def)             Requested size: 455.24408pt x 45.88531pt.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 230.
+(Font)              scaled to size 16.41594pt on input line 241.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 16.41594pt on input line 234.
+(Font)              scaled to size 16.41594pt on input line 245.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 238.
+(Font)              scaled to size 23.63593pt on input line 249.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 242.
-<imagenes/creativecommons.png, id=275, 338.76563pt x 118.19156pt>
+(Font)              scaled to size 19.70294pt on input line 253.
+LaTeX Font Info:    Trying to load font information for TS1+txss on input line 253.
+ (c:/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txss.fd
+File: ts1txss.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `TS1/txss/m/n' will be
+(Font)              scaled to size 19.70294pt on input line 253.
+<imagenes/creativecommons.png, id=251, 338.76563pt x 118.19156pt>
 File: imagenes/creativecommons.png Graphic file (type png)
 <use imagenes/creativecommons.png>
-Package pdftex.def Info: imagenes/creativecommons.png  used on input line 253.
+Package pdftex.def Info: imagenes/creativecommons.png  used on input line 263.
 (pdftex.def)             Requested size: 119.50148pt x 41.69228pt.
 LaTeX Font Info:    Font shape `T1/txss/b/n' in size <12> not available
-(Font)              Font shape `T1/txss/bx/n' tried instead on input line 254.
+(Font)              Font shape `T1/txss/bx/n' tried instead on input line 264.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 11.39996pt on input line 254.
+(Font)              scaled to size 11.39996pt on input line 264.
 
 
 [1
@@ -1564,12 +1586,10 @@ LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.266 \begin{abstract}
+l.275 \begin{abstract}
                        [1]
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 266.
-LaTeX Font Info:    Font shape `T1/txr/b/n' in size <14.4> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 266.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 275.
 
 
 [3]
@@ -1578,14 +1598,22 @@ LaTeX Font Info:    Font shape `T1/txr/b/n' in size <14.4> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.284 \chapter
-              *{Dedication} [1]
+l.300 \chapter
+              *{Agradecimientos} [1]
+LaTeX Font Info:    Font shape `T1/txr/b/n' in size <14.4> not available
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 300.
+
 
 [5
 
 ]
 
 [6] (./main.toc
+Overfull \hbox (3.40796pt too wide) detected at line 2
+ \T1/txr/m/n/12 xviii
+ []
+
+
 
 [7
 
@@ -1623,31 +1651,40 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 [11
 
-]
-
-[12])
+])
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
 
 
-[13]
+[12]
 
-[14] (./main.lot
+[13] (./main.lot
 
-[15
+[14
 
 ]
 
-[16])
+[15])
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
 
 
-[17]
+[16]
 
-[18] (./secciones/introduccion.tex
+[17]
+Underfull \hbox (badness 10000) in alignment at lines 351--397
+[] []
+ []
+
+[18
+
+]
+
+[19]
+
+[20] (./secciones/introduccion.tex
 Chapter 1.
 
 
@@ -1655,8 +1692,12 @@ Chapter 1.
 
 
 ]
+Overfull \hbox (7.03271pt too wide) in paragraph at lines 17--18
+\T1/txr/m/n/12 no solo académico, sino que pueda más ade-lante ser uti-lizada por usuar-ios reales, generando
+ []
+
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 26.
- (c:/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txr.fd
+(c:/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
 
@@ -1664,7 +1705,12 @@ File: ts1txr.fd 2000/12/15 v3.1
 
 [3]
 
-[4]) (./secciones/estado_del_arte.tex
+[4]
+Overfull \hbox (4.28337pt too wide) in paragraph at lines 90--91
+[]\T1/txr/m/n/12 Análisis y plan-i-fi-cación: se pre-sen-tan las his-to-rias de usuario y prue-bas de aceptación
+ []
+
+) (./secciones/estado_del_arte.tex
 
 [5]
 Chapter 2.
@@ -1673,523 +1719,438 @@ Chapter 2.
 [6
 
 ]
-<./imagenes/HTML5-logo.png, id=790, 1104.125pt x 602.25pt>
+<./imagenes/HTML5-logo.png, id=755, 1104.125pt x 602.25pt>
 File: ./imagenes/HTML5-logo.png Graphic file (type png)
 <use ./imagenes/HTML5-logo.png>
-Package pdftex.def Info: ./imagenes/HTML5-logo.png  used on input line 25.
-(pdftex.def)             Requested size: 156.48022pt x 85.35826pt.
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 35.
+Package pdftex.def Info: ./imagenes/HTML5-logo.png  used on input line 26.
+(pdftex.def)             Requested size: 104.32014pt x 56.9055pt.
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 36.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
-<imagenes/tailwind.png, id=791, 903.375pt x 501.875pt>
-File: imagenes/tailwind.png Graphic file (type png)
-<use imagenes/tailwind.png>
-Package pdftex.def Info: imagenes/tailwind.png  used on input line 42.
-(pdftex.def)             Requested size: 153.64064pt x 85.35826pt.
-
 
 [7 <./imagenes/HTML5-logo.png>]
-<./imagenes/css-logo.png, id=799, 1457.445pt x 2057.6875pt>
+<imagenes/tailwind.png, id=765, 903.375pt x 501.875pt>
+File: imagenes/tailwind.png Graphic file (type png)
+<use imagenes/tailwind.png>
+Package pdftex.def Info: imagenes/tailwind.png  used on input line 43.
+(pdftex.def)             Requested size: 102.4179pt x 56.9055pt.
+<./imagenes/css-logo.png, id=768, 1457.445pt x 2057.6875pt>
 File: ./imagenes/css-logo.png Graphic file (type png)
 <use ./imagenes/css-logo.png>
-Package pdftex.def Info: ./imagenes/css-logo.png  used on input line 55.
-(pdftex.def)             Requested size: 60.44502pt x 85.35826pt.
+Package pdftex.def Info: ./imagenes/css-logo.png  used on input line 56.
+(pdftex.def)             Requested size: 40.29668pt x 56.9055pt.
 
 
 [8 <./imagenes/tailwind.png> <./imagenes/css-logo.png>]
-<./imagenes/javascript-logo.png, id=806, 225.84375pt x 225.84375pt>
+<./imagenes/javascript-logo.png, id=780, 225.84375pt x 225.84375pt>
 File: ./imagenes/javascript-logo.png Graphic file (type png)
 <use ./imagenes/javascript-logo.png>
-Package pdftex.def Info: ./imagenes/javascript-logo.png  used on input line 69.
-(pdftex.def)             Requested size: 85.35973pt x 85.35826pt.
-<imagenes/typescript.jpg, id=807, 369.38pt x 368.37625pt>
+Package pdftex.def Info: ./imagenes/javascript-logo.png  used on input line 70.
+(pdftex.def)             Requested size: 56.90533pt x 56.9055pt.
+<imagenes/typescript.jpg, id=782, 369.38pt x 368.37625pt>
 File: imagenes/typescript.jpg Graphic file (type jpg)
 <use imagenes/typescript.jpg>
-Package pdftex.def Info: imagenes/typescript.jpg  used on input line 78.
-(pdftex.def)             Requested size: 85.58687pt x 85.35826pt.
+Package pdftex.def Info: imagenes/typescript.jpg  used on input line 79.
+(pdftex.def)             Requested size: 57.05603pt x 56.9055pt.
 
 
 [9 <./imagenes/javascript-logo.png> <./imagenes/typescript.jpg>]
-<./imagenes/react-logo.jpg, id=813, 1204.5pt x 667.49374pt>
+<./imagenes/react-logo.jpg, id=792, 1204.5pt x 667.49374pt>
 File: ./imagenes/react-logo.jpg Graphic file (type jpg)
 <use ./imagenes/react-logo.jpg>
-Package pdftex.def Info: ./imagenes/react-logo.jpg  used on input line 97.
-(pdftex.def)             Requested size: 154.01741pt x 85.35826pt.
-<./imagenes/next-logo.jpg, id=814, 1284.8pt x 857.2025pt>
+Package pdftex.def Info: ./imagenes/react-logo.jpg  used on input line 98.
+(pdftex.def)             Requested size: 102.6844pt x 56.9055pt.
+<./imagenes/next-logo.jpg, id=794, 940.51375pt x 507.8975pt>
 File: ./imagenes/next-logo.jpg Graphic file (type jpg)
 <use ./imagenes/next-logo.jpg>
-Package pdftex.def Info: ./imagenes/next-logo.jpg  used on input line 108.
-(pdftex.def)             Requested size: 127.91899pt x 85.35826pt.
+Package pdftex.def Info: ./imagenes/next-logo.jpg  used on input line 109.
+(pdftex.def)             Requested size: 105.36552pt x 56.9055pt.
 
 
 [10 <./imagenes/react-logo.jpg>]
-<./imagenes/vue-logo.png, id=819, 501.875pt x 301.125pt>
+<./imagenes/vue-logo.png, id=802, 501.875pt x 301.125pt>
 File: ./imagenes/vue-logo.png Graphic file (type png)
 <use ./imagenes/vue-logo.png>
-Package pdftex.def Info: ./imagenes/vue-logo.png  used on input line 120.
-(pdftex.def)             Requested size: 142.26239pt x 85.35826pt.
-<./imagenes/angular.png, id=820, 1204.5pt x 1204.5pt>
+Package pdftex.def Info: ./imagenes/vue-logo.png  used on input line 121.
+(pdftex.def)             Requested size: 94.83649pt x 56.9055pt.
+<./imagenes/angular.png, id=804, 1204.5pt x 1204.5pt>
 File: ./imagenes/angular.png Graphic file (type png)
 <use ./imagenes/angular.png>
-Package pdftex.def Info: ./imagenes/angular.png  used on input line 131.
-(pdftex.def)             Requested size: 85.35284pt x 85.35826pt.
+Package pdftex.def Info: ./imagenes/angular.png  used on input line 132.
+(pdftex.def)             Requested size: 56.90189pt x 56.9055pt.
 
 
-[11 <./imagenes/next-logo.jpg> <./imagenes/vue-logo.png>]
-<./imagenes/node.png, id=826, 1204.5pt x 737.75626pt>
+[11 <./imagenes/next-logo.jpg> <./imagenes/vue-logo.png> <./imagenes/angular.png>]
+<./imagenes/node.png, id=816, 1204.5pt x 737.75626pt>
 File: ./imagenes/node.png Graphic file (type png)
 <use ./imagenes/node.png>
-Package pdftex.def Info: ./imagenes/node.png  used on input line 150.
-(pdftex.def)             Requested size: 139.35083pt x 85.35826pt.
-
-
-[12 <./imagenes/angular.png>]
-<imagenes/python.png, id=832, 3854.4pt x 2168.1pt>
+Package pdftex.def Info: ./imagenes/node.png  used on input line 152.
+(pdftex.def)             Requested size: 92.90668pt x 56.9055pt.
+<imagenes/python.png, id=817, 3854.4pt x 2168.1pt>
 File: imagenes/python.png Graphic file (type png)
 <use imagenes/python.png>
-Package pdftex.def Info: imagenes/python.png  used on input line 162.
-(pdftex.def)             Requested size: 151.73839pt x 85.35826pt.
-<imagenes/django.png, id=833, 1204.5pt x 419.5675pt>
+Package pdftex.def Info: imagenes/python.png  used on input line 164.
+(pdftex.def)             Requested size: 101.15892pt x 56.9055pt.
+
+
+[12 <./imagenes/node.png>]
+<imagenes/django.png, id=827, 1204.5pt x 419.5675pt>
 File: imagenes/django.png Graphic file (type png)
 <use imagenes/django.png>
 Package pdftex.def Info: imagenes/django.png  used on input line 172.
-(pdftex.def)             Requested size: 245.04942pt x 85.35826pt.
-
-
-[13 <./imagenes/node.png> <./imagenes/python.png>]
-<./imagenes/java.jpg, id=841, 436.63126pt x 244.915pt>
+(pdftex.def)             Requested size: 163.35402pt x 56.9055pt.
+<./imagenes/java.jpg, id=830, 436.63126pt x 244.915pt>
 File: ./imagenes/java.jpg Graphic file (type jpg)
 <use ./imagenes/java.jpg>
-Package pdftex.def Info: ./imagenes/java.jpg  used on input line 183.
-(pdftex.def)             Requested size: 152.1703pt x 85.35826pt.
-<imagenes/spring-boot.png, id=842, 602.25pt x 316.18124pt>
+Package pdftex.def Info: ./imagenes/java.jpg  used on input line 181.
+(pdftex.def)             Requested size: 101.44908pt x 56.9055pt.
+
+
+[13 <./imagenes/python.png> <./imagenes/django.png>]
+<imagenes/spring-boot.png, id=839, 602.25pt x 316.18124pt>
 File: imagenes/spring-boot.png Graphic file (type png)
 <use imagenes/spring-boot.png>
-Package pdftex.def Info: imagenes/spring-boot.png  used on input line 189.
-(pdftex.def)             Requested size: 162.58209pt x 85.35826pt.
-<imagenes/php.png, id=843, 1204.5pt x 650.43pt>
+Package pdftex.def Info: imagenes/spring-boot.png  used on input line 187.
+(pdftex.def)             Requested size: 108.39113pt x 56.9055pt.
+<imagenes/php.png, id=842, 1204.5pt x 650.43pt>
 File: imagenes/php.png Graphic file (type png)
 <use imagenes/php.png>
-Package pdftex.def Info: imagenes/php.png  used on input line 200.
-(pdftex.def)             Requested size: 158.06082pt x 85.35826pt.
-
-
-[14 <./imagenes/django.png> <./imagenes/java.jpg> <./imagenes/spring-boot.png>]
-<imagenes/Laravel.jpg, id=850, 903.375pt x 451.6875pt>
+Package pdftex.def Info: imagenes/php.png  used on input line 196.
+(pdftex.def)             Requested size: 105.36775pt x 56.9055pt.
+<imagenes/Laravel.jpg, id=843, 903.375pt x 451.6875pt>
 File: imagenes/Laravel.jpg Graphic file (type jpg)
 <use imagenes/Laravel.jpg>
-Package pdftex.def Info: imagenes/Laravel.jpg  used on input line 206.
-(pdftex.def)             Requested size: 170.70569pt x 85.35826pt.
-<imagenes/ruby.png, id=851, 401.5pt x 245.91875pt>
+Package pdftex.def Info: imagenes/Laravel.jpg  used on input line 202.
+(pdftex.def)             Requested size: 113.80379pt x 56.9055pt.
+
+
+[14 <./imagenes/java.jpg> <./imagenes/spring-boot.png> <./imagenes/php.png>]
+<imagenes/ruby.png, id=856, 353.82187pt x 187.19937pt>
 File: imagenes/ruby.png Graphic file (type png)
 <use imagenes/ruby.png>
-Package pdftex.def Info: imagenes/ruby.png  used on input line 217.
-(pdftex.def)             Requested size: 139.35695pt x 85.35826pt.
-<imagenes/Ruby2.png, id=852, 481.8pt x 240.9pt>
+Package pdftex.def Info: imagenes/ruby.png  used on input line 211.
+(pdftex.def)             Requested size: 107.55647pt x 56.9055pt.
+<imagenes/Ruby2.png, id=857, 481.8pt x 240.9pt>
 File: imagenes/Ruby2.png Graphic file (type png)
 <use imagenes/Ruby2.png>
-Package pdftex.def Info: imagenes/Ruby2.png  used on input line 223.
-(pdftex.def)             Requested size: 170.71304pt x 85.35826pt.
+Package pdftex.def Info: imagenes/Ruby2.png  used on input line 217.
+(pdftex.def)             Requested size: 113.81114pt x 56.9055pt.
 
 
-[15 <./imagenes/php.png> <./imagenes/Laravel.jpg>]
-<imagenes/go.png, id=858, 1204.5pt x 500.87125pt>
+[15 <./imagenes/Laravel.jpg> <./imagenes/ruby.png> <./imagenes/Ruby2.png>]
+<imagenes/go.png, id=868, 1204.5pt x 500.87125pt>
 File: imagenes/go.png Graphic file (type png)
 <use imagenes/go.png>
-Package pdftex.def Info: imagenes/go.png  used on input line 234.
-(pdftex.def)             Requested size: 205.25853pt x 85.35826pt.
-<imagenes/gin.png, id=859, 869.2475pt x 652.4375pt>
+Package pdftex.def Info: imagenes/go.png  used on input line 227.
+(pdftex.def)             Requested size: 136.83289pt x 56.9055pt.
+<imagenes/gin.png, id=869, 869.2475pt x 652.4375pt>
 File: imagenes/gin.png Graphic file (type png)
 <use imagenes/gin.png>
-Package pdftex.def Info: imagenes/gin.png  used on input line 240.
-(pdftex.def)             Requested size: 113.72237pt x 85.35826pt.
-
-
-[16 <./imagenes/ruby.png> <./imagenes/Ruby2.png> <./imagenes/go.png>]
-<imagenes/axios.png, id=867, 3854.4pt x 2168.1pt>
+Package pdftex.def Info: imagenes/gin.png  used on input line 233.
+(pdftex.def)             Requested size: 75.81491pt x 56.9055pt.
+<imagenes/axios.png, id=871, 3854.4pt x 2168.1pt>
 File: imagenes/axios.png Graphic file (type png)
 <use imagenes/axios.png>
-Package pdftex.def Info: imagenes/axios.png  used on input line 256.
-(pdftex.def)             Requested size: 151.73839pt x 85.35826pt.
-<imagenes/fetch.png, id=868, 1244.65pt x 700.6175pt>
+Package pdftex.def Info: imagenes/axios.png  used on input line 248.
+(pdftex.def)             Requested size: 101.15892pt x 56.9055pt.
+
+
+[16 <./imagenes/go.png> <./imagenes/gin.png>]
+<imagenes/fetch.png, id=880, 1244.65pt x 700.6175pt>
 File: imagenes/fetch.png Graphic file (type png)
 <use imagenes/fetch.png>
-Package pdftex.def Info: imagenes/fetch.png  used on input line 265.
-(pdftex.def)             Requested size: 151.63057pt x 85.35826pt.
-
-
-[17 <./imagenes/gin.png> <./imagenes/axios.png>]
-<./imagenes/postman.png, id=874, 1510.64375pt x 603.25375pt>
+Package pdftex.def Info: imagenes/fetch.png  used on input line 257.
+(pdftex.def)             Requested size: 101.07439pt x 56.9055pt.
+<./imagenes/postman.png, id=882, 1510.64375pt x 603.25375pt>
 File: ./imagenes/postman.png Graphic file (type png)
 <use ./imagenes/postman.png>
-Package pdftex.def Info: ./imagenes/postman.png  used on input line 276.
-(pdftex.def)             Requested size: 213.74763pt x 85.35826pt.
+Package pdftex.def Info: ./imagenes/postman.png  used on input line 266.
+(pdftex.def)             Requested size: 142.49841pt x 56.9055pt.
 
 
-[18 <./imagenes/fetch.png>]
-<imagenes/insomnia.png, id=880, 451.6875pt x 227.34938pt>
+[17 <./imagenes/axios.png> <./imagenes/fetch.png>]
+<imagenes/insomnia.png, id=893, 451.6875pt x 140.02313pt>
 File: imagenes/insomnia.png Graphic file (type png)
 <use imagenes/insomnia.png>
-Package pdftex.def Info: imagenes/insomnia.png  used on input line 285.
-(pdftex.def)             Requested size: 169.58916pt x 85.35826pt.
-<imagenes/curl.png, id=881, 1003.75pt x 457.71pt>
+Package pdftex.def Info: imagenes/insomnia.png  used on input line 275.
+(pdftex.def)             Requested size: 183.56651pt x 56.9055pt.
+<imagenes/curl.png, id=895, 1003.75pt x 457.71pt>
 File: imagenes/curl.png Graphic file (type png)
 <use imagenes/curl.png>
-Package pdftex.def Info: imagenes/curl.png  used on input line 294.
-(pdftex.def)             Requested size: 187.17648pt x 85.35826pt.
+Package pdftex.def Info: imagenes/curl.png  used on input line 284.
+(pdftex.def)             Requested size: 124.77922pt x 56.9055pt.
 
 
-[19 <./imagenes/postman.png> <./imagenes/insomnia.png>]
-<imagenes/mysql.png, id=889, 843.15pt x 361.35pt>
+[18 <./imagenes/postman.png> <./imagenes/insomnia.png>]
+<imagenes/mysql.png, id=906, 843.15pt x 361.35pt>
 File: imagenes/mysql.png Graphic file (type png)
 <use imagenes/mysql.png>
-Package pdftex.def Info: imagenes/mysql.png  used on input line 316.
-(pdftex.def)             Requested size: 199.16951pt x 85.35826pt.
+Package pdftex.def Info: imagenes/mysql.png  used on input line 307.
+(pdftex.def)             Requested size: 132.77109pt x 56.9055pt.
 
 
-[20 <./imagenes/curl.png>]
-Overfull \hbox (7.14069pt too wide) in paragraph at lines 323--327
-\T1/txr/m/n/12 ple-jas y grandes volúmenes de datos, man-te-niendo siem-pre la in-te-gri-dad rela-cional. Cuando
- []
-
-<imagenes/postgresql.png, id=895, 1927.2pt x 1084.05pt>
+[19 <./imagenes/curl.png>]
+<imagenes/postgresql.png, id=915, 1337.99875pt x 655.44875pt>
 File: imagenes/postgresql.png Graphic file (type png)
 <use imagenes/postgresql.png>
-Package pdftex.def Info: imagenes/postgresql.png  used on input line 330.
-(pdftex.def)             Requested size: 151.73839pt x 85.35826pt.
-<imagenes/mariadb.png, id=896, 341.275pt x 175.65625pt>
+Package pdftex.def Info: imagenes/postgresql.png  used on input line 322.
+(pdftex.def)             Requested size: 116.1477pt x 56.9055pt.
+<imagenes/mariadb.png, id=917, 341.275pt x 175.65625pt>
 File: imagenes/mariadb.png Graphic file (type png)
 <use imagenes/mariadb.png>
-Package pdftex.def Info: imagenes/mariadb.png  used on input line 339.
-(pdftex.def)             Requested size: 165.84103pt x 85.35826pt.
+Package pdftex.def Info: imagenes/mariadb.png  used on input line 331.
+(pdftex.def)             Requested size: 110.55894pt x 56.9055pt.
 
 
-[21 <./imagenes/mysql.png> <./imagenes/postgresql.png>]
-<imagenes/mongo.png, id=903, 843.15pt x 232.61906pt>
+[20 <./imagenes/mysql.png> <./imagenes/postgresql.png>]
+<imagenes/mongo.png, id=927, 843.15pt x 232.61906pt>
 File: imagenes/mongo.png Graphic file (type png)
 <use imagenes/mongo.png>
-Package pdftex.def Info: imagenes/mongo.png  used on input line 352.
-(pdftex.def)             Requested size: 309.38753pt x 85.35826pt.
-
-
-[22 <./imagenes/mariadb.png> <./imagenes/mongo.png>]
-<./imagenes/firebase.png, id=910, 1204.5pt x 330.23375pt>
+Package pdftex.def Info: imagenes/mongo.png  used on input line 342.
+(pdftex.def)             Requested size: 206.25835pt x 56.9055pt.
+<./imagenes/firebase.png, id=929, 1204.5pt x 330.23375pt>
 File: ./imagenes/firebase.png Graphic file (type png)
 <use ./imagenes/firebase.png>
-Package pdftex.def Info: ./imagenes/firebase.png  used on input line 364.
-(pdftex.def)             Requested size: 311.34308pt x 85.35826pt.
-<imagenes/Cassandra_logo.svg.png, id=911, 1204.5pt x 809.0225pt>
+Package pdftex.def Info: ./imagenes/firebase.png  used on input line 352.
+(pdftex.def)             Requested size: 207.55592pt x 56.9055pt.
+
+
+[21 <./imagenes/mariadb.png> <./imagenes/mongo.png>]
+<imagenes/Cassandra_logo.svg.png, id=939, 1204.5pt x 809.0225pt>
 File: imagenes/Cassandra_logo.svg.png Graphic file (type png)
 <use imagenes/Cassandra_logo.svg.png>
-Package pdftex.def Info: imagenes/Cassandra_logo.svg.png  used on input line 375.
-(pdftex.def)             Requested size: 127.07355pt x 85.35826pt.
-
-
-[23 <./imagenes/firebase.png> <./imagenes/Cassandra_logo.svg.png>]
-<imagenes/aws.png, id=918, 642.4pt x 385.44pt>
-File: imagenes/aws.png Graphic file (type png)
-<use imagenes/aws.png>
-Package pdftex.def Info: imagenes/aws.png  used on input line 390.
-(pdftex.def)             Requested size: 142.25964pt x 85.35826pt.
-<imagenes/MicrosoftAzure.png, id=919, 402.50375pt x 219.82124pt>
-File: imagenes/MicrosoftAzure.png Graphic file (type png)
-<use imagenes/MicrosoftAzure.png>
-Package pdftex.def Info: imagenes/MicrosoftAzure.png  used on input line 399.
-(pdftex.def)             Requested size: 156.2941pt x 85.35826pt.
-
-
-[24 <./imagenes/aws.png>]
-<imagenes/GCP.png, id=925, 365.6205pt x 225.6795pt>
-File: imagenes/GCP.png Graphic file (type png)
-<use imagenes/GCP.png>
-Package pdftex.def Info: imagenes/GCP.png  used on input line 409.
-(pdftex.def)             Requested size: 138.29007pt x 85.35826pt.
-
-
-[25 <./imagenes/MicrosoftAzure.png> <./imagenes/GCP.png>]
-<imagenes/chatgpt.png, id=933, 803.0pt x 803.0pt>
-File: imagenes/chatgpt.png Graphic file (type png)
-<use imagenes/chatgpt.png>
-Package pdftex.def Info: imagenes/chatgpt.png  used on input line 422.
-(pdftex.def)             Requested size: 85.35284pt x 85.35826pt.
-<imagenes/gemini.png, id=934, 385.44pt x 161.10187pt>
-File: imagenes/gemini.png Graphic file (type png)
-<use imagenes/gemini.png>
-Package pdftex.def Info: imagenes/gemini.png  used on input line 431.
-(pdftex.def)             Requested size: 204.2293pt x 85.35826pt.
-
-
-[26 <./imagenes/chatgpt.png>]
-<imagenes/codex.png, id=940, 211.79124pt x 239.89626pt>
-File: imagenes/codex.png Graphic file (type png)
-<use imagenes/codex.png>
-Package pdftex.def Info: imagenes/codex.png  used on input line 440.
-(pdftex.def)             Requested size: 75.3593pt x 85.35826pt.
-<imagenes/github-copilot.jpeg, id=941, 803.0pt x 423.5825pt>
-File: imagenes/github-copilot.jpeg Graphic file (type jpg)
-<use imagenes/github-copilot.jpeg>
-Package pdftex.def Info: imagenes/github-copilot.jpeg  used on input line 450.
-(pdftex.def)             Requested size: 161.81018pt x 85.35826pt.
-
-
-[27 <./imagenes/gemini.png> <./imagenes/codex.png>]
-Overfull \hbox (9.39667pt too wide) in paragraph at lines 458--459
+Package pdftex.def Info: imagenes/Cassandra_logo.svg.png  used on input line 361.
+(pdftex.def)             Requested size: 84.70956pt x 56.9055pt.
+ Excluding 'comment' comment.
+Overfull \hbox (9.39667pt too wide) in paragraph at lines 444--446
 \T1/txr/m/n/12 evolu-cionado sig-ni-fica-ti-va-mente, desde en-fo-ques rígi-dos y es-truc-tura-dos hasta metodologías
  []
 
 
 
-[28 <./imagenes/github-copilot.jpeg>]
-<imagenes/Scrum.png, id=952, 963.6pt x 536.0025pt>
-File: imagenes/Scrum.png Graphic file (type png)
-<use imagenes/Scrum.png>
-Package pdftex.def Info: imagenes/Scrum.png  used on input line 479.
-(pdftex.def)             Requested size: 153.44398pt x 85.35826pt.
-<imagenes/Extreme_Programming.png, id=953, 1204.5pt x 1106.1325pt>
-File: imagenes/Extreme_Programming.png Graphic file (type png)
-<use imagenes/Extreme_Programming.png>
-Package pdftex.def Info: imagenes/Extreme_Programming.png  used on input line 487.
-(pdftex.def)             Requested size: 92.94344pt x 85.35826pt.
-<imagenes/kanban.png, id=954, 755.82375pt x 445.665pt>
-File: imagenes/kanban.png Graphic file (type png)
-<use imagenes/kanban.png>
-Package pdftex.def Info: imagenes/kanban.png  used on input line 498.
-(pdftex.def)             Requested size: 144.76129pt x 85.35826pt.
+[22 <./imagenes/firebase.png> <./imagenes/Cassandra_logo.svg.png>] Excluding 'comment' comment.
 
-
-[29 <./imagenes/Scrum.png> <./imagenes/Extreme_Programming.png>]
-<imagenes/hinative.png, id=961, 513.92pt x 513.92pt>
+[23] Excluding 'comment' comment. Excluding 'comment' comment.
+<imagenes/hinative.png, id=966, 513.92pt x 513.92pt>
 File: imagenes/hinative.png Graphic file (type png)
 <use imagenes/hinative.png>
-Package pdftex.def Info: imagenes/hinative.png  used on input line 516.
-(pdftex.def)             Requested size: 85.35774pt x 85.35826pt.
+Package pdftex.def Info: imagenes/hinative.png  used on input line 513.
+(pdftex.def)             Requested size: 56.89993pt x 56.9055pt.
 
 
-[30 <./imagenes/kanban.png>]
-<imagenes/lang-8.jpg, id=967, 290.5254pt x 290.5254pt>
-File: imagenes/lang-8.jpg Graphic file (type jpg)
-<use imagenes/lang-8.jpg>
-Package pdftex.def Info: imagenes/lang-8.jpg  used on input line 527.
-(pdftex.def)             Requested size: 85.35846pt x 85.35826pt.
-<imagenes/tandem.png, id=968, 513.92pt x 346.29375pt>
+[24] Excluding 'comment' comment.
+<imagenes/tandem.png, id=976, 513.92pt x 346.29375pt>
 File: imagenes/tandem.png Graphic file (type png)
 <use imagenes/tandem.png>
 Package pdftex.def Info: imagenes/tandem.png  used on input line 535.
-(pdftex.def)             Requested size: 126.67607pt x 85.35826pt.
-
-
-[31 <./imagenes/hinative.png> <./imagenes/lang-8.jpg>]
-<imagenes/grammarly.png, id=975, 513.92pt x 513.92pt>
+(pdftex.def)             Requested size: 84.44809pt x 56.9055pt.
+<imagenes/grammarly.png, id=978, 513.92pt x 513.92pt>
 File: imagenes/grammarly.png Graphic file (type png)
 <use imagenes/grammarly.png>
 Package pdftex.def Info: imagenes/grammarly.png  used on input line 544.
-(pdftex.def)             Requested size: 85.35774pt x 85.35826pt.
-<imagenes/duolingo.png, id=976, 513.92pt x 513.92pt>
+(pdftex.def)             Requested size: 56.89993pt x 56.9055pt.
+<imagenes/duolingo.png, id=980, 513.92pt x 513.92pt>
 File: imagenes/duolingo.png Graphic file (type png)
 <use imagenes/duolingo.png>
 Package pdftex.def Info: imagenes/duolingo.png  used on input line 553.
-(pdftex.def)             Requested size: 85.35774pt x 85.35826pt.
+(pdftex.def)             Requested size: 56.89993pt x 56.9055pt.
 
 
-[32 <./imagenes/tandem.png> <./imagenes/grammarly.png> <./imagenes/duolingo.png>]) (./secciones/analisis-planificacion.tex
+[25 <./imagenes/hinative.png> <./imagenes/tandem.png> <./imagenes/grammarly.png>]) (./secciones/analisis-planificacion.tex
 
-[33]
+[26 <./imagenes/duolingo.png>]
 Chapter 3.
-(./secciones/analisis.tex
-
-[34
-
-]
+(./secciones/analisis.tex Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10.95> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 41.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 44.
 
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 39--54
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 42--57
  [][] 
  []
 
 
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 60--75
+
+[27
+
+]
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 63--78
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 84--99
+ [][] 
+ []
+
+
+
+[28]
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 105--121
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 127--143
+ [][] 
+ []
+
+
+
+[29]
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 149--164
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 170--184
+ [][] 
+ []
+
+
+
+[30]
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 194--209
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 215--229
+ [][] 
+ []
+
+
+
+[31]
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 235--248
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 258--275
+ [][] 
+ []
+
+
+
+[32]
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 281--296
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 302--314
+ [][] 
+ []
+
+
+
+[33]
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 324--337
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 343--356
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 363--376
+ [][] 
+ []
+
+
+
+[34]
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 382--398
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 404--418
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 429--445
  [][] 
  []
 
 
 
 [35]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 81--96
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 451--464
  [][] 
  []
 
 
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 102--118
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 471--485
  [][] 
  []
 
 
 
 [36]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 124--140
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 491--504
  [][] 
  []
 
 
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 146--161
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 510--523
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 530--545
  [][] 
  []
 
 
 
 [37]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 167--181
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 555--568
  [][] 
  []
 
 
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 191--206
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 574--587
  [][] 
  []
 
 
 
 [38]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 212--226
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 593--609
  [][] 
  []
 
 
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 232--245
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 616--631
  [][] 
  []
 
 
 
 [39]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 255--272
- [][] 
- []
-
-
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 278--293
- [][] 
- []
-
-
 
 [40]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 299--311
- [][] 
- []
-
-
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 321--334
- [][] 
- []
-
-
-
-[41]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 340--353
- [][] 
- []
-
-
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 360--373
- [][] 
- []
-
-
-
-[42]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 379--395
- [][] 
- []
-
-
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 401--415
- [][] 
- []
-
-
-
-[43]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 426--442
- [][] 
- []
-
-
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 448--461
- [][] 
- []
-
-
-
-[44]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 468--482
- [][] 
- []
-
-
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 488--501
- [][] 
- []
-
-
-
-[45]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 507--520
- [][] 
- []
-
-
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 527--542
- [][] 
- []
-
-
-
-[46]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 552--565
- [][] 
- []
-
-
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 571--584
- [][] 
- []
-
-
-
-[47]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 590--606
- [][] 
- []
-
-
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 613--628
- [][] 
- []
-
-
-
-[48]
-
-[49]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 651--651
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 654--654
  []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 645--657
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 648--660
  [][] 
  []
 
 
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 669--669
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 672--672
  []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 663--675
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 666--675
  [][] 
  []
 
@@ -2199,516 +2160,386 @@ Overfull \hbox (1.69878pt too wide) in paragraph at lines 691--691
  []
 
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 685--706
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 685--708
+ [][] 
+ []
+
+
+
+[41]
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 720--720
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 714--728
+ [][] 
+ []
+
+
+
+[42]
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 740--740
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 734--756
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 769--769
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 763--778
+ [][] 
+ []
+
+
+
+[43]
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 790--790
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 784--798
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 811--811
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 805--819
+ [][] 
+ []
+
+
+
+[44]
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 833--833
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 826--839
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 853--853
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 847--861
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 874--874
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 868--888
+ [][] 
+ []
+
+
+
+[45]
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 901--901
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 895--915
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 928--928
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 922--942
+ [][] 
+ []
+
+
+
+[46]
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 954--954
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 948--963
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 978--978
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 972--992
+ [][] 
+ []
+
+
+
+[47]
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1005--1005
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 999--1017
+ [][] 
+ []
+
+
+
+[48]
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1029--1029
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1023--1037
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1049--1049
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1043--1059
+ [][] 
+ []
+
+
+
+[49]
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1071--1071
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1065--1083
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1096--1096
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1090--1107
  [][] 
  []
 
 
 
 [50]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 718--718
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1122--1122
  []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 712--726
+Underfull \hbox (badness 1147) in paragraph at lines 1127--1128
+[]\T1/txr/m/n/10.95 El usuario aplica uno o var-ios fil-tros (es-tado, re-mi-tente o
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1116--1131
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1144--1144
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1138--1153
  [][] 
  []
 
 
 
 [51]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 738--738
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1166--1166
  []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 732--751
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1160--1179
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1192--1192
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1186--1199
  [][] 
  []
 
 
 
 [52]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 764--764
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1214--1214
  []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 758--771
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1208--1223
+ [][] 
+ []
+
+
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1235--1235
+ []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+ []
+
+
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1229--1244
  [][] 
  []
 
 
 
 [53]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 783--783
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1256--1256
  []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 777--791
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1250--1265
  [][] 
  []
 
 
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 804--804
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1278--1278
  []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 798--812
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1272--1288
  [][] 
  []
 
 
 
 [54]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 836--836
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1300--1300
  []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 819--842
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1294--1308
  [][] 
  []
 
 
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 856--856
+Overfull \hbox (1.69878pt too wide) in paragraph at lines 1321--1321
  []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 850--864
+Overfull \hbox (7.8591pt too wide) in paragraph at lines 1315--1331
  [][] 
  []
 
 
 
 [55]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 877--877
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
 
+[56])
 
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 871--889
- [][] 
- []
-
-
-
-[56]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 902--902
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 896--918
- [][] 
- []
-
-
-
-[57]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 932--932
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 926--947
- [][] 
- []
-
-
+[57] (./secciones/planificacion.tex
 
 [58]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 959--959
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 953--969
- [][] 
- []
-
-
-
-[59]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 984--984
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 978--995
- [][] 
- []
-
-
-
-[60]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1008--1008
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1002--1022
- [][] 
- []
-
-
-
-[61]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1034--1034
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1028--1041
- [][] 
- []
-
-
-
-[62]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1053--1053
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1047--1063
- [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1075--1075
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1069--1087
- [][] 
- []
-
-
-
-[63]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1100--1100
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1094--1114
- [][] 
- []
-
-
-
-[64]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1129--1129
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1123--1141
- [][] 
- []
-
-
-
-[65]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1154--1154
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1148--1164
- [][] 
- []
-
-
-
-[66]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1177--1177
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1171--1194
- [][] 
- []
-
-
-
-[67]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1207--1207
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1201--1214
- [][] 
- []
-
-
-
-[68]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1229--1229
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1223--1238
- [][] 
- []
-
-
-
-[69]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1250--1250
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1244--1258
- [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1270--1270
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 1276--1277
-[]\T1/txr/m/n/10.95 Ese usuario re-cep-tor puede ver en el panel de So-lic-i-tudes
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1264--1279
- [][] 
- []
-
-
-
-[70]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1292--1292
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1286--1303
- [][] 
- []
-
-
-
-[71]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1315--1315
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1309--1322
- [][] 
- []
-
-
-
-[72]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1335--1335
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Overfull \hbox (7.8591pt too wide) in paragraph at lines 1329--1347
- [][] 
- []
-
-
-
-[73])
-
-[74] (./secciones/planificacion.tex
-
-[75]
-<./imagenes/sprint2-trello.png, id=1338, 646.415pt x 319.1925pt>
+<./imagenes/sprint2-trello.png, id=1310, 1073.00874pt x 608.77437pt>
 File: ./imagenes/sprint2-trello.png Graphic file (type png)
 <use ./imagenes/sprint2-trello.png>
-Package pdftex.def Info: ./imagenes/sprint2-trello.png  used on input line 67.
-(pdftex.def)             Requested size: 426.79135pt x 210.74562pt.
+Package pdftex.def Info: ./imagenes/sprint2-trello.png  used on input line 77.
+(pdftex.def)             Requested size: 426.79135pt x 242.13992pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )) (./secciones/arquitectura.tex
 
-[76]
+[59]
 
-[77 <./imagenes/sprint2-trello.png>]
+[60 <./imagenes/sprint2-trello.png>]
 Chapter 4.
-(./secciones/stack_seleccionado.tex
-
-[78
-
-])
-<./imagenes/fullstack.drawio.png, id=1352, 693.59125pt x 266.9975pt>
+<./imagenes/fullstack.drawio.png, id=1321, 693.59125pt x 266.9975pt>
 File: ./imagenes/fullstack.drawio.png Graphic file (type png)
 <use ./imagenes/fullstack.drawio.png>
-Package pdftex.def Info: ./imagenes/fullstack.drawio.png  used on input line 8.
-(pdftex.def)             Requested size: 426.79135pt x 164.29822pt.
+Package pdftex.def Info: ./imagenes/fullstack.drawio.png  used on input line 7.
+(pdftex.def)             Requested size: 384.1096pt x 147.86757pt.
 
 
-[79 <./imagenes/fullstack.drawio.png>] (./secciones/arquitectura_datos.tex
-<./imagenes/letterexDB.png, id=1359, 733.74126pt x 540.0175pt>
+[61
+
+ <./imagenes/fullstack.drawio.png>] (./secciones/stack_seleccionado.tex
+
+[62] Excluding 'comment' comment.) (./secciones/modelado_datos.tex
+
+[63]
+<./imagenes/letterexDB.png, id=1335, 733.74126pt x 540.0175pt>
 File: ./imagenes/letterexDB.png Graphic file (type png)
 <use ./imagenes/letterexDB.png>
-Package pdftex.def Info: ./imagenes/letterexDB.png  used on input line 8.
-(pdftex.def)             Requested size: 426.79135pt x 314.11676pt.
+Package pdftex.def Info: ./imagenes/letterexDB.png  used on input line 9.
+(pdftex.def)             Requested size: 341.43437pt x 251.29506pt.
 
 
-[80]
+[64 <./imagenes/letterexDB.png>]) (./secciones/arquitectura_backend.tex (./secciones/estructura_backend.tex
 
-[81 <./imagenes/letterexDB.png>]
-
-[82]
-
-[83]
-Overfull \hbox (1.97935pt too wide) in paragraph at lines 90--91
-[]\T1/txr/bx/n/12 purpose\T1/txr/m/n/12 : \T1/txr/m/it/12 String \T1/txr/m/n/12 que de-scribe la fi-nal-i-dad del código, pu-di-endo ser ``pass-word_reset''
- []
-
-
-
-[84]) (./secciones/arquitectura_backend.tex (./secciones/estructura_backend.tex
-
-[85]
-
-[86]
-<imagenes/cors.png, id=1395, 399.4925pt x 110.4125pt>
+[65]
+<imagenes/cors.png, id=1346, 399.4925pt x 110.4125pt>
 File: imagenes/cors.png Graphic file (type png)
 <use imagenes/cors.png>
-Package pdftex.def Info: imagenes/cors.png  used on input line 77.
-(pdftex.def)             Requested size: 426.79135pt x 117.96329pt.
-
-Underfull \hbox (badness 10000) in alignment at lines 84--102
-[] []
- []
-
-[87 <./imagenes/cors.PNG>]
-LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <12> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 104.
-
-Underfull \hbox (badness 10000) in alignment at lines 106--112
-[] []
- []
-
-
-Underfull \hbox (badness 3199) in paragraph at lines 122--123
-[]|\T1/txr/m/n/12 Configuración de Mul-ter para subir fo-tos de per-fil a
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 116--124
-[] []
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 128--134
-[] []
- []
-
-
-Overfull \hbox (5.27924pt too wide) in paragraph at lines 148--148
-[]|\T1/txtt/m/n/12 correctedLetter.js| 
- []
-
-
-Underfull \hbox (badness 1748) in paragraph at lines 150--151
-[]|\T1/txr/m/n/12 Gestión de rela-ciones so-ciales: so-lic-i-tudes de amis-tad,
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 140--152
-[] []
- []
-
-
-
-[88]
-Overfull \hbox (5.27924pt too wide) in paragraph at lines 169--169
-[]|\T1/txtt/m/n/12 correctedLetter.js| 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 159--171
-[] []
- []
-
-
-Underfull \hbox (badness 5592) in paragraph at lines 180--181
-[]|\T1/txr/m/n/12 Esquema de usuario: cre-den-ciales, id-iomas dom-i-na-
- []
-
-
-Overfull \hbox (5.27924pt too wide) in paragraph at lines 184--184
-[]|\T1/txtt/m/n/12 correctedLetter.js| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
-[]|\T1/txtt/m/n/12 verification-
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 176--192
-[] []
- []
-
-[89]
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
-[]|\T1/txtt/m/n/12 templates/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
-\T1/txtt/m/n/12 verification-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
-[]|\T1/txtt/m/n/12 uploads/
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 196--204
-[] []
- []
-
+Package pdftex.def Info: imagenes/cors.png  used on input line 12.
+(pdftex.def)             Requested size: 341.43437pt x 94.37164pt.
 )
 
-[90]
-<./imagenes/template_email.png, id=1422, 1033.8625pt x 464.23438pt>
+[66 <./imagenes/cors.PNG>]
+<./imagenes/template_email.png, id=1352, 1033.8625pt x 464.23438pt>
 File: ./imagenes/template_email.png Graphic file (type png)
 <use ./imagenes/template_email.png>
 Package pdftex.def Info: ./imagenes/template_email.png  used on input line 17.
 (pdftex.def)             Requested size: 426.79135pt x 191.6407pt.
-<./imagenes/jwt.png, id=1423, 1134.2375pt x 638.385pt>
+<./imagenes/jwt.png, id=1354, 554.07pt x 299.61937pt>
 File: ./imagenes/jwt.png Graphic file (type png)
 <use ./imagenes/jwt.png>
-Package pdftex.def Info: ./imagenes/jwt.png  used on input line 34.
-(pdftex.def)             Requested size: 151.64435pt x 85.35826pt.
+Package pdftex.def Info: ./imagenes/jwt.png  used on input line 27.
+(pdftex.def)             Requested size: 157.84395pt x 85.35826pt.
 
 
-[91 <./imagenes/template_email.png>]
+[67 <./imagenes/template_email.png>]
 
-[92 <./imagenes/jwt.png>]
-Overfull \hbox (7.59537pt too wide) in paragraph at lines 57--58
-[]\T1/txr/bx/n/12 Almacenamiento Per-sis-tente (DiskStor-age)\T1/txr/m/n/12 : Se uti-liza el mo-tor de al-ma-ce-namiento
- []
+[68 <./imagenes/jwt.png>]
 
-
-
-[93] (./secciones/tabla_rutas.tex
+[69] (./secciones/tabla_rutas.tex
 Overfull \hbox (26.01845pt too wide) in alignment at lines 1--5
 [] [] []
  []
@@ -2803,35 +2634,48 @@ Overfull \hbox (26.01845pt too wide) in alignment at lines 7--70
 [] [] []
  []
 
-[94] [95] [96] [97])
+[70] [71] [72] [73])
 
-[98]
+[74] Excluding 'comment' comment.
+Overfull \hbox (1.76395pt too wide) in paragraph at lines 123--124
+\T1/txr/m/n/12 gación de Mon-goDB per-mite una mejora drás-tica en el rendimiento del sis-tema re-duciendo
+ []
 
-[99]
-<./imagenes/aggregate3.png, id=1473, 404.51125pt x 640.3925pt>
+<./imagenes/aggregate3.png, id=1394, 404.51125pt x 640.3925pt>
 File: ./imagenes/aggregate3.png Graphic file (type png)
 <use ./imagenes/aggregate3.png>
-Package pdftex.def Info: ./imagenes/aggregate3.png  used on input line 138.
+Package pdftex.def Info: ./imagenes/aggregate3.png  used on input line 129.
 (pdftex.def)             Requested size: 426.79135pt x 675.67613pt.
 ) (./secciones/arquitectura_frontend.tex
 
-[100]
+[75]
 
-[101 <./imagenes/aggregate3.PNG>]
+[76 <./imagenes/aggregate3.PNG>]
 
-[102]
-<imagenes/ui/login.png, id=1487, 1284.8pt x 708.14563pt>
+[77]
+
+[78]
+<imagenes/ui/dialogDeleteAll.png, id=1417, 608.77437pt x 258.46562pt>
+File: imagenes/ui/dialogDeleteAll.png Graphic file (type png)
+<use imagenes/ui/dialogDeleteAll.png>
+Package pdftex.def Info: imagenes/ui/dialogDeleteAll.png  used on input line 48.
+(pdftex.def)             Requested size: 426.79135pt x 181.20471pt.
+<imagenes/ui/login.png, id=1418, 1284.8pt x 708.14563pt>
 File: imagenes/ui/login.png Graphic file (type png)
 <use imagenes/ui/login.png>
-Package pdftex.def Info: imagenes/ui/login.png  used on input line 72.
+Package pdftex.def Info: imagenes/ui/login.png  used on input line 67.
 (pdftex.def)             Requested size: 426.79135pt x 235.23395pt.
 
 
-[103]
-<imagenes/ui/homepage.png, id=1493, 1284.8pt x 707.64375pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[79 <./imagenes/ui/dialogDeleteAll.PNG>]
+<imagenes/ui/homepage.png, id=1424, 1284.8pt x 707.64375pt>
 File: imagenes/ui/homepage.png Graphic file (type png)
 <use imagenes/ui/homepage.png>
-Package pdftex.def Info: imagenes/ui/homepage.png  used on input line 92.
+Package pdftex.def Info: imagenes/ui/homepage.png  used on input line 87.
 (pdftex.def)             Requested size: 426.79135pt x 235.06723pt.
 
 
@@ -2839,185 +2683,233 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[104 <./imagenes/ui/login.PNG>]
-Overfull \hbox (1.69113pt too wide) in paragraph at lines 101--102
-[]\T1/txr/bx/n/12 Letters Re-ceived \T1/txr/m/n/12 (\T1/txtt/m/n/12 ReceivedLetterBlock\T1/txr/m/n/12 ): Pre-senta las car-tas recibidas de usuar-
- []
-
-<imagenes/ui/new-letter.png, id=1499, 1284.8pt x 710.15312pt>
+[80 <./imagenes/ui/login.PNG>]
+<imagenes/ui/new-letter.png, id=1431, 1284.8pt x 710.15312pt>
 File: imagenes/ui/new-letter.png Graphic file (type png)
 <use imagenes/ui/new-letter.png>
-Package pdftex.def Info: imagenes/ui/new-letter.png  used on input line 112.
+Package pdftex.def Info: imagenes/ui/new-letter.png  used on input line 103.
 (pdftex.def)             Requested size: 426.79135pt x 235.9008pt.
 
 
-[105 <./imagenes/ui/homepage.PNG>]
-Overfull \hbox (20.6975pt too wide) in paragraph at lines 127--128
-[]\T1/txr/m/n/12 El com-po-nente im-ple-menta val-i-dación en tiempo real de los cam-pos re-queri-dos, mostrando
- []
-
-<imagenes/ui/correct-letter2.png, id=1507, 1284.29813pt x 707.64375pt>
+[81 <./imagenes/ui/homepage.PNG> <./imagenes/ui/new-letter.PNG>]
+<imagenes/ui/correct-letter2.png, id=1439, 1284.29813pt x 707.64375pt>
 File: imagenes/ui/correct-letter2.png Graphic file (type png)
 <use imagenes/ui/correct-letter2.png>
-Package pdftex.def Info: imagenes/ui/correct-letter2.png  used on input line 133.
+Package pdftex.def Info: imagenes/ui/correct-letter2.png  used on input line 116.
 (pdftex.def)             Requested size: 426.79135pt x 235.15363pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-
-[106 <./imagenes/ui/new-letter.PNG>]
-<imagenes/ui/view-correction.png, id=1513, 1284.8pt x 707.64375pt>
-File: imagenes/ui/view-correction.png Graphic file (type png)
-<use imagenes/ui/view-correction.png>
-Package pdftex.def Info: imagenes/ui/view-correction.png  used on input line 161.
-(pdftex.def)             Requested size: 426.79135pt x 235.06723pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[107 <./imagenes/ui/correct-letter2.PNG>]
-<imagenes/ui/friends-page.png, id=1519, 1284.8pt x 709.14937pt>
-File: imagenes/ui/friends-page.png Graphic file (type png)
-<use imagenes/ui/friends-page.png>
-Package pdftex.def Info: imagenes/ui/friends-page.png  used on input line 181.
-(pdftex.def)             Requested size: 426.79135pt x 235.56738pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[108 <./imagenes/ui/view-correction.PNG>]
-<imagenes/ui/my-profile.png, id=1526, 1284.8pt x 710.655pt>
-File: imagenes/ui/my-profile.png Graphic file (type png)
-<use imagenes/ui/my-profile.png>
-Package pdftex.def Info: imagenes/ui/my-profile.png  used on input line 200.
-(pdftex.def)             Requested size: 426.79135pt x 236.06752pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[109 <./imagenes/ui/friends-page.PNG>]
-<imagenes/ui/dialogDeleteAll.png, id=1535, 608.77437pt x 258.46562pt>
-File: imagenes/ui/dialogDeleteAll.png Graphic file (type png)
-<use imagenes/ui/dialogDeleteAll.png>
-Package pdftex.def Info: imagenes/ui/dialogDeleteAll.png  used on input line 229.
-(pdftex.def)             Requested size: 426.79135pt x 181.20471pt.
-
-
-[110 <./imagenes/ui/my-profile.PNG>] Excluding 'comment' comment.
-
-[111 <./imagenes/ui/dialogDeleteAll.PNG>]
-Overfull \hbox (66.68304pt too wide) in paragraph at lines 296--297
-[]\T1/txr/m/n/12 Hooks per-son-al-iza-dos: De-tec-ción del tamaño de ven-tana con \T1/txtt/m/n/12 useEffect \T1/txr/m/n/12 y \T1/txtt/m/n/12 window.innerWidth
- []
-
-
-Overfull \hbox (11.65137pt too wide) in paragraph at lines 298--299
-[]\T1/txr/m/n/12 Componentes condi-cionales: Ren-der-izado de com-po-nentes difer-entes según el tamaño
- []
-
-
-Overfull \hbox (3.85455pt too wide) in paragraph at lines 327--327
+[82 <./imagenes/ui/correct-letter2.PNG>]
+Overfull \hbox (3.85455pt too wide) in paragraph at lines 146--146
 []    \T1/txtt/m/n/12 originalText: string;[] 
  []
 
 
-Overfull \hbox (10.15454pt too wide) in paragraph at lines 327--327
+Overfull \hbox (10.15454pt too wide) in paragraph at lines 146--146
 []    \T1/txtt/m/n/12 correctedText: string;[] 
  []
 
+<imagenes/ui/view-correction.png, id=1445, 1284.8pt x 707.64375pt>
+File: imagenes/ui/view-correction.png Graphic file (type png)
+<use imagenes/ui/view-correction.png>
+Package pdftex.def Info: imagenes/ui/view-correction.png  used on input line 154.
+(pdftex.def)             Requested size: 426.79135pt x 235.06723pt.
 
 
-[112]
+[83 <./imagenes/ui/view-correction.PNG>]
+<imagenes/ui/friends-page.png, id=1456, 1284.8pt x 709.14937pt>
+File: imagenes/ui/friends-page.png Graphic file (type png)
+<use imagenes/ui/friends-page.png>
+Package pdftex.def Info: imagenes/ui/friends-page.png  used on input line 167.
+(pdftex.def)             Requested size: 426.79135pt x 235.56738pt.
 
-[113] Excluding 'comment' comment.)) (./secciones/economico.tex
 
-[114]
+[84 <./imagenes/ui/friends-page.PNG>]
+<imagenes/ui/my-profile.png, id=1465, 1244.14813pt x 706.13812pt>
+File: imagenes/ui/my-profile.png Graphic file (type png)
+<use imagenes/ui/my-profile.png>
+Package pdftex.def Info: imagenes/ui/my-profile.png  used on input line 186.
+(pdftex.def)             Requested size: 426.79135pt x 242.22797pt.
+
+
+[85 <./imagenes/ui/my-profile.PNG>]
+<imagenes/ui/skeleton.png, id=1471, 1241.13687pt x 705.63625pt>
+File: imagenes/ui/skeleton.png Graphic file (type png)
+<use imagenes/ui/skeleton.png>
+Package pdftex.def Info: imagenes/ui/skeleton.png  used on input line 227.
+(pdftex.def)             Requested size: 426.79135pt x 242.648pt.
+
+
+[86])) (./secciones/economico.tex
+
+[87 <./imagenes/ui/skeleton.PNG>]
 Chapter 5.
 LaTeX Font Info:    Font shape `TS1/txr/b/n' in size <12> not available
-(Font)              Font shape `TS1/txr/bx/n' tried instead on input line 29.
+(Font)              Font shape `TS1/txr/bx/n' tried instead on input line 33.
 
-Underfull \hbox (badness 2027) in paragraph at lines 33--33
+Underfull \hbox (badness 2027) in paragraph at lines 37--37
 []|\T1/txr/m/n/12 Lenguajes y frame-works
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 37--37
+Underfull \hbox (badness 1057) in paragraph at lines 41--41
 []|\T1/txr/m/n/12 Plataforma de co-mu-ni-cación para las re-
  []
 
 
-Overfull \hbox (1.48969pt too wide) in paragraph at lines 27--42
+Overfull \hbox (1.48969pt too wide) in paragraph at lines 31--46
  [][] 
  []
 
 
 
-[115
+[88
 
 ]
 
-[116]
+[89]
 
-[117]) (./secciones/resultados.tex
+[90]) (./secciones/resultados.tex
 
-[118]
+[91]
 Chapter 6.
 
+Underfull \hbox (badness 2435) in paragraph at lines 24--24
+[]|\T1/txr/m/n/10 Sistema de au-t-en-ti-
+ []
 
-[119
 
-])
-Overfull \hbox (2.5087pt too wide) in paragraph at lines 32--394
-\T1/txr/m/n/12 grad-u-ado, sino que ha for-jado mi iden-ti-dad pro-fe-sional como in-ge-niero in-for-mático, dotán-
+Underfull \hbox (badness 3780) in paragraph at lines 24--24
+[]|\T1/txr/m/n/10 Interfaz para crear,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\T1/txr/m/n/10 Sistema de so-lic-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\T1/txr/m/n/10 Documentación
+ []
+
+
+Overfull \hbox (3.02734pt too wide) in alignment at lines 24--24
+[][][] 
  []
 
 
 
-[120]
-Overfull \hbox (2.36742pt too wide) in paragraph at lines 403--403
+[92
+
+]
+
+[93])
+
+[94]
+Overfull \hbox (8.36742pt too wide) in paragraph at lines 475--475
 []\T1/txr/m/n/12 Microsoft. ^^P  Vi-sual stu-dio code.^^Q Ac-ce-dido: 2026-02-27. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
  []
 
 
-Overfull \hbox (11.51132pt too wide) in paragraph at lines 403--403
-[]\T1/txr/m/n/12 GitHub Inc. ^^P  Github.^^Q Ac-ce-dido: 2026-02-27. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / github .
+
+[95
+
+
+]
+Overfull \hbox (0.23143pt too wide) in paragraph at lines 475--475
+[]\T1/txr/m/n/12 MDN Web Docs. ^^P  Javascript.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
+ []
+
+
+Overfull \hbox (3.92393pt too wide) in paragraph at lines 475--475
+[]\T1/txr/m/n/12 Meta Open Source. ^^P  Re-act doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-
+ []
+
+
+Overfull \hbox (12.27943pt too wide) in paragraph at lines 475--475
+[]\T1/txr/m/n/12 Vercel. ^^P  Next.js doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
+ []
+
+
+Overfull \hbox (6.03943pt too wide) in paragraph at lines 475--475
+[]\T1/txr/m/n/12 The PHP Group. ^^P  Php man-ual.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
+ []
+
+
+Overfull \hbox (19.93542pt too wide) in paragraph at lines 475--475
+[]\T1/txr/m/n/12 Laravel. ^^P  Lar-avel doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
  []
 
 
 
-[121
+[96]
+Overfull \hbox (10.13144pt too wide) in paragraph at lines 475--475
+[]\T1/txr/m/n/12 Oracle. ^^P  Mysql doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
+ []
 
 
-] (./main.aux)
+Overfull \hbox (3.84904pt too wide) in paragraph at lines 475--475
+[]\T1/txr/m/n/12 Apache Soft-ware Foun-da-tion. ^^P  Apache cas-san-dra doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-
+ []
+
+
+Overfull \hbox (2.55592pt too wide) in paragraph at lines 475--475
+[]\T1/txr/m/n/12 Atlassian. ^^P  Wa-ter-fall project man-age-ment.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-
+ []
+
+
+Overfull \hbox (9.06139pt too wide) in paragraph at lines 475--475
+\T1/txr/m/n/12 able: [][]$\T1/txtt/m/n/12 https : / / www . atlassian . com / agile / project -[] management / waterfall$[][] 
+ []
+
+
+Overfull \hbox (16.75545pt too wide) in paragraph at lines 475--475
+[]\T1/txr/m/n/12 TechTarget. ^^P  In-cre-men-tal model.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
+ []
+
+
+Overfull \hbox (21.24973pt too wide) in paragraph at lines 475--475
+\T1/txtt/m/n/12 / / www . techtarget . com / searchsoftwarequality / definition / incremental -[]
+ []
+
+
+
+[97]
+Overfull \hbox (27.53128pt too wide) in paragraph at lines 475--475
+[]\T1/txr/m/n/12 HiNative. ^^P  Hi-na-tive.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / hinative .
+ []
+
+
+Overfull \hbox (1.63374pt too wide) in paragraph at lines 475--475
+\T1/txr/m/n/12 tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / www . investopedia .
+ []
+
+
+
+[98] (./main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 686B4C51005077BEA4E43D7068CC0B91;11706.
+(rerunfilecheck)             Checksum: 22855E73AC5E21C7E264560411165A1C;10304.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31418 strings out of 467746
- 525939 string characters out of 5431099
- 1631487 words of memory out of 5000000
- 59047 multiletter control sequences out of 15000+600000
- 702080 words of font info for 167 fonts, out of 8000000 for 9000
+ 31944 strings out of 467746
+ 538124 string characters out of 5431099
+ 1655811 words of memory out of 5000000
+ 59546 multiletter control sequences out of 15000+600000
+ 702351 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,20n,117p,1271b,3917s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txex.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txsy.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txsya.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (139 pages, 4926755 bytes).
+ 92i,20n,117p,1453b,3925s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txex.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txsy.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txsya.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (118 pages, 4152367 bytes).
 PDF statistics:
- 1801 PDF objects out of 2073 (max. 8388607)
- 552 named destinations out of 1000 (max. 500000)
- 864 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1811 PDF objects out of 2073 (max. 8388607)
+ 564 named destinations out of 1000 (max. 500000)
+ 766 words of extra memory for PDF output out of 10000 (max. 10000000)
 

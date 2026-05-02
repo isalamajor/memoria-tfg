@@ -1,28 +1,29 @@
-\chapter{Estado del arte}
+﻿\chapter{Estado del arte}
+
+En este capítulo se define el contexto en que se desarrolla el proyecto, estudiando tres factores principales: el sector tecnológico, teniendo en cuenta las tecnologías actuales para el desarrollo de aplicaciones web; las metodologías vigentes empleadas en este sector; y el modelo de negocio en que se ubica la aplicación, estudiando los principales ejemplos de soluciones similares presentes en el mercado.
+
 \section{Tecnologías para el Desarrollo de Aplicaciones Web}
+En el desarrollo de una aplicación web completa, entran en juego tecnologías de varios tipos. Entre estos tipos, se han seleccionado los más relevantes dado el tipo de solución que se implementa en este proyecto, que son: tecnologías de frontend, frameworks de JavaScript, tecnologías de backend, herramientas para el consumo de APIs y bases de datos.
 
 \subsection{Frontend}
 El frontend es la parte visible de una aplicación web, con la que el usuario interactúa de forma directa. Se compone de tres tecnologías principales: lenguaje de marcado de hipertexto (HTML), lenguaje de diseño gráfico y lenguaje de programación; que trabajan juntas para definir la estructura, el diseño y la interactividad de la interfaz. Estas tecnologías son esenciales para cualquier desarrollo web, desde sitios estáticos hasta aplicaciones dinámicas y complejas como la que se plantea en este proyecto.
-
 
 \subsubsection{HTML: la estructura de la web}
 HTML (HyperText Markup Language) es el lenguaje de marcado utilizado para definir la estructura de una página web. Funciona mediante etiquetas que organizan el contenido en elementos como encabezados, párrafos, listas, imágenes y enlaces. Como ejemplo, las etiquetas correspondientes a estos elementos son <h>, <p>, <ol>, <img> y <link>. Existe una gran cantidad de etiquetas para construir los diferentes elementos que se pueden encontrar en una página web. Otros ejemplos de estos elementos son los botones, áreas de texto, formularios, menús, secciones, títulos, y muchos otros.
 La estructura de una etiqueta o "tag" HTML se compone de una etiqueta de apertura, el contenido, y una etiqueta de cierre:
     \begin{itemize}
-                    \item La etiqueta de apertura puede contener atributos que especifican información sobre ese elemento, como puede ser su clase, un link a otra página, funciones que se ejecutan cuando el usuario interactúa con ese elemento, y más. Existen atributos opcionales y obligatorios para según qué etiqueta; cada atributo tendrá un valor, y es posible tener tags sin atributos.
+        \item La etiqueta de apertura puede contener atributos que especifican información sobre ese elemento, como puede ser su clase, un link a otra página, funciones que se ejecutan cuando el usuario interactúa con ese elemento, y más. Existen atributos opcionales y obligatorios para según qué etiqueta; cada atributo tendrá un valor, y es posible tener tags sin atributos.
         \item Un tag puede tener contenido, que se especifica entre la etiqueta de apertura y la de cierre. El contenido es el texto, imagen u otro elemento dentro de la etiqueta, lo que se mostrará en la pantalla. Así como existen tags sin atributos, también podemos crear tags sin contenido.
         \item La etiqueta de cierre marca el fin de la etiqueta. Si la etiqueta carece de contenido, se puede prescindir de la etiqueta de cierra marcando la etiqueta de apertura con un \textit{slash} ("/"), es decir, se puede utilizar \textit{<tag/>} en vez de \textit{<tag></tag>}.  A continuación vemos un ejemplo de etiqueta de link a otra página.
     \end{itemize}
 
-% <a href="https://www.ejemplo.com" target="_blank">Visitar ejemplo</a>
 
-A diferencia de otros lenguajes, HTML no tiene lógica de control (como bucles, variables o condicionales), sino que se enfoca exclusivamente en estructurar la información. Por tanto, HTML es el pilar sobre el cual se construyen las páginas.
-La evolución de HTML ha llevado a versiones más avanzadas, en particular HTML5, que introduce nuevas etiquetas semánticas como <article>, <section> y <nav>, mejorando la organización del contenido y optimizando su accesibilidad. También incorpora soporte para audio, video y gráficos vectoriales sin necesidad de complementos adicionales, lo que amplía las posibilidades de una aplicación web moderna.
+A diferencia de otros lenguajes, HTML no tiene lógica de control (como bucles, variables o condicionales), sino que se enfoca exclusivamente en estructurar la información. Por tanto, HTML es el pilar sobre el cual se construyen las páginas. La evolución de HTML ha llevado a versiones más avanzadas, en particular HTML5, que introduce nuevas etiquetas semánticas como <article>, <section> y <nav>, mejorando la organización del contenido y optimizando su accesibilidad. También incorpora soporte para audio, video y gráficos vectoriales sin necesidad de complementos adicionales, lo que amplía las posibilidades de una aplicación web moderna.\cite{html_universidad_europea}
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/HTML5-logo.png}
+    \includegraphics[height=2cm]{./imagenes/HTML5-logo.png}
     \caption{Logo de HTML5}
     \label{fig:html}
 \end{figure}
@@ -39,7 +40,7 @@ Para construir el diseño y el aspecto visual de una página web, se utiliza CSS
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/tailwind.png}
+    \includegraphics[height=2cm]{imagenes/tailwind.png}
     \caption{Logo de Tailwind}
     \label{fig:tailwind}
 \end{figure}
@@ -47,88 +48,88 @@ Para construir el diseño y el aspecto visual de una página web, se utiliza CSS
 
 
 
-Con la introducción de CSS3, se han añadido características avanzadas como gradientes, sombras, transiciones y animaciones, así como técnicas de diseño responsivo como flexbox y grid, que permiten adaptar la interfaz a distintos tamaños de pantalla. Esto es especialmente importante para que el diseño una aplicación web sea correcto y agradable en cualquier tipo de dispositivo, tanto portátiles como tabletas, teléfonos móviles y otros..
+Con la introducción de CSS3, se han añadido características avanzadas como gradientes, sombras, transiciones y animaciones, así como técnicas de diseño responsivo como flexbox y grid, que permiten adaptar la interfaz a distintos tamaños de pantalla. Esto es especialmente importante para que el diseño una aplicación web sea correcto y agradable en cualquier tipo de dispositivo, tanto portátiles como tabletas, teléfonos móviles y otros..\cite{css_hostinger, tailwind_docs}
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/css-logo.png}
+    \includegraphics[height=2cm]{./imagenes/css-logo.png}
     \caption{Logo de CSS}
     \label{fig:CSS}
 \end{figure}
 
 \subsubsection{JavaScript: La interactividad y la lógica}
-JavaScript es el lenguaje de programación estándar para implementar la interactividad de un sitio web. Se trada de un lenguaje de propósito general que se ejecuta en el navegador del usuario y permite añadir interactividad y dinamismo a una aplicación web. Mediante JavaScript, una aplicación web puede responder a eventos como clics, introducción de texto o movimientos del ratón sin necesidad de recargar la página. Con esta herramienta se pueden implementar todo tipo de funcionalidades, como validar formularios, actualizar datos en tiempo real, integrar servicios externos y demás funciones.
+JavaScript es el lenguaje de programación estándar para implementar la interactividad de un sitio web. Se trata de un lenguaje de propósito general que se ejecuta en el navegador del usuario y permite añadir interactividad y dinamismo a una aplicación web. Mediante JavaScript, una aplicación web puede responder a eventos como clics, introducción de texto o movimientos del ratón sin necesidad de recargar la página. Con esta herramienta se pueden implementar todo tipo de funcionalidades, como validar formularios, actualizar datos en tiempo real, integrar servicios externos y demás funciones.
 
-Un "framework" o entorno de trabajo es una herramienta que ofrece varias funcionalidades y esquemas para desarrollar un proyecto de forma más organizada, ágil y escalable. Con la introducción de frameworks de Javascript, como React.js, Vue.js y Angular, el desarrollo frontend ha evolucionado hacia la creación de aplicaciones de una sola página (SPA), donde JavaScript gestiona la navegación y actualización de contenido sin necesidad de recargar la página; y hacia la construcción de páginas mediante componentes reutilizables, lo que aumenta la escabilidad y acelera el desarrollo de una aplicación compleja.
+Un \textit{framework} o entorno de trabajo es una herramienta que ofrece varias funcionalidades y esquemas para desarrollar un proyecto de forma más organizada, ágil y escalable. Con la introducción de frameworks de JavaScript, como React.js, Vue.js y Angular, el desarrollo frontend ha evolucionado hacia la creación de aplicaciones de una sola página (\textit{Single Page Application} o SPA), donde JavaScript gestiona la navegación y actualización de contenido sin necesidad de recargar la página; y hacia la construcción de páginas mediante componentes reutilizables, lo que aumenta la escalabilidad y acelera el desarrollo de una aplicación compleja.
 
-Otro aspecto fundamental que Javascript permite implementar es el uso de técnicas como AJAX o Fetch API, que permiten  comunicarse con un servidor en segundo plano, enviando y recibiendo datos sin interrumpir la experiencia del usuario.
+Otros aspectos fundamentales que JavaScript permite implementar incluyen técnicas como AJAX o Fetch API, que permiten comunicarse con un servidor en segundo plano, enviando y recibiendo datos sin interrumpir la experiencia del usuario.\cite{js_mdn,js_framework_bridge,ts_handbook}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/javascript-logo.png}
-    \caption{Logo de Javascript}
+    \includegraphics[height=2cm]{./imagenes/javascript-logo.png}
+    \caption{Logo de JavaScript}
     \label{fig:javascript}
 \end{figure}
 
-En 2012, vista la falta de herramientas que facilitaran un desarrollo óptimo, apareció Typescript, un \textit{superset} de Javacript que incorporaba clases, módulos y una estructura más organizada y conveniente para proyectos grandes. Un superset de Javascript es una tecnología capaz de compilar y ejecutar código Javascript pero que tiene su propia sintaxis y diferenciaciones, de forma que podemos incluir código Typescript en un proyecto Javascript y viceversa.
-La principal diferencia que marca Typrescript es que se trata de un lenguaje de tipado estático, es decir, al declarar una variable se debe especificar el tipo de dato de esta, y este no es modificable. Esto no solo facilita la detección de \textit{bugs} o errores en el código, sino que también permite ofrecer sugerencias a la hora de operar con esas variables o tomar argumentos en funciones.
+En 2012, vista la falta de herramientas que facilitaran un desarrollo óptimo, apareció TypeScript, un \textit{superset} de JavaScript que incorporaba clases, módulos y una estructura más organizada y conveniente para proyectos grandes. Un superset de JavaScript es una tecnología capaz de compilar y ejecutar código JavaScript pero que tiene su propia sintaxis y diferenciaciones, de forma que podemos incluir código TypeScript en un proyecto JavaScript y viceversa.
+La principal diferencia que marca TypeScript es que se trata de un lenguaje de tipado estático, es decir, al declarar una variable se debe especificar el tipo de dato de esta, y este no es modificable. Esto no solo facilita la detección de \textit{bugs} o errores en el código, sino que también permite ofrecer sugerencias a la hora de operar con esas variables o tomar argumentos en funciones.\cite{ts_handbook}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/typescript.jpg}
+    \includegraphics[height=2cm]{imagenes/typescript.jpg}
     \caption{Logo de TypeScript}
     \label{img:typeScript}
 \end{figure}
 
 
-\subsection{Frameworks de Javascript}
-La utilización de un framework de Javascript para el desarrollo de una aplicación web es muy recomendable dadas las funcionalidades preprogramadas que ofrecen agilizar las tareas de programación; funcionalidades como la modularización del código, la optimización del rendimiento, la integración de servicios, la manipulación de eventos y la creación de interfaces dinámicas; además del manejo del DOM (Document Objetc Model), la interfaz de programación que permite crear, eliminar o modificar elementos de la página.
+\subsection{Frameworks de JavaScript}
+La utilización de un framework de JavaScript para el desarrollo de una aplicación web es muy recomendable dadas las funcionalidades preprogramadas que ofrecen agilizar las tareas de programación; funcionalidades como la modularización del código, la optimización del rendimiento, la integración de servicios, la manipulación de eventos y la creación de interfaces dinámicas; además del manejo del DOM (Document Objetc Model), la interfaz de programación que permite crear, eliminar o modificar elementos de la página.
 Estudiaremos algunas de las alternativas de frameworks que hay actualmente a disposición del programador.
 
 
 \subsubsection{React}
 React.js es una de las tecnologías más utilizadas en el desarrollo de interfaces dinámicas. Creada por ingenieros de Meta, esta biblioteca de JavaScript permite construir aplicaciones modulares y eficientes gracias a su sistema basado en componentes reutilizables y la utilización de un DOM virtual, que realiza una evaluación de los cambios que se aplicarán al DOM, y los aplica solamente al elemento o los elementos que cambian o se ven afectados por la modificación. Esto mejora el rendimiento en la actualización de la interfaz.
 Aplicaciones como Facebook, Instagram y Airbnb han adoptado React debido a las facilidades que ofrece y su flexibilidad y ecosistema robusto, además de su facilidad de instalación y relativamente accesible curva de aprendizaje.
-Actualmente es uno de los frameworks web más populares y utilizados, aunque existen otra opciones también interesantes. Esto implica que existe una gran cantidad de documentación y guías para aprender y resolver dudas sobre React, además de numerosas librerías compatibles con esta tecnologías y componentes gratuitos que uno puede incorporar en sus propios proyectos y que encontramos en plataformas como 21st.dev, Aceternity ui o MUI.
+Actualmente es uno de los frameworks web más populares y utilizados, aunque existen otra opciones también interesantes. Esto implica que existe una gran cantidad de documentación y guías para aprender y resolver dudas sobre React, además de numerosas librerías compatibles con esta tecnologías y componentes gratuitos que uno puede incorporar en sus propios proyectos y que encontramos en plataformas como 21st.dev, Aceternity ui o MUI.\cite{react_docs}
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/react-logo.jpg}
+    \includegraphics[height=2cm]{./imagenes/react-logo.jpg}
     \caption{Logo de React}
     \label{fig:react}
 \end{figure}
 
 \subsubsection{Next}
 Sobre React se ha construido Next.js, un framework que optimiza el rendimiento al incorporar renderizado del lado del servidor (la generación del contenido de una página web ocurre en el servidor, en lugar de hacerlo en el navegador del cliente buscando una mejora del rendimiento) y generación de páginas estáticas, lo que lo convierte en una muy buena opción para aplicaciones con necesidades de optimización para motores de búsqueda. Empresas como TikTok, Twitch y Hulu han apostado por Next.js debido a su capacidad para mejorar la velocidad de carga y la experiencia del usuario. A pesar de estas ventajas, su configuración inicial puede ser más compleja en comparación con React puro, y algunas de sus funcionalidades avanzadas requieren un aprendizaje adicional.
-Otra de las principales ventajas de utilizar Next.js es que cuenta con Vercel, una plataforma que nos permite desplegar y alojar proyectos de forma altamente optimizada, rápida y sencilla.
+Otra de las principales ventajas de utilizar Next.js es que cuenta con Vercel, una plataforma que nos permite desplegar y alojar proyectos de forma altamente optimizada, rápida y sencilla.\cite{next_docs}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/next-logo.jpg}
+    \includegraphics[height=2cm]{./imagenes/next-logo.jpg}
     \caption{Logo de Next}
     \label{fig:next}
 \end{figure}
 
 \subsubsection{Vue}
 Otra opción destacada en frontend es Vue.js, un framework progresivo que ha ganado popularidad por su curva de aprendizaje baja y su sintaxis intuitiva. Facilita la creación de sitios web de una sola página ligeros y con alta velocidad de carga. Empresas como Xiaomi, Alibaba y Nintendo lo utilizan por su facilidad de integración y su capacidad para construir interfaces interactivas con menor esfuerzo en comparación con React o Angular.  Además, existe una librería llamada Vuetify que pone a disposición del desarrollador numerosos componentes para utilizar en sus aplicaciones.
-Una desventaja es que Vue cuenta con una comunidad más pequeña y menos recursos disponibles, lo que puede ser un inconveniente en proyectos grandes.
+Una desventaja es que Vue cuenta con una comunidad más pequeña y menos recursos disponibles, lo que puede ser un inconveniente en proyectos grandes.\cite{vue_docs}
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/vue-logo.png}
+    \includegraphics[height=2cm]{./imagenes/vue-logo.png}
     \caption{Logo de Vue}
     \label{fig:vue}
 \end{figure}
 
 \subsubsection{Angular}
-Angular es un framework completo desarrollado por Google basado en TypeScript que ofrece una arquitectura robusta para el desarrollo de aplicaciones web a gran escala. Gmail y Microsoft Teams lo utilizan debido a su capacidad para estructurar aplicaciones complejas con un fuerte soporte empresarial. No obstante, su curva de aprendizaje es considerablemente más alta que la de React o Vue, y su enfoque basado en clases y módulos puede resultar más rígido.
+Angular es un framework completo desarrollado por Google basado en TypeScript que ofrece una arquitectura robusta para el desarrollo de aplicaciones web a gran escala. Gmail y Microsoft Teams lo utilizan debido a su capacidad para estructurar aplicaciones complejas con un fuerte soporte empresarial. No obstante, su curva de aprendizaje es considerablemente más alta que la de React o Vue, y su enfoque basado en clases y módulos puede resultar más rígido.\cite{angular_docs}
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/angular.png}
+    \includegraphics[height=2cm]{./imagenes/angular.png}
     \caption{Logo de Angular}
     \label{fig:angular}
 \end{figure}
@@ -136,18 +137,19 @@ Angular es un framework completo desarrollado por Google basado en TypeScript qu
 \subsection{Backend}
 El backend es la parte de una aplicación que gestiona la lógica de negocio, el procesamiento de datos,  la seguridad, y la comunicación con la base de datos y otros servicios. El backend funciona en el servidor y se encarga de recibir peticiones del cliente, procesarlas y devolver una respuesta adecuada.
 Hay diversas opciones de tecnologías que permiten llevar a cabo estos objetivos. Entre as más significativas a día de hoy se encuentran: Node.js, Django, Spring Boot, Laravel, Ruby, y Gin.
+Estas alternativas se han contrastado con sus manuales y guías oficiales para describir de forma consistente sus capacidades y su encaje en el backend moderno.
 
 \subsubsection{Node.js}
 Node.js es un entorno de ejecución basado en JavaScript que permite ejecutar código en el servidor. Su principal ventaja es que permite desarrollar tanto el frontend como el backend con el mismo lenguaje, lo que facilita la comunicación entre ambas partes.
 Su arquitectura está basada en eventos y es no bloqueante, es decir, el sistema no espera a que se termine de ejecutar cada tarea o consulta para empezar con la siguiente, sino que libera el flujo de ejecución para llevar a cabo otras tareas mientras tanto. Esto lo hace altamente eficiente en aplicaciones que requieren muchas conexiones simultáneas.
 Es posible cargar y utilizar una amplia gama de paquetes con npm (Node Package Manager), que ofrece miles de bibliotecas para ampliar sus funcionalidades y agilizar el desarrollo; y permite dar soporte y servicio en tiempo real a una aplicación.
 Empresas como Netflix, PayPal y Uber utilizan Node.js dada su capacidad para manejar grandes volúmenes de tráfico y su escalabilidad. Sin embargo, no es la mejor opción para aplicaciones que requieren cálculos intensivos, como procesamiento de imágenes o simulaciones matemáticas complejas.
-Dentro del ecosistema de Node.js, destaca el Express.js, un framework minimalista que facilita la creación de APIs y servidores web. Es rápido, flexible y ampliamente utilizado en el desarrollo de aplicaciones modernas.
+Dentro del ecosistema de Node.js, destaca el Express.js, un framework minimalista que facilita la creación de APIs y servidores web. Es rápido, flexible y ampliamente utilizado en el desarrollo de aplicaciones modernas.\cite{node_docs,express_docs}
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/node.png}
+    \includegraphics[height=2cm]{./imagenes/node.png}
     \caption{Logo de NodeJS}
     \label{fig:node}
 \end{figure}
@@ -159,139 +161,127 @@ Django es un framework de Python que se encuentra entre uno de los frameworks m�
 Python es un lenguaje de programación conocido por su simplicidad y legibilidad, con una sintaxis clara y cercana al lenguaje humano. Su flexibilidad y estructura intuitiva, basada en indentación en lugar de símbolos complejos, lo hace fácil de entender y aprender. Por ello, es una buena opción tanto para principiantes como para desarrolladores en áreas diversas, desde inteligencia artificial hasta desarrollo web.
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/python.png}
+    \includegraphics[height=2cm]{imagenes/python.png}
     \caption{Logo de Python}
     \label{fig:python}
 \end{figure}
 
-Django tiene un Enfoque "batteries included", es decir, ofrece muchas herramientas listas para usar: cuenta con ORM (Mapeo Objeto-Relacional), integrado, una herramienta que convierte los objetos de una aplicación en un formato compatible para guardarlos en una base de datos y así permitir al desarrollador interactuar con bases de datos sin escribir código SQL; y herramientas de Seguridad avanzada, protegiendo contra ataques comunes como inyección SQL y cross-site scripting (XSS).
-
-Django es ampliamente utilizado en aplicaciones como Instagram, Spotify y Pinterest. No obstante, es un framework monolítico, es decir, todo su código está integrado en una sola estructura. Por ello, es menos flexible cuando se necesita dividir la aplicación en partes independientes que trabajen de forma autónoma, como ocurre en arquitecturas basadas en microservicios, donde cada parte de la aplicación se maneja de manera independiente y puede ser escalada o actualizada por separado.
+Django tiene un Enfoque "batteries included", es decir, ofrece muchas herramientas listas para usar: cuenta con ORM (Mapeo Objeto-Relacional), integrado, una herramienta que convierte los objetos de una aplicación en un formato compatible para guardarlos en una base de datos y así permitir al desarrollador interactuar con bases de datos sin escribir código SQL; y herramientas de Seguridad avanzada, protegiendo contra ataques comunes como inyección SQL y cross-site scripting (XSS). Django es ampliamente utilizado en aplicaciones como Instagram, Spotify y Pinterest. No obstante, es un framework monolítico, es decir, todo su código está integrado en una sola estructura. Por ello, es menos flexible cuando se necesita dividir la aplicación en partes independientes que trabajen de forma autónoma, como ocurre en arquitecturas basadas en microservicios, donde cada parte de la aplicación se maneja de manera independiente y puede ser escalada o actualizada por separado.\cite{python_docs,django_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/django.png}
+    \includegraphics[height=2cm]{imagenes/django.png}
     \caption{Logo de Django}
     \label{fig:django}
 \end{figure}
 
 \subsubsection{Java con SpringBoot}
-Java es una de las opciones más utilizadas en el desarrollo backend, especialmente en entornos empresariales, dadas la robustez de sus funciones de seguridad y su sólido rendimiento en tareas que demandan un uso intensivo del procesador como cálculos matemático avanzados o intérpretes de lenguaje. El framework más popular dentro de este ecosistema es Spring Boot, que agiliza la creación de aplicaciones escalables y distribuidas.
-Entre las ventajas de Spring Boot encontramos su arquitectura modular, que permite crear servicios independientes y fácilmente escalables; su alta seguridad y estabilidad, lo que lo hace ideal para aplicaciones bancarias y corporativas; y su compatibilidad con múltiples bases de datos y herramientas empresariales.
-Sin embargo, Java tiene una curva de aprendizaje más alta y puede ser más pesado en comparación con otras opciones como Node.js o Python.
+Java es una de las opciones más utilizadas en el desarrollo backend, especialmente en entornos empresariales, dadas la robustez de sus funciones de seguridad y su sólido rendimiento en tareas que demandan un uso intensivo del procesador como cálculos matemático avanzados o intérpretes de lenguaje. El framework más popular dentro de este ecosistema es Spring Boot, que agiliza la creación de aplicaciones escalables y distribuidas. Entre las ventajas de Spring Boot encontramos su arquitectura modular, que permite crear servicios independientes y fácilmente escalables; su alta seguridad y estabilidad, lo que lo hace ideal para aplicaciones bancarias y corporativas; y su compatibilidad con múltiples bases de datos y herramientas empresariales. Sin embargo, Java tiene una curva de aprendizaje más alta y puede ser más pesado en comparación con otras opciones como Node.js o Python.\cite{java_docs,spring_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/java.jpg}
+    \includegraphics[height=2cm]{./imagenes/java.jpg}
     \caption{Logo de Java}
     \label{fig:java}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/spring-boot.png}
+    \includegraphics[height=2cm]{imagenes/spring-boot.png}
     \caption{Logo de SpingBoot}
     \label{fig:spingBoot}
 \end{figure}
 
 \subsubsection{PHP y Laravel}
-PHP ha sido históricamente uno de los lenguajes más utilizados para el desarrollo web, especialmente en sistemas de gestión de contenido como WordPress, que permite crear páginas como blogs o tiendas en línea sin a penas conocimientos técnicos. PHP nos permite agregar dinamismo a nuestros sitios web conectando el servidor y base de datos con la interfaz de usuario. En la actualidad, Laravel es el framework más moderno dentro del ecosistema PHP, ofreciendo una sintaxis elegante y herramientas avanzadas para el desarrollo de aplicaciones web.
-Laravel cuenta con un sistema de enrutamiento y autenticación integrado, buena documentación y comunidad activa. Además, existe ORM Eloquent, que es un Mapeador de Objetos Relacionales especialmente diseñado para Laravel, que ofrece una experiencia de conexión con la base de datos más ágil y simple.
-Se trata de una opción sólida para proyectos que necesitan desarrollo rápido, pero PHP no es tan popular en nuevas aplicaciones escalables como Node.js o Django. Entre sus desventajas encontramos herramientas de debugging no tan potentes, los comunes problemas de seguridad, y el hecho de que es necesario un servidor web para que la app funcione.
+PHP ha sido históricamente uno de los lenguajes más utilizados para el desarrollo web, especialmente en sistemas de gestión de contenido como WordPress, que permite crear páginas como blogs o tiendas en línea sin apenas conocimientos técnicos. PHP nos permite agregar dinamismo a nuestros sitios web conectando el servidor y base de datos con la interfaz de usuario. En la actualidad, Laravel es el framework más moderno dentro del ecosistema PHP, ofreciendo una sintaxis elegante y herramientas avanzadas para el desarrollo de aplicaciones web. Laravel cuenta con un sistema de enrutamiento y autenticación integrado, buena documentación y comunidad activa. Además, existe ORM Eloquent, que es un Mapeador de Objetos Relacionales especialmente diseñado para Laravel, que ofrece una experiencia de conexión con la base de datos más ágil y simple. Se trata de una opción sólida para proyectos que necesitan desarrollo rápido, pero PHP no es tan popular en nuevas aplicaciones escalables como Node.js o Django. Entre sus desventajas encontramos herramientas de debugging no tan potentes, los comunes problemas de seguridad, y el hecho de que es necesario un servidor web para que la app funcione.\cite{php_docs,laravel_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/php.png}
+    \includegraphics[height=2cm]{imagenes/php.png}
     \caption{Logo de PHP}
     \label{fig:php}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/Laravel.jpg}
+    \includegraphics[height=2cm]{imagenes/Laravel.jpg}
     \caption{Logo de Laravel}
     \label{fig:laravel}
 \end{figure}
 
 \subsubsection{Ruby on Rails}
-Ruby es un lenguaje de programación con una sintaxis cercana al lenguaje humano y orientado a objetos. Ruby on Rails es un framework basado en el lenguaje Ruby que se centra en la productividad del desarrollador y la facilidad de uso dado que toma decisiones por el desarrollador basándose en convenciones preestablecidas e incluye una gran cantidad de herramientas integradas para tareas comunes.
-La generación automática de código que ofrece Ruby On Rails acelera el desarrollo; y además la seguridad está integrada, protegiendo contra ataques comunes. Aplicaciones como GitHub y Airbnb fueron construidas con esta tecnología debido a su facilidad para construir aplicaciones rápidamente.
-El principal inconveniente de Rails es que su rendimiento puede ser inferior al de otras tecnologías más modernas, como Node.js o Go.
+Ruby es un lenguaje de programación con una sintaxis cercana al lenguaje humano y orientado a objetos. Ruby on Rails es un framework basado en el lenguaje Ruby que se centra en la productividad del desarrollador y la facilidad de uso dado que toma decisiones por el desarrollador basándose en convenciones preestablecidas e incluye una gran cantidad de herramientas integradas para tareas comunes. La generación automática de código que ofrece Ruby On Rails acelera el desarrollo; y además la seguridad está integrada, protegiendo contra ataques comunes. Aplicaciones como GitHub y Airbnb fueron construidas con esta tecnología debido a su facilidad para construir aplicaciones rápidamente. El principal inconveniente de Rails es que su rendimiento puede ser inferior al de otras tecnologías más modernas, como Node.js o Go.\cite{ruby_docs,rails_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/ruby.png}
+    \includegraphics[height=2cm]{imagenes/ruby.png}
     \caption{Logo de Ruby}
     \label{fig:ruby}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/Ruby2.png}
+    \includegraphics[height=2cm]{imagenes/Ruby2.png}
     \caption{Logo de Ruby On Rails}
     \label{img:rubyOnRails}
 \end{figure}
 
 \subsubsection{Golang y Gin}
-Golang, también conocido como Go, es un lenguaje desarrollado por Google enfocado en el rendimiento, la seguridad y la concurrencia a la hora de atender solicitudes, lo cual es ideal para sistemas que requieren gran escalabilidad.. Plataformas como Dropbox, Netflix o Uber están programadas con Go. Se trata de una alternativa de Alto rendimiento, comparable al de C/C++, ya que utiliza Código compilado, es decir, el código fuente es compilado para traducirse a código máquina, lo que mejora la velocidad de ejecución. Su framework más popular para el backend es Gin, que permite construir APIs rápidas y eficientes.
-Sin embargo, Go tiene menos bibliotecas y comunidad que otras tecnologías más maduras como Node.js o Python. Además, su funcionamiento puede resultar complejo en ciertos puntos, por ejemplo, en ciertas situaciones se requiere manejar manualmente la memoria para optimizar la aplicación.
+Golang, también conocido como Go, es un lenguaje desarrollado por Google enfocado en el rendimiento, la seguridad y la concurrencia a la hora de atender solicitudes, lo cual es ideal para sistemas que requieren gran escalabilidad.. Plataformas como Dropbox, Netflix o Uber están programadas con Go. Se trata de una alternativa de Alto rendimiento, comparable al de C/C++, ya que utiliza Código compilado, es decir, el código fuente es compilado para traducirse a código máquina, lo que mejora la velocidad de ejecución. Su framework más popular para el backend es Gin, que permite construir APIs rápidas y eficientes. Sin embargo, Go tiene menos bibliotecas y comunidad que otras tecnologías más maduras como Node.js o Python. Además, su funcionamiento puede resultar complejo en ciertos puntos, por ejemplo, en ciertas situaciones se requiere manejar manualmente la memoria para optimizar la aplicación.\cite{go_docs,gin_docs}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/go.png}
+    \includegraphics[height=2cm]{imagenes/go.png}
     \caption{Logo de Go}
     \label{fig:go}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/gin.png}
+    \includegraphics[height=2cm]{imagenes/gin.png}
     \caption{Logo de Gin}
     \label{fig:gin}
 \end{figure}
 
 
 \subsection{Consumo de APIs}
-Estos frameworks y tecnologías backend que son útiles entre muchas otras cosas para la creación de APIs. Una API o "Interfaz de Programación de Aplicaciones" es un mecanismo que permite conectar dos piezas de software para que una pueda interactuar con la otra, intercambiar información, invocar funciones o utilizar servicios.
-Existen diferentes tecnologías que nos permiten consumir o utilizar una API desde una aplicación web, destacando Axios, Fetch API y cURL; además de herramientas que ayudan a probar una API que uno quiere usar o desarrollar, como Postman e Imsomia.
+Estos frameworks y tecnologías backend que son útiles entre muchas otras cosas para la creación de APIs. Una API o "Interfaz de Programación de Aplicaciones" es un mecanismo que permite conectar dos piezas de software para que una pueda interactuar con la otra, intercambiar información, invocar funciones o utilizar servicios. Existen diferentes tecnologías que nos permiten consumir o utilizar una API desde una aplicación web, destacando Axios, Fetch API y cURL; además de herramientas que ayudan a probar una API que uno quiere usar o desarrollar, como Postman e Insomnia.
 
 \subsubsection{Axios}
 Axios es una librería basada en JavaScript que permite la realización de solicitudes HTTP tanto en el navegador como en el servidor utilizando Node.js. HTTP o "Hypertext Transfer Protocol" es un protocolo de comunicación para transferir de datos entre un cliente (generalmente una aplicación o navegador) y un servidor web a través de Internet. La comunicación se lleva a cabo mediante solicitudes y respuestas: el cliente realiza una solicitud HTTP al servidor para obtener un recurso (como una página, un archivo, una imagen o cualquier dato), y el servidor responde con la información solicitada en caso de éxito.
-Axios soporta métodos estándar de HTTP y es especialmente popular debido a su capacidad para manejar promesas de manera eficiente, lo que permite gestionar de forma más sencilla la asincronía en las aplicaciones web. Entre sus ventajas se destacan la posibilidad de interceptar solicitudes o respuestas, manejar errores de manera más eficaz y la capacidad de enviar datos en formato JSON de forma predeterminada. Dado su amplio uso en aplicaciones basadas en frameworks como React o Vue.js, Axios se ha consolidado como una de las opciones más elegidas por los desarrolladores.
+Axios soporta métodos estándar de HTTP y es especialmente popular debido a su capacidad para manejar promesas de manera eficiente, lo que permite gestionar de forma más sencilla la asincronía en las aplicaciones web. Entre sus ventajas se destacan la posibilidad de interceptar solicitudes o respuestas, manejar errores de manera más eficaz y la capacidad de enviar datos en formato JSON de forma predeterminada. Dado su amplio uso en aplicaciones basadas en frameworks como React o Vue.js, Axios se ha consolidado como una de las opciones más elegidas por los desarrolladores.\cite{axios_docs}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/axios.png}
+    \includegraphics[height=2cm]{imagenes/axios.png}
     \caption{Logo de Axios}
     \label{fig:axios}
 \end{figure}
 
 \subsubsection{FetchAPI}
-Fetch API es una interfaz nativa en JavaScript que proporciona una forma moderna y flexible de hacer solicitudes HTTP desde el navegador. A diferencia de otras soluciones, como Axios, Fetch es parte del estándar de JavaScript, por lo que no requiere la instalación de bibliotecas adicionales. Esta API permite trabajar con promesas para manejar solicitudes asincrónicas y es compatible con los métodos HTTP más utilizados, como GET, POST, PUT y DELETE. Aunque Fetch no ofrece algunas características avanzadas como la transformación automática de respuestas JSON o manejo de errores, su simplicidad y flexibilidad lo convierten en una excelente opción para aplicaciones web modernas que requieren realizar solicitudes HTTP sin depender de bibliotecas externas.
+Fetch API es una interfaz nativa en JavaScript que proporciona una forma moderna y flexible de hacer solicitudes HTTP desde el navegador. A diferencia de otras soluciones, como Axios, Fetch es parte del estándar de JavaScript, por lo que no requiere la instalación de bibliotecas adicionales. Esta API permite trabajar con promesas para manejar solicitudes asincrónicas y es compatible con los métodos HTTP más utilizados, como GET, POST, PUT y DELETE. Aunque Fetch no ofrece algunas características avanzadas como la transformación automática de respuestas JSON o manejo de errores, su simplicidad y flexibilidad lo convierten en una excelente opción para aplicaciones web modernas que requieren realizar solicitudes HTTP sin depender de bibliotecas externas.\cite{fetch_mdn}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/fetch.png}
+    \includegraphics[height=2cm]{imagenes/fetch.png}
     \caption{Logo de FetchAPI}
     \label{fig:fetchApi}
 \end{figure}
 
 \subsubsection{Postman}
-Postman es una herramienta gráfica ampliamente utilizada para probar, desarrollar y gestionar APIs. Permite enviar solicitudes HTTP, analizar las respuestas y organizar las pruebas en colecciones, lo cual resulta muy útil durante el desarrollo de servicios web y microservicios.
-Postman es particularmente valioso cuando se trabaja con APIs REST. Una API REST es una API que sigue los principios REST (Representational State Transfer): opera mediante métodos del protocolo HTTP, que son GET para recuperar información del servidor, POST para enviar datos al servidor, PUT para actualizar esos datos, DELETE para borrarlos, y otros; cada recurso está asociado a una URL única; y cada solicitud contiene toda la información necesaria para ser completada, no solo no necesita ni depende de datos de otras solicitudes, sino que no se transmiten ni comparten datos de una petición a otra.
-También, Postman permite visualizar respuestas en diversos formatos, como JSON, XML y texto plano; y ofrece funciones avanzadas como la automatización de pruebas, la creación de entornos y la automatización del proceso de integración y despliegue del código. Todo esto lo convierte en una herramienta muy potente en el proceso de desarrollo y pruebas de APIs.
+Postman es una herramienta gráfica ampliamente utilizada para probar, desarrollar y gestionar APIs. Permite enviar solicitudes HTTP, analizar las respuestas y organizar las pruebas en colecciones, lo cual resulta muy útil durante el desarrollo de servicios web y microservicios. Postman es particularmente valioso cuando se trabaja con APIs REST. Una API REST es una API que sigue los principios REST (Representational State Transfer): opera mediante métodos del protocolo HTTP, que son GET para recuperar información del servidor, POST para enviar datos al servidor, PUT para actualizar esos datos, DELETE para borrarlos, y otros; cada recurso está asociado a una URL única; y cada solicitud contiene toda la información necesaria para ser completada, no solo no necesita ni depende de datos de otras solicitudes, sino que no se transmiten ni comparten datos de una petición a otra. También, Postman permite visualizar respuestas en diversos formatos, como JSON, XML y texto plano; y ofrece funciones avanzadas como la automatización de pruebas, la creación de entornos y la automatización del proceso de integración y despliegue del código. Todo esto lo convierte en una herramienta muy potente en el proceso de desarrollo y pruebas de APIs.\cite{postman_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/postman.png}
+    \includegraphics[height=2cm]{./imagenes/postman.png}
     \caption{Logo de Postman}
     \label{fig:postman}
 \end{figure}
 
-\subsubsection{Imsomnia}
-Insomnia es una herramienta similar a Postman, diseñada para facilitar la prueba y el consumo de APIs. Insomnia se distingue por su interfaz limpia y sencilla, que permite a los desarrolladores trabajar de manera eficiente sin distracciones. Al igual que Postman, Insomnia soporta solicitudes HTTP y puede gestionar entornos, variables y autenticación. Además, cuenta con soporte nativo para GraphQL,un lenguaje de consulta y entorno de ejecución para las APIs que permite obtener varios recursos con una sola consulta y obtener solamente los datos deseados, sin datos extra o campos que no queremos en ese momento. Una de sus principales ventajas es la posibilidad de crear pruebas automatizadas, lo que optimiza el proceso de desarrollo y mejora la calidad del código. Insomnia también es altamente personalizable y permite a los usuarios gestionar sus solicitudes de forma organizada, lo que lo hace adecuado tanto para desarrolladores principiantes como para profesionales experimentados.
+\subsubsection{Insomnia}
+Insomnia es una herramienta similar a Postman, diseñada para facilitar la prueba y el consumo de APIs. Insomnia se distingue por su interfaz limpia y sencilla, que permite a los desarrolladores trabajar de manera eficiente sin distracciones. Al igual que Postman, Insomnia soporta solicitudes HTTP y puede gestionar entornos, variables y autenticación. Además, cuenta con soporte nativo para GraphQL, un lenguaje de consulta y entorno de ejecución para las APIs que permite obtener varios recursos con una sola consulta y obtener solamente los datos deseados, sin datos extra o campos que no queremos en ese momento. Una de sus principales ventajas es la posibilidad de crear pruebas automatizadas, lo que optimiza el proceso de desarrollo y mejora la calidad del código. Insomnia también es altamente personalizable y permite a los usuarios gestionar sus solicitudes de forma organizada, lo que lo hace adecuado tanto para desarrolladores principiantes como para profesionales experimentados.\cite{insomnia_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{insomnia.png}
-    \caption{Logo de Imsomnia}
-    \label{fig:imsomnia}
+    \includegraphics[height=2cm]{insomnia.png}
+    \caption{Logo de Insomnia}
+    \label{fig:insomnia}
 \end{figure}
 
 \subsubsection{cURL}
-cURL es una herramienta de línea de comandos ampliamente utilizada para realizar solicitudes HTTP a través de un terminal o script. Aunque no proporciona una interfaz gráfica, cURL es extremadamente versátil y potente, permitiendo a los desarrolladores interactuar con APIs mediante métodos como GET, POST, PUT y DELETE de forma directa. Su principal ventaja es su capacidad para ser integrado en scripts y automatizar tareas de manera eficiente, lo que lo convierte en una herramienta útil para aquellos que prefieren trabajar desde la línea de comandos o necesitan realizar pruebas en entornos sin interfaz gráfica. cURL es compatible con una amplia variedad de protocolos y es especialmente útil para realizar pruebas rápidas y depurar servicios web.
+cURL es una herramienta de línea de comandos ampliamente utilizada para realizar solicitudes HTTP a través de un terminal o script. Aunque no proporciona una interfaz gráfica, cURL es extremadamente versátil y potente, permitiendo a los desarrolladores interactuar con APIs mediante métodos como GET, POST, PUT y DELETE de forma directa. Su principal ventaja es su capacidad para ser integrado en scripts y automatizar tareas de manera eficiente, lo que lo convierte en una herramienta útil para aquellos que prefieren trabajar desde la línea de comandos o necesitan realizar pruebas en entornos sin interfaz gráfica. cURL es compatible con una amplia variedad de protocolos y es especialmente útil para realizar pruebas rápidas y depurar servicios web.\cite{curl_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{curl.png}
+    \includegraphics[height=2cm]{curl.png}
     \caption{Logo de cURL}
     \label{fig:cUrl}
 \end{figure}
@@ -303,6 +293,7 @@ Una base de datos es una recopilación de información que se almacena en un sis
 En una base de datos relacional, los datos se almacenan en tablas, donde cada fila representa un registro y cada columna contiene un atributo o campo de ese registro. Cada registro suele tener un identificador único, conocido como clave primaria, que permite distinguirlo de los demás. Existen relaciones entre las tablas que permiten organizar los datos de forma lógica y estructurada siguiendo un modelo relacional. Para escribir y leer datos de este tipo de bases de datos, se utiliza un lenguaje de consulta estructurado (SQL), como MySQL, PostgreSQL o MariaDB.
 
 Por otro lado, las bases de datos no relacionales o NoSQL ofrecen un enfoque más flexible ya que, en lugar de seguir una estructura rígida de tablas, almacenan la información en formatos como documentos JSON, pares clave-valor, grafos o familias de columnas. Esta estructura es especialmente útil cuando los datos cambian con frecuencia o no requieren un esquema fijo. Esto permite insertar, modificar y obtener los datos de forma más dinámica, lo que se hace mediante lenguajes de consulta más modernos. Este tipo de bases de datos ha ganado popularidad en el campo de las aplicaciones web modernas, microservicios y sistemas que manejan grandes volúmenes de datos no estructurados. MongoDB, Cassandra, Firebase y ElasticSearch se encuentran entre las bases de datos NoSQL más utilizadas a día de hoy.
+La comparativa se ha realizado a partir de la documentación oficial de MySQL, PostgreSQL, MariaDB, MongoDB, Firebase y Cassandra.
 
 
 \subsubsection{Bases de datos relacionales}
@@ -310,199 +301,205 @@ Por otro lado, las bases de datos no relacionales o NoSQL ofrecen un enfoque má
 \paragraph{MySQL}
 
 
-MySQL es uno de los sistemas de gestión de bases de datos más populares y utilizados en aplicaciones web. Originalmente desarrollado por MySQL AB y posteriormente adquirido por Oracle, MySQL es conocido por su fiabilidad, integridad, velocidad y facilidad de uso. Su arquitectura de replicación maestro-esclavo permite distribuir la carga de trabajo y mejorar la disponibilidad. Aunque es de código abierto, también ofrece versiones comerciales con soporte adicional. MySQL ha sido fundamental en la creación de aplicaciones dentro de la pila LAMP (Linux, Apache, MySQL, PHP/Python), y grandes plataformas como Facebook y Twitter lo emplean para manejar grandes volúmenes de datos.
+MySQL es uno de los sistemas de gestión de bases de datos más populares y utilizados en aplicaciones web. Originalmente desarrollado por MySQL AB y posteriormente adquirido por Oracle, MySQL es conocido por su fiabilidad, integridad, velocidad y facilidad de uso. Su arquitectura de replicación maestro-esclavo permite distribuir la carga de trabajo y mejorar la disponibilidad. Aunque es de código abierto, también ofrece versiones comerciales con soporte adicional. MySQL ha sido fundamental en la creación de aplicaciones dentro de la pila LAMP (Linux, Apache, MySQL, PHP/Python), y grandes plataformas como Facebook y Twitter lo emplean para manejar grandes volúmenes de datos.\cite{mysql_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{mysql.png}
+    \includegraphics[height=2cm]{mysql.png}
     \caption{Logo de MySQL}
     \label{fig:mySQL}
 \end{figure}
 
 \paragraph{PostgreSQL}
 
-PostgreSQL  destaca por su capacidad para gestionar transacciones complejas y grandes volúmenes de datos, manteniendo siempre la integridad relacional.
+PostgreSQL  destaca por su capacidad para gestionar transacciones complejas y grandes volúmenes de datos, manteniendo siempre la integridad relacional.\cite{postgresql_docs}
 Cuando varios usuarios acceden simultáneamente a una base de datos, los sistemas tradicionales suelen bloquear los registros para evitar conflictos entre lecturas y escrituras. Una de sus principales ventajas reside en que gestiona esta concurrencia de manera más eficiente gracias a su implementación de MVCC (Control de Concurrencia Multiversión), que permite que las operaciones de lectura no interfieran con las de escritura y viceversa. Esto se traduce en una mejora significa del rendimiento y la experiencia en entornos con múltiples usuarios accediendo a los mismos datos.
 Además, PostgreSQL es compatible con múltiples lenguajes de programación, como JavaScript, C/C++, Python, Ruby y demás.
 Aplicaciones de alto perfil como Instagram, Reddit y Discord emplean PostgreSQL debido a su estabilidad, capacidad para manejar grandes cantidades de datos y su sistema avanzado de consultas.
+La descripción se apoya en la documentación oficial de PostgreSQL \cite{postgresql_docs}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/postgresql.png}
+    \includegraphics[height=2cm]{imagenes/postgresql.png}
     \caption{Logo de Postgresql}
     \label{fig:postgreSql}
 \end{figure}
 
 \paragraph{Maria DB}
-MariaDB es un sistema de gestión de bases de datos relacional de código abierto que nació como una bifurcación de MySQL, creado por su fundador original, Michael Widenius, después de la compra de MySQL por Oracle. Este sistema mantiene una alta compatibilidad con MySQL, lo que facilita la migración entre ambos. MariaDB ofrece mejoras en términos de rendimiento y seguridad, incorporando nuevos motores de almacenamiento como Aria y XtraDB. Además, su enfoque en la escalabilidad y la alta disponibilidad lo hace adecuado para aplicaciones que requieren un rendimiento constante. Es ampliamente utilizado por empresas de gran tamaño y cuenta con una comunidad activa que garantiza una evolución constante.
+MariaDB es un sistema de gestión de bases de datos relacional de código abierto que nació como una bifurcación de MySQL, creado por su fundador original, Michael Widenius, después de la compra de MySQL por Oracle. Este sistema mantiene una alta compatibilidad con MySQL, lo que facilita la migración entre ambos. MariaDB ofrece mejoras en términos de rendimiento y seguridad, incorporando nuevos motores de almacenamiento como Aria y XtraDB. Además, su enfoque en la escalabilidad y la alta disponibilidad lo hace adecuado para aplicaciones que requieren un rendimiento constante. Es ampliamente utilizado por empresas de gran tamaño y cuenta con una comunidad activa que garantiza una evolución constante.\cite{mariadb_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/mariadb.png}
+    \includegraphics[height=2cm]{imagenes/mariadb.png}
     \caption{Logo de MariaDB}
     \label{fig:mariaDB}
 \end{figure}
 
 \subsubsection{No relacionales}
 \paragraph{MongoDB}
-MongoDB es una base de datos NoSQL que ha ganado una gran popularidad en aplicaciones web modernas. Su principal característica es que almacena los datos en formato de documentos BSON, una versión de JSON en formato binario; lo que permite un enfoque flexible y escalable. JSON es el formato en el que se intercambian los datos en JavaScript, por lo que combinar estas dos tecnologías es una configuración ágil para un proyecto. Estos documentos se pueden agrupar en colecciones para facilitar la organización de los datos.
-MongoDB es ideal para aplicaciones que necesitan escalabilidad horizontal, ya que permite distribuir los datos entre varios servidores de manera eficiente. Además, permite modificar fácilmente los datos almacenados sin tener que realizar grandes cambios en la base de datos.
-Empresas como Uber, eBay y Trello utilizan MongoDB debido a su capacidad para manejar grandes cantidades de datos sin la rigidez de las bases de datos tradicionales, además de su gran fiabilidad y alto rendimiento.
+MongoDB es una base de datos NoSQL que ha ganado una gran popularidad en aplicaciones web modernas. Su principal característica es que almacena los datos en formato de documentos BSON, una versión de JSON en formato binario; lo que permite un enfoque flexible y escalable. JSON es el formato en el que se intercambian los datos en JavaScript, por lo que combinar estas dos tecnologías es una configuración ágil para un proyecto. Estos documentos se pueden agrupar en colecciones para facilitar la organización de los datos. MongoDB es ideal para aplicaciones que necesitan escalabilidad horizontal, ya que permite distribuir los datos entre varios servidores de manera eficiente. Además, permite modificar fácilmente los datos almacenados sin tener que realizar grandes cambios en la base de datos. Empresas como Uber, eBay y Trello utilizan MongoDB debido a su capacidad para manejar grandes cantidades de datos sin la rigidez de las bases de datos tradicionales, además de su gran fiabilidad y alto rendimiento.\cite{mongodb_docs}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/mongo.png}
+    \includegraphics[height=2cm]{imagenes/mongo.png}
     \caption{Logo de MongoDB}
     \label{fig:mongoDB}
 \end{figure}
 
 \paragraph{Firebase}
-Firebase es un servicio de base de datos de Google que almacena los datos en la nube y  está diseñado principalmente para aplicaciones web y móviles que requieren sincronización en tiempo real, dado que facilita la actualización instantánea de los datos en todas las plataformas de manera eficiente, lo que la convierte en una opción atractiva para proyectos  como aplicaciones de mensajería o colaboración.
-Su integración con el ecosistema de Google permite aprovechar otros servicios como Firebase Authentication y Google Cloud Storage. Además, su facilidad de uso lo hace adecuado para desarrolladores que trabajan en proyectos pequeños o medianos, dado que permite desarrollar aplicaciones de manera rápida sin la necesidad de gestionar una infraestructura compleja.
-No obstante, Firebase puede generar dependencia de la plataforma Google, lo que podría convertirse en un inconveniente si se desea cambiar de proveedor a largo plazo. Además, los costos asociados con su uso pueden incrementarse a medida que la aplicación escala, lo que puede ser una preocupación para proyectos de gran tamaño.
+Firebase es un servicio de base de datos de Google que almacena los datos en la nube y  está diseñado principalmente para aplicaciones web y móviles que requieren sincronización en tiempo real, dado que facilita la actualización instantánea de los datos en todas las plataformas de manera eficiente, lo que la convierte en una opción atractiva para proyectos  como aplicaciones de mensajería o colaboración. Su integración con el ecosistema de Google permite aprovechar otros servicios como Firebase Authentication y Google Cloud Storage. Además, su facilidad de uso lo hace adecuado para desarrolladores que trabajan en proyectos pequeños o medianos, dado que permite desarrollar aplicaciones de manera rápida sin la necesidad de gestionar una infraestructura compleja. No obstante, Firebase puede generar dependencia de la plataforma Google, lo que podría convertirse en un inconveniente si se desea cambiar de proveedor a largo plazo. Además, los costos asociados con su uso pueden incrementarse a medida que la aplicación escala, lo que puede ser una preocupación para proyectos de gran tamaño.\cite{firebase_docs}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{./imagenes/firebase.png}
+    \includegraphics[height=2cm]{./imagenes/firebase.png}
     \caption{Logo de Firebase}
     \label{fig:firebase}
 \end{figure}
 
 \paragraph{Cassandra}
-Cassandra es una base de datos no relacional distribuida diseñada para manejar grandes volúmenes de datos en entornos de alta velocidad y disponibilidad y sin un único punto de fallo gracias a que opera mediante varios nodos o servidores cada uno de los cuales almacena una parte de los datos y responde a una parte de las consultas. Además, su arquitectura es distribuida, es decir, cada nodo tiene réplicas de los datos de los demás, y es por eso que, si uno falla, los demás pueden atender sus peticiones.
-Cassandra utiliza un modelo basado en columnas en lugar de filas, de forma que cada fila o registro puede tener columnas diferentes, y Cassandra puede acceder a una columna específica en lugar de obtener toda la fila, lo que aumenta la velocidad de acceso a la información.
-Empresas que requieren una infraestructura que pueda escalar horizontalmente y manejar grandes volúmenes de datos, como Netflix y eBay, utilizan Cassandra para gestionar su información.
+Cassandra es una base de datos no relacional distribuida diseñada para manejar grandes volúmenes de datos en entornos de alta velocidad y disponibilidad y sin un único punto de fallo gracias a que opera mediante varios nodos o servidores cada uno de los cuales almacena una parte de los datos y responde a una parte de las consultas. Además, su arquitectura es distribuida, es decir, cada nodo tiene réplicas de los datos de los demás, y es por eso que, si uno falla, los demás pueden atender sus peticiones. Cassandra utiliza un modelo basado en columnas en lugar de filas, de forma que cada fila o registro puede tener columnas diferentes, y Cassandra puede acceder a una columna específica en lugar de obtener toda la fila, lo que aumenta la velocidad de acceso a la información. Empresas que requieren una infraestructura que pueda escalar horizontalmente y manejar grandes volúmenes de datos, como Netflix y eBay, utilizan Cassandra para gestionar su información.\cite{cassandra_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/Cassandra_logo.svg.png}
+    \includegraphics[height=2cm]{imagenes/Cassandra_logo.svg.png}
     \caption{Logo de Cassandra}
     \label{fig:cassandra}
 \end{figure}
 
+
+\begin{comment}
+
 \subsection{Computación en la nube}
-La computación en la nube o cloud computing es un término que se ha hecho popular en los últimos años por ser una herramienta que facilita enormemente el acceso a recursos informáticos permitiendo a las empresas y usuarios almacenar, procesar y gestionar datos sin necesidad de contar con infraestructura propia, lo que reduce costos, mejora la eficiencia y facilita la colaboración y el acceso remoto desde cualquier lugar del mundo.
-Amazon Web Services (AWS) fue pionero en esta tecnología con el lanzamiento de su servicio de computación en la nube en 2006. A partir de ese momento, esta tecnología comenzó a ganar terreno, y se popularizó y consolidó en los últimos 10 años, a medida que más empresas y usuarios adoptaron la nube para almacenar datos, ejecutar aplicaciones y aprovechar las capacidades de procesamiento a gran escala de manera flexible y rentable.
-Estas herramientas no solo nos permiten ofrecer servicios a los usuarios de una aplicación, sino también alojar dicha aplicación. Algunos de los proveedores más significativos actualmente son, además de AWS: Microsoft Azure y Google Cloud Platform (GCP).
+La computación en la nube o cloud computing es un término que se ha hecho popular en los últimos años por ser una herramienta que facilita enormemente el acceso a recursos informáticos permitiendo a las empresas y usuarios almacenar, procesar y gestionar datos sin necesidad de contar con infraestructura propia, lo que reduce costos, mejora la eficiencia y facilita la colaboración y el acceso remoto desde cualquier lugar del mundo. Amazon Web Services (AWS) fue pionero en esta tecnología con el lanzamiento de su servicio de computación en la nube en 2006. A partir de ese momento, esta tecnología comenzó a ganar terreno, y se popularizó y consolidó en los últimos 10 años, a medida que más empresas y usuarios adoptaron la nube para almacenar datos, ejecutar aplicaciones y aprovechar las capacidades de procesamiento a gran escala de manera flexible y rentable. Estas herramientas no solo nos permiten ofrecer servicios a los usuarios de una aplicación, sino también alojar dicha aplicación. Algunos de los proveedores más significativos actualmente son, además de AWS: Microsoft Azure y Google Cloud Platform (GCP).\cite{aws_docs,azure_docs,gcp_docs}
 
 \subsubsection{Amazon Web Services}
-Amazon Web Services es la plataforma en la nube más popular y ampliamente adoptada a nivel mundial. Ofrece una extensa gama de servicios que cubren prácticamente todos los aspectos de la infraestructura tecnológica, desde servidores y almacenamiento hasta bases de datos, redes y herramientas de inteligencia artificial. Con su servicio de cómputo EC2 (Elastic Cloud 2), los usuarios pueden crear y gestionar servidores virtuales, mientras que Amazon S3 (Simple Storage Service) proporciona un almacenamiento de alta seguridad y rendimiento. AWS también incluye servicios sin servidor como AWS Lambda, que permiten ejecutar código sin tener que gestionar servidores; herramientas para el análisis de datos, bases de datos gestionadas, redes, y mucho más.
-Su capacidad de escalabilidad, flexibilidad y fiabilidad lo convierte en la opción por al que optan muchas empresas que requieren una infraestructura altamente personalizable y capaz de manejar aplicaciones a gran escala.
+Amazon Web Services es la plataforma en la nube más popular y ampliamente adoptada a nivel mundial. Ofrece una extensa gama de servicios que cubren prácticamente todos los aspectos de la infraestructura tecnológica, desde servidores y almacenamiento hasta bases de datos, redes y herramientas de inteligencia artificial. Con su servicio de cómputo EC2 (Elastic Cloud 2), los usuarios pueden crear y gestionar servidores virtuales, mientras que Amazon S3 (Simple Storage Service) proporciona un almacenamiento de alta seguridad y rendimiento. AWS también incluye servicios sin servidor como AWS Lambda, que permiten ejecutar código sin tener que gestionar servidores; herramientas para el análisis de datos, bases de datos gestionadas, redes, y mucho más. Su capacidad de escalabilidad, flexibilidad y fiabilidad lo convierte en la opción por al que optan muchas empresas que requieren una infraestructura altamente personalizable y capaz de manejar aplicaciones a gran escala.\cite{aws_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/aws.png}
+    \includegraphics[height=2cm]{imagenes/aws.png}
     \caption{Logo de AWS}
     \label{fig:aws}
 \end{figure}
 
 \subsubsection{Microsoft Azure}
-Microsoft Azure es una plataforma en la nube de Microsoft diseñada para ayudar a las empresas a construir, desplegar y gestionar aplicaciones y servicios a través de una red global de centros de datos. Azure es muy conocida por su integración con otros productos de Microsoft, como Windows Server, SQL Server, y herramientas de desarrollo como Visual Studio. Ofrece soluciones completas para el desarrollo y despliegue de aplicaciones web, como Azure App Services, que permite crear aplicaciones web sin gestionar la infraestructura subyacente. Además, Azure cuenta con servicios de bases de datos, análisis de datos con Azure Synapse, herramientas de inteligencia artificial con Azure AI, y servicios de computación en contenedores con Azure Kubernetes Service (AKS). Es una plataforma versátil y especialmente atractiva para empresas que ya utilizan el ecosistema de Microsoft, dado que proporciona un entorno seguro y fácil de integrar.
+Microsoft Azure es una plataforma en la nube de Microsoft diseñada para ayudar a las empresas a construir, desplegar y gestionar aplicaciones y servicios a través de una red global de centros de datos. Azure es muy conocida por su integración con otros productos de Microsoft, como Windows Server, SQL Server, y herramientas de desarrollo como Visual Studio. Ofrece soluciones completas para el desarrollo y despliegue de aplicaciones web, como Azure App Services, que permite crear aplicaciones web sin gestionar la infraestructura subyacente. Además, Azure cuenta con servicios de bases de datos, análisis de datos con Azure Synapse, herramientas de inteligencia artificial con Azure AI, y servicios de computación en contenedores con Azure Kubernetes Service (AKS). Es una plataforma versátil y especialmente atractiva para empresas que ya utilizan el ecosistema de Microsoft, dado que proporciona un entorno seguro y fácil de integrar.\cite{azure_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/MicrosoftAzure.png}
+    \includegraphics[height=2cm]{imagenes/MicrosoftAzure.png}
     \caption{Logo de Microsoft Azure}
     \label{fig:microsoftAzure}
 \end{figure}
 
 \subsubsection{Google Cloud Platform}
-Google Cloud Platform es la plataforma de computación en la nube de Google. Se distingue por sus soluciones avanzadas en big data, análisis y machine learning. GCP ofrece herramientas como Google Compute Engine para crear y gestionar máquinas virtuales, Google App Engine para lanzar aplicaciones sin servidor y Google Kubernetes Engine para gestionar contenedores. Firebase es parte de GCP y proporciona bases de datos en tiempo real, autenticación de usuarios y funciones de backend como análisis y notificaciones push, que son mensajes que una aplicación envía al usuario en tiempo real sin que este tenga que estar usando la app en ese momento.
-GCP también destaca por su capacidad para manejar grandes volúmenes de datos y ofrecer soluciones avanzadas en inteligencia artificial y aprendizaje automático, lo que lo convierte en una opción ideal para aplicaciones que requieren procesamiento de datos en tiempo real o capacidades analíticas avanzadas. Además, su infraestructura está respaldada por la misma red de centros de datos que Google utiliza para sus propios servicios, ofreciendo una alta fiabilidad y rendimiento.
+Google Cloud Platform es la plataforma de computación en la nube de Google. Se distingue por sus soluciones avanzadas en big data, análisis y machine learning. GCP ofrece herramientas como Google Compute Engine para crear y gestionar máquinas virtuales, Google App Engine para lanzar aplicaciones sin servidor y Google Kubernetes Engine para gestionar contenedores. Firebase es parte de GCP y proporciona bases de datos en tiempo real, autenticación de usuarios y funciones de backend como análisis y notificaciones push, que son mensajes que una aplicación envía al usuario en tiempo real sin que este tenga que estar usando la app en ese momento. GCP también destaca por su capacidad para manejar grandes volúmenes de datos y ofrecer soluciones avanzadas en inteligencia artificial y aprendizaje automático, lo que lo convierte en una opción ideal para aplicaciones que requieren procesamiento de datos en tiempo real o capacidades analíticas avanzadas. Además, su infraestructura está respaldada por la misma red de centros de datos que Google utiliza para sus propios servicios, ofreciendo una alta fiabilidad y rendimiento.\cite{gcp_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/GCP.png}
+    \includegraphics[height=2cm]{imagenes/GCP.png}
     \caption{Logo de Google Cloud Platform}
     \label{gif:googleCloudPlatform}
 \end{figure}
 
 \subsection{Inteligencia Artificial Generativa para el programador}
-En la actualidad, el avance de las herramientas de inteligencia artificial generativa ha llevado a una parte importante de la población a utilizarla para facilitarse tareas de todo tipo. La IA está transformando la forma en que trabajamos y en particular, para los programadores, estas tecnologías resultan especialmente útiles a la hora de abordar tareas mecánicas y repetitivas, como la generación de código, la depuración y la interpretación de fragmentos de código. Los desarrolladores pueden obtener asistencia para comprender y solucionar problemas técnicos, optimizando su flujo de trabajo y acelerando el desarrollo de software. ChatGPT, Gemini, Codex y Github Copilot son algunas de las opciones más populares en este sector.
+En la actualidad, el avance de las herramientas de inteligencia artificial generativa ha llevado a una parte importante de la población a utilizarla para facilitarse tareas de todo tipo. La IA está transformando la forma en que trabajamos y en particular, para los programadores, estas tecnologías resultan especialmente útiles a la hora de abordar tareas mecánicas y repetitivas, como la generación de código, la depuración y la interpretación de fragmentos de código. Los desarrolladores pueden obtener asistencia para comprender y solucionar problemas técnicos, optimizando su flujo de trabajo y acelerando el desarrollo de software. ChatGPT, Gemini, Codex y Github Copilot son algunas de las opciones más populares en este sector.\cite{chatgpt_docs,gemini_docs,codex_docs,copilot_docs}
 
 
 \subsubsection{ChatGPT}
-ChatGPT, desarrollado por OpenAI, es una de las opciones más populares de inteligencia artificial generativa orientada a la programación. Esta herramienta utiliza modelos avanzados de lenguaje natural para asistir en tareas como la generación de código, depuración y explicación de fragmentos de programación. ChatGPT puede ser de gran ayuda para programadores novatos que necesitan comprender conceptos complejos, así como para desarrolladores experimentados que buscan optimizar su flujo de trabajo. Su capacidad para responder a preguntas técnicas, sugerir soluciones a problemas específicos y generar ejemplos de código en diversos lenguajes de programación hace de ChatGPT una herramienta versátil. Además, con su integración en plataformas como IDEs o herramientas de productividad, los desarrolladores pueden acceder a su soporte en tiempo real durante el proceso de codificación.
+ChatGPT, desarrollado por OpenAI, es una de las opciones más populares de inteligencia artificial generativa orientada a la programación. Esta herramienta utiliza modelos avanzados de lenguaje natural para asistir en tareas como la generación de código, depuración y explicación de fragmentos de programación. ChatGPT puede ser de gran ayuda para programadores novatos que necesitan comprender conceptos complejos, así como para desarrolladores experimentados que buscan optimizar su flujo de trabajo. Su capacidad para responder a preguntas técnicas, sugerir soluciones a problemas específicos y generar ejemplos de código en diversos lenguajes de programación hace de ChatGPT una herramienta versátil. Además, con su integración en plataformas como IDEs o herramientas de productividad, los desarrolladores pueden acceder a su soporte en tiempo real durante el proceso de codificación.\cite{chatgpt_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/chatgpt.png}
+    \includegraphics[height=2cm]{imagenes/chatgpt.png}
     \caption{Logo de ChatGPT}
     \label{fig:chatGTP}
 \end{figure}
 
 \subsubsection{Gemini}
-Gemini es otro sistema de inteligencia artificial generativa que llegó en 2023 de la mano de Google DeepMind para posicionarse como principal competidor de ChatGPT. Puede asistir en tareas de programación, especialmente en la generación de código y la interpretación de problemas técnicos. Aunque se lanzó recientemente, Gemini ha sido diseñado con capacidades avanzadas para comprender y generar texto en múltiples lenguajes de programación. La diferencia clave de Gemini respecto a otras plataformas es su enfoque en la integración con otras herramientas de Google, como los servicios de Google Cloud, lo que lo convierte en una opción muy útil para quienes ya están trabajando en este ecosistema. Al igual que otros modelos de IA generativa, Gemini puede ayudar a los desarrolladores a encontrar soluciones a errores comunes, automatizar tareas repetitivas y generar código funcional a partir de descripciones en lenguaje natural.
+Gemini es otro sistema de inteligencia artificial generativa que llegó en 2023 de la mano de Google DeepMind para posicionarse como principal competidor de ChatGPT. Puede asistir en tareas de programación, especialmente en la generación de código y la interpretación de problemas técnicos. Aunque se lanzó recientemente, Gemini ha sido diseñado con capacidades avanzadas para comprender y generar texto en múltiples lenguajes de programación. La diferencia clave de Gemini respecto a otras plataformas es su enfoque en la integración con otras herramientas de Google, como los servicios de Google Cloud, lo que lo convierte en una opción muy útil para quienes ya están trabajando en este ecosistema. Al igual que otros modelos de IA generativa, Gemini puede ayudar a los desarrolladores a encontrar soluciones a errores comunes, automatizar tareas repetitivas y generar código funcional a partir de descripciones en lenguaje natural.\cite{gemini_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/gemini.png}
+    \includegraphics[height=2cm]{imagenes/gemini.png}
     \caption{Logo de Gemini}
     \label{fig:gemini}
 \end{figure}
 
 \subsubsection{Codex}
-Codex, también desarrollado por OpenAI, es otro modelo de inteligencia artificial generativa especializado en la programación. Está diseñado para comprender el lenguaje natural y generar código en múltiples lenguajes de programación, como Python, JavaScript, Ruby, entre otros. Codex puede integrarse con diversas plataformas y herramientas, como GitHub Copilot, proporcionando asistencia contextual mientras el usuario escribe código. Esta IA no solo ayuda a generar fragmentos de código, sino que también puede realizar tareas complejas, como la conversión de pseudocódigo a código real y la mejora de código existente. Codex ha demostrado ser útil para mejorar la productividad de los desarrolladores, ayudándoles a escribir código más rápido, depurar errores y generar soluciones para problemas complejos sin la necesidad de una intervención manual constante.
+Codex, también desarrollado por OpenAI, es otro modelo de inteligencia artificial generativa especializado en la programación. Está diseñado para comprender el lenguaje natural y generar código en múltiples lenguajes de programación, como Python, JavaScript, Ruby, entre otros. Codex puede integrarse con diversas plataformas y herramientas, como GitHub Copilot, proporcionando asistencia contextual mientras el usuario escribe código. Esta IA no solo ayuda a generar fragmentos de código, sino que también puede realizar tareas complejas, como la conversión de pseudocódigo a código real y la mejora de código existente. Codex ha demostrado ser útil para mejorar la productividad de los desarrolladores, ayudándoles a escribir código más rápido, depurar errores y generar soluciones para problemas complejos sin la necesidad de una intervención manual constante.\cite{codex_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/codex.png}
+    \includegraphics[height=2cm]{imagenes/codex.png}
     \caption{Logo de Codex}
     \label{fig:codex}
 \end{figure}
 
 \subsubsection{Github Copilot}
-GitHub Copilot es una herramienta de inteligencia artificial desarrollada por GitHub en colaboración con OpenAI, diseñada para asistir a los desarrolladores en tiempo real mientras el escriben código. Ofrece autocompletado avanzado y generación de funciones completas a partir de descripciones en lenguaje natural. Una sus las principales ventajas es su análisis del contexto del archivo y del proyecto para ofrecer sugerencias más precisas y adaptadas a la tarea en la que se está trabajando.
-Copilot es compatible con múltiples lenguajes de programación y se integra con entornos de desarrollo populares como Visual Studio Code, Visual Studio y otros IDEs. Además, Copilot puede ayudar a crear pruebas unitarias, reducir errores, explicar código existente y proponer mejoras de forma rápida y eficiente.
+GitHub Copilot es una herramienta de inteligencia artificial desarrollada por GitHub en colaboración con OpenAI, diseñada para asistir a los desarrolladores en tiempo real mientras el escriben código. Ofrece autocompletado avanzado y generación de funciones completas a partir de descripciones en lenguaje natural. Una sus las principales ventajas es su análisis del contexto del archivo y del proyecto para ofrecer sugerencias más precisas y adaptadas a la tarea en la que se está trabajando. Copilot es compatible con múltiples lenguajes de programación y se integra con entornos de desarrollo populares como Visual Studio Code, Visual Studio y otros IDEs. Además, Copilot puede ayudar a crear pruebas unitarias, reducir errores, explicar código existente y proponer mejoras de forma rápida y eficiente.\cite{copilot_docs}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/github-copilot.jpeg}
+    \includegraphics[height=2cm]{imagenes/github-copilot.jpeg}
     \caption{Logo de Github Copilot}
     \label{fig:copilot}
 \end{figure}
 
 
+\end{comment}
+
 \section{Metodología}
 
 A lo largo de los años, la forma en que se abordan los proyectos de desarrollo web ha evolucionado significativamente, desde enfoques rígidos y estructurados hasta metodologías más flexibles y colaborativas. Cada método ha surgido en respuesta a distintas necesidades dentro del desarrollo de software y encaja con un tipo de proyecto u otro dependiendo de sus requisitos y equipo de trabajo. A continuación, se presentan algunas de las metodologías más utilizadas en proyectos de desarrollo web.
+La revisión metodológica se basa en referencias sobre desarrollo secuencial, iterativo e incremental, así como en marcos ágiles reconocidos.
 
 \subsubsection{\textbf{Metodología en Cascada}}
 
-Este modelo es uno de los más antiguos en el desarrollo de software y sigue un enfoque secuencial, en el que cada fase debe completarse antes de pasar a la siguiente. Se divide en etapas bien definidas como análisis, diseño, implementación, pruebas y mantenimiento. Su principal ventaja es la claridad en la planificación, pero su rigidez puede dificultar la adaptación a cambios durante el proyecto.
+Este modelo es uno de los más antiguos en el desarrollo de software y sigue un enfoque secuencial, en el que cada fase debe completarse antes de pasar a la siguiente. Se divide en etapas bien definidas como análisis, diseño, implementación, pruebas y mantenimiento. Su principal ventaja es la claridad en la planificación, pero su rigidez puede dificultar la adaptación a cambios durante el proyecto.\cite{waterfall_ref}
 
 \subsubsection{Metodología Incremental}
 
-La metodología incremental es un enfoque de desarrollo de software que consiste en construir el sistema por partes, entregando versiones más desarrolladas en cada etapa. Cada incremento añade nuevas funcionalidades al producto, se avanza de forma progresiva hasta completar el sistema final. Este método facilita la detección temprana de errores y la incorporación de cambios, ya que se obtiene retroalimentación continua del cliente. Además, permite entregar valor desde las primeras fases del proyecto. Por otro lado, el sistema requiere de una planificación inicial bastante completa, ya que los incrementos dependen de una buena definición de requisitos desde el principio.
+La metodología incremental es un enfoque de desarrollo de software que consiste en construir el sistema por partes, entregando versiones más desarrolladas en cada etapa. Cada incremento añade nuevas funcionalidades al producto, se avanza de forma progresiva hasta completar el sistema final. Este método facilita la detección temprana de errores y la incorporación de cambios, ya que se obtiene retroalimentación continua del cliente. Además, permite entregar valor desde las primeras fases del proyecto. Por otro lado, el sistema requiere de una planificación inicial bastante completa, ya que los incrementos dependen de una buena definición de requisitos desde el principio.\cite{incremental_ref}
 
 \subsubsection{Metodología RAD}
 
-La metodología RAD (Desarrollo Rápido de Aplicaciones) se utiliza para desarrollar software partiendo del diseño de un prototipo funcional que se prueba con los usuarios desde etapas tempranas, permitiendo identificar fallos y nuevos requerimientos. Basándose en esa retroalimentación, se establecen prioridades para realizar mejoras rápidas y continuas, enfocándose en la velocidad de ejecución y en la entrega de resultados en plazos cortos.
+La metodología RAD (Desarrollo Rápido de Aplicaciones) se utiliza para desarrollar software partiendo del diseño de un prototipo funcional que se prueba con los usuarios desde etapas tempranas, permitiendo identificar fallos y nuevos requerimientos. Basándose en esa retroalimentación, se establecen prioridades para realizar mejoras rápidas y continuas, enfocándose en la velocidad de ejecución y en la entrega de resultados en plazos cortos.\cite{rad_ref}
 
 
 \subsubsection{\textbf{Metodología Agile}}
 
 Agile es un enfoque iterativo e incremental que busca la entrega rápida de software funcional mediante ciclos cortos de trabajo llamados "sprints". Se basa en la colaboración entre equipos multidisciplinarios, la adaptación continua a los cambios y la entrega de valor al cliente de manera constante, además de priorizar el sofware frente a la documentación.
-Existen varias metodologías ágiles o entornos de trabajos que aplican diferentes enfoques para conseguir objetivos más concretos. Uno de los más populares es Scrum, donde el proceso comienza con la planificación del Sprint, seleccionando tareas del la lista priorizada de funcionalidades que el producto necesita (\textit{Product Backlog}) para formar una lista reducida que debe estar hecha al terminar ese sprint (\textit{Sprint Backlog}). Durante el Sprint, el equipo trabaja colaborativamente y realiza reuniones diarias para revisar el progreso. Al finalizar, se entrega un incremento del producto y se hace un trabajo de retrospección y análisis del proceso, con el objetivo de mejorar continuamente en el siguiente ciclo.
-\begin{figure}[H]
+Existen varias metodologías ágiles o entornos de trabajos que aplican diferentes enfoques para conseguir objetivos más concretos. Uno de los más populares es Scrum, donde el proceso comienza con la planificación del Sprint, seleccionando tareas del la lista priorizada de funcionalidades que el producto necesita (\textit{Product Backlog}) para formar una lista reducida que debe estar hecha al terminar ese sprint (\textit{Sprint Backlog}). Durante el Sprint, el equipo trabaja colaborativamente y realiza reuniones diarias para revisar el progreso. Al finalizar, se entrega un incremento del producto y se hace un trabajo de retrospección y análisis del proceso, con el objetivo de mejorar continuamente en el siguiente ciclo. \cite{agile_manifesto,scrum_guide}
+\begin{comment}
+
+    \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/Scrum.png}
+    \includegraphics[height=2cm]{imagenes/Scrum.png}
     \caption{Metodología SCRUM}
     \label{fig:scrum}
 \end{figure}
+\end{comment}
 
-Un marco de trabajo similar a Scrum es Extreme Programming o XP, aunque este tiene un enfoque más técnico con métodos para los desarrolladores como la programación en pareja, la integración continua, el desarrollo basado en pruebas, y la refactorización iterativa y continua mediante ciclos de retroalimentación. XP tiene un enfoque muy técnico para asegurar la calidad y flexibilidad del software.
-\begin{figure}[H]
+Un marco de trabajo similar a Scrum es Extreme Programming o XP, aunque este tiene un enfoque más técnico con métodos para los desarrolladores como la programación en pareja, la integración continua, el desarrollo basado en pruebas, y la refactorización iterativa y continua mediante ciclos de retroalimentación. XP tiene un enfoque muy técnico para asegurar la calidad y flexibilidad del software.\cite{xp_ref}
+
+\begin{comment}
+
+    \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/Extreme_Programming.png}
+    \includegraphics[height=2cm]{imagenes/Extreme_Programming.png}
     \caption{Metodología Extreme Programming}
     \label{fig:extremeProgramming}
 \end{figure}
+\end{comment}
 
 \subsubsection{\textbf{Metodología Kanban}}
 
-Kanban es una metodología con origen en Japón que ayuda a gestionar el flujo de trabajo de manera eficiente mediante un tablero con representaciones visuales del flujo de trabajo y las tareas a realizar, en proceso y terminadas. Estos tableros con columnas también pueden representar las diferentes etapas del desarrollo, permitiendo un control más flexible de las tareas y facilitando la identificación de cuellos de botella, que son limitaciones que restringen el flujo del trabajo o lo bloquean, y del número de tareas que se están llevando a cabo al mismo tiempo.
-Esta metodología es ideal para equipos que buscan mejorar la productividad de forma simple, rápida, visual y flexible.
-\begin{figure}[H]
+Kanban es una metodología con origen en Japón que ayuda a gestionar el flujo de trabajo de manera eficiente mediante un tablero con representaciones visuales del flujo de trabajo y las tareas a realizar, en proceso y terminadas. Estos tableros con columnas también pueden representar las diferentes etapas del desarrollo, permitiendo un control más flexible de las tareas y facilitando la identificación de cuellos de botella, que son limitaciones que restringen el flujo del trabajo o lo bloquean, y del número de tareas que se están llevando a cabo al mismo tiempo. Esta metodología es ideal para equipos que buscan mejorar la productividad de forma simple, rápida, visual y flexible.\cite{kanban_guide}
+
+\begin{comment}
+
+    \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/kanban.png}
+    \includegraphics[height=2cm]{imagenes/kanban.png}
     \caption{Metodología Kanban}
     \label{fig:kanban}
 \end{figure}
+\end{comment}
 
 \subsubsection{\textbf{Metodología Lean}}
 
-Derivada de los principios de manufactura de Toyota, Lean busca minimizar el desperdicio de tiempo y recursos, a la vez que maximizar la eficiencia. Se enfoca en la entrega de valor al cliente de la manera más rápida y eficiente posible, eliminando tareas innecesarias y fomentando la mejora continua. Esta metodología prescinde de una retroalimentación frecuente para asegurar una evaluación y mejora continua, tiene un enfoque perfeccionista.
+Derivada de los principios de manufactura de Toyota, Lean busca minimizar el desperdicio de tiempo y recursos, a la vez que maximizar la eficiencia. Se enfoca en la entrega de valor al cliente de la manera más rápida y eficiente posible, eliminando tareas innecesarias y fomentando la mejora continua. Esta metodología prescinde de una retroalimentación frecuente para asegurar una evaluación y mejora continua, tiene un enfoque perfeccionista.\cite{lean_ref}
 
 
 \section{Negocio}
@@ -510,53 +507,60 @@ Derivada de los principios de manufactura de Toyota, Lean busca minimizar el des
 Hoy en día, existen varias plataformas y aplicaciones centradas en el aprendizaje colaborativo de idiomas, alguna de ellas, similar al proyecto aquí presentado, permiten la corrección de textos por parte de hablantes nativos. Estas herramientas varían en su enfoque, desde la corrección automática con inteligencia artificial hasta el intercambio lingüístico entre usuarios. Se expondrán varias de estas alternativas para estudiar en qué se diferenciará el proyecto aquí expuesto de estas y qué ideas, características y funcionalidades nuevas aporta.
 
 \subsection{HiNative}
-HiNative es una de las plataformas más conocidas en este ámbito, diseñada para resolver dudas sobre el uso de un idioma a través de preguntas y respuestas. Los usuarios pueden consultar sobre gramática, pronunciación y expresiones cotidianas, obteniendo respuestas de hablantes nativos. No obstante, HiNative no está enfocada en la corrección de textos largos, sino en consultas puntuales, lo que limita su utilidad para quienes buscan mejorar su escritura de manera estructurada. Además, al depender de la comunidad, la calidad y rapidez de las respuestas pueden variar considerablemente.
+HiNative es una de las plataformas más conocidas en este ámbito, diseñada para resolver dudas sobre el uso de un idioma a través de preguntas y respuestas. Los usuarios pueden consultar sobre gramática, pronunciación y expresiones cotidianas, obteniendo respuestas de hablantes nativos. No obstante, HiNative no está enfocada en la corrección de textos largos, sino en consultas puntuales o discusiones de foro, lo que limita su utilidad para quienes buscan mejorar su escritura de manera estructurada. \cite{hinative_ref}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/hinative.png}
+    \includegraphics[height=2cm]{imagenes/hinative.png}
     \caption{Logo de HiNative}
     \label{fig:hinative}
 \end{figure}
 
+\begin{comment}
 
-\subsection{Lang-8}
-Por otro lado, Lang-8 ofrece un sistema más orientado a la corrección de textos completos. Los usuarios publican textos en el idioma que están aprendiendo y reciben correcciones detalladas de hablantes nativos. Esta plataforma permite obtener retroalimentación más estructurada que HiNative, ya que el objetivo es mejorar la redacción en su conjunto. Sin embargo, el proyecto ha dejado de recibir actualizaciones y no cuenta con una integración eficiente en dispositivos móviles, lo que ahora limita su accesibilidad y usabilidad.
+    \subsection{Lang-8}
+    Por otro lado, Lang-8 ofrece un sistema más orientado a la corrección de textos completos. Los usuarios publican textos en el idioma que están aprendiendo y reciben correcciones detalladas de hablantes nativos. Esta plataforma permite obtener retroalimentación más estructurada que HiNative, ya que el objetivo es mejorar la redacción en su conjunto. Sin embargo, el proyecto ha dejado de recibir actualizaciones y no cuenta con una integración eficiente en dispositivos móviles, lo que ahora limita su accesibilidad y usabilidad.\cite{lang8_ref}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/lang-8.jpg}
+    \includegraphics[height=2cm]{imagenes/lang-8.jpg}
     \caption{Logo de Lang-8}
     \label{img:lang8}
 \end{figure}
+\end{comment}
+
 \subsection{Tandem}
-Otra alternativa es Tandem, una aplicación centrada en el intercambio lingüístico en tiempo real. A través de mensajes de texto, llamadas de voz y videollamadas, los usuarios pueden practicar con hablantes nativos, incluyendo la opción de corregir mensajes dentro del chat. No obstante, Tandem prioriza la interacción oral y escrita breve, sin ofrecer herramientas específicas para la corrección detallada de textos largos ni la posibilidad de almacenarlos para un seguimiento a largo plazo.
+Otra alternativa es Tandem, una aplicación centrada en el intercambio lingüístico en tiempo real. A través de mensajes de texto, llamadas de voz y videollamadas, los usuarios pueden practicar con hablantes nativos, incluyendo la opción de corregir mensajes dentro del chat. No obstante, Tandem prioriza la interacción oral y escrita breve, sin ofrecer herramientas específicas para la corrección detallada de textos largos ni la posibilidad de almacenarlos para un seguimiento a largo plazo.\cite{tandem_ref}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/tandem.png}
+    \includegraphics[height=2cm]{imagenes/tandem.png}
     \caption{Logo de Tandem}
     \label{fig:tandem}
 \end{figure}
 
 \subsection{Grammarly}
-En el ámbito de la corrección automática, herramientas como Grammarly proporcionan análisis gramatical y sugerencias estilísticas mediante inteligencia artificial. Si bien son útiles para detectar errores básicos y mejorar la fluidez del texto, su funcionamiento se basa en reglas predefinidas y modelos de aprendizaje automático, por lo que no pueden ofrecer la misma precisión y contexto que un hablante nativo. Además, carecen de un enfoque social o de intercambio colaborativo entre usuarios.
+En el ámbito de la corrección automática, herramientas como Grammarly proporcionan análisis gramatical y sugerencias estilísticas mediante inteligencia artificial. Si bien son útiles para detectar errores básicos y mejorar la fluidez del texto, su funcionamiento se basa en reglas predefinidas y modelos de aprendizaje automático, por lo que no pueden ofrecer la misma precisión y contexto que un hablante nativo. Además, carecen de un enfoque social o de intercambio colaborativo entre usuarios.\cite{grammarly_ref}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/grammarly.png}
+    \includegraphics[height=2cm]{imagenes/grammarly.png}
     \caption{Logo de Grammarly}
     \label{fig:grammarly}
 \end{figure}
 
 \subsection{Duolingo}
-Duolingo es una de las aplicaciones más populares para el aprendizaje de idiomas, conocida por su enfoque gamificado y accesible. A través de ejercicios interactivos, los usuarios pueden mejorar su vocabulario, gramática y comprensión escrita y oral de un idioma. Cuenta con un sistema de recompensas que fomenta la constancia en el estudio. Sin embargo, aunque Duolingo ofrece ejercicios de traducción y escritura, su metodología se centra en frases cortas y respuestas predefinidas, sin permitir la redacción libre ni la corrección detallada de textos extensos.
+Duolingo es una de las aplicaciones más populares para el aprendizaje de idiomas, conocida por su enfoque gamificado y accesible. A través de ejercicios interactivos, los usuarios pueden mejorar su vocabulario, gramática y comprensión escrita y oral de un idioma. Cuenta con un sistema de recompensas que fomenta la constancia en el estudio. Sin embargo, aunque Duolingo ofrece ejercicios de traducción y escritura, su metodología se centra en frases cortas y respuestas predefinidas, sin permitir la redacción libre ni la corrección detallada de textos extensos.\cite{duolingo_ref}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=3cm]{imagenes/duolingo.png}
+    \includegraphics[height=2cm]{imagenes/duolingo.png}
     \caption{Logo de Duolingo}
     \label{fig:duolingo}
 \end{figure}
 
-\subsection{Conclusión}
-A pesar de existir varias opciones similares, ninguna ofrece una solución que combine la escritura libre con la interacción social de manera sencilla y atractiva. La aplicación propuesta en este documento se diferencia en que permite a los usuarios intercambiar textos personales con amigos o nuevos contactos, eligiendo la temática de sus escritos, como si fueran entradas de un diario. Además, incorpora un sistema de almacenamiento de textos, permitiendo a los usuarios llevar un registro de su evolución en la escritura del idioma que están aprendiendo.
-A diferencia de estas plataformas, la aplicación propuesta busca ofrecer un espacio donde los usuarios puedan expresarse con mayor libertad, intercambiar textos personales con otros estudiantes y recibir correcciones estructuradas en un entorno colaborativo.
-Uno de los objetivos principales de este proyecto es ofrecer una interfaz intuitiva y visualmente atractiva, diseñada específicamente para facilitar la corrección de textos de manera sencilla y fluida. A diferencia de otras plataformas que presentan sistemas de corrección poco intuitivos o sobrecargados de opciones, esta aplicación prioriza una experiencia de usuario agradable, donde las correcciones pueden realizarse de manera clara y organizada. La combinación de un diseño amigable con la posibilidad de conocer nuevas personas a través del intercambio de textos hace que esta plataforma no solo sea una herramienta educativa, sino también un espacio de interacción y aprendizaje dinámico.
+\section{Justificación de la solución}
 
+Como hemos visto en esta última parte del Estado del Arte, existen varias herramientas con el mismo objetivo que la aquí presentada. Sin embargo, ninguna de ellas ofrece una solución que combine la escritura libre con la interacción social y el intercambio de correcciones. La aplicación propuesta en este documento se diferencia en salirse de las rutas de aprendizaje fijas y predeterminadas ofertadas en soluciones como Duolingo; basar el aprendizaje en la interacción con nativos, a diferencia de opciones como Grammarly; y en la creación de un espacio libre para el aprendizaje por un esfuerzo profundo y personal mediante la redacción de textos más largos, un enfoque alejado de las interacciones rápidas y concisas que ocurren en plataformas como HiNative o Tandem.
+
+Por tanto, la principal innovación reside en que Letterex permite intercambiar textos personales con amigos o nuevos contactos, eligiendo la temática de sus escritos, como si fueran entradas de un diario personal. Esto permite el intercambio lingüístico, con un sistema de almacenamiento de textos y correcciones para llevar un registro de la evolución en la escritura del idioma que se está aprendiendo; pero también un intercambio personal, es decir, una vía para compartir experiencias e ideas entre usuarios favoreciendo así las conexiones internacionales.
+
+Tras el estudio de las tecnologías presentes actualmente en la industria para el desarrollo de aplicaciones web, para la realización este proyecto se ha optado por Next, Node.js, Axios y MongoDB, además de la herramienta Postman para pruebas de la API. La justificación de esta elección se detalla en profundidad en el cuarto capítulo del documento.
+
+En cuanto a la metodología, se ha decidido utilizar la metodología Agile con Scrum como marco de trabajo, por su capacidad de adaptación continua a cambios en los requisitos y funcionalidades, su flexibilidad a la hora de detallar la planificación inicial, y su estructura sostenible que incluye un seguimiento del trabajo claro y funcional. Se trata de una metodología ampliamente utilizada en la industra en la actualidad, lo que hace que su aprendizaje resulte altamente atractivo para el estudiante.

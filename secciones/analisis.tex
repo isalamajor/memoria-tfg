@@ -1,4 +1,4 @@
-\section{Historias de Usuario}
+﻿\section{Historias de Usuario}
 
 Las Historias de Usuario (HU) son una herramienta básica en la gestión de proyectos mediante metodologías ágiles como SCRUM. Se utilizan para definir las funciones de un sistema desde la perspectiva del usuario final, la forma que las necesidades y funcionalidades que se plantean para el proyecto estén orientadas a aportar valor real al usuario del software. No se debe confundir con los requisitos del sistema, un método más tradicional que suele resultar rígido y técnico en comparación con las Historias de Usuario, las cuales consisten en una explicación breve y directa de cada funcionalidad del sistema.
 
@@ -11,14 +11,17 @@ Este enfoque orientado al usuario final se consigue mediante esta fórmula:
 
 Así, se expresa el requerimiento con una descripción concisa, por ejemplo, "Como usuario registrado, quiero recuperar mi contraseña, para poder acceder a mi cuenta en caso de que la olvide". Además, no se trata de un requisito cerrado sino de plantear situaciones para que el cliente y los desarrolladores tengan una conversación sobre las funcionalidades y sus detalles.
 
-Los principios que deben seguir las Historias de Usuario se recogen en el criterio INVEST. Según este criterio, una historia de usuario debe ser:
-    \begin{itemize}
+\begin{comment}
+
+    Los principios que deben seguir las Historias de Usuario se recogen en el criterio INVEST. Según este criterio, una historia de usuario debe ser:
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Independiente: no debe depender de ninguna otra historia de usuario para poder desarrollarse.
         \item Valiosa: debe aportar un beneficio real al usuario, de forma que se invierta esfuerzo en aspectos que verdaderamente satisfagan una necesidad del usuario.
         \item Estimable: debe poder calcularse el esfuerzo que tomará su desarrollo, en este caso mediante puntos de historia, cada uno de los cuales corresponde a 4 horas de trabajo.
         \item Compacta (\textit{Small}): no debe suponer un gran volumen de trabajo sino que debe poder terminarse en unas pocas semanas o días.
         \item Comprobable (\textit{Testable}): las historias deberán ir acompañadas por una confirmación, los criterios para validar que se satisface el objetivo planteado en cada una. En este caso se hará en forma de Pruebas de Aceptación, presentadas en la siguiente sección.
     \end{itemize}
+\end{comment}
 
 Cada historia cuenta con: un identificador (HU-XX), que facilitará reconocerlas, cuantificarlas y asociarlas con las Pruebas de Aceptación; una descripción, siguiendo la fórmula presentada anteriormente; su prioridad ('Alta', 'Media' o 'Baja'), que representa la relevancia para el cliente y el orden que ocupará en el desarrollo; la estimación, que cuantifica las horas de trabajo que requiere la compleción de la historia mediante un sistema de puntos en el que 1 punto equivale a 4 horas; las tareas a realizar para satisfacerla; y las Pruebas de Aceptación para validarla.
 
@@ -43,7 +46,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Baja}{1}
 \textbf{DESCRIPCIÓN} & Como desarrolladora, quiero estructurar e introducir el documento de forma clara, y presentar el marco regulador pertinente. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Investigar plantillas y normativa de la universidad
         \item Consultar ejemplos de TFG de otros compañeros
         \item Investigar sobre las leyes que componen el marco regulador que incumbe a un proyecto web de este tipo
@@ -62,9 +65,9 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \multicolumn{2}{|c|}{\textbf{HU-02}} \\ \hline
 \textbf{TÍTULO} & Investigación de tecnologías para el desarrollo web \\ \hline
 \huPriorityEstimationRow{Alta}{2}
-\textbf{DESCRIPCIÓN} & Como desarrolladora, quiero investigar las principales tecnologías para el desarrollo de aplicaciones web para poder hacer una elección sólidad y fundada de stack del proyecto \\ \hline
+\textbf{DESCRIPCIÓN} & Como desarrolladora, quiero investigar las principales tecnologías para el desarrollo de aplicaciones web para poder hacer una elección sólida y fundada de stack del proyecto \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Investigar tecnologías web para proyectos full-stack
         \item Redactar la primera sección del Estado del Arte
         \item Añadir las referencias bibliográficas necesarias
@@ -85,7 +88,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{1}
 \textbf{DESCRIPCIÓN} & Como desarrolladora, quiero investigar las principales metodologías para el desarrollo de proyectos de software para trabajar en el proyecto de manera ordenada y planificada \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Investigar metodologías de desarrollo de software
         \item Redactar las segunda sección del Estado del Arte
         \item Añadir las referencias bibliográficas necesarias
@@ -106,7 +109,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{1}
 \textbf{DESCRIPCIÓN} & Como desarrolladora, quiero investigar sobre otros productos o propuestas similares ya existentes, para un mejor planteamiento del proyecto y de su aporte. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Investigar propuestas similares a la aquí trabajada
         \item Redactar las tercera sección del Estado del Arte
         \item Añadir las referencias bibliográficas necesarias
@@ -128,7 +131,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Media}{5}
 \textbf{DESCRIPCIÓN} & Como desarrolladora, quiero documentar el análisis de los requerimientos del proyecto y dejarlo constatado en forma de las presentes Historias de Usuario, Pruebas de Aceptación y Matriz de trazabilidad; para poder planificar el trabajo mediante la metodología escogida. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Plantear las necesidades de la aplicación y del documento
         \item Redactar este apartado de "Análisis y Planificación"
         \item Documentar la planificación que se ha seguido y la metodología y
@@ -150,7 +153,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Media}{5}
 \textbf{DESCRIPCIÓN} & Como diseñadora, quiero crear prototipos para definir una línea visual representativa de la interfaz de la aplicación, y documentar tanto ese proceso como el producto final de estructura y arquitectura del proyecto de software. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear prototipos de las interfaces de la aplicación e incluirlos en la sección "Análisis y planificación" del documento
         \item Tras desarrollar la aplicación, documentar su estructura y arquitectura en la sección "Arquitectura" del documento
         \item Redacción del apartado de presupuesto del proyecto y marco socio-económico
@@ -171,8 +174,8 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Baja}{1}
 \textbf{DESCRIPCIÓN} & Como desarrolladora, al finalizar el grueso del trabajo quiero plantear aspectos del producto final a mejorar en el futuro y conclusiones para cerrar el documento. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
-        \item Analizar el producto final para hacer una reflaxión de las posibles mejoras a futuro y del recorrido de aprendizaje en la realización de este trabajo
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item Analizar el producto final para hacer una reflexión de las posibles mejoras a futuro y del recorrido de aprendizaje en la realización de este trabajo
         \item Redactar sección de "Líneas de Trabajo Futuro y Conclusión"
     \end{itemize}
 \\ \hline
@@ -195,7 +198,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{5}
 \textbf{DESCRIPCIÓN} & Como usuario visitante, quiero registrarme con mis datos y correo electrónico para acceder a las funcionalidades de mi cuenta de forma segura.\\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear una interfaz con formulario de registro e inicio de sesión
         \item Incluir verificación via email de la identidad del usuario para el registro
         \item Facilitar la entrega de un token de autenticación de usuario para obtener los datos que le correspondan en cada página, poder mantener la sesión abierta, y proteger las rutas privadas de la aplicación
@@ -216,7 +219,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Media}{1}
 \textbf{DESCRIPCIÓN} & Como usuario registrado, quiero poder navegar fácilmente entre las páginas de la aplicación y cerrar la sesión iniciada \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear un menú desplegable con links a las diferentes páginas y la opción de cerrar la sesión
         \item Asegurarse de que se limpia el token de autenticación al cerrar la sesión
     \end{itemize}
@@ -236,7 +239,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Baja}{1}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero poder recuperar mi acceso a la plataforma si olvido la contraseña. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear una interfaz para la recuperación de contraseña y selección de una nueva
         \item Crear un sistema de envío automático de un código de verificación por correo electrónico para la identificación del usuario
     \end{itemize}\\ \hline
@@ -259,7 +262,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{5}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero editar mis idiomas, biografía, imagen de perfil y país en mi página de perfil, así como mi contraseña. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear una interfaz que muestre los datos de perfil del usuario y que permita editarlos
         \item Crear un componente que permita cargar imágenes a la plataforma
         \item Implementar un mapa que muestre el país del usuario y que le permita editarlo
@@ -282,7 +285,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Baja}{1}
 \textbf{DESCRIPCIÓN} & Como usuario registrado, quiero poder eliminar mi cuenta de forma permanente para que mis datos personales sean borrados del sistema. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear un apartado de configuración en la interfaz de mi perfil de usuario
         \item Implementar un modal en que se pida una doble confirmación de la acción para evitar borrados accidentales
         \item Crear el servicio encargado de la eliminación de los datos del usuario en la base de datos
@@ -303,7 +306,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Media}{1}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero ver el perfil de otros para conocer sobre ellos y decidir si quiero agregarlos. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Modificar la interfaz anterior de perfil de usuario para que sirva como visualizador tanto de perfil propio como de perfil ajeno, restringiendo las funciones de edición si es ajeno
     \end{itemize} \\ \hline
 \textbf{PRUEBAS DE ACEPTACIÓN} & PA-14 \\ \hline
@@ -325,7 +328,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{5}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero escribir cartas en diferentes idiomas otorgándoles un título, una fecha, una especificación del idioma en que están escritas, su contenido; además de tener la opción de clasificarlas por diario. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear una interfaz que permita la creación de una carta nueva, que cuente con un editores que permitan especificar todos los datos de una carta (título, contenido, fecha, diario, idioma)
         \item Crear la lógica que guarde los datos de una carta en la base de datos
     \end{itemize}\\ \hline
@@ -344,7 +347,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{2}
 \textbf{DESCRIPCIÓN} & Como autor, quiero guardar mi progreso para terminar la carta en otro momento. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Incluir el la interfaz de creación de carta la opción de guardar la carta
         \item Crear una interfaz que permita acceder a una carta, editarla y guardar los cambios
     \end{itemize}\\ \hline
@@ -364,7 +367,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{2}
 \textbf{DESCRIPCIÓN} & Como autor, quiero compartir mis cartas con amigos. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Incluir en la interfaz de edición de carta la opción de enviarla a amigos
         \item Crear el servicio para compartir una carta con otro usuario
     \end{itemize}\\ \hline
@@ -383,7 +386,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{5}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero ver la lista de mis cartas, con la opción de aplicar filtros para encontrar cartas determinadas más fácilmente. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear una interfaz que muestre las cartas escritas por el usuario
         \item Añadir barras con herramientas de filtrado por título, idioma o diario
         \item Añadir opción de visualizar la lista ordenada por diarios, y la lista de diarios.
@@ -405,7 +408,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Baja}{2}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero poder borrar mis cartas sin que desaparezcan del buzón de otros. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Añadir a la interfaz con la lista de cartas creadas por el usuario la opción de borrar una selección de cartas
         \item Pedir confirmación del usuario antes de realizar el borrado
         \item Crear los servicios encargados del borrado lógico de cartas
@@ -430,7 +433,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{3}
 \textbf{DESCRIPCIÓN} & Como revisor, quiero ver qué cartas han compartido conmigo para empezar a corregir, con la opción de aplicar filtros para encontrar cartas determinadas fácilmente, y pudiendo ver claramente cuáles de esas cartas ya han sido corregidas y cuáles no. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Añadir a la interfaz de cartas creadas, un apartado con la lista de cartas recibidas
         \item Incluir en esta lista una distinción por colores de carta corregida o pendiente
         \item Añadir barras con herramientas de filtrado por título, remitente o si la carta está pendiente de corregir
@@ -452,7 +455,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Baja}{1}
 \textbf{DESCRIPCIÓN} & Como revisor, quiero poder borrar de mi buzón de recibidas aquellas cartas que han sido eliminadas por el usuario que me las envió, en caso de no querer conservar la carta y las correcciones que le he aplicado. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Añadir a la interfaz con la lista de cartas recibidas la opción de eliminar una carta que ha sido eliminada por su autor
         \item Crear el servicio encargado del borrado físico de cartas (si la carta es eliminada tanto por creador como por remitente, no hay necesidad de mantener el registro en la base de datos)
     \end{itemize}\\ \hline
@@ -472,7 +475,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{4}
 \textbf{DESCRIPCIÓN} & Como revisor, quiero añadir correcciones sobre el texto de mi amigo para señalar sus errores u ofrecer sugerencias. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear una interfaz de correción que permita visualizar una carta recibida y añadir correcciones sobre su contenido
         \item Incluir en dicha interfaz la opción de guardar la corrección para editarla más adelante
         \item Crear el servicio para guardas las correcciones y acceder a ellas
@@ -492,7 +495,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Media}{1}
 \textbf{DESCRIPCIÓN} & Como revisor, quiero escribir una nota explicativa al final de mi corrección. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Incluir en la interfaz de correción un campo para añadir retroalimentación o comentarios finales
         \item Incluir en el servicio de guardado y acceso a cartas corregidas este campo
     \end{itemize}\\ \hline
@@ -511,7 +514,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{1}
 \textbf{DESCRIPCIÓN} & Como revisor, quiero marcar la corrección como enviada para que mi amigo la vea. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Añadir en la interfaz de corrección la opción de enviar la correción de vuelta: un botón "Send Back"
         \item Crear el servicio para enviar la carta de vuelta a su autor con las correcciones y comentarios añadidos
     \end{itemize}\\ \hline
@@ -531,7 +534,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{2}
 \textbf{DESCRIPCIÓN} & Como remitente, quiero recibir la corrección de la carta que envié a mi amigo una vez este la haya corregido y enviado de vuelta. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Añadir a las tarjetas de la interfaz de listas de cartas un botón por cada corrección recibida para esa carta.
         \item Crear una página de visualización de corrección, similar a la de corrección pero no editable.
         \item Añadir un link hacia esa página al click del botón mencionado anteriormente.
@@ -556,7 +559,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{3}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero que al plataforma me sugiera usuarios que puedo añadir como amigos basándose en intereses lingüísticos comunes. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear una interfaz que muestra una lista de usuarios sugeridos
         \item Crear el servicio para acceder y crear dicha lista mediante un algoritmo de recomendación personalizado
     \end{itemize}\\ \hline
@@ -575,7 +578,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{1}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero buscar personas para agregarlas a mi lista de amigos. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Incluir en la interfaz de amistades una barra de búsqueda para realizar la tarea
         \item Crear la lógica para obtener una lista de usuarios a partir de una búsqueda
     \end{itemize}\\ \hline
@@ -594,7 +597,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Alta}{2}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero solicitar amistad a alguien para intercambiar cartas y correcciones; y rechazar o aceptar las solicitudes de amistad que me lleguen. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Añadir a las tarjetas de usuarios sugeridos o buscados de la interfaz de amistades un botón para enviar una solicitud de amistad
         \item Crear el servicio para enviar una solicitud de amistad
         \item Añadir un componente de interfaz que muestre la lista de solicitudes de amistad recibidas
@@ -617,7 +620,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \huPriorityEstimationRow{Baja}{1}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero ver quiénes son mis amigos actuales para saber con quién puedo interactuar, así como eliminar un contacto si ya no es de mi interés intercambiar cartas con él. \\ \hline
 \textbf{TAREAS} &
-    \begin{itemize}
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Añadir un componente de interfaz que muestre la lista de amigos del usuario
         \item Crear el servicio para acceder a la lista de amigos del usuario
         \item Añadir un componente de interfaz que permita eliminar un amigo de la lista de contactos
@@ -649,7 +652,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-05 \\ \hline
 \textbf{DESCRIPCIÓN} & Obtención de una validación positiva por parte del tutor de las historias de usuario. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Redacción de historias de usuario
         \item Validación de estas en una revisión con el tutor
     \end{enumerate}. \\ \hline
@@ -667,10 +670,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07 \\ \hline
 \textbf{DESCRIPCIÓN} & Obtención de una validación positiva por parte del tutor de la estructura planteada en el documento, el esqueleto de las diferentes secciones y su contenido. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item Redacción completa del documento
-        \item Validación de este en una revisión con el tutor
-    \end{enumerate}. \\ \hline
+        El tutor valida que la documentación cumple con los requisitos establecidos. \\ \hline
 \end{tabular}
 \caption{PA-02}
 \label{tab:PA-02}
@@ -689,18 +689,20 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-08 \\ \hline
 \textbf{DESCRIPCIÓN} & Asegurar que un nuevo usuario puede registrarse y que el sistema impide el registro hasta que el correo es verificado. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario abre su navegador y a accede a la URL de la aplicación.
-        \item El usuario clica el botón "Register" para acceder al formulario de registro.
-        \item El usuario introduce un nombre y contraseña.
-        \item En caso de ser validos, el usuario podrá introducir un correo electrónico al que vincular la cuenta. En caso contrario un mensaje de error.
-        \item El usuario recibe un email con un código al correo electrónico.
-        \item El usuario podrá escoger los idiomas que controla. En caso de no escoger ninguno, recibe un mensaje de error.
-        \item El usuario introduce dicho código en la interfaz. En caso de ser incorrecto, recibe un mensaje de error.
-        \item El usuario podrá escoger los idiomas que desee aprender. En caso de no escoger ninguno, recibe un mensaje de error.
-        \item El usuario ve una compilación de los datos que seleccionó para la creación de su cuenta, con la opción de cargar una foto de perfil.
-        \item El usuario carga una foto de perfil, opcionalmente; y clica el botón "All set \checkmark" para continuar al inicio de sesión.
-        \item En la base de datos, se comprueba que se creó el nuevo usuario con los datos que introdujo. En la carpeta local de imagenes, se comprueba que se subió la imagen de perfil.
+        \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+            \item El usuario accede a la URL de la aplicación a través de su navegador.
+            \item El usuario selecciona el botón "Register" para iniciar el proceso de registro.
+            \item El usuario introduce un nombre de usuario y una contraseña.
+            \item El sistema valida los datos introducidos. En caso de que el nombre tenga menos de 5 caracteres o la contraseña menos de 8, se muestra un mensaje de error.
+            \item El usuario introduce un correo electrónico para vincular la cuenta.
+            \item El sistema envía un código de verificación al correo electrónico proporcionado.
+            \item El usuario introduce el código de verificación en la interfaz.
+            \item El sistema valida el código. En caso de ser incorrecto, se muestra un mensaje de error.
+            \item El usuario selecciona los idiomas que domina. En caso de no seleccionar ninguno, se muestra un mensaje de error.
+            \item El usuario selecciona los idiomas que desea aprender. En caso de no seleccionar ninguno, se muestra un mensaje de error.
+            \item El sistema muestra un resumen de los datos introducidos, incluyendo la opción de añadir una imagen de perfil.
+            \item El usuario, de forma opcional, añade una imagen de perfil y selecciona el botón "All set" para finalizar el registro.
+            \item El sistema crea el nuevo usuario con los datos proporcionados y almacena la imagen de perfil en caso de haber sido añadida.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-03}
@@ -716,11 +718,11 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-08 \\ \hline
 \textbf{DESCRIPCIÓN} & Asegurar que un usuario puede acceder a la plataforma introduciendo sus credenciales. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario abre su navegador y a accede a la URL de la aplicación.
-        \item El usuario clica el botón "Log in" para acceder al formulario de inicio de sesión.
-        \item El usuario introduce su nombre de usuario o email, y su contraseña.
-        \item En caso de ser validos, el usuario será dirigido a la página principal. En caso contrario, obtiene un mensaje de error en el formulario.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario selecciona el botón "Log in" para acceder al formulario de inicio de sesión.
+        \item El usuario introduce su nombre de usuario o correo electrónico, junto con su contraseña.
+        \item El sistema valida las credenciales introducidas.
+        \item En caso de ser correctas, el usuario es redirigido a la página principal. En caso contrario, el sistema muestra un mensaje de error en el formulario.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-04}
@@ -736,16 +738,19 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-10 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar que un usuario que ha olvidado su contraseña puede restablecerla mediante código por email. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario abre su navegador y a accede a la URL de la aplicación.
-        \item El usuario clica el botón "Log in" para acceder al formulario de inicio de sesión.
-        \item El usuario encuentra fácil y claramente una opción "Forgot password" y la clica.
-        \item El usuario ve un formulario donde introduce el correo electrónico vinculado a su cuenta.
-        \item El usuario recibe un correo electrónico con un código de verificación.
-        \item El usuario introduce dicho código en el nuevo formulario que se muestra. En caso de no ser válido, recibe un mensaje de error.
-        \item El usuario ve un formulario con dos entradas para introducir la nueva contraseña y una confirmación de esta. En caso de no ser válida, o de que las contraseñas no coincidan, recibe un mensaje de error.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario accede a la URL de la aplicación a través de su navegador.
+        \item El usuario selecciona el botón "Log in" para acceder al formulario de inicio de sesión.
+        \item El usuario localiza la opción "Forgot password" y la selecciona.
+        \item El sistema muestra un formulario en el que el usuario introduce el correo electrónico vinculado a su cuenta.
+        \item El sistema envía un correo electrónico con un código de verificación.
+        \item El usuario introduce dicho código en el formulario correspondiente.
+        \item El sistema valida el código. En caso de no ser válido, se muestra un mensaje de error.
+        \item El sistema muestra un formulario para introducir una nueva contraseña y su confirmación.
+        \item El usuario introduce la nueva contraseña y su confirmación.
+        \item El sistema valida que la contraseña tiene al menos 8 caracteres y que ambas coinciden. En caso contrario, se muestra un mensaje de error.
         \item El usuario es redirigido al formulario de inicio de sesión.
-        \item Se comprueba que el reseteo funcionó llevando acabo la PA-04 con ese usuario y la nueva contraseña. Para doble validación, se comprueba que se obtiene un mensaje de error al introducir las credenciales anteriores al reseteo.
+        \item El usuario introduce sus nuevas credenciales y accede correctamente a la aplicación.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-05}
@@ -762,10 +767,12 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-08 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar que el token de autenticación persiste en el navegador aunque este se cierre. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario que ya ha abierto su sesión (PA-04) cierra el navegador.
-        \item Dicho usuario vuelva a abrir el navegador e introduce la URL de la aplicación.
-        \item El usuario ve su página principal, con sus datos cargados correctamente.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+    \item El usuario accede a la aplicación e inicia sesión correctamente.
+    \item El usuario cierra el navegador.
+    \item El usuario vuelve a abrir el navegador e introduce la URL de la aplicación.
+    \item El sistema reconoce la sesión del usuario.
+    \item El usuario es dirigido a la página principal con sus datos cargados correctamente.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-06}
@@ -781,11 +788,11 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-09 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar la existencia y funcionamiento del menú de navegación desplegable. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario registrado inicia sesión.
-        \item El usuario despliega el menú de navegación que se encuentra a la izquierda de la ventana acercando el cursor a este.
-        \item Se verifica que se abre un menú con las diferentes páginas de la aplicación: Página Principal, Mi Perfil, y Amigos; además del logo de la aplcación y un botón de Cierre de Sesión.
-        \item El usuario navega por las tres páginas clicando sus enlaces y se comprueba con conducen a la página correspondiente.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+    \item El usuario accede a la aplicación e inicia sesión correctamente.
+    \item El usuario desplaza el cursor hacia el menú de navegación situado en la parte izquierda de la ventana.
+    \item El sistema muestra el menú de navegación, que incluye las páginas Página Principal, Mi Perfil y Amigos, así como el logo de la aplicación y el botón de cierre de sesión.
+    \item El usuario navega por las distintas páginas seleccionando sus enlaces y se comprueba que conducen a la página correspondiente.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-07}
@@ -802,11 +809,11 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-09 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar el cierre de sesión. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario que ya ha abierto su sesión (PA-04) despliega el menú de navegación que se encuentra a la izquierda de la ventana acercando el cursor a este.
-        \item El usuario clica la opción de cierre de sesión "Log out".
-        \item El usuario ve la página de inicio de la aplicación.
-        \item El usuario abre una ventana nueva del navegador y ve la página de inicio de sesión de la aplicación.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+    \item El usuario accede a la aplicación con una sesión iniciada y desplaza el cursor hacia el menú de navegación situado en la parte izquierda de la ventana.
+    \item El usuario selecciona la opción de cierre de sesión "Log out".
+    \item El sistema cierra la sesión y redirige al usuario a la página de inicio de la aplicación.
+    \item El usuario abre una nueva ventana del navegador y se muestra la página de inicio de sesión de la aplicación.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-08}
@@ -821,22 +828,12 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-09 \\ \hline
 \textbf{TÍTULO} & Protección de rutas \\ \hline
 \textbf{HU IMPLICADAS} & HU-08 \\ \hline
-\textbf{DESCRIPCIÓN} & Validar el funcionamiento de la implementación de rutas protegidas. Se lleva a cabo esta prueba con todas las páginas protegidas de la aplicación, que son las siguientes:
-    \begin{itemize}
-        \item \texttt{'letterex/homepage'}
-        \item \texttt{'letterex/friends'}
-        \item \texttt{'letterex/profile/yours'}
-        \item \texttt{'letterex/profile/userId'}
-        \item \texttt{'letterex/new-letter'}
-        \item \texttt{'letterex/edit-letter/letterId'}
-        \item \texttt{'letterex/correct-letter/correctedLetterId'}
-        \item \texttt{'letterex/view-correccion/correctedLetterId'}
-    \end{itemize}
+\textbf{DESCRIPCIÓN} & Validar el correcto funcionamiento de las rutas protegidas de la aplicación, asegurando que un usuario no autenticado no puede acceder a ellas y es redirigido a la página de inicio de sesión.
 \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario abre su navegador y introduce la URL de la página protegida.
-        \item El usuario es redirigido automáticamente a la página de inicio.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+    \item El usuario accede a una URL correspondiente a una página protegida sin haber iniciado sesión.
+    \item El sistema redirige automáticamente al usuario a la página de inicio de sesión.
     \end{enumerate}\\ \hline
 \end{tabular}
 \end{table}
@@ -854,7 +851,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-11 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar la existencia y propiedad de la página de perfil del usuario. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item El usuario inicia sesión en la plataforma.
         \item El usuario abre el menú desplegable y hace clic en \texttt{Profile}.
         \item El usuario es dirigido a la página de perfil donde puede ver su información de perfil (nombre, email, biografía, lenguajes, estadísticas y mapa con su localidad)
@@ -873,17 +870,19 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-11 \\ \hline
 \textbf{TÍTULO} & Edición del Perfil Propio \\ \hline
 \textbf{HU IMPLICADAS} & HU-11 \\ \hline
-\textbf{DESCRIPCIÓN} & Comprobar que los campos de la página de perfil de usuario son editables. \\ \hline
+\textbf{DESCRIPCIÓN} & Comprobar que los campos de la página de perfil de usuario pueden ser editados correctamente. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item El usuario inicia sesión en la plataforma.
-        \item El usuario abre el menú desplegable y hace clic en \texttt{Profile}.
-        \item El usuario es dirigido a la página de perfil, donde clica en el botón \texttt{Edit} en la esquina superior izquierda del panel.
-        \item Los campos editables del perfil (biografía, lenguajes y localidad) se tornan editables.
-        \item El usuario cambia la biografía, los lenguajes, su localidad (país) en el mapa interactivo, y su imagen; y clica el botón \texttt{Save} para guardar.
-        \item Aparece un diálogo de confirmación de éxito del guardado.
-        \item El usuario refresca la página y se muestran los datos según los acaba de guardar.
-        \item Se comprueba en la base de datos que los campos de ese usuario se actualizaron correctamente.
+        \item El usuario accede al menú de navegación y selecciona \texttt{Profile}.
+        \item El sistema muestra la página de perfil con la información del usuario.
+        \item El usuario hace clic en \texttt{Edit}.
+        \item El sistema activa el modo edición de los campos del perfil.
+        \item El usuario modifica los campos deseados (biografía, lenguajes, localidad e imagen) y pulsa \texttt{Save}.
+        \item El sistema muestra una confirmación de guardado y actualiza los datos.
+        \item El usuario recarga la página.
+        \item El sistema muestra la información actualizada.
+        \item Se verifica en la base de datos que los cambios han sido persistidos correctamente.
     \end{enumerate} \\ \hline
 \end{tabular}
 \caption{PA-11}
@@ -900,25 +899,22 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-11 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar la existencia y correcto funcionamiento del panel de cambio de contraseña. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item El usuario inicia sesión en la plataforma.
-        \item El usuario abre el menú desplegable y hace clic en \texttt{Profile}.
-        \item El usuario es dirigido a la página de perfil, donde clica en el botón \texttt{Settings} en la esquina superior izquierda del panel.
-        \item Aparece un diálogo de configuración con dos páginas: cambio de contraseña (la actual) y eliminación de cuenta.
-        \item El usuario rellena el formulario con su contraseña, la confirmación de contraseña incorrecta (diferente de la contraseña del campo anterior) y la nueva contraseña. Al hacer click en el botón \texttt{Save} obtiene un mensaje de error.
-        \item El usuario rellena el formulario con su contraseña incorrecta (diferente a la válida que asignó), la confirmación de contraseña, y la nueva contraseña. Al hacer click en el botón \texttt{Save} obtiene un mensaje de error.
-        \item El usuario rellena el formulario con su contraseña, la confirmación de contraseña, y la nueva contraseña igual a las anteriores. Al hacer click en el botón \texttt{Save} obtiene un mensaje de error.
-        \item El usuario clica el botón \texttt{Save} con alguno de estos tres campos incompleto, y el botón no funciona.
-        \item El usuario rellena el formulario con su contraseña correcta, la confirmación de esta, y una nueva contraseña.
-        \item Aparece un diálogo de confirmación de éxito del cambio de contraseña.
-        \item El usuario cierra la sesión e intenta acceder con sus antiguas credenciales. Recibe un mensaje de credenciales inválida.
-        \item El usuario cierra la sesión e intenta acceder con sus nuevas credenciales. Se le permite el acceso a la plataforma y a su cuenta.
+        \item El usuario accede a \texttt{Profile} y abre el panel \texttt{Settings}.
+        \item El sistema muestra las opciones de configuración, incluyendo el cambio de contraseña.
+        \item El usuario accede al formulario de cambio de contraseña.
+        \item El usuario realiza intentos de envío con datos inválidos (contraseñas incorrectas, no coincidentes o campos incompletos).
+        \item El sistema rechaza los intentos y muestra mensajes de error adecuados.
+        \item El usuario introduce la contraseña actual correcta, la nueva contraseña y su confirmación, y pulsa \texttt{Save}.
+        \item El sistema confirma el cambio de contraseña.
+        \item El usuario cierra sesión e intenta acceder con credenciales antiguas, siendo rechazado.
+        \item El usuario accede exitosamente con las nuevas credenciales.
     \end{enumerate} \\ \hline
 \end{tabular}
 \caption{PA-12}
 \label{tab:PA-12}
 \end{table}
-
 
 
 \begin{table}[H]
@@ -930,18 +926,17 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-12 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar la existencia y correcto funcionamiento del panel de eliminación de cuenta. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item El usuario inicia sesión en la plataforma.
-        \item El usuario abre el menú desplegable y hace clic en \texttt{Profile}.
-        \item El usuario es dirigido a la página de perfil, donde clica en el botón \texttt{Settings} en la esquina superior izquierda del panel.
-        \item Aparece un diálogo de configuración con dos páginas: cambio de contraseña (la actual) y eliminación de cuenta.
-        \item El usuario clica la opción de \texttt{Delete account}.
-        \item Se muestra una advertencia de acción irreversible y un formulario que pide la contraseña.
-        \item El usuario introduce una contraseña incorrecta y al clicar el botón \texttt{Delete account} obtiene un mensaje de error de contraseña incorrecta.
-        \item El usuario introduce su contraseña y se le muestra mensaje y botón de confirmación.
-        \item El usuario clica el botón de confirmación y es redirigido a la página de inicio.
-        \item El usuario intenta iniciar sesión con la cuenta que acaba de borrar y obtiene un mensaje de usuario no registrado.
-        \item Se comprueba en base de datos que se borró la información de ese usuario y sus cartas fueron marcadas como borradas si fueron compartidas y eliminadas físicamente (registro borrado) si no.
+        \item El usuario accede a la página \texttt{Profile} y abre el panel \texttt{Settings}.
+        \item El sistema muestra las opciones de configuración, incluyendo la eliminación de cuenta.
+        \item El usuario selecciona la opción \texttt{Delete account}.
+        \item El sistema muestra una advertencia de acción irreversible y solicita la contraseña del usuario.
+        \item El usuario introduce una contraseña incorrecta y el sistema muestra un mensaje de error.
+        \item El usuario introduce la contraseña correcta y confirma la eliminación.
+        \item El sistema elimina la cuenta y redirige al usuario a la página de inicio.
+        \item El usuario intenta iniciar sesión nuevamente y el sistema rechaza el acceso indicando que el usuario no existe.
+        \item Se verifica en la base de datos que la cuenta ha sido eliminada y que sus cartas han sido marcadas como eliminadas (borrado lógico).
     \end{enumerate} \\ \hline
 \end{tabular}
 \caption{PA-13}
@@ -955,15 +950,14 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-14 \\ \hline
 \textbf{TÍTULO} & Visualización de Perfil Ajeno \\ \hline
 \textbf{HU IMPLICADAS} & HU-13 \\ \hline
-\textbf{DESCRIPCIÓN} & Comprobar la existencia y propiedad de la página de perfil de otro usuario (diferente al autenticado). Asegurar que no es posible editar los campos o acceder a la configuración en este perfil, dado que no es el propio.\\ \hline
+\textbf{DESCRIPCIÓN} & Comprobar la visualización del perfil de otro usuario y la restricción de edición sobre el mismo.\\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item El usuario inicia sesión en la plataforma.
-        \item El usuario abre el menú desplegable y hace clic en \texttt{Friends}.
-        \item El usuario clica la tarjeta de alguno de los perfiles de usuarios que se muestran.
-        \item El usuario es dirigido a la página del perfil de ese usuario, donde se ve su nombre de usuario, email, imagen, biografía, lenguajes, estadísticas y mapa con localidad.
-        \item Se comprueba que no existen botones de editar o configuración en esta vista.
-        \item Se hace la prueba con otro par de tarjetas usuarios diferentes para comprobar que los datos se corresponden el usuario consultado.
+        \item El usuario accede a \texttt{Friends}.
+        \item El usuario selecciona el perfil de otro usuario.
+        \item El sistema muestra el perfil del usuario seleccionado con su información (nombre, fecha de registro, biografía, lenguajes, estadísticas y localización).
+        \item El sistema no muestra opciones de edición ni configuración en este perfil.
     \end{enumerate} \\ \hline
 \end{tabular}
 \caption{PA-14}
@@ -980,16 +974,19 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-15 \\ \hline
 \textbf{TÍTULO} & Gestión de Borradores y Persistencia de Cartas Creadas \\ \hline
 \textbf{HU IMPLICADAS} & HU-14, HU-15 \\ \hline
-\textbf{DESCRIPCIÓN} & Validar que una carta que se ha creado puede ser guardada parcialmente y retomada más tarde sin perder información. \\ \hline
+\textbf{DESCRIPCIÓN} & Validar que una carta que se ha creado puede ser guardada parcialmente y retomada posteriormente sin perder información. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item El usuario inicia sesión en la plataforma.
-        \item En la principal, el usuario clica el botón de crear nueva carta \texttt{New}.
-        \item El usuario es dirigido a la página de creación de carta, donde tiene los campos título, fecha, diario, idioma y contenido a rellenar.
-        \item El usuario rellena los campos y clica el botón de guardado \texttt{Save}.
-        \item Se abre un diálogo de éxito del guardado, y el botón de guardado es sustituido por un mensaje de "Carta guardada".
-        \item Al editar alguno de los campos, vuelve a aparecer el botón de guardado.
-        \item El usuario vuelve a la página de inicio o va a cualquier otra página, y al volver a la carta creada clicando su tarjeta en el listado de sus cartas de la página principal, ve la información de su carta tal y como lo había guardado.
+        \item El usuario accede a la creación de una nueva carta mediante el botón \texttt{New} de la página principal.
+        \item El sistema redirige a la página de creación de carta, con los campos título, fecha, diario, idioma y contenido.
+        \item El usuario intenta guardar la carta sin completar todos los campos obligatorios.
+        \item El sistema impide el guardado y muestra un mensaje de validación.
+        \item El usuario completa todos los campos obligatorios (título, fecha, idioma y contenido; el diario es opcional) y pulsa \texttt{Save}.
+        \item El sistema guarda la carta, muestra un mensaje de confirmación y redirige a la página de edición de carta, donde muestra los datos tal y como que se han guardado.
+        \item El usuario modifica alguno de los campos y el sistema vuelve a habilitar la opción de guardado.
+        \item El usuario navega a la página principal y posteriormente vuelve a la carta desde el listado.
+        \item El sistema muestra la carta con los datos tal y como fueron guardados.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-15}
@@ -1004,19 +1001,17 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-16\\ \hline
 \textbf{TÍTULO} & Envío de Cartas a Contactos \\ \hline
 \textbf{HU IMPLICADAS} & HU-16 \\ \hline
-\textbf{DESCRIPCIÓN} & Asegurar que en la página de edición de una carta existe la opción de compartirla con amigos. \\ \hline
+\textbf{DESCRIPCIÓN} & Asegurar que una carta puede ser compartida con otros usuarios desde la página de edición. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item El usuario inicia sesión en la plataforma.
-        \item En la lista de sus cartas de página principal, clica una de ellas, o bien crea una nueva y la guarda.
-        \item Se comprueba que se muestra, junto con el mensaje de "Carta guardada", un botón \texttt{Share letter} para su envío.
-        \item El usuario clica dicho botón.
-        \item Se debe abrir un diálogo con el listado de contactos del usuario con cada uno un checkbox de selección.
-        \item Se permite seleccionar uno o dos amigos del listado. Al clicar un tercero se deselecciona automáticamente el primer seleccionado de los otros.
-        \item Habiendo seleccionado un contacto, se clica el botón de envío \texttt{Send}.
-        \item Se cierra el diálogo y se observa que los campos de la carta se deshabilitan, pues ya no se pueden editar.
-        \item Se clica el botón de envío nuevamente, y debe aparecer en el listado el usuario con quien se compartió la carta ya seleccionado y su checkbox deshabilitado, y se puede escoger solamente uno más.
-        \item Al seleccionar y clicar enviar, desaparece el botón de envío.
+        \item El usuario accede a una carta desde el listado o crea una nueva y la guarda.
+        \item El sistema muestra la carta junto con la opción \texttt{Share letter}.
+        \item El usuario selecciona la opción de compartir.
+        \item El sistema muestra un diálogo con la lista de contactos del usuario para seleccionar destinatarios.
+        \item El usuario selecciona contactos y confirma el envío mediante \texttt{Send}.
+        \item El sistema registra el envío, actualiza el estado de la carta a "Enviada", cierra el diálogo y deshabilita la opción de editar.
+        \item El usuario vuelve a abrir la opción de compartir y el sistema muestra los contactos ya seleccionados como no disponibles para selección.
     \end{enumerate} \\ \hline
 \end{tabular}
 \caption{PA-16}
@@ -1028,14 +1023,15 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
 \textbf{IDENTIFICADOR} & PA-17 \\ \hline
-\textbf{TÍTULO} & Recepción de Cartas de Contactos \\ \hline
+\textbf{TÍTULO} & Recepción de Cartas Compartidas \\ \hline
 \textbf{HU IMPLICADAS} & HU-16 \\ \hline
-\textbf{DESCRIPCIÓN} & Asegurar que el envío de una carta hace que esta aparezca en el buzón del destinatario seleccionado. La prueba se debe realizar habiendo realizado la prueba anterior (PA-12) en que se envía una carta, pero con el usuario destinatario. \\ \hline
+\textbf{DESCRIPCIÓN} & Asegurar que una carta enviada por otro usuario aparece correctamente en el buzón del usuario destinatario.  \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item El usuario destinatario inicia sesión en la plataforma.
-        \item En la lista de sus cartas recibidas de página principal, se muestra una tarjeta correspondiente a la carta enviada en la prueba PA-12, con su mismo título e idioma, y su correspondiente fecha de envío y remitente.
-        \item El usuario clica esa tarjeta y es dirigido a la página de corrección de cartas recibidas, donde los datos de la carta deben coincidir exactamente con lo que el usuario remitente envió.
+        \item El sistema muestra en el buzón de cartas recibidas una carta enviada por otro usuario, con su título, idioma, fecha de envío y remitente.
+        \item El usuario clica la carta recibida.
+        \item El sistema redirige a la página de corrección, que muestra los detalles de la carta enviada por el remitente.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-17}
@@ -1049,15 +1045,15 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-18 \\ \hline
 \textbf{TÍTULO} & Filtrado y Paginación de Cartas Enviadas \\ \hline
 \textbf{HU IMPLICADAS} & HU-17 \\ \hline
-\textbf{DESCRIPCIÓN} & Verificar que la barra de búsqueda y los filtros de la interfaz funcionan sobre el listado de cartas propias. \\ \hline
+\textbf{DESCRIPCIÓN} & Verificar el correcto funcionamiento de la paginación, filtrado y ordenación del listado de cartas propias. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario con al menos 11 cartas creadas inicia sesión.
-        \item El en panel de sus cartas de la página principal, ve el listado de sus cartas por páginas de 10 elementos.
-        \item Al pasar de página se muestran las próximas 10.
-        \item Al volver atrás se muestran las anteriores.
-        \item El usuario escribe en la barra de búsqueda, y ve que se reduce el listado a las cartas cuyo título o idioma corresponda total o parcialmente con la búsqueda.
-        \item Puesto que aparece la fecha de cada carta en su tarjeta, se comprueba que están ordenadas de más recientes a más antiguas.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario inicia sesión en la plataforma con al menos 6 cartas creadas.
+        \item El sistema muestra el listado de cartas propias paginado (5 elementos por página).
+        \item El usuario navega entre páginas y el sistema actualiza correctamente los elementos mostrados.
+        \item El usuario utiliza la barra de búsqueda.
+        \item El sistema filtra las cartas cuyo título o idioma coincide total o parcialmente con la búsqueda.
+        \item El sistema muestra las cartas ordenadas de más recientes a más antiguas según su fecha.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-18}
@@ -1071,17 +1067,17 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-19 \\ \hline
 \textbf{TÍTULO} & Borrado de Cartas No Compartidas \\ \hline
 \textbf{HU IMPLICADAS} & HU-18 \\ \hline
-\textbf{DESCRIPCIÓN} & Comprobar que al borrar una carta que no ha sido compartida con ningún usuario, esta desaparece para de la lista de cartas y se elimina su registro (borrado físico). \\ \hline
+\textbf{DESCRIPCIÓN} & Comprobar que al eliminar una carta no compartida, esta desaparece del listado y su registro se elimina de la base de datos (borrado físico). \\ \hline
 \textbf{PROCEDIMIENTO} &
-     \begin{enumerate}
-        \item El usuario inicia sesión. El usuario debe tener al menos una carta que no haya sido compartida.
-        \item En la barra de herramientas del panel de sus cartas de la página principal, clica el botón de borrado, identificable por un icono de papelera.
-        \item Se deslizan las tarjetas de carta mostrando un checkbox de eliminación en cada una.
-        \item El usuario clica el checkbox de la carta (no compartida) a borrar para seleccionarlo y clica el nuevo botón de borrado resaltado.
-        \item Se abre un diálogo pidiendo confirmación de la acción.
-        \item El usuario clica en la opción de aceptar del diálogo.
-        \item El diálogo se cierra y se ve que la carta se borra del listado en ese momento, lo que perdura tanto al refrescar la página como al reiniciar la sesión.
-        \item En la base de datos, se comprueba que la carta fue eliminada de la base de datos.
+     \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario inicia sesión en la plataforma con al menos una carta no compartida.
+        \item El usuario activa el modo de eliminación desde el listado de cartas.
+        \item El sistema permite seleccionar la carta a eliminar.
+        \item El usuario selecciona una o varias cartas no compartidas y confirma la acción de borrado.
+        \item El sistema solicita confirmación de la eliminación.
+        \item El usuario confirma la acción.
+        \item El sistema elimina las cartas del listado y del sistema, manteniendo el cambio tras recargar la página o reiniciar sesión.
+        \item Se verifica en la base de datos que el registro de las cartas ha sido eliminado.
      \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-19}
@@ -1096,19 +1092,16 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-20 \\ \hline
 \textbf{TÍTULO} & Borrado de Cartas Compartidas\\ \hline
 \textbf{HU IMPLICADAS} & HU-18 \\ \hline
-\textbf{DESCRIPCIÓN} & Comprobar que al borrar una carta que ha sido compartida con otro usuario, esta desaparece para de la lista de cartas, pero no de la lista de cartas recibidas del destinatario. El borrado es lógico, se marca como eliminada pero no se elimina el registro.\\ \hline
+\textbf{DESCRIPCIÓN} & Comprobar que al borrar una carta compartida, esta desaparece del listado del remitente pero permanece accesible para el destinatario como carta eliminada (borrado lógico). \\ \hline
 \textbf{PROCEDIMIENTO} &
-     \begin{enumerate}
-        \item El usuario con al menos una carta creada inicia sesión. Aseguramos que esa carta haya sido compartida con un destinatario.
-        \item En la barra de herramientas del panel de sus cartas de la página principal, clica el botón de borrado, identificable por un icono de papelera.
-        \item Se deslizan las tarjetas de carta mostrando un checkbox de eliminación en cada una.
-        \item El usuario clica el checkbox de la carta a borrar para seleccionarlo y clica el nuevo botón de borrado resaltado.
-        \item Se abre un diálogo pidiendo confirmación de la acción, y el usuario clica en la opción de aceptar.
-        \item Se ve que la carta se borra del listado en ese momento, lo que perdura tanto al refrescar la página como al reiniciar la sesión.
-        \item En la base de datos, se comprueba que la carta fue marcada como borrada, es decir, su campo \texttt{deleted} pasó de true a false.
+     \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario remitente con al menos una carta compartida inicia sesión.
+        \item El usuario selecciona una carta compartida y confirma su eliminación.
+        \item El sistema elimina la carta del listado del remitente y la marca como eliminada sin borrar su registro.
+        \item Se verifica en la base de datos que la carta existe pero está marcada como eliminada.
         \item El usuario destinatario inicia sesión.
-        \item En el panel de cartas recibidas de la página principal, la carta que fue borrada por el remitente está marcada como eliminada, pero se puede acceder a ella.
-        \item El usuario clica la tarjeta de esa carta recibida, y es dirigido a la página de corrección, donde puede aplicar correcciones pero no existe el botón para enviar la carta de vuelta sino un mensaje explicativo de su eliminación por parte del remitente.
+        \item El sistema muestra la carta en su buzón de recibidas marcada como eliminada por el autor, pero accesible.
+        \item El usuario abre la carta y el sistema permite su visualización y la adición de correcciones, pero sin opción de enviarla de vuelta.
      \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-20}
@@ -1125,17 +1118,14 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-21 \\ \hline
 \textbf{TÍTULO} & Gestión y Filtrado del Buzón de Cartas Recibidas\\ \hline
 \textbf{HU IMPLICADAS} & HU-19 \\ \hline
-\textbf{DESCRIPCIÓN} & Validar que el usuario cuenta con un listado de cartas recibidas y distingue visualmente las cartas ya corregidas de las pendientes en su buzón, además de poder aplicar filtros por pendiente, por remitente, y por título mediante una búsqueda. \\ \hline
+\textbf{DESCRIPCIÓN} & Validar que el buzón de cartas recibidas permite distinguir visualmente el estado de las cartas y aplicar filtros por estado (corregida, pendiente o eliminada por el autor), remitente y título, junto con paginación del listado. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario registrado con al menos una carta recibida inicia sesión.
-        \item En la página de inicio, debe ver a la izquierda un panel de cartas escritas por él, y a la derecha un panel de cartas que le han enviado.
-        \item Se muestra encima del listado una barra de tareas con una barra de búsqueda, un botón switch como filtro de cartas pendientes (Todas/Pendientes) y un seleccionador de remitentes (con los usuarios que le enviaron alguna carta).
-        \item Al pasar el ratón por la tarjetas de cada carta recibida, aparece una distinción visual en verde para cartas que ha enviado de vuelta, azul para cartas pendientes por enviar de vuelta, y roja para cartas que el remitante ha eliminado.
-        \item El usuario clica en el botón \texttt{Pending} para filtrar por cartas pendientes y se verifica que no aparecen las cartas ya corregidas.
-        \item El usuario clica un usario en el seleccionador de remitentes y se muestran solo las cartas enviadas por ese usuario en el listado.
-        \item El usuario escribe una consulta en la barra de búsqueda y se muestran solo las cartas cuyo título coindice total o parcialmente con el valor introducido.
-        \item Se comprueba el correcto funcionamiento del filtrado combinando estos tres filtros, dos de ellos, uno de ellos y ninguno.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario con al menos 6 cartas recibidas inicia sesión en la plataforma.
+        \item El sistema muestra el buzón de cartas recibidas junto con un panel de búsqueda y filtros por estado y remitente.
+        \item El sistema diferencia visualmente las cartas según su estado.
+        \item El usuario aplica uno o varios filtros (estado, remitente o búsqueda por título), individual o conjuntamente, y el sistema actualiza el listado mostrando únicamente las cartas que cumplen los criterios aplicados.
+        \item El usuario navega entre páginas y el sistema mantiene correctamente el filtrado sobre los resultados paginados.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-21}
@@ -1150,15 +1140,14 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-22 \\ \hline
 \textbf{TÍTULO} & Borrado de Cartas Recibidas\\ \hline
 \textbf{HU IMPLICADAS} & HU-20 \\ \hline
-\textbf{DESCRIPCIÓN} & Comprobar que al borrar una carta que se ha recibido y que ha sido eliminada por su remitente, esta desaparece para de la lista de cartas recibidas del destinatario y de la base de datos.\\ \hline
+\textbf{DESCRIPCIÓN} & Comprobar que al eliminar una carta recibida que ya ha sido eliminada por su remitente, esta desaparece del buzón del destinatario y de la base de datos (borrado físico).\\ \hline
 \textbf{PROCEDIMIENTO} &
-     \begin{enumerate}
-        \item El usuario destinatario de una carta eliminada por su autor inicia sesión.
-        \item En el panel de cartas cartas de la página principal, aparece la tarjeta de una carta borrada por su autor marcada como eliminada.
-        \item Al pasar el ratón por la tarjeta, aparece un botón de borrado.
-        \item El usuario clica dicho botón y la carta desaparece de su lista de cartas recibidas.
-        \item Se ve que la carta se borra del listado en ese momento, y el borrado perdura tanto al refrescar la página como al reiniciar la sesión.
-        \item Se comprueba que la carta fue borrada de la base de datos. Tanto el registro de la carta como el de la corrección correspondiente  a esta.
+     \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario destinatario de una carta borrada por su autor inicia sesión en la plataforma.
+        \item El sistema muestra en su buzón dicha carta, con la distición visual de las eliminadas por el autor y un botón de borrado.
+        \item El usuario elimina la carta desde su lista de cartas recibidas.
+        \item El sistema elimina la carta del listado del destinatario y de la base de datos.
+        \item Se verifica que la eliminación persiste tras recargar la página o reiniciar sesión.
      \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-22}
@@ -1171,25 +1160,21 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
 \textbf{IDENTIFICADOR} & PA-23 \\ \hline
-\textbf{TÍTULO} & Interfaz de Corrección y Envío de Carta Corregida \\ \hline
+\textbf{TÍTULO} & Página de Corrección y Envío de Carta Corregida \\ \hline
 \textbf{HU IMPLICADAS} & HU-21, HU-22, HU-23 \\ \hline
-\textbf{DESCRIPCIÓN} & Validar la interfaz de corrección: adición de correcciones al texto recibido y comentarios finales; y el envío de la corrección. \\ \hline
+\textbf{DESCRIPCIÓN} & Validar el proceso de corrección de una carta recibida, incluyendo la adición de anotaciones sobre el texto, comentarios finales y el envío de la corrección al autor. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{itemize}
-        \item El usuario destinatario inicia sesión.
-        \item En el panel de cartas recibidas de la página principal, clica alguna de las cartas pendientes de corregir.
-        \item El usuario destinatario es dirigido a la página de corrección, donde puede ver el título, fecha, idioma, autor y contenido de la carta recibida.
-        \item El usuario destinatario clica el botón de corregir (\texttt{Correct}) y aparece un lapicero como cursor.
-        \item Al seleccionar una palabra, frase o parte del texto (contenido de la carta), se abre un pequeño panel bajo el texto seleccionado donde se puede introducir la corrección.
-        \item Se añade una línea roja bajo la parte corregida, que al clicarla abre de nuevo el panel de corrección.
-        \item En este panel se puede editar la corrección, eliminarla, o cerrar el panel. Se comprueba el funcionamiento de estas tres opciones.
-        \item El usuario destinatario añade un comentario final en la entrada que aparece bajo el contenido.
-        \item El usuario destinatario clica el botón de guardado \texttt{Send back} y se abre un diálogo pidiendo confirmación.
-        \item El usuario destinatario confirma la acción y el botón de guardado se cambia por un mensaje indicativo de que la carta se envió de vuelta a su autor.
-        \item El usuario destinatario se dirige a la página principal clicando "Dashboard" en el menú, y en la lista de cartas recibidas aparece esta carta marcada como corregida y enviada de vuelta.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario destinatario inicia sesión en la plataforma.
+        \item El usuario accede a una carta pendiente de corrección desde su buzón.
+        \item El sistema muestra la vista de corrección con el contenido de la carta.
+        \item El usuario activa el modo de corrección y añade correcciones sobre el texto recibido.
+        \item El usuario añade un comentario final a la carta.
+        \item El usuario envía la corrección mediante la opción \texttt{Send back} y confirma la acción.
+        \item El sistema marca la carta como corregida y enviada de vuelta al autor.
         \item El usuario remitente inicia sesión.
-        \item El usuario remitente aprecia en el panel de sus cartas de la página principal que ya tiene una corrección disponible para esa carta por parte del usuario destinatario.
-    \end{itemize}\\ \hline
+        \item El sistema muestra la carta con una corrección disponible en su panel de cartas.
+    \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-23}
 \label{tab:PA-23}
@@ -1203,12 +1188,12 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-24 \\ \hline
 \textbf{TÍTULO} & Recepción de Carta Corregida y Visualización de Correcciones \\ \hline
 \textbf{HU IMPLICADAS} & HU-24 \\ \hline
-\textbf{DESCRIPCIÓN} & Validar la receición de una corrección. Debe aparecer en el listado de cartas una marca de corrección recibida que permite acceder a dicha corrección. \\ \hline
+\textbf{DESCRIPCIÓN} & Validar la recepción de una corrección, de forma que esta quede accesible desde el listado de cartas del usuario remitente. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{itemize}
-        \item El usuario inicia sesión. Se trata de un usuario que envió una carta y recibió una corrección de vuelta (por ejemplo, el usuario remitente de la PA-18).
-        \item En el panel de sus cartas de la página principal, el usuario ve en la tarjeta de esa carta un indicativo que ya tiene una corrección disponible para esa carta por parte del usuario destinatario corrector.
-        \item Al clicar ese indicativo, el usuario es dirigido a la página de visualización de corrección, donde puede ver los datos de su carta más las correcciones que el destinatario añadió y sus comentarios finales, además del nombre de usuario e imagen de perfil del corrector.
+    \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario, remitente de una carta previamente corregida y enviada de vuelta por otro usuario, inicia sesión en la plataforma.
+        \item El sistema muestra en el listado de cartas una indicación de que la carta tiene una corrección disponible.
+        \item El usuario clica dicho indicador y el sistema redirige a la página de visualización de corrección, que muestra las anotaciones realizadas por el corrector y sus comentarios finales.
     \end{itemize}\\ \hline
 \end{tabular}
 \caption{PA-24}
@@ -1227,12 +1212,12 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{HU IMPLICADAS} & HU-25 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar que el sistema recomienda usuarios con intereses afines. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuaro registrado inicia sesión.
-        \item El usuario registrado se dirige a la página de amigos (\texttt{Friends}) clicando su etiqueta en el menú desplegable.
-        \item La página muestra un panel de usuarios sugeridos, los primeros de los cuales estudian los mismos idiomas que el usuario registrado, y van seguidos de usuarios que enseñan los idiomas que el usuario registrado aprende, y seguidamente usuarios aleatorios.
-        \item El usuario introduce una texto en la barra de búsqueda ubicada en la parte superior del panel, y se verifica que aparecen usuarios cuyo nombre de usuario coincida total o parcialmente con la búsqueda.
-        \item Se verifica también que ninguno de los usuarios sugeridos de este panel aparecen en el panel de Amigos de su izquierda.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario inicia sesión en la plataforma.
+        \item El usuario accede a la página \texttt{Friends} del menú desplegable.
+        \item El sistema muestra un panel de usuarios sugeridos en función de afinidad de idiomas.
+        \item El sistema prioriza usuarios con coincidencias de idiomas con el usuario y posteriormente muestra otros usuarios.
+        \item El sistema no incluye en las sugerencias usuarios que ya formen parte de la lista de amigos del usuario.
     \end{enumerate} \\ \hline
 \end{tabular}
 \caption{PA-25}
@@ -1246,13 +1231,14 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-26 \\ \hline
 \textbf{TÍTULO} & Búsqueda de Usuarios \\ \hline
 \textbf{HU IMPLICADAS} & HU-26 \\ \hline
-\textbf{DESCRIPCIÓN} & Comprobar que el buscador por nombre de usuario del panel de usuarios sugeridos funciona. \\ \hline
+\textbf{DESCRIPCIÓN} & Comprobar que el buscador por nombre de usuario  funciona correctamente. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuaro registrado inicia sesión.
-        \item El usuario registrado se dirige a la página de amigos (\texttt{Friends}) clicando su etiqueta en el menú desplegable.
-        \item La página muestra un panel de usuarios sugeridos.
-        \item El usuario introduce una texto en la barra de búsqueda ubicada en la parte superior del panel, y se observa que aparecen usuarios cuyo nombre de usuario coincida total o parcialmente con la búsqueda.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario inicia sesión en la plataforma.
+        \item El usuario accede a la página \texttt{Friends} del menú desplegable.
+        \item El sistema muestra el panel de usuarios sugeridos, con una barra de búsqueda en la parte superior.
+        \item El usuario introduce un texto en la barra de búsqueda.
+        \item El sistema muestra los usuarios cuyo nombre de usuario coincide total o parcialmente con el texto introducido, independientemente de si forman parte de las sugerencias iniciales.
     \end{enumerate} \\ \hline
 \end{tabular}
 \caption{PA-26}
@@ -1266,14 +1252,14 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-27 \\ \hline
 \textbf{TÍTULO} & Flujo de Solicitud de Amistad \\ \hline
 \textbf{HU IMPLICADAS} & HU-27 \\ \hline
-\textbf{DESCRIPCIÓN} & Verificar que el envío de la solicitud de amistad se muestra disponible para su aceptación o rechazo para el receptor de dicha solicitud. \\ \hline
+\textbf{DESCRIPCIÓN} & Verificar que el envío de la solicitud de amistad queda disponible para su aceptación o rechazo por parte del usuario receptor de dicha solicitud. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario registrado inicia sesión y se dirige a la página de Amigos clicando \texttt{Friends} en el menú desplegable.
-        \item El usuario clica el botón de Añadir Amigo de una de las tarjetas de usuario disponibles en el panel de usuarios sugeridos de la página.
-        \item Se verifica que el botón de Añadir Amigo se sustituye por un indicativo de envío de solicitud ya realizada.
-        \item Ese usuario receptor de la solicitud inicia sesión y se dirige a la página de Amigos.
-        \item Ese usuario receptor puede ver en el panel de Solicitudes Recibidas de la página la tarjeta del usuario del inicio, con un botón para rechazar la solicitud y otro para aceptarla.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario inicia sesión en la plataforma y accede a la página \texttt{Friends} del menú desplegable.
+        \item El usuario envía una solicitud de amistad a otro usuario desde el panel de sugerencias.
+        \item El sistema registra la solicitud enviada.
+        \item El usuario receptor inicia sesión y accede a la página \texttt{Friends}.
+        \item El sistema muestra la solicitud recibida en el panel de solicitudes de amistad, con opciones de aceptación y de rechazo.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-27}
@@ -1286,18 +1272,17 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
 \textbf{IDENTIFICADOR} & PA-28 \\ \hline
-\textbf{TÍTULO} & Aceptación/Rechazo de Solicitudes \\ \hline
+\textbf{TÍTULO} & Aceptación y Rechazo de Solicitudes de Amistad \\ \hline
 \textbf{HU IMPLICADAS} & HU-27 \\ \hline
-\textbf{DESCRIPCIÓN} & Comprobar que el destinatario puede gestionar sus peticiones recibidas: puede aceptarlas, en cuyo caso se añadirá un nuevo contacto a su lista de amigos; o bien rechazarla. El registro de la solicitud se borrará tras ser gestionada. \\ \hline
+\textbf{DESCRIPCIÓN} &  Comprobar que el usuario puede aceptar o rechazar solicitudes de amistad, actualizando correctamente su lista de amigos y eliminando la solicitud tras su gestión. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario con dos solicitudes de amistad recibidas inicia sesión y se dirige a la página de Amigos clicando \texttt{Friends} en el menú desplegable.
-        \item En el panel superior de Solicitudes Recibidas ve dos tarjeta de solicitud de amistad de dos usuario.
-        \item El usuario clica el botón de rechazo para el primer usuario y se verifica que la tarjeta desaparece y ese usuario no se añade al panel de Amigos.
-        \item Se verifica en la base de datos que el registro de esa solicitud ha sido eliminado.
-        \item El usuario clica el botón de aceptación para el otro usuario y se verifica que la tarjeta desaparece y ese usuario esta vez sí se añade al panel de Amigos.
-        \item Se verifica en la base de datos que el registro de esa solicitud ha sido eliminado y que se ha creado uno nuevo de relación de amistad entre ambos usuarios.
-        \item El usuario se dirige a la vista de editar una carta y se verifica que al clicar en Compartir este nuevo amigo aparece en la lista de contactos.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario inicia sesión en la plataforma y accede a la página \texttt{Friends}.
+        \item El sistema muestra las solicitudes de amistad recibidas.
+        \item El usuario rechaza una solicitud y el sistema la elimina sin modificar la lista de amigos.
+        \item El sistema elimina el registro de la solicitud en la base de datos.
+        \item El usuario acepta otra solicitud y el sistema la elimina de la lista de solicitudes y añade al usuario correspondiente a su lista de amigos.
+        \item El sistema registra la nueva relación de amistad en la base de datos y elimina el registro de la solicitud.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-28}
@@ -1311,12 +1296,13 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-29 \\ \hline
 \textbf{TÍTULO} & Visualización de la Lista de Amigos \\ \hline
 \textbf{HU IMPLICADAS} & HU-28 \\ \hline
-\textbf{DESCRIPCIÓN} & Validar que el usuario puede ver su lista de contactos paginada. \\ \hline
+\textbf{DESCRIPCIÓN} & Validar que el usuario puede visualizar su lista de contactos con paginación. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item El usuario con al menos 7 amistades inicia sesión y se dirige a la página de Amigos clicando \texttt{Friends} en el menú desplegable.
-        \item El usuario ve un panel de Amigos en la parte inferior izquierda con los contactos que tiene agragados.
-        \item Se verifica que la paginación de esta lista de contactos funciona correctamente.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+        \item El usuario con al menos 7 amigos añadidos inicia sesión en la plataforma.
+        \item El usuario accede a la página \texttt{Friends} del menú desplegable.
+        \item El sistema muestra la lista de amigos en formato paginado (6 amigos por página).
+        \item El usuario navega entre páginas y el sistema actualiza correctamente los contactos mostrados.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-29}
@@ -1331,17 +1317,15 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \textbf{IDENTIFICADOR} & PA-30 \\ \hline
 \textbf{TÍTULO} & Eliminación de Contactos \\ \hline
 \textbf{HU IMPLICADAS} & HU-28 \\ \hline
-\textbf{DESCRIPCIÓN} & Validar que el usuario puede eliminar un contacto de su red. \\ \hline
+\textbf{DESCRIPCIÓN} & Validar que el usuario puede eliminar un contacto de su lista de amigos. \\ \hline
 \textbf{PROCEDIMIENTO} &
-    \begin{enumerate}
-        \item
-        \item El usuario con al menos 7 amistades inicia sesión y se dirige a la página de Amigos clicando \texttt{Friends} en el menú desplegable.
-        \item El usuario ve un panel de Amigos en la parte inferior izquierda con los contactos que tiene agragados.
-        \item El usuario clica en la tarjeta de un contacto y es dirigido a la página de perfil de este.
-        \item El usuario clica en botón de Eliminación de Amistad y se abre un diálogo de confirmación de acción.
-        \item Se verifica que este botón de Eliminación de Amistad desaparece.
-        \item El usuario vuelve a la página de Amigos y se comprueba que ese usuario no aparece ya en su lista de Amigos.
-        \item Se comprueba que el registro de Relación de Amistad correspondiente se borró de la base de datos.
+    \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
+       \item El usuario con al menos un contacto añadido inicia sesión en la plataforma.
+        \item El usuario accede a la página \texttt{Friends} del menú desplegable.
+        \item El sistema muestra la lista de amigos del usuario.
+        \item El usuario elimina un contacto desde su lista de amigos.
+        \item El sistema actualiza la lista de amigos de forma que el contacto eliminado ya no aparece en la lista.
+        \item El sistema elimina la relación de amistad de la base de datos.
     \end{enumerate}\\ \hline
 \end{tabular}
 \caption{PA-30}
@@ -1369,7 +1353,7 @@ En esta tabla se presenta la correspondencia entre las Historias de Usuario y la
     \multicolumn{2}{|c|}{} & \multicolumn{28}{c|}{\textbf{Historias de Usuario (HU)}} \\ \cline{3-30}
     \multicolumn{2}{|c|}{} & 01 & 02 & 03 & 04 & 05 & 06 & 07 & 08 & 09 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 \\ \hline
     % Columna vertical de PAs
-    \multirow{30}{*}{\rotatebox{90}{\parbox{10cm}{\centering\textbf{Pruebas de Aceptación (PA)}}}}
+    \multirow{30}{*}{\rotatebox{90}{\textbf{Pruebas de Aceptaci\'on (PA)}}}
     & \textbf{01} & & & & & \checkmark & & & & & & & & & & & & & & & & & & & & & & & \\ \cline{2-30}
     & \textbf{02} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & & & & & & & & & & & & & & & & & & & & & \\ \cline{2-30}
     & \textbf{03} & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & & & & \\ \cline{2-30}

@@ -12,13 +12,13 @@ A continuación, un diagrama que muestra rápidamente los diferentes esquemas qu
 
 Un aspecto importante a mencionar en el diseño de estos esquemas es el uso del ObjectId. En MongoDB, cada documento generado recibe de forma automática un campo \texttt{\_id} único de 12 bytes. A diferencia de los ID incrementales de las bases de datos relacionales (SQL), el ObjectId es un identificador hexadecimal que garantiza la unicidad incluso en sistemas distribuidos. En definitiva, el ObjectId es el tipo de dato para los identificadores y cumple dos funciones críticas: la vinculación mediante referencias, permitiendo incluir campos en colecciones que apunten a documentos de otra (por ejemplo, el campo \texttt{originalLetter} en \texttt{CorrectedLetter} es una referencia a un objeto de la colección \texttt{Letter}); y la indexación eficiente, que permite realizar búsquedas rápidas gracias a su generación basada en marcas de tiempo (timestamps).
 
-Cabe destacar que, aunque MongoDB utiliza de forma nativa el campo \texttt{\_id}, en el diagrama y en el consumo de la API se utiliza el término \texttt{id}. Esta transformación se realiza en la capa del Back-end antes de enviar los datos al Front-end, con el fin de ofrecer una interfaz más limpia, estandarizada y desacoplada de las particularidades del motor de base de datos.
+Cabe destacar que, aunque MongoDB utiliza de forma nativa el campo \texttt{\_id}, en el diagrama y en el consumo de la API se utiliza el término \texttt{id}. Esta transformación se realiza en la capa del backend antes de enviar los datos al frontend, con el fin de ofrecer una interfaz más limpia, estandarizada y desacoplada de las particularidades del motor de base de datos.
 
 A continuación, se describen las colecciones que conforman el sistema.
 
 
 \subsection{Colección User (Usuarios)}
-Representa a los actores principales del sistema, gestionando su identidad y perfil lingüístico.
+Representa a los actores principales del sistema, gestionando su identidad y perfil lingüístico. Cuanta con los siguientes campos:
 
 \begin{itemize}
     \item \textbf{id}: Identificador único del documento.
@@ -38,12 +38,12 @@ Almacena los textos originales redactados por los usuarios para ser compartidos 
 
 \begin{itemize}
     \item \textbf{id}: Identificador único del documento.
-    \item \textbf{author}: Referencia al usuario creador del contenido.
+    \item \textbf{author}: Referencia al usuario creador de la carta.
     \item \textbf{title / content}: Título y cuerpo del texto de la carta.
     \item \textbf{diary}: String con el diario de la carta. Es una forma de que el usuario pueda organizar sus cartas en diferentes grupos si lo desea.
     \item \textbf{language}: Idioma en el que está redactado el texto.
     \item \textbf{sharedWith}: Array de referencias a la colección \textit{User}, que identifica a los usuarios con permisos de visualización y corrección.
-    \item \textbf{deleted}: Booleano utilizado para el borrado lógico, permitiendo ocultar el recurso sin eliminarlo físicamente de la base de datos.
+    \item \textbf{deleted}: Booleano utilizado para el borrado lógico, permitiendo ocultar el recurso sin eliminarlo físicamente de la base de datos, de forma que si la carta había sido compartida, los receptores pueden conservarla junto con sus correcciones.
     \item \textbf{createdAt}: Fecha de creación del documento.
 \end{itemize}
 
