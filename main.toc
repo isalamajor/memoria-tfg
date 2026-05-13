@@ -78,21 +78,21 @@
 \contentsline {subsection}{\numberline {4.3.2}Emails automatizados}{67}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Mecanismo de Autenticación y Autorización}{67}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Almacenamiento de imágenes con Multer y Cloudinary}{69}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Interfaz de Programación de Aplicaciones (API): Rutas y Controladores}{69}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.5}Interfaz de Programación de Aplicaciones (API): Rutas y Controladores}{70}{subsection.4.3.5}%
 \contentsline {subsection}{\numberline {4.3.6}Técnicas de optimización}{74}{subsection.4.3.6}%
 \contentsline {subsubsection}{Optimización de búsqueda datos}{74}{subsection.4.3.6}%
 \contentsline {subsubsection}{Procesamiento Avanzado de Datos: Aggregate de MongoDB}{75}{subsection.4.3.6}%
 \contentsline {section}{\numberline {4.4}Frontend de la aplicación}{77}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Stack Tecnológico}{77}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Arquitectura del Proyecto}{77}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.2}Estructura del Proyecto}{77}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Páginas de la aplicación}{79}{subsection.4.4.3}%
 \contentsline {subsubsection}{Página de Inicio y Autenticación}{79}{subsection.4.4.3}%
 \contentsline {subsubsection}{Página Principal}{80}{figure.caption.110}%
-\contentsline {subsubsection}{Páginas de Creación y Edición de Cartas}{81}{Item.193}%
+\contentsline {subsubsection}{Páginas de Creación y Edición de Cartas}{81}{Item.190}%
 \contentsline {subsubsection}{Página de Corrección de Cartas}{82}{figure.caption.112}%
-\contentsline {subsubsection}{Página de Visualización de Correcciones Recibidas}{83}{Item.197}%
+\contentsline {subsubsection}{Página de Visualización de Correcciones Recibidas}{83}{Item.194}%
 \contentsline {subsubsection}{Página de Amigos}{84}{figure.caption.114}%
-\contentsline {subsubsection}{Página de Perfil de Usuario}{85}{Item.200}%
+\contentsline {subsubsection}{Página de Perfil de Usuario}{85}{Item.197}%
 \contentsline {subsection}{\numberline {4.4.4}Técnicas de Optimización}{86}{subsection.4.4.4}%
 \contentsline {chapter}{\numberline {5}Entorno socio-económico}{88}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Presupuesto}{88}{section.5.1}%

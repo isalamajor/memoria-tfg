@@ -1181,6 +1181,7 @@
       \strng{authornamehash}{206e3718af092fd1d12f80cae771ccac}
       \strng{authorfullhash}{206e3718af092fd1d12f80cae771ccac}
       \strng{authorfullhashraw}{206e3718af092fd1d12f80cae771ccac}
+      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -1601,6 +1602,117 @@
       \endverb
       \verb{url}
       \verb https://www.jwt.io/
+      \endverb
+    \endentry
+    \entry{llamas_multer_nd}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=789d74aa550b6585221f27682e8adb89}{%
+           family={Llamas},
+           familyi={L\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{789d74aa550b6585221f27682e8adb89}
+      \strng{fullhash}{789d74aa550b6585221f27682e8adb89}
+      \strng{fullhashraw}{789d74aa550b6585221f27682e8adb89}
+      \strng{bibnamehash}{789d74aa550b6585221f27682e8adb89}
+      \strng{authorbibnamehash}{789d74aa550b6585221f27682e8adb89}
+      \strng{authornamehash}{789d74aa550b6585221f27682e8adb89}
+      \strng{authorfullhash}{789d74aa550b6585221f27682e8adb89}
+      \strng{authorfullhashraw}{789d74aa550b6585221f27682e8adb89}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-05-13}
+      \field{title}{Subir múltiples ficheros con Multer}
+      \verb{urlraw}
+      \verb https://www.luisllamas.es/subir-multiples-ficheros-multer/
+      \endverb
+      \verb{url}
+      \verb https://www.luisllamas.es/subir-multiples-ficheros-multer/
+      \endverb
+    \endentry
+    \entry{cloudinary_official_2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=2420d93729403f55a9cf8f6d70dbad81}{%
+           family={{Cloudinary}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2420d93729403f55a9cf8f6d70dbad81}
+      \strng{fullhash}{2420d93729403f55a9cf8f6d70dbad81}
+      \strng{fullhashraw}{2420d93729403f55a9cf8f6d70dbad81}
+      \strng{bibnamehash}{2420d93729403f55a9cf8f6d70dbad81}
+      \strng{authorbibnamehash}{2420d93729403f55a9cf8f6d70dbad81}
+      \strng{authornamehash}{2420d93729403f55a9cf8f6d70dbad81}
+      \strng{authorfullhash}{2420d93729403f55a9cf8f6d70dbad81}
+      \strng{authorfullhashraw}{2420d93729403f55a9cf8f6d70dbad81}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-05-13}
+      \field{title}{Cloudinary}
+      \verb{urlraw}
+      \verb https://cloudinary.com/
+      \endverb
+      \verb{url}
+      \verb https://cloudinary.com/
+      \endverb
+    \endentry
+    \entry{moge_cloudinary_2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=00dd910c2afeeddb9b38de170be4a208}{%
+           family={{Moge.ai}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{00dd910c2afeeddb9b38de170be4a208}
+      \strng{fullhash}{00dd910c2afeeddb9b38de170be4a208}
+      \strng{fullhashraw}{00dd910c2afeeddb9b38de170be4a208}
+      \strng{bibnamehash}{00dd910c2afeeddb9b38de170be4a208}
+      \strng{authorbibnamehash}{00dd910c2afeeddb9b38de170be4a208}
+      \strng{authornamehash}{00dd910c2afeeddb9b38de170be4a208}
+      \strng{authorfullhash}{00dd910c2afeeddb9b38de170be4a208}
+      \strng{authorfullhashraw}{00dd910c2afeeddb9b38de170be4a208}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-05-13}
+      \field{title}{Cloudinary - Producto en Moge.ai}
+      \verb{urlraw}
+      \verb https://moge.ai/es/product/cloudinary
+      \endverb
+      \verb{url}
+      \verb https://moge.ai/es/product/cloudinary
+      \endverb
+    \endentry
+    \entry{mongodb_aggregation_2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=206e3718af092fd1d12f80cae771ccac}{%
+           family={{MongoDB}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{fullhash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{fullhashraw}{206e3718af092fd1d12f80cae771ccac}
+      \strng{bibnamehash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{authorbibnamehash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{authornamehash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{authorfullhash}{206e3718af092fd1d12f80cae771ccac}
+      \strng{authorfullhashraw}{206e3718af092fd1d12f80cae771ccac}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-05-13}
+      \field{title}{Aggregation — MongoDB Manual}
+      \verb{urlraw}
+      \verb https://www.mongodb.com/es/docs/manual/aggregation/
+      \endverb
+      \verb{url}
+      \verb https://www.mongodb.com/es/docs/manual/aggregation/
       \endverb
     \endentry
     \entry{amortizacion_lineal}{online}{}{}

@@ -9,7 +9,7 @@
 \hline
 POST & /api/users/register & Registrar un nuevo usuario. \newline \textbf{Valores de entrada:} nickname*, email*, password*, master\-Language*, learning\-Language* \newline \textbf{Valores de salida:} status, message, user \\
 POST & /api/users/login & Iniciar sesión. Si las credenciales recibidas son correctas, se crea y envía la cookie de autenticación. \newline \textbf{Valores de entrada:} email* (string, puede ser email o nickname), password* \newline \textbf{Valores de salida:} status, userData, token, cookie authToken \\
-POST & /api/users/logout & Cerrar la sesión. Se limpia la cookie de autenticación. \newline \textbf{Valores de entrada:} ninguno \newline \textbf{Valores de salida:} status, message \\
+POST & /api/users/logout & Cerrar la sesión. Se limpia la cookie de autenticación. \newline \textbf{Valores de entrada:} - \newline \textbf{Valores de salida:} status, message \\
 GET & /api/users/profile/:id? & Obtener los datos del perfil de usuario cuyo id es especificado en la ruta, o en su defecto (es un parámetro opcional, de ahí el signo de interrogación en la ruta) del usuario autenticado.\newline \textbf{Valores de salida:} status, user \\
 GET & /api/users/list-users/:page? & Listar usuarios con paginación. Si no se recibe el parámetro page, que indica la página que se pide, se entregan los usuarios de la primera página. \newline \textbf{Valores de salida:} status, users, page, itemsPerPage, totalUsers, totalPages \\
 PUT & /api/users/update & Actualizar datos del usuario autenticado. \newline \textbf{Valores de salida:} status, userData \\

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1778695115.88063 "main.bcf" "main.bbl" "main" 1778696280.65536 0
-  "main.bcf" 1778696278 111849 63db8952948baa3ab1e2d09e9ef039fc "pdflatex"
-  "referencias.bib" 1778326541 12811 295513b5dd265c1eadeed808ef03b4f2 ""
+["biber main"] 1778697126.61923 "main.bcf" "main.bbl" "main" 1778698453.20064 0
+  "main.bcf" 1778698452 112157 5d3bcb652d953ffb51583d78c33f3bd5 "pdflatex"
+  "referencias.bib" 1778697113 13526 cb901455c2c7cb62ffabb68d1f7d4bfa ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778696240.76101 "c:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.tex" "main.pdf" "main" 1778696280.65706 0
+["pdflatex"] 1778698437.09285 "c:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.tex" "main.pdf" "main" 1778698453.20161 0
   "c:/Users/isabe/Documents/Bachelor_thesis_template___UC3M___IEEE_Style__1_/main.tex" 1778327258 14961 322c4bf5ebdcad6b9e4201f951fc1090 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1761555504 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1761555974 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -284,20 +284,20 @@
   "imagenes/ui/skeleton.PNG" 1776689866 44724 1e52039dee3c8f9c911d2c0dcb268e98 ""
   "imagenes/ui/view-correction.PNG" 1772724842 128544 b4a5f0976a0269225c657d73c1b1fad6 ""
   "imagenes/vue-logo.png" 1761548930 12346 7425bbb9913df62b0738cc72bbc59c31 ""
-  "main.aux" 1778696278 45735 f0f65ae029bde2c9a64a636f34db0671 "pdflatex"
-  "main.bbl" 1778695139 69201 6e9299c4c0c3c7593abe5d921e0c4a81 "biber main"
-  "main.lof" 1778696278 5368 aee4b231f34275ef26b106a7cf90d0e5 "pdflatex"
-  "main.lot" 1778696278 5801 d4a81047a7a2760ff3ce8ec2601bd4f2 "pdflatex"
-  "main.out" 1778696278 10375 fcd5df45f4d4a16e9ec6068db649c268 "pdflatex"
-  "main.run.xml" 1778696278 2434 162d858ffb7c356f1e339b2ddbc1e62c "pdflatex"
+  "main.aux" 1778698452 46417 8c2996450087c0ce9f7e38bcf0f38745 "pdflatex"
+  "main.bbl" 1778697129 73987 d02d4e64ac4dc37ccfb4414af89beaa4 "biber main"
+  "main.lof" 1778698452 5368 aee4b231f34275ef26b106a7cf90d0e5 "pdflatex"
+  "main.lot" 1778698452 5801 d4a81047a7a2760ff3ce8ec2601bd4f2 "pdflatex"
+  "main.out" 1778698452 10365 10ebb7f06653e043328725468031918a "pdflatex"
+  "main.run.xml" 1778698452 2434 162d858ffb7c356f1e339b2ddbc1e62c "pdflatex"
   "main.tex" 1778327258 14961 322c4bf5ebdcad6b9e4201f951fc1090 ""
-  "main.toc" 1778696278 8613 382eb34cf572fd9d164ce95fb27b8ef6 "pdflatex"
-  "pdfa.xmpi" 1778696242 5042 ba3959e118a5dec4d6fdb3f19b92a60f "pdflatex"
+  "main.toc" 1778698452 8611 06a1972d67d5c5030beb89483bf7c7ab "pdflatex"
+  "pdfa.xmpi" 1778698438 5042 ecadbc13fd8ed549f55f49475da0081b "pdflatex"
   "secciones/analisis-planificacion.tex" 1774518849 518 c98e1ccd6d221c0905c4149e61e9d763 ""
   "secciones/analisis.tex" 1777716063 71837 15d4df411c6a6d6635d1f62e9d227757 ""
   "secciones/arquitectura.tex" 1776757580 3377 6dc107428ef75724c3f064cc12851ce3 ""
-  "secciones/arquitectura_backend.tex" 1778695219 15992 15318c82a351d6a3130f8f5c84b73742 ""
-  "secciones/arquitectura_frontend.tex" 1777716991 18411 43bdf6bbc733e96e80fc5059ba5ca4b1 ""
+  "secciones/arquitectura_backend.tex" 1778698436 16293 150d888eea8dfb1f4e1e11b209ddcf4c ""
+  "secciones/arquitectura_frontend.tex" 1778698075 18543 426af20d9ebbc1609964d56d25316e4c ""
   "secciones/economico.tex" 1776690404 8578 ac0e2df47b0edcc63fbcf004118b8884 ""
   "secciones/estado_del_arte.tex" 1777715716 61785 95aaa2f69b811c97ef4921116202c2a7 ""
   "secciones/estructura_backend.tex" 1776079124 2703 f8d202b911a2c5f9003d00f23caed8f1 ""
@@ -306,7 +306,7 @@
   "secciones/planificacion.tex" 1776608393 5016 7a9ba670495b89551c28562087550845 ""
   "secciones/resultados.tex" 1778696229 6793 909e98cc907d30b3c279f6799cdc4820 ""
   "secciones/stack_seleccionado.tex" 1777715873 4957 7445016a77b5ecd58591b6936c87bb76 ""
-  "secciones/tabla_rutas.tex" 1778327143 8055 ac3f8c4c1480e851681bd8ac9ff6c2a9 ""
+  "secciones/tabla_rutas.tex" 1778698312 8049 017e05772c5b46e8904ebbeafa19d8ce ""
   (generated)
   "main.aux"
   "main.bcf"

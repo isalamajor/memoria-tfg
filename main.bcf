@@ -2434,7 +2434,11 @@
     <bcf:citekey order="48" intorder="1">grammarly_ref</bcf:citekey>
     <bcf:citekey order="49" intorder="1">duolingo_ref</bcf:citekey>
     <bcf:citekey order="50" intorder="1">jwtio</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">amortizacion_lineal</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">llamas_multer_nd</bcf:citekey>
+    <bcf:citekey order="51" intorder="2">cloudinary_official_2026</bcf:citekey>
+    <bcf:citekey order="51" intorder="3">moge_cloudinary_2026</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">mongodb_aggregation_2026</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">amortizacion_lineal</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
