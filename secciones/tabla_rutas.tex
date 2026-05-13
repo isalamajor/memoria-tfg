@@ -43,7 +43,6 @@ GET & /api/letters/count/:id? & Contar cartas por idioma. Si no se especifica id
 \hline
 POST & /api/follow/add/:id & Mandar una solicitud de amistad a un usuario. \newline \textbf{Valores de salida:} status, message \\
 DELETE & /api/follow/unfollow/:id & Dejar de seguir a un usuario. \newline \textbf{Valores de salida:} status, message \\
-GET & /api/follow/request/:id & Verificar si existe solicitud de amistad. \newline \textbf{Valores de salida:} status, exists: boolean \\
 GET & /api/follow/friends & Obtener lista de amigos. \newline \textbf{Valores de salida:} status, count, friends \\
 GET & /api/follow/non-friends & Obtener usuarios no agregados. \newline \textbf{Valores de salida:} status, users, totalUsers, totalPages \\
 GET & /api/follow/non-friends/:filter & Obtener no usuarios no agregados con un filtro por su nickname. \newline \textbf{Valores de salida:} status, users, totalUsers, totalPages \\
@@ -68,3 +67,6 @@ DELETE & /api/corrected-letters/:corrected\-Letter\-Id & Eliminar carta corregid
 \caption{Rutas de la API de Letterex}
 \label{tab:rutas-api}
 \end{longtable}
+\begin{comment}
+GET & /api/follow/request/:id & Verificar si existe solicitud de amistad. \newline \textbf{Valores de salida:} status, exists: boolean \\
+\end{comment}

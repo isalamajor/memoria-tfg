@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.27)  2 MAY 2026 14:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.27)  13 MAY 2026 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1674,7 +1674,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 [16]
 
 [17]
-Underfull \hbox (badness 10000) in alignment at lines 351--397
+Underfull \hbox (badness 10000) in alignment at lines 352--398
 [] []
  []
 
@@ -1706,7 +1706,7 @@ File: ts1txr.fd 2000/12/15 v3.1
 [3]
 
 [4]
-Overfull \hbox (4.28337pt too wide) in paragraph at lines 90--91
+Overfull \hbox (4.28337pt too wide) in paragraph at lines 91--92
 []\T1/txr/m/n/12 Análisis y plan-i-fi-cación: se pre-sen-tan las his-to-rias de usuario y prue-bas de aceptación
  []
 
@@ -1719,7 +1719,7 @@ Chapter 2.
 [6
 
 ]
-<./imagenes/HTML5-logo.png, id=755, 1104.125pt x 602.25pt>
+<./imagenes/HTML5-logo.png, id=757, 1104.125pt x 602.25pt>
 File: ./imagenes/HTML5-logo.png Graphic file (type png)
 <use ./imagenes/HTML5-logo.png>
 Package pdftex.def Info: ./imagenes/HTML5-logo.png  used on input line 26.
@@ -1730,12 +1730,12 @@ File: t1txtt.fd 2000/12/15 v3.1
 )
 
 [7 <./imagenes/HTML5-logo.png>]
-<imagenes/tailwind.png, id=765, 903.375pt x 501.875pt>
+<imagenes/tailwind.png, id=767, 903.375pt x 501.875pt>
 File: imagenes/tailwind.png Graphic file (type png)
 <use imagenes/tailwind.png>
 Package pdftex.def Info: imagenes/tailwind.png  used on input line 43.
 (pdftex.def)             Requested size: 102.4179pt x 56.9055pt.
-<./imagenes/css-logo.png, id=768, 1457.445pt x 2057.6875pt>
+<./imagenes/css-logo.png, id=770, 1457.445pt x 2057.6875pt>
 File: ./imagenes/css-logo.png Graphic file (type png)
 <use ./imagenes/css-logo.png>
 Package pdftex.def Info: ./imagenes/css-logo.png  used on input line 56.
@@ -1743,12 +1743,12 @@ Package pdftex.def Info: ./imagenes/css-logo.png  used on input line 56.
 
 
 [8 <./imagenes/tailwind.png> <./imagenes/css-logo.png>]
-<./imagenes/javascript-logo.png, id=780, 225.84375pt x 225.84375pt>
+<./imagenes/javascript-logo.png, id=782, 225.84375pt x 225.84375pt>
 File: ./imagenes/javascript-logo.png Graphic file (type png)
 <use ./imagenes/javascript-logo.png>
 Package pdftex.def Info: ./imagenes/javascript-logo.png  used on input line 70.
 (pdftex.def)             Requested size: 56.90533pt x 56.9055pt.
-<imagenes/typescript.jpg, id=782, 369.38pt x 368.37625pt>
+<imagenes/typescript.jpg, id=784, 369.38pt x 368.37625pt>
 File: imagenes/typescript.jpg Graphic file (type jpg)
 <use imagenes/typescript.jpg>
 Package pdftex.def Info: imagenes/typescript.jpg  used on input line 79.
@@ -1756,12 +1756,12 @@ Package pdftex.def Info: imagenes/typescript.jpg  used on input line 79.
 
 
 [9 <./imagenes/javascript-logo.png> <./imagenes/typescript.jpg>]
-<./imagenes/react-logo.jpg, id=792, 1204.5pt x 667.49374pt>
+<./imagenes/react-logo.jpg, id=794, 1204.5pt x 667.49374pt>
 File: ./imagenes/react-logo.jpg Graphic file (type jpg)
 <use ./imagenes/react-logo.jpg>
 Package pdftex.def Info: ./imagenes/react-logo.jpg  used on input line 98.
 (pdftex.def)             Requested size: 102.6844pt x 56.9055pt.
-<./imagenes/next-logo.jpg, id=794, 940.51375pt x 507.8975pt>
+<./imagenes/next-logo.jpg, id=796, 940.51375pt x 507.8975pt>
 File: ./imagenes/next-logo.jpg Graphic file (type jpg)
 <use ./imagenes/next-logo.jpg>
 Package pdftex.def Info: ./imagenes/next-logo.jpg  used on input line 109.
@@ -1769,12 +1769,12 @@ Package pdftex.def Info: ./imagenes/next-logo.jpg  used on input line 109.
 
 
 [10 <./imagenes/react-logo.jpg>]
-<./imagenes/vue-logo.png, id=802, 501.875pt x 301.125pt>
+<./imagenes/vue-logo.png, id=804, 501.875pt x 301.125pt>
 File: ./imagenes/vue-logo.png Graphic file (type png)
 <use ./imagenes/vue-logo.png>
 Package pdftex.def Info: ./imagenes/vue-logo.png  used on input line 121.
 (pdftex.def)             Requested size: 94.83649pt x 56.9055pt.
-<./imagenes/angular.png, id=804, 1204.5pt x 1204.5pt>
+<./imagenes/angular.png, id=806, 1204.5pt x 1204.5pt>
 File: ./imagenes/angular.png Graphic file (type png)
 <use ./imagenes/angular.png>
 Package pdftex.def Info: ./imagenes/angular.png  used on input line 132.
@@ -1782,12 +1782,12 @@ Package pdftex.def Info: ./imagenes/angular.png  used on input line 132.
 
 
 [11 <./imagenes/next-logo.jpg> <./imagenes/vue-logo.png> <./imagenes/angular.png>]
-<./imagenes/node.png, id=816, 1204.5pt x 737.75626pt>
+<./imagenes/node.png, id=818, 1204.5pt x 737.75626pt>
 File: ./imagenes/node.png Graphic file (type png)
 <use ./imagenes/node.png>
 Package pdftex.def Info: ./imagenes/node.png  used on input line 152.
 (pdftex.def)             Requested size: 92.90668pt x 56.9055pt.
-<imagenes/python.png, id=817, 3854.4pt x 2168.1pt>
+<imagenes/python.png, id=819, 3854.4pt x 2168.1pt>
 File: imagenes/python.png Graphic file (type png)
 <use imagenes/python.png>
 Package pdftex.def Info: imagenes/python.png  used on input line 164.
@@ -1795,12 +1795,12 @@ Package pdftex.def Info: imagenes/python.png  used on input line 164.
 
 
 [12 <./imagenes/node.png>]
-<imagenes/django.png, id=827, 1204.5pt x 419.5675pt>
+<imagenes/django.png, id=829, 1204.5pt x 419.5675pt>
 File: imagenes/django.png Graphic file (type png)
 <use imagenes/django.png>
 Package pdftex.def Info: imagenes/django.png  used on input line 172.
 (pdftex.def)             Requested size: 163.35402pt x 56.9055pt.
-<./imagenes/java.jpg, id=830, 436.63126pt x 244.915pt>
+<./imagenes/java.jpg, id=832, 436.63126pt x 244.915pt>
 File: ./imagenes/java.jpg Graphic file (type jpg)
 <use ./imagenes/java.jpg>
 Package pdftex.def Info: ./imagenes/java.jpg  used on input line 181.
@@ -1808,17 +1808,17 @@ Package pdftex.def Info: ./imagenes/java.jpg  used on input line 181.
 
 
 [13 <./imagenes/python.png> <./imagenes/django.png>]
-<imagenes/spring-boot.png, id=839, 602.25pt x 316.18124pt>
+<imagenes/spring-boot.png, id=841, 602.25pt x 316.18124pt>
 File: imagenes/spring-boot.png Graphic file (type png)
 <use imagenes/spring-boot.png>
 Package pdftex.def Info: imagenes/spring-boot.png  used on input line 187.
 (pdftex.def)             Requested size: 108.39113pt x 56.9055pt.
-<imagenes/php.png, id=842, 1204.5pt x 650.43pt>
+<imagenes/php.png, id=844, 1204.5pt x 650.43pt>
 File: imagenes/php.png Graphic file (type png)
 <use imagenes/php.png>
 Package pdftex.def Info: imagenes/php.png  used on input line 196.
 (pdftex.def)             Requested size: 105.36775pt x 56.9055pt.
-<imagenes/Laravel.jpg, id=843, 903.375pt x 451.6875pt>
+<imagenes/Laravel.jpg, id=845, 903.375pt x 451.6875pt>
 File: imagenes/Laravel.jpg Graphic file (type jpg)
 <use imagenes/Laravel.jpg>
 Package pdftex.def Info: imagenes/Laravel.jpg  used on input line 202.
@@ -1826,12 +1826,12 @@ Package pdftex.def Info: imagenes/Laravel.jpg  used on input line 202.
 
 
 [14 <./imagenes/java.jpg> <./imagenes/spring-boot.png> <./imagenes/php.png>]
-<imagenes/ruby.png, id=856, 353.82187pt x 187.19937pt>
+<imagenes/ruby.png, id=858, 353.82187pt x 187.19937pt>
 File: imagenes/ruby.png Graphic file (type png)
 <use imagenes/ruby.png>
 Package pdftex.def Info: imagenes/ruby.png  used on input line 211.
 (pdftex.def)             Requested size: 107.55647pt x 56.9055pt.
-<imagenes/Ruby2.png, id=857, 481.8pt x 240.9pt>
+<imagenes/Ruby2.png, id=859, 481.8pt x 240.9pt>
 File: imagenes/Ruby2.png Graphic file (type png)
 <use imagenes/Ruby2.png>
 Package pdftex.def Info: imagenes/Ruby2.png  used on input line 217.
@@ -1839,17 +1839,17 @@ Package pdftex.def Info: imagenes/Ruby2.png  used on input line 217.
 
 
 [15 <./imagenes/Laravel.jpg> <./imagenes/ruby.png> <./imagenes/Ruby2.png>]
-<imagenes/go.png, id=868, 1204.5pt x 500.87125pt>
+<imagenes/go.png, id=870, 1204.5pt x 500.87125pt>
 File: imagenes/go.png Graphic file (type png)
 <use imagenes/go.png>
 Package pdftex.def Info: imagenes/go.png  used on input line 227.
 (pdftex.def)             Requested size: 136.83289pt x 56.9055pt.
-<imagenes/gin.png, id=869, 869.2475pt x 652.4375pt>
+<imagenes/gin.png, id=871, 869.2475pt x 652.4375pt>
 File: imagenes/gin.png Graphic file (type png)
 <use imagenes/gin.png>
 Package pdftex.def Info: imagenes/gin.png  used on input line 233.
 (pdftex.def)             Requested size: 75.81491pt x 56.9055pt.
-<imagenes/axios.png, id=871, 3854.4pt x 2168.1pt>
+<imagenes/axios.png, id=873, 3854.4pt x 2168.1pt>
 File: imagenes/axios.png Graphic file (type png)
 <use imagenes/axios.png>
 Package pdftex.def Info: imagenes/axios.png  used on input line 248.
@@ -1857,12 +1857,12 @@ Package pdftex.def Info: imagenes/axios.png  used on input line 248.
 
 
 [16 <./imagenes/go.png> <./imagenes/gin.png>]
-<imagenes/fetch.png, id=880, 1244.65pt x 700.6175pt>
+<imagenes/fetch.png, id=882, 1244.65pt x 700.6175pt>
 File: imagenes/fetch.png Graphic file (type png)
 <use imagenes/fetch.png>
 Package pdftex.def Info: imagenes/fetch.png  used on input line 257.
 (pdftex.def)             Requested size: 101.07439pt x 56.9055pt.
-<./imagenes/postman.png, id=882, 1510.64375pt x 603.25375pt>
+<./imagenes/postman.png, id=884, 1510.64375pt x 603.25375pt>
 File: ./imagenes/postman.png Graphic file (type png)
 <use ./imagenes/postman.png>
 Package pdftex.def Info: ./imagenes/postman.png  used on input line 266.
@@ -1870,12 +1870,12 @@ Package pdftex.def Info: ./imagenes/postman.png  used on input line 266.
 
 
 [17 <./imagenes/axios.png> <./imagenes/fetch.png>]
-<imagenes/insomnia.png, id=893, 451.6875pt x 140.02313pt>
+<imagenes/insomnia.png, id=895, 451.6875pt x 140.02313pt>
 File: imagenes/insomnia.png Graphic file (type png)
 <use imagenes/insomnia.png>
 Package pdftex.def Info: imagenes/insomnia.png  used on input line 275.
 (pdftex.def)             Requested size: 183.56651pt x 56.9055pt.
-<imagenes/curl.png, id=895, 1003.75pt x 457.71pt>
+<imagenes/curl.png, id=897, 1003.75pt x 457.71pt>
 File: imagenes/curl.png Graphic file (type png)
 <use imagenes/curl.png>
 Package pdftex.def Info: imagenes/curl.png  used on input line 284.
@@ -1883,7 +1883,7 @@ Package pdftex.def Info: imagenes/curl.png  used on input line 284.
 
 
 [18 <./imagenes/postman.png> <./imagenes/insomnia.png>]
-<imagenes/mysql.png, id=906, 843.15pt x 361.35pt>
+<imagenes/mysql.png, id=908, 843.15pt x 361.35pt>
 File: imagenes/mysql.png Graphic file (type png)
 <use imagenes/mysql.png>
 Package pdftex.def Info: imagenes/mysql.png  used on input line 307.
@@ -1891,12 +1891,12 @@ Package pdftex.def Info: imagenes/mysql.png  used on input line 307.
 
 
 [19 <./imagenes/curl.png>]
-<imagenes/postgresql.png, id=915, 1337.99875pt x 655.44875pt>
+<imagenes/postgresql.png, id=917, 1337.99875pt x 655.44875pt>
 File: imagenes/postgresql.png Graphic file (type png)
 <use imagenes/postgresql.png>
 Package pdftex.def Info: imagenes/postgresql.png  used on input line 322.
 (pdftex.def)             Requested size: 116.1477pt x 56.9055pt.
-<imagenes/mariadb.png, id=917, 341.275pt x 175.65625pt>
+<imagenes/mariadb.png, id=919, 341.275pt x 175.65625pt>
 File: imagenes/mariadb.png Graphic file (type png)
 <use imagenes/mariadb.png>
 Package pdftex.def Info: imagenes/mariadb.png  used on input line 331.
@@ -1904,12 +1904,12 @@ Package pdftex.def Info: imagenes/mariadb.png  used on input line 331.
 
 
 [20 <./imagenes/mysql.png> <./imagenes/postgresql.png>]
-<imagenes/mongo.png, id=927, 843.15pt x 232.61906pt>
+<imagenes/mongo.png, id=929, 843.15pt x 232.61906pt>
 File: imagenes/mongo.png Graphic file (type png)
 <use imagenes/mongo.png>
 Package pdftex.def Info: imagenes/mongo.png  used on input line 342.
 (pdftex.def)             Requested size: 206.25835pt x 56.9055pt.
-<./imagenes/firebase.png, id=929, 1204.5pt x 330.23375pt>
+<./imagenes/firebase.png, id=931, 1204.5pt x 330.23375pt>
 File: ./imagenes/firebase.png Graphic file (type png)
 <use ./imagenes/firebase.png>
 Package pdftex.def Info: ./imagenes/firebase.png  used on input line 352.
@@ -1917,7 +1917,7 @@ Package pdftex.def Info: ./imagenes/firebase.png  used on input line 352.
 
 
 [21 <./imagenes/mariadb.png> <./imagenes/mongo.png>]
-<imagenes/Cassandra_logo.svg.png, id=939, 1204.5pt x 809.0225pt>
+<imagenes/Cassandra_logo.svg.png, id=941, 1204.5pt x 809.0225pt>
 File: imagenes/Cassandra_logo.svg.png Graphic file (type png)
 <use imagenes/Cassandra_logo.svg.png>
 Package pdftex.def Info: imagenes/Cassandra_logo.svg.png  used on input line 361.
@@ -1932,7 +1932,7 @@ Overfull \hbox (9.39667pt too wide) in paragraph at lines 444--446
 [22 <./imagenes/firebase.png> <./imagenes/Cassandra_logo.svg.png>] Excluding 'comment' comment.
 
 [23] Excluding 'comment' comment. Excluding 'comment' comment.
-<imagenes/hinative.png, id=966, 513.92pt x 513.92pt>
+<imagenes/hinative.png, id=968, 513.92pt x 513.92pt>
 File: imagenes/hinative.png Graphic file (type png)
 <use imagenes/hinative.png>
 Package pdftex.def Info: imagenes/hinative.png  used on input line 513.
@@ -1940,17 +1940,17 @@ Package pdftex.def Info: imagenes/hinative.png  used on input line 513.
 
 
 [24] Excluding 'comment' comment.
-<imagenes/tandem.png, id=976, 513.92pt x 346.29375pt>
+<imagenes/tandem.png, id=978, 513.92pt x 346.29375pt>
 File: imagenes/tandem.png Graphic file (type png)
 <use imagenes/tandem.png>
 Package pdftex.def Info: imagenes/tandem.png  used on input line 535.
 (pdftex.def)             Requested size: 84.44809pt x 56.9055pt.
-<imagenes/grammarly.png, id=978, 513.92pt x 513.92pt>
+<imagenes/grammarly.png, id=980, 513.92pt x 513.92pt>
 File: imagenes/grammarly.png Graphic file (type png)
 <use imagenes/grammarly.png>
 Package pdftex.def Info: imagenes/grammarly.png  used on input line 544.
 (pdftex.def)             Requested size: 56.89993pt x 56.9055pt.
-<imagenes/duolingo.png, id=980, 513.92pt x 513.92pt>
+<imagenes/duolingo.png, id=982, 513.92pt x 513.92pt>
 File: imagenes/duolingo.png Graphic file (type png)
 <use imagenes/duolingo.png>
 Package pdftex.def Info: imagenes/duolingo.png  used on input line 553.
@@ -2476,7 +2476,7 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 1315--1331
 [57] (./secciones/planificacion.tex
 
 [58]
-<./imagenes/sprint2-trello.png, id=1310, 1073.00874pt x 608.77437pt>
+<./imagenes/sprint2-trello.png, id=1312, 1073.00874pt x 608.77437pt>
 File: ./imagenes/sprint2-trello.png Graphic file (type png)
 <use ./imagenes/sprint2-trello.png>
 Package pdftex.def Info: ./imagenes/sprint2-trello.png  used on input line 77.
@@ -2491,7 +2491,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [60 <./imagenes/sprint2-trello.png>]
 Chapter 4.
-<./imagenes/fullstack.drawio.png, id=1321, 693.59125pt x 266.9975pt>
+<./imagenes/fullstack.drawio.png, id=1323, 693.59125pt x 266.9975pt>
 File: ./imagenes/fullstack.drawio.png Graphic file (type png)
 <use ./imagenes/fullstack.drawio.png>
 Package pdftex.def Info: ./imagenes/fullstack.drawio.png  used on input line 7.
@@ -2505,7 +2505,7 @@ Package pdftex.def Info: ./imagenes/fullstack.drawio.png  used on input line 7.
 [62] Excluding 'comment' comment.) (./secciones/modelado_datos.tex
 
 [63]
-<./imagenes/letterexDB.png, id=1335, 733.74126pt x 540.0175pt>
+<./imagenes/letterexDB.png, id=1337, 733.74126pt x 540.0175pt>
 File: ./imagenes/letterexDB.png Graphic file (type png)
 <use ./imagenes/letterexDB.png>
 Package pdftex.def Info: ./imagenes/letterexDB.png  used on input line 9.
@@ -2515,7 +2515,7 @@ Package pdftex.def Info: ./imagenes/letterexDB.png  used on input line 9.
 [64 <./imagenes/letterexDB.png>]) (./secciones/arquitectura_backend.tex (./secciones/estructura_backend.tex
 
 [65]
-<imagenes/cors.png, id=1346, 399.4925pt x 110.4125pt>
+<imagenes/cors.png, id=1348, 399.4925pt x 110.4125pt>
 File: imagenes/cors.png Graphic file (type png)
 <use imagenes/cors.png>
 Package pdftex.def Info: imagenes/cors.png  used on input line 12.
@@ -2523,12 +2523,12 @@ Package pdftex.def Info: imagenes/cors.png  used on input line 12.
 )
 
 [66 <./imagenes/cors.PNG>]
-<./imagenes/template_email.png, id=1352, 1033.8625pt x 464.23438pt>
+<./imagenes/template_email.png, id=1354, 1033.8625pt x 464.23438pt>
 File: ./imagenes/template_email.png Graphic file (type png)
 <use ./imagenes/template_email.png>
 Package pdftex.def Info: ./imagenes/template_email.png  used on input line 17.
 (pdftex.def)             Requested size: 426.79135pt x 191.6407pt.
-<./imagenes/jwt.png, id=1354, 554.07pt x 299.61937pt>
+<./imagenes/jwt.png, id=1356, 554.07pt x 299.61937pt>
 File: ./imagenes/jwt.png Graphic file (type png)
 <use ./imagenes/jwt.png>
 Package pdftex.def Info: ./imagenes/jwt.png  used on input line 27.
@@ -2565,33 +2565,38 @@ Underfull \hbox (badness 1259) in paragraph at lines 30--31
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 51--52
+Underfull \hbox (badness 1259) in paragraph at lines 50--51
 \T1/txr/bx/n/12 Valores de sal-ida: \T1/txr/m/n/12 sta-tus, mes-sage, frien-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--59
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
 []|\T1/txr/m/n/12 /api/corrected-letters/send-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 []|\T1/txr/m/n/12 /api/corrected-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 \T1/txr/m/n/12 letters/corrections/:original-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 []|\T1/txr/m/n/12 /api/corrected-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 \T1/txr/m/n/12 letters/corrected-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|\T1/txr/m/n/12 /api/corrected-
  []
 
 
@@ -2605,13 +2610,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--63
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
-[]|\T1/txr/m/n/12 /api/corrected-
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+\T1/txr/m/n/12 letters/update/:corrected-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 64--64
-\T1/txr/m/n/12 letters/update/:corrected-
+[]|\T1/txr/m/n/12 /api/corrected-
  []
 
 
@@ -2620,31 +2625,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--65
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-[]|\T1/txr/m/n/12 /api/corrected-
- []
-
-
-Overfull \hbox (426.79135pt too wide) detected at line 68
+Overfull \hbox (426.79135pt too wide) detected at line 67
 []
  []
 
 
-Overfull \hbox (26.01845pt too wide) in alignment at lines 7--70
+Overfull \hbox (26.01845pt too wide) in alignment at lines 7--69
 [] [] []
  []
 
-[70] [71] [72] [73])
+[70] [71] [72] [73] Excluding 'comment' comment.)
 
 [74] Excluding 'comment' comment.
-Overfull \hbox (1.76395pt too wide) in paragraph at lines 123--124
+Overfull \hbox (1.76395pt too wide) in paragraph at lines 121--122
 \T1/txr/m/n/12 gación de Mon-goDB per-mite una mejora drás-tica en el rendimiento del sis-tema re-duciendo
  []
 
-<./imagenes/aggregate3.png, id=1394, 404.51125pt x 640.3925pt>
+<./imagenes/aggregate3.png, id=1396, 404.51125pt x 640.3925pt>
 File: ./imagenes/aggregate3.png Graphic file (type png)
 <use ./imagenes/aggregate3.png>
-Package pdftex.def Info: ./imagenes/aggregate3.png  used on input line 129.
+Package pdftex.def Info: ./imagenes/aggregate3.png  used on input line 127.
 (pdftex.def)             Requested size: 426.79135pt x 675.67613pt.
 ) (./secciones/arquitectura_frontend.tex
 
@@ -2655,12 +2655,12 @@ Package pdftex.def Info: ./imagenes/aggregate3.png  used on input line 129.
 [77]
 
 [78]
-<imagenes/ui/dialogDeleteAll.png, id=1417, 608.77437pt x 258.46562pt>
+<imagenes/ui/dialogDeleteAll.png, id=1419, 608.77437pt x 258.46562pt>
 File: imagenes/ui/dialogDeleteAll.png Graphic file (type png)
 <use imagenes/ui/dialogDeleteAll.png>
 Package pdftex.def Info: imagenes/ui/dialogDeleteAll.png  used on input line 48.
 (pdftex.def)             Requested size: 426.79135pt x 181.20471pt.
-<imagenes/ui/login.png, id=1418, 1284.8pt x 708.14563pt>
+<imagenes/ui/login.png, id=1420, 1284.8pt x 708.14563pt>
 File: imagenes/ui/login.png Graphic file (type png)
 <use imagenes/ui/login.png>
 Package pdftex.def Info: imagenes/ui/login.png  used on input line 67.
@@ -2672,7 +2672,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [79 <./imagenes/ui/dialogDeleteAll.PNG>]
-<imagenes/ui/homepage.png, id=1424, 1284.8pt x 707.64375pt>
+<imagenes/ui/homepage.png, id=1426, 1284.8pt x 707.64375pt>
 File: imagenes/ui/homepage.png Graphic file (type png)
 <use imagenes/ui/homepage.png>
 Package pdftex.def Info: imagenes/ui/homepage.png  used on input line 87.
@@ -2684,7 +2684,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [80 <./imagenes/ui/login.PNG>]
-<imagenes/ui/new-letter.png, id=1431, 1284.8pt x 710.15312pt>
+<imagenes/ui/new-letter.png, id=1433, 1284.8pt x 710.15312pt>
 File: imagenes/ui/new-letter.png Graphic file (type png)
 <use imagenes/ui/new-letter.png>
 Package pdftex.def Info: imagenes/ui/new-letter.png  used on input line 103.
@@ -2692,7 +2692,7 @@ Package pdftex.def Info: imagenes/ui/new-letter.png  used on input line 103.
 
 
 [81 <./imagenes/ui/homepage.PNG> <./imagenes/ui/new-letter.PNG>]
-<imagenes/ui/correct-letter2.png, id=1439, 1284.29813pt x 707.64375pt>
+<imagenes/ui/correct-letter2.png, id=1441, 1284.29813pt x 707.64375pt>
 File: imagenes/ui/correct-letter2.png Graphic file (type png)
 <use imagenes/ui/correct-letter2.png>
 Package pdftex.def Info: imagenes/ui/correct-letter2.png  used on input line 116.
@@ -2709,7 +2709,7 @@ Overfull \hbox (10.15454pt too wide) in paragraph at lines 146--146
 []    \T1/txtt/m/n/12 correctedText: string;[] 
  []
 
-<imagenes/ui/view-correction.png, id=1445, 1284.8pt x 707.64375pt>
+<imagenes/ui/view-correction.png, id=1447, 1284.8pt x 707.64375pt>
 File: imagenes/ui/view-correction.png Graphic file (type png)
 <use imagenes/ui/view-correction.png>
 Package pdftex.def Info: imagenes/ui/view-correction.png  used on input line 154.
@@ -2717,7 +2717,7 @@ Package pdftex.def Info: imagenes/ui/view-correction.png  used on input line 154
 
 
 [83 <./imagenes/ui/view-correction.PNG>]
-<imagenes/ui/friends-page.png, id=1456, 1284.8pt x 709.14937pt>
+<imagenes/ui/friends-page.png, id=1458, 1284.8pt x 709.14937pt>
 File: imagenes/ui/friends-page.png Graphic file (type png)
 <use imagenes/ui/friends-page.png>
 Package pdftex.def Info: imagenes/ui/friends-page.png  used on input line 167.
@@ -2725,7 +2725,7 @@ Package pdftex.def Info: imagenes/ui/friends-page.png  used on input line 167.
 
 
 [84 <./imagenes/ui/friends-page.PNG>]
-<imagenes/ui/my-profile.png, id=1465, 1244.14813pt x 706.13812pt>
+<imagenes/ui/my-profile.png, id=1467, 1244.14813pt x 706.13812pt>
 File: imagenes/ui/my-profile.png Graphic file (type png)
 <use imagenes/ui/my-profile.png>
 Package pdftex.def Info: imagenes/ui/my-profile.png  used on input line 186.
@@ -2733,7 +2733,7 @@ Package pdftex.def Info: imagenes/ui/my-profile.png  used on input line 186.
 
 
 [85 <./imagenes/ui/my-profile.PNG>]
-<imagenes/ui/skeleton.png, id=1471, 1241.13687pt x 705.63625pt>
+<imagenes/ui/skeleton.png, id=1473, 1241.13687pt x 705.63625pt>
 File: imagenes/ui/skeleton.png Graphic file (type png)
 <use imagenes/ui/skeleton.png>
 Package pdftex.def Info: imagenes/ui/skeleton.png  used on input line 227.
@@ -2807,8 +2807,13 @@ Overfull \hbox (3.02734pt too wide) in alignment at lines 24--24
 [93])
 
 [94]
-Overfull \hbox (8.36742pt too wide) in paragraph at lines 475--475
+Overfull \hbox (8.36742pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 Microsoft. ^^P  Vi-sual stu-dio code.^^Q Ac-ce-dido: 2026-02-27. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
+ []
+
+
+Overfull \hbox (4.14333pt too wide) in paragraph at lines 477--477
+[]\T1/txr/m/n/12 Atlassian. ^^P  Trello.^^Q Ac-ce-dido: 2026-05-09. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / trello .
  []
 
 
@@ -2817,71 +2822,71 @@ Overfull \hbox (8.36742pt too wide) in paragraph at lines 475--475
 
 
 ]
-Overfull \hbox (0.23143pt too wide) in paragraph at lines 475--475
+Overfull \hbox (0.23143pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 MDN Web Docs. ^^P  Javascript.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
  []
 
 
-Overfull \hbox (3.92393pt too wide) in paragraph at lines 475--475
+Overfull \hbox (3.92393pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 Meta Open Source. ^^P  Re-act doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-
  []
 
 
-Overfull \hbox (12.27943pt too wide) in paragraph at lines 475--475
+Overfull \hbox (12.27943pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 Vercel. ^^P  Next.js doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
  []
 
 
-Overfull \hbox (6.03943pt too wide) in paragraph at lines 475--475
+Overfull \hbox (6.03943pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 The PHP Group. ^^P  Php man-ual.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
  []
 
 
-Overfull \hbox (19.93542pt too wide) in paragraph at lines 475--475
+Overfull \hbox (19.93542pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 Laravel. ^^P  Lar-avel doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
  []
 
 
 
 [96]
-Overfull \hbox (10.13144pt too wide) in paragraph at lines 475--475
+Overfull \hbox (10.13144pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 Oracle. ^^P  Mysql doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
  []
 
 
-Overfull \hbox (3.84904pt too wide) in paragraph at lines 475--475
+Overfull \hbox (3.84904pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 Apache Soft-ware Foun-da-tion. ^^P  Apache cas-san-dra doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-
  []
 
 
-Overfull \hbox (2.55592pt too wide) in paragraph at lines 475--475
+Overfull \hbox (2.55592pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 Atlassian. ^^P  Wa-ter-fall project man-age-ment.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-
  []
 
 
-Overfull \hbox (9.06139pt too wide) in paragraph at lines 475--475
+Overfull \hbox (9.06139pt too wide) in paragraph at lines 477--477
 \T1/txr/m/n/12 able: [][]$\T1/txtt/m/n/12 https : / / www . atlassian . com / agile / project -[] management / waterfall$[][] 
  []
 
 
-Overfull \hbox (16.75545pt too wide) in paragraph at lines 475--475
+Overfull \hbox (16.75545pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 TechTarget. ^^P  In-cre-men-tal model.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
  []
 
 
-Overfull \hbox (21.24973pt too wide) in paragraph at lines 475--475
+Overfull \hbox (21.24973pt too wide) in paragraph at lines 477--477
 \T1/txtt/m/n/12 / / www . techtarget . com / searchsoftwarequality / definition / incremental -[]
  []
 
 
 
 [97]
-Overfull \hbox (27.53128pt too wide) in paragraph at lines 475--475
+Overfull \hbox (27.53128pt too wide) in paragraph at lines 477--477
 []\T1/txr/m/n/12 HiNative. ^^P  Hi-na-tive.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / hinative .
  []
 
 
-Overfull \hbox (1.63374pt too wide) in paragraph at lines 475--475
+Overfull \hbox (1.63374pt too wide) in paragraph at lines 477--477
 \T1/txr/m/n/12 tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / www . investopedia .
  []
 
@@ -2893,23 +2898,23 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 22855E73AC5E21C7E264560411165A1C;10304.
+(rerunfilecheck)             Checksum: FCD5DF45F4D4A16E9EC6068DB649C268;10375.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31944 strings out of 467746
- 538124 string characters out of 5431099
- 1655811 words of memory out of 5000000
- 59546 multiletter control sequences out of 15000+600000
+ 31948 strings out of 467746
+ 538260 string characters out of 5431099
+ 1654860 words of memory out of 5000000
+ 59549 multiletter control sequences out of 15000+600000
  702351 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,20n,117p,1453b,3925s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txex.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txsy.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txsya.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (118 pages, 4152367 bytes).
+Output written on main.pdf (118 pages, 4153563 bytes).
 PDF statistics:
- 1811 PDF objects out of 2073 (max. 8388607)
- 564 named destinations out of 1000 (max. 500000)
+ 1816 PDF objects out of 2073 (max. 8388607)
+ 565 named destinations out of 1000 (max. 500000)
  766 words of extra memory for PDF output out of 10000 (max. 10000000)
 

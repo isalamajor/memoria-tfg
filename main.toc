@@ -77,7 +77,7 @@
 \contentsline {subsection}{\numberline {4.3.1}Estructura del backend}{65}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Emails automatizados}{67}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Mecanismo de Autenticación y Autorización}{67}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Almacenamiento de imágenes con Multer}{69}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.4}Almacenamiento de imágenes con Multer y Cloudinary}{69}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Interfaz de Programación de Aplicaciones (API): Rutas y Controladores}{69}{subsection.4.3.5}%
 \contentsline {subsection}{\numberline {4.3.6}Técnicas de optimización}{74}{subsection.4.3.6}%
 \contentsline {subsubsection}{Optimización de búsqueda datos}{74}{subsection.4.3.6}%

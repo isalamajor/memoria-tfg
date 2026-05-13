@@ -324,6 +324,34 @@
       \verb https://meet.google.com/
       \endverb
     \endentry
+    \entry{trello}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=a8fd8cd0b6d2cfda939a8ef257e60192}{%
+           family={{Atlassian}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{fullhash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{fullhashraw}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{bibnamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authorbibnamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authornamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authorfullhash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authorfullhashraw}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-05-09}
+      \field{title}{Trello}
+      \verb{urlraw}
+      \verb https://trello.com/
+      \endverb
+      \verb{url}
+      \verb https://trello.com/
+      \endverb
+    \endentry
     \entry{html_universidad_europea}{online}{}{}
       \name{author}{1}{}{%
         {{hash=ac0998186e715066452b99f063040825}{%
@@ -583,8 +611,8 @@
       \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
       \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-04-12}
@@ -1017,8 +1045,8 @@
       \strng{authornamehash}{866d815adb055e7d4ed23ac402b221f1}
       \strng{authorfullhash}{866d815adb055e7d4ed23ac402b221f1}
       \strng{authorfullhashraw}{866d815adb055e7d4ed23ac402b221f1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-04-12}
@@ -1235,6 +1263,7 @@
       \strng{authornamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
       \strng{authorfullhash}{a8fd8cd0b6d2cfda939a8ef257e60192}
       \strng{authorfullhashraw}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \field{extraname}{2}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -1263,8 +1292,8 @@
       \strng{authorfullhash}{700f0e630e939fff4cff6be3fc518b34}
       \strng{authorfullhashraw}{700f0e630e939fff4cff6be3fc518b34}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-04-12}
@@ -1561,8 +1590,8 @@
       \strng{authornamehash}{2a723769d08b0732d8563ffe6bdaee7d}
       \strng{authorfullhash}{2a723769d08b0732d8563ffe6bdaee7d}
       \strng{authorfullhashraw}{2a723769d08b0732d8563ffe6bdaee7d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-04-03}

@@ -39,23 +39,21 @@ Al llegar una solicitud HTTP al sistema, si se trata de una ruta protegida se ej
 
 Estas decisiones técnicas refuerzan la robustez del sistema y aseguran que cada acción realizada en este sea legítima y provenga exclusivamente de la interacción directa del usuario con la interfaz oficial, de forma que usuario pueda acceder de forma segura a las acciones que requieren su autenticación.
 
+\subsection{Almacenamiento de imágenes con Multer y Cloudinary}
 
-\subsection{Almacenamiento de imágenes con Multer}
-
-Para la gestión de imágenes de perfil, se ha implementado la librería \textbf{Multer}, que permite procesar la subida de archivos de forma eficiente, integrándose directamente con el sistema de archivos del servidor.
+Para la gestión de imágenes de perfil, se ha implementado una solución que combina la librería \textbf{Multer} para el procesamiento eficiente de archivos con \textbf{Cloudinary} como servicio de almacenamiento en la nube. Cloudinary es un servicio de gestión de recursos digitales que proporciona almacenamiento persistente, distribución a través de CDN y optimización automática de imágenes.
 
 La configuración del sistema de subida de archivos se divide en tres pilares fundamentales:
 
 \begin{enumerate}
-    \item Almacenamiento Persistente: Se utiliza el motor de almacenamiento en disco para definir la ruta de destino. Una decisión de diseño clave ha sido el renombrado de archivos: en lugar de conservar el nombre original (que podría contener caracteres inválidos o colisionar con otros usuarios), el archivo se renombra utilizando el identificador del usuario extraído del token JWT. Esto garantiza que cada usuario solo posea una imagen activa, sobrescribiendo la anterior automáticamente en caso de actualización.
+    \item Procesamiento en memoria: Se utiliza Multer para interceptar y procesar la subida de archivos directamente en memoria con un búfer, evitando la necesidad de almacenamiento temporal en disco. Una decisión de diseño clave ha sido el renombrado del archivo por el identificador del usuario extraído del token de autenticación, de modo que cada usuario posea una única imagen de perfil en Cloudinary. En caso de actualización, se sobrescribe la imagen anterior automáticamente, eliminando la necesidad de gestionar manualmente archivos obsoletos.
 
-    \item Filtrado de Seguridad: Para prevenir la subida de archivos maliciosos (como scripts ejecutables disfrazados), se ha implementado un filtro por \textit{mimetype} y extensión. El sistema solo acepta formatos de imagen estándar (\texttt{JPEG, JPG, PNG}), verificando tanto la extensión del archivo como su tipo MIME real para asegurar la integridad del recurso.
+    \item Almacenamiento en la nube: Una vez procesado el búfer, la imagen se sube directamente a Cloudinary. El sistema almacena la URL segura retornada por Cloudinary en la base de datos, facilitando un acceso rápido sin depender del almacenamiento local del servidor. Además, Cloudinary aplica transformaciones automáticas, como la limitación de dimensiones a 800x800 píxeles, para garantizar consistencia visual y reducir consumo de ancho de banda.
+    \item Filtrado de seguridad: Para prevenir la subida de archivos maliciosos (como \textit{scripts} ejecutables disfrazados), se ha implementado un filtro por tipo MIME y extensión. El sistema solo acepta formatos de imagen estándar (\texttt{JPEG, JPG, PNG}), verificando tanto la extensión del archivo como su tipo MIME real para asegurar la integridad del recurso. También, se establece un máximo de tamaño del archivo de 5 MB para evitar \textbf{ataques de denegación de servicio (DoS)} por agotamiento de almacenamiento o ancho de banda.
 
-    \item Control de Recursos: Se establece una restricción en el tamaño del archivo (fijando un máximo de 5 MB) para evitar \textbf{ataques de denegación de servicio (DoS)} por agotamiento de almacenamiento o ancho de banda, garantizando que el servidor procese únicamente archivos de dimensiones razonables para una imagen de perfil.
 \end{enumerate}
 
-Este módulo se exporta como un middleware independiente, lo que permite inyectarlo exclusivamente en las rutas de la API que requieren capacidad de subida, manteniendo el principio de responsabilidad única en el código.
-
+Este módulo se exporta como un middleware independiente, lo que permite inyectarlo exclusivamente en las rutas de la API que requieren capacidad de subida, manteniendo así el principio de responsabilidad única en el código. Además, la integración con Cloudinary elimina la dependencia de la infraestructura local de almacenamiento, proporcionando escalabilidad y disponibilidad.
 
 \subsection{Interfaz de Programación de Aplicaciones (API): Rutas y Controladores}
 
