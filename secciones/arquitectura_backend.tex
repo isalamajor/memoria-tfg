@@ -41,19 +41,27 @@ Estas decisiones técnicas refuerzan la robustez del sistema y aseguran que cada
 
 \subsection{Almacenamiento de imágenes con Multer y Cloudinary}
 
-Para la gestión de imágenes de perfil, se ha implementado una solución que combina la librería \textbf{Multer} para el procesamiento eficiente de archivos con \textbf{Cloudinary} como servicio de almacenamiento en la nube. Multer es una librería que facilita la subida de archivos mediante formularios web para aplicaciones de Node.js. Por su parte, Cloudinary es un servicio de gestión de recursos digitales, en especial imágenes y vídeos, que proporciona almacenamiento persistente en la nube y optimización automática. \cite{llamas_multer_nd, cloudinary_official_2026,moge_cloudinary_2026}
+Para la gestión de imágenes de perfil, se ha implementado una solución que combina la librería \textbf{Multer} para el procesamiento eficiente de archivos con \textbf{Cloudinary} como servicio de almacenamiento en la nube. Multer es un middleware de Express que facilita la subida de archivos mediante formularios web \cite{llamas_multer_nd,}. Por su parte, Cloudinary es un servicio de gestión de recursos digitales en la nube, en especial imágenes y vídeos, que proporciona almacenamiento persistente, optimización automática y una distribución segura y eficiente a nivel global, gracias a su infraestructura de red de entrega de contenido (CDN o \textit{Content Delivery Network}) \cite{cloudinary_official_2026,moge_cloudinary_2026,cloudflare_cdn_2026}.
 
-La configuración del sistema de subida de archivos se divide en tres pilares fundamentales:
+
+El módulo de subida de archivos se exporta como un middleware independiente, lo que permite inyectarlo exclusivamente en las rutas de la API que lo requieren, manteniendo así el principio de responsabilidad única en el código.
+
+Su configuración se divide en tres pilares fundamentales:
 
 \begin{itemize}
-    \item Procesamiento en memoria: Se utiliza Multer para interceptar y procesar la subida de archivos directamente en memoria con un búfer, evitando la necesidad de almacenamiento temporal en disco. Una decisión de diseño clave ha sido el renombrado del archivo por el identificador del usuario extraído del token de autenticación, de modo que cada usuario posea una única imagen de perfil en Cloudinary. En caso de actualización, se sobrescribe la imagen anterior automáticamente, eliminando la necesidad de gestionar manualmente archivos obsoletos.
-
-    \item Almacenamiento en la nube: Una vez procesado el búfer, la imagen se sube directamente a Cloudinary. El sistema almacena la URL segura retornada por Cloudinary en la base de datos, facilitando un acceso rápido sin depender del almacenamiento local del servidor. Además, Cloudinary aplica transformaciones automáticas, como la limitación de dimensiones a 800x800 píxeles, para garantizar consistencia visual y reducir consumo de ancho de banda.
     \item Filtrado de seguridad: Para prevenir la subida de archivos maliciosos (como \textit{scripts} ejecutables disfrazados), se ha implementado un filtro por tipo MIME y extensión. El sistema solo acepta formatos de imagen estándar (\texttt{JPEG, JPG, PNG}), verificando tanto la extensión del archivo como su tipo MIME real para asegurar la integridad del recurso. También, se establece un máximo de tamaño del archivo de 5 MB para evitar \textbf{ataques de denegación de servicio (DoS)} por agotamiento de almacenamiento o ancho de banda.
+    \item Procesamiento en memoria: Se utiliza Multer para interceptar y procesar la subida de archivos directamente en memoria con un búfer, evitando la necesidad de almacenamiento temporal en disco. Una decisión de diseño clave ha sido el renombrado del archivo por el identificador del usuario y la normalización de formato a JPG, de modo que cada usuario posea una única imagen de perfil en Cloudinary. Al combinar esta transformación con el parámetro \texttt{overwrite: true}, se reemplaza el recurso anterior automáticamente en caso de actualización, eliminando la necesidad de gestionar manualmente archivos obsoletos. Adicionalmente, el uso de \texttt{invalidate: true} garantiza que la actualización se propague correctamente al invalidar las versiones previas almacenadas en la caché de la CDN.
+
+    \item Almacenamiento en la nube: Una vez procesado el búfer, la imagen se sube directamente a Cloudinary. El sistema almacena la URL segura retornada por Cloudinary en la base de datos, facilitando un acceso rápido sin depender del almacenamiento local del servidor. Además, Cloudinary permite aplicar transformaciones automáticas, como la limitación de dimensiones a 800x800 píxeles, para garantizar consistencia visual y reducir consumo de ancho de banda. La CDN de Cloudinary se encarga de que, cuando alguien quiera ver la imagen, esta cargue en cuestión de milisegundos.
 
 \end{itemize}
 
-Este módulo se exporta como un middleware independiente, lo que permite inyectarlo exclusivamente en las rutas de la API que requieren capacidad de subida, manteniendo así el principio de responsabilidad única en el código. Además, la integración con Cloudinary elimina la dependencia de la infraestructura local de almacenamiento, proporcionando escalabilidad y disponibilidad.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{imagenes/cloudinaryBuffer.png}
+    \caption{Configuración del proceso de subida en Cloudinary}
+    \label{fig:cloudinary}
+\end{figure}
 
 \subsection{Interfaz de Programación de Aplicaciones (API): Rutas y Controladores}
 
@@ -70,7 +78,7 @@ La lógica de interacción se fundamenta en las operaciones \textbf{CRUD} (\text
 
 Cada ruta definida en el servidor está vinculada a un \textbf{controlador} específico, el cual contiene la lógica final para procesar la solicitud. Una vez superada la fase de autenticación, la ejecución pasa al controlador específico correspondiente, cuya función es extraer los parámetros de la consulta, utilizar la identidad del usuario ya validada para aplicar reglas de negocio, ejecutar las operaciones correspondientes en MongoDB mediante los modelos de Mongoose, y devolver una respuesta HTTP con los datos en formato JSON y un código de éxito o error.
 
-A continuación, se muestra una tabla con todos los métodos que se han desarrollado para esta API y de los que el frontend más adelante se servirá. Estás separados en categorías según el controlador y enrutador que se encarga de ellos: User, Letter, CorrectedLetter y Follow. Podría crearse uno nuevo para los modelos de VerificationCode y FriendRequest, pero por simplicidad se han incluido las pocas funciones de estos en el grupo de User y Follow, respectivamente. Además, se marca con un asterisco los valores de entrada obligatorios.
+A continuación, se muestra una tabla con todos los métodos que se han desarrollado para esta API y de los que el frontend más adelante se servirá. Estás separados en categorías según el controlador y enrutador que se encarga de ellos: User, Letter, CorrectedLetter y Follow. Podría crearse uno nuevo para los modelos de VerificationCode y FriendRequest, pero por simplicidad se han incluido las pocas funciones de estos en el grupo de User y Follow, respectivamente. En la tabla, se marca con un asterisco los valores de entrada obligatorios.
 
 \input{secciones/tabla_rutas.tex}
 

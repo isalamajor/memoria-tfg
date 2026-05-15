@@ -1681,10 +1681,37 @@
       \field{note}{Accedido: 2026-05-13}
       \field{title}{Cloudinary - Producto en Moge.ai}
       \verb{urlraw}
-      \verb https://moge.ai/es/product/cloudinary
+      \verb https://secretnetwork.co/programas/cloudinary
       \endverb
       \verb{url}
-      \verb https://moge.ai/es/product/cloudinary
+      \verb https://secretnetwork.co/programas/cloudinary
+      \endverb
+    \endentry
+    \entry{cloudflare_cdn_2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3f07179a07b2a7661e37a3fd0e652a07}{%
+           family={{Cloudflare}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{fullhash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{fullhashraw}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{bibnamehash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{authorbibnamehash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{authornamehash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{authorfullhash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{authorfullhashraw}{3f07179a07b2a7661e37a3fd0e652a07}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-05-15}
+      \field{title}{What is a CDN?}
+      \verb{urlraw}
+      \verb https://www.cloudflare.com/es-es/learning/cdn/what-is-a-cdn/
+      \endverb
+      \verb{url}
+      \verb https://www.cloudflare.com/es-es/learning/cdn/what-is-a-cdn/
       \endverb
     \endentry
     \entry{mongodb_aggregation_2026}{online}{}{}
