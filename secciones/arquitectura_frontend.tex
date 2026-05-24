@@ -8,14 +8,14 @@ El frontend ha sido desarrollado como una aplicación web moderna y responsiva, 
 La aplicación se ha construido utilizando el siguiente stack tecnológico:
 
 \begin{itemize}
-    \item Next.js 15: Framework de React que proporciona renderizado del lado del servidor (SSR), enrutamiento basado en archivos y optimizaciones de rendimiento automáticas.
     \item React 19: Biblioteca principal para la construcción de interfaces de usuario basadas en componentes.
+    \item Next.js 15: Framework de React que proporciona renderizado del lado del servidor (SSR), enrutamiento basado en archivos y optimizaciones de rendimiento automáticas.
     \item TypeScript: Superset tipado de JavaScript que proporciona seguridad de tipos en tiempo de compilación.
     \item Tailwind CSS: Framework de CSS utility-first para un desarrollo de estilos rápido y consistente. El uso este librería agiliza la aplicación de interfaces responsivas, adaptándose a todo tipo de dispositivos con tamaños de pantalla diversos.
-    \item Framer Motion: Biblioteca de animaciones para crear transiciones fluidas y experiencias interactivas.
-    \item React Quill: Editor de texto enriquecido basado en Quill.js para la escritura de cartas.
+    \item Framer Motion: Biblioteca de animaciones para crear transiciones fluidas y experiencias interactivas.\cite{framer_motion_docs}
+    \item React Quill: Editor de texto enriquecido basado en Quill.js para la escritura de cartas.\cite{quill_react_playground}
     \item Axios: Cliente HTTP para comunicación con la API backend.
-    \item React Leaflet: Biblioteca para integración de mapas interactivos.
+    \item React Leaflet: Biblioteca para integración de mapas interactivos.\cite{react_leaflet_docs}
 \end{itemize}
 
 \subsection{Arquitectura del Frontend y Gestión del Estado}
@@ -79,7 +79,6 @@ La página de inicio presenta una interfaz atractiva y animada que da la bienven
 \end{itemize}
 
 Una característica distintiva de esta página es la animación del logo implementada con Framer Motion, que se desplaza suavemente entre diferentes posiciones según el formulario activo, proporcionando un elemento lúdico y memorable a la experiencia del usuario.
-
 \subsubsection{Página Principal}
 
 \begin{figure}[h]
@@ -105,7 +104,7 @@ El dashboard principal (\texttt{/homepage}) es la página central de la aplicaci
     \label{fig:new-letter}
 \end{figure}
 
-La página de creación de cartas (\texttt{/new-letter}) proporciona una interfaz completa para escribir nuevas entradas de diario. El componente implementa validación en tiempo real de los campos requeridos, mostrando mensajes de error específicos cuando el usuario intenta guardar sin completar todos los campos obligatorios. Los elementos principales incluyen campo de título, selectores de fecha, idioma y diario; y un editor de texto enriquecido implementado con React Quill, permite formatear texto con negrita, cursiva, listas, enlaces, etc.
+La página de creación de cartas (\texttt{/new-letter}) proporciona una interfaz completa para escribir nuevas entradas de diario. El componente implementa validación en tiempo real de los campos requeridos, mostrando mensajes de error específicos cuando el usuario intenta guardar sin completar todos los campos obligatorios. Los elementos principales incluyen campo de título, selectores de fecha, idioma y diario; y un editor de texto enriquecido implementado con React Quill, permite formatear texto con negrita, cursiva, listas, enlaces, etc.\cite{quill_react_playground}
 
 Al guardar la carta, se redirige al usuario a una página muy similar (\texttt{/edit-letter}), lo que permite el guardado de borradores de forma que se pueda seguir editando la carta en otro momento. Esta última página es muy similar a la de Creación de Cartas, salvo que en ella es posible enviar la carta a amigos para que la corrigan.
 

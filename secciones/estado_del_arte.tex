@@ -63,7 +63,7 @@ JavaScript es el lenguaje de programación estándar para implementar la interac
 
 Un \textit{framework} o entorno de trabajo es una herramienta que ofrece varias funcionalidades y esquemas para desarrollar un proyecto de forma más organizada, ágil y escalable. Con la introducción de frameworks de JavaScript, como React.js, Vue.js y Angular, el desarrollo frontend ha evolucionado hacia la creación de aplicaciones de una sola página (\textit{Single Page Application} o SPA), donde JavaScript gestiona la navegación y actualización de contenido sin necesidad de recargar la página; y hacia la construcción de páginas mediante componentes reutilizables, lo que aumenta la escalabilidad y acelera el desarrollo de una aplicación compleja.
 
-Otros aspectos fundamentales que JavaScript permite implementar incluyen técnicas como AJAX o Fetch API, que permiten comunicarse con un servidor en segundo plano, enviando y recibiendo datos sin interrumpir la experiencia del usuario.\cite{js_mdn,js_framework_bridge,ts_handbook}
+Otros aspectos fundamentales que JavaScript permite implementar incluyen técnicas como AJAX o Fetch API, que permiten comunicarse con un servidor en segundo plano, enviando y recibiendo datos sin interrumpir la experiencia del usuario.\cite{js_mdn}
 
 \begin{figure}[H]
     \centering
@@ -73,7 +73,7 @@ Otros aspectos fundamentales que JavaScript permite implementar incluyen técnic
 \end{figure}
 
 En 2012, vista la falta de herramientas que facilitaran un desarrollo óptimo, apareció TypeScript, un \textit{superset} de JavaScript que incorporaba clases, módulos y una estructura más organizada y conveniente para proyectos grandes. Un superset de JavaScript es una tecnología capaz de compilar y ejecutar código JavaScript pero que tiene su propia sintaxis y diferenciaciones, de forma que podemos incluir código TypeScript en un proyecto JavaScript y viceversa.
-La principal diferencia que marca TypeScript es que se trata de un lenguaje de tipado estático, es decir, al declarar una variable se debe especificar el tipo de dato de esta, y este no es modificable. Esto no solo facilita la detección de \textit{bugs} o errores en el código, sino que también permite ofrecer sugerencias a la hora de operar con esas variables o tomar argumentos en funciones.\cite{ts_handbook}
+La principal diferencia que marca TypeScript es que se trata de un lenguaje de tipado estático, es decir, al declarar una variable se debe especificar el tipo de dato de esta, y este no es modificable. Esto no solo facilita la detección de \textit{bugs} o errores en el código, sino que también permite ofrecer sugerencias a la hora de operar con esas variables o tomar argumentos en funciones. \cite{ts_handbook,typescript_org}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{imagenes/typescript.jpg}
@@ -84,13 +84,13 @@ La principal diferencia que marca TypeScript es que se trata de un lenguaje de t
 
 \subsection{Frameworks de JavaScript}
 La utilización de un framework de JavaScript para el desarrollo de una aplicación web es muy recomendable dadas las funcionalidades preprogramadas que ofrecen agilizar las tareas de programación; funcionalidades como la modularización del código, la optimización del rendimiento, la integración de servicios, la manipulación de eventos y la creación de interfaces dinámicas; además del manejo del DOM (Document Objetc Model), la interfaz de programación que permite crear, eliminar o modificar elementos de la página.
-Estudiaremos algunas de las alternativas de frameworks que hay actualmente a disposición del programador.
+Estudiaremos algunas de las alternativas de frameworks que hay actualmente a disposición del programador.\cite{js_framework_bridge}
 
 
 \subsubsection{React}
 React.js es una de las tecnologías más utilizadas en el desarrollo de interfaces dinámicas. Creada por ingenieros de Meta, esta biblioteca de JavaScript permite construir aplicaciones modulares y eficientes gracias a su sistema basado en componentes reutilizables y la utilización de un DOM virtual, que realiza una evaluación de los cambios que se aplicarán al DOM, y los aplica solamente al elemento o los elementos que cambian o se ven afectados por la modificación. Esto mejora el rendimiento en la actualización de la interfaz.
 Aplicaciones como Facebook, Instagram y Airbnb han adoptado React debido a las facilidades que ofrece y su flexibilidad y ecosistema robusto, además de su facilidad de instalación y relativamente accesible curva de aprendizaje.
-Actualmente es uno de los frameworks web más populares y utilizados, aunque existen otra opciones también interesantes. Esto implica que existe una gran cantidad de documentación y guías para aprender y resolver dudas sobre React, además de numerosas librerías compatibles con esta tecnologías y componentes gratuitos que uno puede incorporar en sus propios proyectos y que encontramos en plataformas como 21st.dev, Aceternity ui o MUI.\cite{react_docs}
+Actualmente es uno de los frameworks web más populares y utilizados, aunque existen otra opciones también interesantes. Esto implica que existe una gran cantidad de documentación y guías para aprender y resolver dudas sobre React, además de numerosas librerías compatibles con esta tecnologías y componentes gratuitos que uno puede incorporar en sus propios proyectos y que encontramos en plataformas como 21st.dev, Aceternity ui o MUI.\cite{react_docs,ebac_react}
 
 
 \begin{figure}[H]
@@ -102,7 +102,7 @@ Actualmente es uno de los frameworks web más populares y utilizados, aunque exi
 
 \subsubsection{Next}
 Sobre React se ha construido Next.js, un framework que optimiza el rendimiento al incorporar renderizado del lado del servidor (la generación del contenido de una página web ocurre en el servidor, en lugar de hacerlo en el navegador del cliente buscando una mejora del rendimiento) y generación de páginas estáticas, lo que lo convierte en una muy buena opción para aplicaciones con necesidades de optimización para motores de búsqueda. Empresas como TikTok, Twitch y Hulu han apostado por Next.js debido a su capacidad para mejorar la velocidad de carga y la experiencia del usuario. A pesar de estas ventajas, su configuración inicial puede ser más compleja en comparación con React puro, y algunas de sus funcionalidades avanzadas requieren un aprendizaje adicional.
-Otra de las principales ventajas de utilizar Next.js es que cuenta con Vercel, una plataforma que nos permite desplegar y alojar proyectos de forma altamente optimizada, rápida y sencilla.\cite{next_docs}
+Otra de las principales ventajas de utilizar Next.js es que cuenta con Vercel, una plataforma que nos permite desplegar y alojar proyectos de forma altamente optimizada, rápida y sencilla.\cite{next_docs,freecodecamp_next}
 
 \begin{figure}[H]
     \centering
@@ -113,7 +113,7 @@ Otra de las principales ventajas de utilizar Next.js es que cuenta con Vercel, u
 
 \subsubsection{Vue}
 Otra opción destacada en frontend es Vue.js, un framework progresivo que ha ganado popularidad por su curva de aprendizaje baja y su sintaxis intuitiva. Facilita la creación de sitios web de una sola página ligeros y con alta velocidad de carga. Empresas como Xiaomi, Alibaba y Nintendo lo utilizan por su facilidad de integración y su capacidad para construir interfaces interactivas con menor esfuerzo en comparación con React o Angular.  Además, existe una librería llamada Vuetify que pone a disposición del desarrollador numerosos componentes para utilizar en sus aplicaciones.
-Una desventaja es que Vue cuenta con una comunidad más pequeña y menos recursos disponibles, lo que puede ser un inconveniente en proyectos grandes.\cite{vue_docs}
+Una desventaja es que Vue cuenta con una comunidad más pequeña y menos recursos disponibles, lo que puede ser un inconveniente en proyectos grandes.\cite{vue_docs,openwebinars_vue}
 
 
 \begin{figure}[H]
@@ -124,7 +124,7 @@ Una desventaja es que Vue cuenta con una comunidad más pequeña y menos recurso
 \end{figure}
 
 \subsubsection{Angular}
-Angular es un framework completo desarrollado por Google basado en TypeScript que ofrece una arquitectura robusta para el desarrollo de aplicaciones web a gran escala. Gmail y Microsoft Teams lo utilizan debido a su capacidad para estructurar aplicaciones complejas con un fuerte soporte empresarial. No obstante, su curva de aprendizaje es considerablemente más alta que la de React o Vue, y su enfoque basado en clases y módulos puede resultar más rígido.\cite{angular_docs}
+Angular es un framework completo desarrollado por Google basado en TypeScript que ofrece una arquitectura robusta para el desarrollo de aplicaciones web a gran escala. Gmail y Microsoft Teams lo utilizan debido a su capacidad para estructurar aplicaciones complejas con un fuerte soporte empresarial. No obstante, su curva de aprendizaje es considerablemente más alta que la de React o Vue, y su enfoque basado en clases y módulos puede resultar más rígido.\cite{angular_docs,hiberus_angular}
 
 
 \begin{figure}[H]
@@ -144,7 +144,7 @@ Node.js es un entorno de ejecución basado en JavaScript que permite ejecutar c�
 Su arquitectura está basada en eventos y es no bloqueante, es decir, el sistema no espera a que se termine de ejecutar cada tarea o consulta para empezar con la siguiente, sino que libera el flujo de ejecución para llevar a cabo otras tareas mientras tanto. Esto lo hace altamente eficiente en aplicaciones que requieren muchas conexiones simultáneas.
 Es posible cargar y utilizar una amplia gama de paquetes con npm (Node Package Manager), que ofrece miles de bibliotecas para ampliar sus funcionalidades y agilizar el desarrollo; y permite dar soporte y servicio en tiempo real a una aplicación.
 Empresas como Netflix, PayPal y Uber utilizan Node.js dada su capacidad para manejar grandes volúmenes de tráfico y su escalabilidad. Sin embargo, no es la mejor opción para aplicaciones que requieren cálculos intensivos, como procesamiento de imágenes o simulaciones matemáticas complejas.
-Dentro del ecosistema de Node.js, destaca el Express.js, un framework minimalista que facilita la creación de APIs y servidores web. Es rápido, flexible y ampliamente utilizado en el desarrollo de aplicaciones modernas.\cite{node_docs,express_docs}
+Dentro del ecosistema de Node.js, destaca el Express.js, un framework minimalista que facilita la creación de APIs y servidores web. Es rápido, flexible y ampliamente utilizado en el desarrollo de aplicaciones modernas.\cite{node_docs,express_docs,evolve_node}
 
 
 \begin{figure}[H]
@@ -220,7 +220,7 @@ Ruby es un lenguaje de programación con una sintaxis cercana al lenguaje humano
 \end{figure}
 
 \subsubsection{Golang y Gin}
-Golang, también conocido como Go, es un lenguaje desarrollado por Google enfocado en el rendimiento, la seguridad y la concurrencia a la hora de atender solicitudes, lo cual es ideal para sistemas que requieren gran escalabilidad.. Plataformas como Dropbox, Netflix o Uber están programadas con Go. Se trata de una alternativa de Alto rendimiento, comparable al de C/C++, ya que utiliza Código compilado, es decir, el código fuente es compilado para traducirse a código máquina, lo que mejora la velocidad de ejecución. Su framework más popular para el backend es Gin, que permite construir APIs rápidas y eficientes. Sin embargo, Go tiene menos bibliotecas y comunidad que otras tecnologías más maduras como Node.js o Python. Además, su funcionamiento puede resultar complejo en ciertos puntos, por ejemplo, en ciertas situaciones se requiere manejar manualmente la memoria para optimizar la aplicación.\cite{go_docs,gin_docs}
+Golang, también conocido como Go, es un lenguaje desarrollado por Google enfocado en el rendimiento, la seguridad y la concurrencia a la hora de atender solicitudes, lo cual es ideal para sistemas que requieren gran escalabilidad.. Plataformas como Dropbox, Netflix o Uber están programadas con Go. Se trata de una alternativa de Alto rendimiento, comparable al de C/C++, ya que utiliza Código compilado, es decir, el código fuente es compilado para traducirse a código máquina, lo que mejora la velocidad de ejecución. Su framework más popular para el backend es Gin, que permite construir APIs rápidas y eficientes. Sin embargo, Go tiene menos bibliotecas y comunidad que otras tecnologías más maduras como Node.js o Python. Además, su funcionamiento puede resultar complejo en ciertos puntos, por ejemplo, en ciertas situaciones se requiere manejar manualmente la memoria para optimizar la aplicación.\cite{go_docs,gin_docs,wiki_go}
 
 \begin{figure}[H]
     \centering
@@ -241,7 +241,7 @@ Estos frameworks y tecnologías backend que son útiles entre muchas otras cosas
 
 \subsubsection{Axios}
 Axios es una librería basada en JavaScript que permite la realización de solicitudes HTTP tanto en el navegador como en el servidor utilizando Node.js. HTTP o "Hypertext Transfer Protocol" es un protocolo de comunicación para transferir de datos entre un cliente (generalmente una aplicación o navegador) y un servidor web a través de Internet. La comunicación se lleva a cabo mediante solicitudes y respuestas: el cliente realiza una solicitud HTTP al servidor para obtener un recurso (como una página, un archivo, una imagen o cualquier dato), y el servidor responde con la información solicitada en caso de éxito.
-Axios soporta métodos estándar de HTTP y es especialmente popular debido a su capacidad para manejar promesas de manera eficiente, lo que permite gestionar de forma más sencilla la asincronía en las aplicaciones web. Entre sus ventajas se destacan la posibilidad de interceptar solicitudes o respuestas, manejar errores de manera más eficaz y la capacidad de enviar datos en formato JSON de forma predeterminada. Dado su amplio uso en aplicaciones basadas en frameworks como React o Vue.js, Axios se ha consolidado como una de las opciones más elegidas por los desarrolladores.\cite{axios_docs}
+Axios soporta métodos estándar de HTTP y es especialmente popular debido a su capacidad para manejar promesas de manera eficiente, lo que permite gestionar de forma más sencilla la asincronía en las aplicaciones web. Entre sus ventajas se destacan la posibilidad de interceptar solicitudes o respuestas, manejar errores de manera más eficaz y la capacidad de enviar datos en formato JSON de forma predeterminada. Dado su amplio uso en aplicaciones basadas en frameworks como React o Vue.js, Axios se ha consolidado como una de las opciones más elegidas por los desarrolladores.\cite{axios_docs,arsys_axios}
 
 \begin{figure}[H]
     \centering
@@ -251,7 +251,7 @@ Axios soporta métodos estándar de HTTP y es especialmente popular debido a su 
 \end{figure}
 
 \subsubsection{FetchAPI}
-Fetch API es una interfaz nativa en JavaScript que proporciona una forma moderna y flexible de hacer solicitudes HTTP desde el navegador. A diferencia de otras soluciones, como Axios, Fetch es parte del estándar de JavaScript, por lo que no requiere la instalación de bibliotecas adicionales. Esta API permite trabajar con promesas para manejar solicitudes asincrónicas y es compatible con los métodos HTTP más utilizados, como GET, POST, PUT y DELETE. Aunque Fetch no ofrece algunas características avanzadas como la transformación automática de respuestas JSON o manejo de errores, su simplicidad y flexibilidad lo convierten en una excelente opción para aplicaciones web modernas que requieren realizar solicitudes HTTP sin depender de bibliotecas externas.\cite{fetch_mdn}
+Fetch API es una interfaz nativa en JavaScript que proporciona una forma moderna y flexible de hacer solicitudes HTTP desde el navegador. A diferencia de otras soluciones, como Axios, Fetch es parte del estándar de JavaScript, por lo que no requiere la instalación de bibliotecas adicionales. Esta API permite trabajar con promesas para manejar solicitudes asincrónicas y es compatible con los métodos HTTP más utilizados, como GET, POST, PUT y DELETE. Aunque Fetch no ofrece algunas características avanzadas como la transformación automática de respuestas JSON o manejo de errores, su simplicidad y flexibilidad lo convierten en una excelente opción para aplicaciones web modernas que requieren realizar solicitudes HTTP sin depender de bibliotecas externas.\cite{fetch_mdn,logrocket_fetch_vs_axios}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{imagenes/fetch.png}
@@ -260,7 +260,7 @@ Fetch API es una interfaz nativa en JavaScript que proporciona una forma moderna
 \end{figure}
 
 \subsubsection{Postman}
-Postman es una herramienta gráfica ampliamente utilizada para probar, desarrollar y gestionar APIs. Permite enviar solicitudes HTTP, analizar las respuestas y organizar las pruebas en colecciones, lo cual resulta muy útil durante el desarrollo de servicios web y microservicios. Postman es particularmente valioso cuando se trabaja con APIs REST. Una API REST es una API que sigue los principios REST (Representational State Transfer): opera mediante métodos del protocolo HTTP, que son GET para recuperar información del servidor, POST para enviar datos al servidor, PUT para actualizar esos datos, DELETE para borrarlos, y otros; cada recurso está asociado a una URL única; y cada solicitud contiene toda la información necesaria para ser completada, no solo no necesita ni depende de datos de otras solicitudes, sino que no se transmiten ni comparten datos de una petición a otra. También, Postman permite visualizar respuestas en diversos formatos, como JSON, XML y texto plano; y ofrece funciones avanzadas como la automatización de pruebas, la creación de entornos y la automatización del proceso de integración y despliegue del código. Todo esto lo convierte en una herramienta muy potente en el proceso de desarrollo y pruebas de APIs.\cite{postman_docs}
+Postman es una herramienta gráfica ampliamente utilizada para probar, desarrollar y gestionar APIs. Permite enviar solicitudes HTTP, analizar las respuestas y organizar las pruebas en colecciones, lo cual resulta muy útil durante el desarrollo de servicios web y microservicios. Postman es particularmente valioso cuando se trabaja con APIs REST. Una API REST es una API que sigue los principios REST (Representational State Transfer): opera mediante métodos del protocolo HTTP, que son GET para recuperar información del servidor, POST para enviar datos al servidor, PUT para actualizar esos datos, DELETE para borrarlos, y otros; cada recurso está asociado a una URL única; y cada solicitud contiene toda la información necesaria para ser completada, no solo no necesita ni depende de datos de otras solicitudes, sino que no se transmiten ni comparten datos de una petición a otra. También, Postman permite visualizar respuestas en diversos formatos, como JSON, XML y texto plano; y ofrece funciones avanzadas como la automatización de pruebas, la creación de entornos y la automatización del proceso de integración y despliegue del código. Todo esto lo convierte en una herramienta muy potente en el proceso de desarrollo y pruebas de APIs.\cite{postman_docs,imagina_postman}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{./imagenes/postman.png}
@@ -269,7 +269,7 @@ Postman es una herramienta gráfica ampliamente utilizada para probar, desarroll
 \end{figure}
 
 \subsubsection{Insomnia}
-Insomnia es una herramienta similar a Postman, diseñada para facilitar la prueba y el consumo de APIs. Insomnia se distingue por su interfaz limpia y sencilla, que permite a los desarrolladores trabajar de manera eficiente sin distracciones. Al igual que Postman, Insomnia soporta solicitudes HTTP y puede gestionar entornos, variables y autenticación. Además, cuenta con soporte nativo para GraphQL, un lenguaje de consulta y entorno de ejecución para las APIs que permite obtener varios recursos con una sola consulta y obtener solamente los datos deseados, sin datos extra o campos que no queremos en ese momento. Una de sus principales ventajas es la posibilidad de crear pruebas automatizadas, lo que optimiza el proceso de desarrollo y mejora la calidad del código. Insomnia también es altamente personalizable y permite a los usuarios gestionar sus solicitudes de forma organizada, lo que lo hace adecuado tanto para desarrolladores principiantes como para profesionales experimentados.\cite{insomnia_docs}
+Insomnia es una herramienta similar a Postman, diseñada para facilitar la prueba y el consumo de APIs. Insomnia se distingue por su interfaz limpia y sencilla, que permite a los desarrolladores trabajar de manera eficiente sin distracciones. Al igual que Postman, Insomnia soporta solicitudes HTTP y puede gestionar entornos, variables y autenticación. Además, cuenta con soporte nativo para GraphQL, un lenguaje de consulta y entorno de ejecución para las APIs que permite obtener varios recursos con una sola consulta y obtener solamente los datos deseados, sin datos extra o campos que no queremos en ese momento. Una de sus principales ventajas es la posibilidad de crear pruebas automatizadas, lo que optimiza el proceso de desarrollo y mejora la calidad del código. Insomnia también es altamente personalizable y permite a los usuarios gestionar sus solicitudes de forma organizada, lo que lo hace adecuado tanto para desarrolladores principiantes como para profesionales experimentados.\cite{insomnia_docs,best_tools_insomnia}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{insomnia.png}
@@ -278,7 +278,7 @@ Insomnia es una herramienta similar a Postman, diseñada para facilitar la prueb
 \end{figure}
 
 \subsubsection{cURL}
-cURL es una herramienta de línea de comandos ampliamente utilizada para realizar solicitudes HTTP a través de un terminal o script. Aunque no proporciona una interfaz gráfica, cURL es extremadamente versátil y potente, permitiendo a los desarrolladores interactuar con APIs mediante métodos como GET, POST, PUT y DELETE de forma directa. Su principal ventaja es su capacidad para ser integrado en scripts y automatizar tareas de manera eficiente, lo que lo convierte en una herramienta útil para aquellos que prefieren trabajar desde la línea de comandos o necesitan realizar pruebas en entornos sin interfaz gráfica. cURL es compatible con una amplia variedad de protocolos y es especialmente útil para realizar pruebas rápidas y depurar servicios web.\cite{curl_docs}
+cURL es una herramienta de línea de comandos ampliamente utilizada para realizar solicitudes HTTP a través de un terminal o script. Aunque no proporciona una interfaz gráfica, cURL es extremadamente versátil y potente, permitiendo a los desarrolladores interactuar con APIs mediante métodos como GET, POST, PUT y DELETE de forma directa. Su principal ventaja es su capacidad para ser integrado en scripts y automatizar tareas de manera eficiente, lo que lo convierte en una herramienta útil para aquellos que prefieren trabajar desde la línea de comandos o necesitan realizar pruebas en entornos sin interfaz gráfica. cURL es compatible con una amplia variedad de protocolos y es especialmente útil para realizar pruebas rápidas y depurar servicios web.\cite{curl_docs,hostinger_curl}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{curl.png}
@@ -293,7 +293,7 @@ Una base de datos es una recopilación de información que se almacena en un sis
 En una base de datos relacional, los datos se almacenan en tablas, donde cada fila representa un registro y cada columna contiene un atributo o campo de ese registro. Cada registro suele tener un identificador único, conocido como clave primaria, que permite distinguirlo de los demás. Existen relaciones entre las tablas que permiten organizar los datos de forma lógica y estructurada siguiendo un modelo relacional. Para escribir y leer datos de este tipo de bases de datos, se utiliza un lenguaje de consulta estructurado (SQL), como MySQL, PostgreSQL o MariaDB.
 
 Por otro lado, las bases de datos no relacionales o NoSQL ofrecen un enfoque más flexible ya que, en lugar de seguir una estructura rígida de tablas, almacenan la información en formatos como documentos JSON, pares clave-valor, grafos o familias de columnas. Esta estructura es especialmente útil cuando los datos cambian con frecuencia o no requieren un esquema fijo. Esto permite insertar, modificar y obtener los datos de forma más dinámica, lo que se hace mediante lenguajes de consulta más modernos. Este tipo de bases de datos ha ganado popularidad en el campo de las aplicaciones web modernas, microservicios y sistemas que manejan grandes volúmenes de datos no estructurados. MongoDB, Cassandra, Firebase y ElasticSearch se encuentran entre las bases de datos NoSQL más utilizadas a día de hoy.
-La comparativa se ha realizado a partir de la documentación oficial de MySQL, PostgreSQL, MariaDB, MongoDB, Firebase y Cassandra.
+La comparativa se ha realizado a partir de la documentación oficial de MySQL, PostgreSQL, MariaDB, MongoDB, Firebase y Cassandra.\cite{aws_compare_rel_nonrel}
 
 
 \subsubsection{Bases de datos relacionales}
@@ -301,7 +301,7 @@ La comparativa se ha realizado a partir de la documentación oficial de MySQL, P
 \paragraph{MySQL}
 
 
-MySQL es uno de los sistemas de gestión de bases de datos más populares y utilizados en aplicaciones web. Originalmente desarrollado por MySQL AB y posteriormente adquirido por Oracle, MySQL es conocido por su fiabilidad, integridad, velocidad y facilidad de uso. Su arquitectura de replicación maestro-esclavo permite distribuir la carga de trabajo y mejorar la disponibilidad. Aunque es de código abierto, también ofrece versiones comerciales con soporte adicional. MySQL ha sido fundamental en la creación de aplicaciones dentro de la pila LAMP (Linux, Apache, MySQL, PHP/Python), y grandes plataformas como Facebook y Twitter lo emplean para manejar grandes volúmenes de datos.\cite{mysql_docs}
+MySQL es uno de los sistemas de gestión de bases de datos más populares y utilizados en aplicaciones web. Originalmente desarrollado por MySQL AB y posteriormente adquirido por Oracle, MySQL es conocido por su fiabilidad, integridad, velocidad y facilidad de uso. Su arquitectura de replicación maestro-esclavo permite distribuir la carga de trabajo y mejorar la disponibilidad. Aunque es de código abierto, también ofrece versiones comerciales con soporte adicional. MySQL ha sido fundamental en la creación de aplicaciones dentro de la pila LAMP (Linux, Apache, MySQL, PHP/Python), y grandes plataformas como Facebook y Twitter lo emplean para manejar grandes volúmenes de datos.\cite{mysql_docs,openwebinars_mysql}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{mysql.png}
@@ -311,11 +311,11 @@ MySQL es uno de los sistemas de gestión de bases de datos más populares y util
 
 \paragraph{PostgreSQL}
 
-PostgreSQL  destaca por su capacidad para gestionar transacciones complejas y grandes volúmenes de datos, manteniendo siempre la integridad relacional.\cite{postgresql_docs}
+PostgreSQL  destaca por su capacidad para gestionar transacciones complejas y grandes volúmenes de datos, manteniendo siempre la integridad relacional.\cite{postgresql_docs,hostinger_postgresql}
 Cuando varios usuarios acceden simultáneamente a una base de datos, los sistemas tradicionales suelen bloquear los registros para evitar conflictos entre lecturas y escrituras. Una de sus principales ventajas reside en que gestiona esta concurrencia de manera más eficiente gracias a su implementación de MVCC (Control de Concurrencia Multiversión), que permite que las operaciones de lectura no interfieran con las de escritura y viceversa. Esto se traduce en una mejora significa del rendimiento y la experiencia en entornos con múltiples usuarios accediendo a los mismos datos.
 Además, PostgreSQL es compatible con múltiples lenguajes de programación, como JavaScript, C/C++, Python, Ruby y demás.
 Aplicaciones de alto perfil como Instagram, Reddit y Discord emplean PostgreSQL debido a su estabilidad, capacidad para manejar grandes cantidades de datos y su sistema avanzado de consultas.
-La descripción se apoya en la documentación oficial de PostgreSQL \cite{postgresql_docs}.
+La descripción se apoya en la documentación oficial de PostgreSQL \cite{postgresql_docs,hostinger_postgresql}.
 
 \begin{figure}[H]
     \centering
@@ -325,7 +325,7 @@ La descripción se apoya en la documentación oficial de PostgreSQL \cite{postgr
 \end{figure}
 
 \paragraph{Maria DB}
-MariaDB es un sistema de gestión de bases de datos relacional de código abierto que nació como una bifurcación de MySQL, creado por su fundador original, Michael Widenius, después de la compra de MySQL por Oracle. Este sistema mantiene una alta compatibilidad con MySQL, lo que facilita la migración entre ambos. MariaDB ofrece mejoras en términos de rendimiento y seguridad, incorporando nuevos motores de almacenamiento como Aria y XtraDB. Además, su enfoque en la escalabilidad y la alta disponibilidad lo hace adecuado para aplicaciones que requieren un rendimiento constante. Es ampliamente utilizado por empresas de gran tamaño y cuenta con una comunidad activa que garantiza una evolución constante.\cite{mariadb_docs}
+MariaDB es un sistema de gestión de bases de datos relacional de código abierto que nació como una bifurcación de MySQL, creado por su fundador original, Michael Widenius, después de la compra de MySQL por Oracle. Este sistema mantiene una alta compatibilidad con MySQL, lo que facilita la migración entre ambos. MariaDB ofrece mejoras en términos de rendimiento y seguridad, incorporando nuevos motores de almacenamiento como Aria y XtraDB. Además, su enfoque en la escalabilidad y la alta disponibilidad lo hace adecuado para aplicaciones que requieren un rendimiento constante. Es ampliamente utilizado por empresas de gran tamaño y cuenta con una comunidad activa que garantiza una evolución constante.\cite{mariadb_docs,wiki_mariadb}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{imagenes/mariadb.png}
@@ -335,7 +335,7 @@ MariaDB es un sistema de gestión de bases de datos relacional de código abiert
 
 \subsubsection{No relacionales}
 \paragraph{MongoDB}
-MongoDB es una base de datos NoSQL que ha ganado una gran popularidad en aplicaciones web modernas. Su principal característica es que almacena los datos en formato de documentos BSON, una versión de JSON en formato binario; lo que permite un enfoque flexible y escalable. JSON es el formato en el que se intercambian los datos en JavaScript, por lo que combinar estas dos tecnologías es una configuración ágil para un proyecto. Estos documentos se pueden agrupar en colecciones para facilitar la organización de los datos. MongoDB es ideal para aplicaciones que necesitan escalabilidad horizontal, ya que permite distribuir los datos entre varios servidores de manera eficiente. Además, permite modificar fácilmente los datos almacenados sin tener que realizar grandes cambios en la base de datos. Empresas como Uber, eBay y Trello utilizan MongoDB debido a su capacidad para manejar grandes cantidades de datos sin la rigidez de las bases de datos tradicionales, además de su gran fiabilidad y alto rendimiento.\cite{mongodb_docs}
+MongoDB es una base de datos NoSQL que ha ganado una gran popularidad en aplicaciones web modernas. Su principal característica es que almacena los datos en formato de documentos BSON, una versión de JSON en formato binario; lo que permite un enfoque flexible y escalable. JSON es el formato en el que se intercambian los datos en JavaScript, por lo que combinar estas dos tecnologías es una configuración ágil para un proyecto. Estos documentos se pueden agrupar en colecciones para facilitar la organización de los datos. MongoDB es ideal para aplicaciones que necesitan escalabilidad horizontal, ya que permite distribuir los datos entre varios servidores de manera eficiente. Además, permite modificar fácilmente los datos almacenados sin tener que realizar grandes cambios en la base de datos. Empresas como Uber, eBay y Trello utilizan MongoDB debido a su capacidad para manejar grandes cantidades de datos sin la rigidez de las bases de datos tradicionales, además de su gran fiabilidad y alto rendimiento.\cite{mongodb_docs,wiki_mongodb}
 
 \begin{figure}[H]
     \centering
@@ -345,7 +345,7 @@ MongoDB es una base de datos NoSQL que ha ganado una gran popularidad en aplicac
 \end{figure}
 
 \paragraph{Firebase}
-Firebase es un servicio de base de datos de Google que almacena los datos en la nube y  está diseñado principalmente para aplicaciones web y móviles que requieren sincronización en tiempo real, dado que facilita la actualización instantánea de los datos en todas las plataformas de manera eficiente, lo que la convierte en una opción atractiva para proyectos  como aplicaciones de mensajería o colaboración. Su integración con el ecosistema de Google permite aprovechar otros servicios como Firebase Authentication y Google Cloud Storage. Además, su facilidad de uso lo hace adecuado para desarrolladores que trabajan en proyectos pequeños o medianos, dado que permite desarrollar aplicaciones de manera rápida sin la necesidad de gestionar una infraestructura compleja. No obstante, Firebase puede generar dependencia de la plataforma Google, lo que podría convertirse en un inconveniente si se desea cambiar de proveedor a largo plazo. Además, los costos asociados con su uso pueden incrementarse a medida que la aplicación escala, lo que puede ser una preocupación para proyectos de gran tamaño.\cite{firebase_docs}
+Firebase es un servicio de base de datos de Google que almacena los datos en la nube y  está diseñado principalmente para aplicaciones web y móviles que requieren sincronización en tiempo real, dado que facilita la actualización instantánea de los datos en todas las plataformas de manera eficiente, lo que la convierte en una opción atractiva para proyectos  como aplicaciones de mensajería o colaboración. Su integración con el ecosistema de Google permite aprovechar otros servicios como Firebase Authentication y Google Cloud Storage. Además, su facilidad de uso lo hace adecuado para desarrolladores que trabajan en proyectos pequeños o medianos, dado que permite desarrollar aplicaciones de manera rápida sin la necesidad de gestionar una infraestructura compleja. No obstante, Firebase puede generar dependencia de la plataforma Google, lo que podría convertirse en un inconveniente si se desea cambiar de proveedor a largo plazo. Además, los costos asociados con su uso pueden incrementarse a medida que la aplicación escala, lo que puede ser una preocupación para proyectos de gran tamaño.\cite{firebase_docs,digital55_firebase}
 
 \begin{figure}[H]
     \centering
@@ -355,14 +355,13 @@ Firebase es un servicio de base de datos de Google que almacena los datos en la 
 \end{figure}
 
 \paragraph{Cassandra}
-Cassandra es una base de datos no relacional distribuida diseñada para manejar grandes volúmenes de datos en entornos de alta velocidad y disponibilidad y sin un único punto de fallo gracias a que opera mediante varios nodos o servidores cada uno de los cuales almacena una parte de los datos y responde a una parte de las consultas. Además, su arquitectura es distribuida, es decir, cada nodo tiene réplicas de los datos de los demás, y es por eso que, si uno falla, los demás pueden atender sus peticiones. Cassandra utiliza un modelo basado en columnas en lugar de filas, de forma que cada fila o registro puede tener columnas diferentes, y Cassandra puede acceder a una columna específica en lugar de obtener toda la fila, lo que aumenta la velocidad de acceso a la información. Empresas que requieren una infraestructura que pueda escalar horizontalmente y manejar grandes volúmenes de datos, como Netflix y eBay, utilizan Cassandra para gestionar su información.\cite{cassandra_docs}
+Cassandra es una base de datos no relacional distribuida diseñada para manejar grandes volúmenes de datos en entornos de alta velocidad y disponibilidad y sin un único punto de fallo gracias a que opera mediante varios nodos o servidores cada uno de los cuales almacena una parte de los datos y responde a una parte de las consultas. Además, su arquitectura es distribuida, es decir, cada nodo tiene réplicas de los datos de los demás, y es por eso que, si uno falla, los demás pueden atender sus peticiones. Cassandra utiliza un modelo basado en columnas en lugar de filas, de forma que cada fila o registro puede tener columnas diferentes, y Cassandra puede acceder a una columna específica en lugar de obtener toda la fila, lo que aumenta la velocidad de acceso a la información. Empresas que requieren una infraestructura que pueda escalar horizontalmente y manejar grandes volúmenes de datos, como Netflix y eBay, utilizan Cassandra para gestionar su información.\cite{cassandra_docs,keepcoding_cassandra}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{imagenes/Cassandra_logo.svg.png}
     \caption{Logo de Cassandra}
     \label{fig:cassandra}
 \end{figure}
-
 
 \begin{comment}
 
@@ -378,6 +377,7 @@ Amazon Web Services es la plataforma en la nube más popular y ampliamente adopt
     \label{fig:aws}
 \end{figure}
 
+\begin{comment}
 \subsubsection{Microsoft Azure}
 Microsoft Azure es una plataforma en la nube de Microsoft diseñada para ayudar a las empresas a construir, desplegar y gestionar aplicaciones y servicios a través de una red global de centros de datos. Azure es muy conocida por su integración con otros productos de Microsoft, como Windows Server, SQL Server, y herramientas de desarrollo como Visual Studio. Ofrece soluciones completas para el desarrollo y despliegue de aplicaciones web, como Azure App Services, que permite crear aplicaciones web sin gestionar la infraestructura subyacente. Además, Azure cuenta con servicios de bases de datos, análisis de datos con Azure Synapse, herramientas de inteligencia artificial con Azure AI, y servicios de computación en contenedores con Azure Kubernetes Service (AKS). Es una plataforma versátil y especialmente atractiva para empresas que ya utilizan el ecosistema de Microsoft, dado que proporciona un entorno seguro y fácil de integrar.\cite{azure_docs}
 \begin{figure}[H]
@@ -395,7 +395,7 @@ Google Cloud Platform es la plataforma de computación en la nube de Google. Se 
     \caption{Logo de Google Cloud Platform}
     \label{gif:googleCloudPlatform}
 \end{figure}
-
+\end
 \subsection{Inteligencia Artificial Generativa para el programador}
 En la actualidad, el avance de las herramientas de inteligencia artificial generativa ha llevado a una parte importante de la población a utilizarla para facilitarse tareas de todo tipo. La IA está transformando la forma en que trabajamos y en particular, para los programadores, estas tecnologías resultan especialmente útiles a la hora de abordar tareas mecánicas y repetitivas, como la generación de código, la depuración y la interpretación de fragmentos de código. Los desarrolladores pueden obtener asistencia para comprender y solucionar problemas técnicos, optimizando su flujo de trabajo y acelerando el desarrollo de software. ChatGPT, Gemini, Codex y Github Copilot son algunas de las opciones más populares en este sector.\cite{chatgpt_docs,gemini_docs,codex_docs,copilot_docs}
 
@@ -435,9 +435,8 @@ GitHub Copilot es una herramienta de inteligencia artificial desarrollada por Gi
     \caption{Logo de Github Copilot}
     \label{fig:copilot}
 \end{figure}
-
-
 \end{comment}
+
 
 \section{Metodología}
 

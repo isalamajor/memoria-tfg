@@ -41,7 +41,7 @@ Estas decisiones técnicas refuerzan la robustez del sistema y aseguran que cada
 
 \subsection{Almacenamiento de imágenes con Multer y Cloudinary}
 
-Para la gestión de imágenes de perfil, se ha implementado una solución que combina la librería \textbf{Multer} para el procesamiento eficiente de archivos con \textbf{Cloudinary} como servicio de almacenamiento en la nube. Multer es un middleware de Express que facilita la subida de archivos mediante formularios web \cite{llamas_multer_nd,}. Por su parte, Cloudinary es un servicio de gestión de recursos digitales en la nube, en especial imágenes y vídeos, que proporciona almacenamiento persistente, optimización automática y una distribución segura y eficiente a nivel global, gracias a su infraestructura de red de entrega de contenido (CDN o \textit{Content Delivery Network}) \cite{cloudinary_official_2026,moge_cloudinary_2026,cloudflare_cdn_2026}.
+Para la gestión de imágenes de perfil, se ha implementado una solución que combina la librería \textbf{Multer} para el procesamiento eficiente de archivos con \textbf{Cloudinary} como servicio de almacenamiento en la nube. Multer es un middleware de Express que facilita la subida de archivos mediante formularios web \cite{llamas_multer_nd}. Por su parte, Cloudinary es un servicio de gestión de recursos digitales en la nube, en especial imágenes y vídeos, que proporciona almacenamiento persistente, optimización automática y una distribución segura y eficiente a nivel global, gracias a su infraestructura de red de entrega de contenido (CDN o \textit{Content Delivery Network}) \cite{cloudinary_official_2026,moge_cloudinary_2026,cloudflare_cdn_2026}.
 
 
 El módulo de subida de archivos se exporta como un middleware independiente, lo que permite inyectarlo exclusivamente en las rutas de la API que lo requieren, manteniendo así el principio de responsabilidad única en el código.
@@ -128,11 +128,14 @@ Un ejemplo representativo es el flujo de obtención de cartas junto con la infor
 
 Aunque construir esta lógica requiere mayor tiempo de desarrollo, el uso de la Agregación de MongoDB permite una mejora drástica en el rendimiento del sistema reduciendo el tráfico de red entre el servidor y la base de datos.
 
-A continuación se muestra el código de la función que se ha presentado como ejemplo de su uso.
+\begin{comment}
 
-\begin{figure}[H]
+    A continuación se muestra el código de la función que se ha presentado como ejemplo de su uso.
+
+    \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{./imagenes/aggregate3.png}
     \caption{Consulta optimizada 1}
     \label{fig:aggregate}
 \end{figure}
+\end{comment}
