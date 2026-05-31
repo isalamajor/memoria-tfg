@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.27)  24 MAY 2026 19:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.27)  31 MAY 2026 18:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -844,7 +844,7 @@ Now handling font encoding PU ...
    defining Unicode char U+2423 (decimal 9251)
    defining Unicode char U+FEFF (decimal 65279)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 62.
+Package hyperref Info: Option `colorlinks' set `true' on input line 64.
  (c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/06/16 v2.17y AMS math features
 \@mathmargin=\skip64
@@ -1016,9 +1016,34 @@ LaTeX Font Info:    Trying to load font information for T1+txr on input line 116
 File: t1txr.fd 2000/12/15 v3.1
 )) (c:/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
+) (c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
+\MT@toks=\toks44
+\MT@tempbox=\box66
+\MT@count=\count333
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks45
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen273
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count334
+ (c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip70
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
 ) (c:/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2025/10/22 v25.14 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
-\babel@savecnt=\count333
+\babel@savecnt=\count335
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2050.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2052.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2054.
@@ -1026,18 +1051,18 @@ LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2056.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2058.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2083.
-\U@D=\dimen273
+\U@D=\dimen274
 \l@unhyphenated=\language90
  (c:/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count334
+\bbl@dirlevel=\count336
  (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex) (c:/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 4295.
  (c:/texlive/2025/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
-\es@quottoks=\toks44
-\es@quotdepth=\count335
+\es@quottoks=\toks46
+\es@quotdepth=\count337
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
@@ -1055,13 +1080,13 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language22). Reported on input line 108.
 )) (c:/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count336
-\csq@gtype=\count337
-\csq@glevel=\count338
-\csq@qlevel=\count339
-\csq@maxlvl=\count340
-\csq@tshold=\count341
-\csq@ltx@everypar=\toks45
+\csq@reset=\count338
+\csq@gtype=\count339
+\csq@glevel=\count340
+\csq@qlevel=\count341
+\csq@maxlvl=\count342
+\csq@tshold=\count343
+\csq@ltx@everypar=\toks47
  (c:/texlive/2025/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
@@ -1076,95 +1101,95 @@ Package csquotes Info: Enabling multilingual quotes.
 Package csquotes Info: Redefining alias 'spanish' -> 'spanish/spanish'.
 ) (c:/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
-\f@nch@headwidth=\skip70
-\f@nch@offset@elh=\skip71
-\f@nch@offset@erh=\skip72
-\f@nch@offset@olh=\skip73
-\f@nch@offset@orh=\skip74
-\f@nch@offset@elf=\skip75
-\f@nch@offset@erf=\skip76
-\f@nch@offset@olf=\skip77
-\f@nch@offset@orf=\skip78
-\f@nch@height=\skip79
-\f@nch@footalignment=\skip80
-\f@nch@widthL=\skip81
-\f@nch@widthC=\skip82
-\f@nch@widthR=\skip83
-\@temptokenb=\toks46
+\f@nch@headwidth=\skip71
+\f@nch@offset@elh=\skip72
+\f@nch@offset@erh=\skip73
+\f@nch@offset@olh=\skip74
+\f@nch@offset@orh=\skip75
+\f@nch@offset@elf=\skip76
+\f@nch@offset@erf=\skip77
+\f@nch@offset@olf=\skip78
+\f@nch@offset@orf=\skip79
+\f@nch@height=\skip80
+\f@nch@footalignment=\skip81
+\f@nch@widthL=\skip82
+\f@nch@widthC=\skip83
+\f@nch@widthR=\skip84
+\@temptokenb=\toks48
 ) (c:/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box66
-\beforetitleunit=\skip84
-\aftertitleunit=\skip85
-\ttl@plus=\dimen274
-\ttl@minus=\dimen275
-\ttl@toksa=\toks47
-\titlewidth=\dimen276
-\titlewidthlast=\dimen277
-\titlewidthfirst=\dimen278
+\ttl@box=\box67
+\beforetitleunit=\skip85
+\aftertitleunit=\skip86
+\ttl@plus=\dimen275
+\ttl@minus=\dimen276
+\ttl@toksa=\toks49
+\titlewidth=\dimen277
+\titlewidthlast=\dimen278
+\titlewidthfirst=\dimen279
 ) (c:/texlive/2025/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2025/01/04 v2.17 TOC entries
-\ttl@leftsep=\dimen279
+\ttl@leftsep=\dimen280
 ) (c:/texlive/2025/texmf-dist/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
-\c@float@type=\count342
-\float@exts=\toks48
-\float@box=\box67
-\@floatcapt=\box68
+\c@float@type=\count344
+\float@exts=\toks50
+\float@box=\box68
+\@floatcapt=\box69
 Package floatrow Info: Modified float package code loaded on input line 455.
 Package floatrow Info: Modified rotfloat package code loaded on input line 473.
-\FR@everyfloat=\toks49
+\FR@everyfloat=\toks51
 \flrow@foot=\insert252
-\FB@wd=\dimen280
-\FBo@wd=\dimen281
-\FBc@wd=\dimen282
-\FBo@ht=\skip86
-\FBc@ht=\skip87
-\FBf@ht=\skip88
-\FBo@max=\skip89
-\FBc@max=\skip90
-\FBf@max=\skip91
-\c@FBl@b=\count343
-\floatbox@depth=\count344
-\c@FRobj=\count345
-\c@FRsobj=\count346
-\Xhsize=\skip92
-\sXhsize=\skip93
-\Zhsize=\skip94
-\sZhsize=\skip95
-\flrow@rowbox=\box69
-\FR@Zunitlength=\dimen283
-\c@FBcnt=\count347
-\FPOScnt=\count348
-\LTleft=\skip96
-\LTright=\skip97
-\LTleft=\skip98
-\LTright=\skip99
-\flrow@types=\toks50
+\FB@wd=\dimen281
+\FBo@wd=\dimen282
+\FBc@wd=\dimen283
+\FBo@ht=\skip87
+\FBc@ht=\skip88
+\FBf@ht=\skip89
+\FBo@max=\skip90
+\FBc@max=\skip91
+\FBf@max=\skip92
+\c@FBl@b=\count345
+\floatbox@depth=\count346
+\c@FRobj=\count347
+\c@FRsobj=\count348
+\Xhsize=\skip93
+\sXhsize=\skip94
+\Zhsize=\skip95
+\sZhsize=\skip96
+\flrow@rowbox=\box70
+\FR@Zunitlength=\dimen284
+\c@FBcnt=\count349
+\FPOScnt=\count350
+\LTleft=\skip97
+\LTright=\skip98
+\LTleft=\skip99
+\LTright=\skip100
+\flrow@types=\toks52
 ) (c:/texlive/2025/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count349
-\lst@gtempboxa=\box70
-\lst@token=\toks51
-\lst@length=\count350
-\lst@currlwidth=\dimen284
-\lst@column=\count351
-\lst@pos=\count352
-\lst@lostspace=\dimen285
-\lst@width=\dimen286
-\lst@newlines=\count353
-\lst@lineno=\count354
-\lst@maxwidth=\dimen287
+\lst@mode=\count351
+\lst@gtempboxa=\box71
+\lst@token=\toks53
+\lst@length=\count352
+\lst@currlwidth=\dimen285
+\lst@column=\count353
+\lst@pos=\count354
+\lst@lostspace=\dimen286
+\lst@width=\dimen287
+\lst@newlines=\count355
+\lst@lineno=\count356
+\lst@maxwidth=\dimen288
  (c:/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count355
-\lst@skipnumbers=\count356
-\lst@framebox=\box71
+\c@lstnumber=\count357
+\lst@skipnumbers=\count358
+\lst@framebox=\box72
 ) (c:/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
@@ -1173,67 +1198,67 @@ Package: listings 2024/09/23 1.10c (Carsten Heinz)
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
  (c:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count357
+\lrq@indent=\count359
  (c:/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count358
-\c@listtotal=\count359
-\c@listcount=\count360
-\c@liststart=\count361
-\c@liststop=\count362
-\c@citecount=\count363
-\c@citetotal=\count364
-\c@multicitecount=\count365
-\c@multicitetotal=\count366
-\c@instcount=\count367
-\c@maxnames=\count368
-\c@minnames=\count369
-\c@maxitems=\count370
-\c@minitems=\count371
-\c@citecounter=\count372
-\c@maxcitecounter=\count373
-\c@savedcitecounter=\count374
-\c@uniquelist=\count375
-\c@uniquename=\count376
-\c@refsection=\count377
-\c@refsegment=\count378
-\c@maxextratitle=\count379
-\c@maxextratitleyear=\count380
-\c@maxextraname=\count381
-\c@maxextradate=\count382
-\c@maxextraalpha=\count383
-\c@abbrvpenalty=\count384
-\c@highnamepenalty=\count385
-\c@lownamepenalty=\count386
-\c@maxparens=\count387
-\c@parenlevel=\count388
-\blx@tempcnta=\count389
-\blx@tempcntb=\count390
-\blx@tempcntc=\count391
-\c@blx@maxsection=\count392
-\blx@maxsegment@0=\count393
-\blx@notetype=\count394
-\blx@parenlevel@text=\count395
-\blx@parenlevel@foot=\count396
-\blx@sectionciteorder@0=\count397
-\blx@sectionciteorderinternal@0=\count398
-\blx@entrysetcounter=\count399
-\blx@biblioinstance=\count400
-\labelnumberwidth=\skip100
-\labelalphawidth=\skip101
-\biblabelsep=\skip102
-\bibitemsep=\skip103
-\bibnamesep=\skip104
-\bibinitsep=\skip105
-\bibparsep=\skip106
-\bibhang=\skip107
+\c@tabx@nest=\count360
+\c@listtotal=\count361
+\c@listcount=\count362
+\c@liststart=\count363
+\c@liststop=\count364
+\c@citecount=\count365
+\c@citetotal=\count366
+\c@multicitecount=\count367
+\c@multicitetotal=\count368
+\c@instcount=\count369
+\c@maxnames=\count370
+\c@minnames=\count371
+\c@maxitems=\count372
+\c@minitems=\count373
+\c@citecounter=\count374
+\c@maxcitecounter=\count375
+\c@savedcitecounter=\count376
+\c@uniquelist=\count377
+\c@uniquename=\count378
+\c@refsection=\count379
+\c@refsegment=\count380
+\c@maxextratitle=\count381
+\c@maxextratitleyear=\count382
+\c@maxextraname=\count383
+\c@maxextradate=\count384
+\c@maxextraalpha=\count385
+\c@abbrvpenalty=\count386
+\c@highnamepenalty=\count387
+\c@lownamepenalty=\count388
+\c@maxparens=\count389
+\c@parenlevel=\count390
+\blx@tempcnta=\count391
+\blx@tempcntb=\count392
+\blx@tempcntc=\count393
+\c@blx@maxsection=\count394
+\blx@maxsegment@0=\count395
+\blx@notetype=\count396
+\blx@parenlevel@text=\count397
+\blx@parenlevel@foot=\count398
+\blx@sectionciteorder@0=\count399
+\blx@sectionciteorderinternal@0=\count400
+\blx@entrysetcounter=\count401
+\blx@biblioinstance=\count402
+\labelnumberwidth=\skip101
+\labelalphawidth=\skip102
+\biblabelsep=\skip103
+\bibitemsep=\skip104
+\bibnamesep=\skip105
+\bibinitsep=\skip106
+\bibparsep=\skip107
+\bibhang=\skip108
 \blx@bcfin=\read4
 \blx@bcfout=\write5
 \blx@langwohyphens=\language91
-\c@mincomprange=\count401
-\c@maxcomprange=\count402
-\c@mincompwidth=\count403
+\c@mincomprange=\count403
+\c@maxcomprange=\count404
+\c@mincompwidth=\count405
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -1243,88 +1268,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count404
-\c@savedafterword=\count405
-\c@annotator=\count406
-\c@savedannotator=\count407
-\c@author=\count408
-\c@savedauthor=\count409
-\c@bookauthor=\count410
-\c@savedbookauthor=\count411
-\c@commentator=\count412
-\c@savedcommentator=\count413
-\c@editor=\count414
-\c@savededitor=\count415
-\c@editora=\count416
-\c@savededitora=\count417
-\c@editorb=\count418
-\c@savededitorb=\count419
-\c@editorc=\count420
-\c@savededitorc=\count421
-\c@foreword=\count422
-\c@savedforeword=\count423
-\c@holder=\count424
-\c@savedholder=\count425
-\c@introduction=\count426
-\c@savedintroduction=\count427
-\c@namea=\count428
-\c@savednamea=\count429
-\c@nameb=\count430
-\c@savednameb=\count431
-\c@namec=\count432
-\c@savednamec=\count433
-\c@translator=\count434
-\c@savedtranslator=\count435
-\c@shortauthor=\count436
-\c@savedshortauthor=\count437
-\c@shorteditor=\count438
-\c@savedshorteditor=\count439
-\c@labelname=\count440
-\c@savedlabelname=\count441
-\c@institution=\count442
-\c@savedinstitution=\count443
-\c@lista=\count444
-\c@savedlista=\count445
-\c@listb=\count446
-\c@savedlistb=\count447
-\c@listc=\count448
-\c@savedlistc=\count449
-\c@listd=\count450
-\c@savedlistd=\count451
-\c@liste=\count452
-\c@savedliste=\count453
-\c@listf=\count454
-\c@savedlistf=\count455
-\c@location=\count456
-\c@savedlocation=\count457
-\c@organization=\count458
-\c@savedorganization=\count459
-\c@origlocation=\count460
-\c@savedoriglocation=\count461
-\c@origpublisher=\count462
-\c@savedorigpublisher=\count463
-\c@publisher=\count464
-\c@savedpublisher=\count465
-\c@language=\count466
-\c@savedlanguage=\count467
-\c@origlanguage=\count468
-\c@savedoriglanguage=\count469
-\c@pageref=\count470
-\c@savedpageref=\count471
-\shorthandwidth=\skip108
-\shortjournalwidth=\skip109
-\shortserieswidth=\skip110
-\shorttitlewidth=\skip111
-\shortauthorwidth=\skip112
-\shorteditorwidth=\skip113
-\locallabelnumberwidth=\skip114
-\locallabelalphawidth=\skip115
-\localshorthandwidth=\skip116
-\localshortjournalwidth=\skip117
-\localshortserieswidth=\skip118
-\localshorttitlewidth=\skip119
-\localshortauthorwidth=\skip120
-\localshorteditorwidth=\skip121
+\c@afterword=\count406
+\c@savedafterword=\count407
+\c@annotator=\count408
+\c@savedannotator=\count409
+\c@author=\count410
+\c@savedauthor=\count411
+\c@bookauthor=\count412
+\c@savedbookauthor=\count413
+\c@commentator=\count414
+\c@savedcommentator=\count415
+\c@editor=\count416
+\c@savededitor=\count417
+\c@editora=\count418
+\c@savededitora=\count419
+\c@editorb=\count420
+\c@savededitorb=\count421
+\c@editorc=\count422
+\c@savededitorc=\count423
+\c@foreword=\count424
+\c@savedforeword=\count425
+\c@holder=\count426
+\c@savedholder=\count427
+\c@introduction=\count428
+\c@savedintroduction=\count429
+\c@namea=\count430
+\c@savednamea=\count431
+\c@nameb=\count432
+\c@savednameb=\count433
+\c@namec=\count434
+\c@savednamec=\count435
+\c@translator=\count436
+\c@savedtranslator=\count437
+\c@shortauthor=\count438
+\c@savedshortauthor=\count439
+\c@shorteditor=\count440
+\c@savedshorteditor=\count441
+\c@labelname=\count442
+\c@savedlabelname=\count443
+\c@institution=\count444
+\c@savedinstitution=\count445
+\c@lista=\count446
+\c@savedlista=\count447
+\c@listb=\count448
+\c@savedlistb=\count449
+\c@listc=\count450
+\c@savedlistc=\count451
+\c@listd=\count452
+\c@savedlistd=\count453
+\c@liste=\count454
+\c@savedliste=\count455
+\c@listf=\count456
+\c@savedlistf=\count457
+\c@location=\count458
+\c@savedlocation=\count459
+\c@organization=\count460
+\c@savedorganization=\count461
+\c@origlocation=\count462
+\c@savedoriglocation=\count463
+\c@origpublisher=\count464
+\c@savedorigpublisher=\count465
+\c@publisher=\count466
+\c@savedpublisher=\count467
+\c@language=\count468
+\c@savedlanguage=\count469
+\c@origlanguage=\count470
+\c@savedoriglanguage=\count471
+\c@pageref=\count472
+\c@savedpageref=\count473
+\shorthandwidth=\skip109
+\shortjournalwidth=\skip110
+\shortserieswidth=\skip111
+\shorttitlewidth=\skip112
+\shortauthorwidth=\skip113
+\shorteditorwidth=\skip114
+\locallabelnumberwidth=\skip115
+\locallabelalphawidth=\skip116
+\localshorthandwidth=\skip117
+\localshortjournalwidth=\skip118
+\localshortserieswidth=\skip119
+\localshorttitlewidth=\skip120
+\localshortauthorwidth=\skip121
+\localshorteditorwidth=\skip122
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -1334,19 +1359,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count472
-\c@textcitetotal=\count473
-\c@textcitemaxnames=\count474
-\c@biburlbigbreakpenalty=\count475
-\c@biburlbreakpenalty=\count476
-\c@biburlnumpenalty=\count477
-\c@biburlucpenalty=\count478
-\c@biburllcpenalty=\count479
+\c@textcitecount=\count474
+\c@textcitetotal=\count475
+\c@textcitemaxnames=\count476
+\c@biburlbigbreakpenalty=\count477
+\c@biburlbreakpenalty=\count478
+\c@biburlnumpenalty=\count479
+\c@biburlucpenalty=\count480
+\c@biburllcpenalty=\count481
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count480
+\c@smartand=\count482
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
@@ -1364,8 +1389,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count481
-\c@bbx:relatedtotal=\count482
+\c@bbx:relatedcount=\count483
+\c@bbx:relatedtotal=\count484
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
@@ -1397,7 +1422,7 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2025-10-24 L3 programming layer (loader) 
  (c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count483
+\l__color_backend_stack_int=\count485
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2025-10-24 L3 programming layer (loader) 
@@ -1413,53 +1438,53 @@ Package csquotes Info: ... found 'babel' package.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 227.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 227.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 237.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 237.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 227.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 227.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 237.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 237.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 227.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 227.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 237.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 237.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 227.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 227.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 237.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 237.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 227.
-LaTeX Font Info:    ... okay on input line 227.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
  (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count484
-\scratchdimen=\dimen288
-\scratchbox=\box72
-\nofMPsegments=\count485
-\nofMParguments=\count486
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count487
-\MPscratchDim=\dimen289
-\MPnumerator=\count488
-\makeMPintoPDFobject=\count489
-\everyMPtoPDFconversion=\toks53
+\scratchcounter=\count486
+\scratchdimen=\dimen289
+\scratchbox=\box73
+\nofMPsegments=\count487
+\nofMParguments=\count488
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count489
+\MPscratchDim=\dimen290
+\MPnumerator=\count490
+\makeMPintoPDFobject=\count491
+\everyMPtoPDFconversion=\toks55
 ) (c:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1509,19 +1534,41 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 227.
+Package hyperref Info: Link coloring ON on input line 237.
 (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
-LaTeX Encoding Info:    Redeclaring text command \k (encoding T1) on input line 227.
- (c:/texlive/2025/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+LaTeX Encoding Info:    Redeclaring text command \k (encoding T1) on input line 237.
+Package microtype Info: Patching varwidth to enable character protrusion.
+\MT@vwid@leftmargin=\dimen291
+\MT@vwid@rightmargin=\dimen292
+LaTeX Info: Redefining \microtypecontext on input line 237.
+Package microtype Info: Applying patch `item' on input line 237.
+Package microtype Info: Applying patch `toc' on input line 237.
+Package microtype Info: Applying patch `eqnum' on input line 237.
+Package microtype Info: Applying patch `footnote' on input line 237.
+Package microtype Info: Applying patch `verbatim' on input line 237.
+LaTeX Info: Redefining \microtypesetup on input line 237.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+) (c:/texlive/2025/texmf-dist/tex/latex/floatrow/fr-longtable.sty
 Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
-\flrow@LT@lasthead=\box73
-\flrow@LT@prelastfoot=\box74
-\c@FBLTpage=\count490
+\flrow@LT@lasthead=\box74
+\flrow@LT@prelastfoot=\box75
+\c@FBLTpage=\count492
 )
-\c@lstlisting=\count491
+\c@lstlisting=\count493
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1548,42 +1595,50 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 227.
-Package biblatex Info: Reference segment=0 on input line 227.
-LaTeX Font Info:    Trying to load font information for T1+txss on input line 234.
+Package biblatex Info: Reference section=0 on input line 237.
+Package biblatex Info: Reference segment=0 on input line 237.
+LaTeX Font Info:    Trying to load font information for T1+txss on input line 244.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 234.
+(Font)              scaled to size 11.39996pt on input line 244.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `txss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 <imagenes/logo_UC3M.png, id=249, 456.2865pt x 45.99pt>
 File: imagenes/logo_UC3M.png Graphic file (type png)
 <use imagenes/logo_UC3M.png>
-Package pdftex.def Info: imagenes/logo_UC3M.png  used on input line 238.
+Package pdftex.def Info: imagenes/logo_UC3M.png  used on input line 248.
 (pdftex.def)             Requested size: 455.24408pt x 45.88531pt.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 241.
+(Font)              scaled to size 16.41594pt on input line 251.
 LaTeX Font Info:    Font shape `T1/txss/m/sl' will be
-(Font)              scaled to size 16.41594pt on input line 245.
+(Font)              scaled to size 16.41594pt on input line 255.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 249.
+(Font)              scaled to size 23.63593pt on input line 259.
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 253.
-LaTeX Font Info:    Trying to load font information for TS1+txss on input line 253.
+(Font)              scaled to size 19.70294pt on input line 263.
+LaTeX Font Info:    Trying to load font information for TS1+txss on input line 263.
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txss.fd
 File: ts1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `TS1/txss/m/n' will be
-(Font)              scaled to size 19.70294pt on input line 253.
+(Font)              scaled to size 19.70294pt on input line 263.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `txss' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 <imagenes/creativecommons.png, id=251, 338.76563pt x 118.19156pt>
 File: imagenes/creativecommons.png Graphic file (type png)
 <use imagenes/creativecommons.png>
-Package pdftex.def Info: imagenes/creativecommons.png  used on input line 263.
+Package pdftex.def Info: imagenes/creativecommons.png  used on input line 273.
 (pdftex.def)             Requested size: 119.50148pt x 41.69228pt.
 LaTeX Font Info:    Font shape `T1/txss/b/n' in size <12> not available
-(Font)              Font shape `T1/txss/bx/n' tried instead on input line 264.
+(Font)              Font shape `T1/txss/bx/n' tried instead on input line 274.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
-(Font)              scaled to size 11.39996pt on input line 264.
+(Font)              scaled to size 11.39996pt on input line 274.
 
 
 [1
@@ -1594,10 +1649,10 @@ LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.275 \begin{abstract}
+l.285 \begin{abstract}
                        [1]
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 275.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 285.
 
 
 [3]
@@ -1606,10 +1661,10 @@ LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.300 \chapter
+l.310 \chapter
               *{Agradecimientos} [1]
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <14.4> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 300.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 310.
 
 
 [5
@@ -1682,7 +1737,12 @@ File: utxsyc.fd 2000/12/15 v3.1
 [16]
 
 [17]
-Underfull \hbox (badness 10000) in alignment at lines 352--398
+Underfull \hbox (badness 1052) in paragraph at lines 363--364
+[]|\T1/txr/m/n/12 (+20) Interfaz de Pro-gra-mación de Apli-ca-ciones (Ap-pli-ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 362--408
 [] []
  []
 
@@ -1700,12 +1760,8 @@ Chapter 1.
 
 
 ]
-Overfull \hbox (7.03271pt too wide) in paragraph at lines 17--18
-\T1/txr/m/n/12 no solo académico, sino que pueda más ade-lante ser uti-lizada por usuar-ios reales, generando
- []
-
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 26.
-(c:/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txr.fd
+ (c:/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
 
@@ -1713,12 +1769,7 @@ File: ts1txr.fd 2000/12/15 v3.1
 
 [3]
 
-[4]
-Overfull \hbox (4.28337pt too wide) in paragraph at lines 91--92
-[]\T1/txr/m/n/12 Análisis y plan-i-fi-cación: se pre-sen-tan las his-to-rias de usuario y prue-bas de aceptación
- []
-
-) (./secciones/estado_del_arte.tex
+[4]) (./secciones/estado_del_arte.tex
 
 [5]
 Chapter 2.
@@ -1736,6 +1787,11 @@ LaTeX Font Info:    Trying to load font information for T1+txtt on input line 36
  (c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `txtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 
 [7 <./imagenes/HTML5-logo.png>]
 <imagenes/tailwind.png, id=767, 903.375pt x 501.875pt>
@@ -1813,51 +1869,51 @@ File: ./imagenes/java.jpg Graphic file (type jpg)
 <use ./imagenes/java.jpg>
 Package pdftex.def Info: ./imagenes/java.jpg  used on input line 181.
 (pdftex.def)             Requested size: 101.44908pt x 56.9055pt.
-
-
-[13 <./imagenes/python.png> <./imagenes/django.png>]
-<imagenes/spring-boot.png, id=852, 602.25pt x 316.18124pt>
+<imagenes/spring-boot.png, id=844, 602.25pt x 316.18124pt>
 File: imagenes/spring-boot.png Graphic file (type png)
 <use imagenes/spring-boot.png>
 Package pdftex.def Info: imagenes/spring-boot.png  used on input line 187.
 (pdftex.def)             Requested size: 108.39113pt x 56.9055pt.
-<imagenes/php.png, id=855, 1204.5pt x 650.43pt>
+
+
+[13 <./imagenes/python.png> <./imagenes/django.png>]
+<imagenes/php.png, id=857, 1204.5pt x 650.43pt>
 File: imagenes/php.png Graphic file (type png)
 <use imagenes/php.png>
 Package pdftex.def Info: imagenes/php.png  used on input line 196.
 (pdftex.def)             Requested size: 105.36775pt x 56.9055pt.
-<imagenes/Laravel.jpg, id=856, 903.375pt x 451.6875pt>
+<imagenes/Laravel.jpg, id=858, 903.375pt x 451.6875pt>
 File: imagenes/Laravel.jpg Graphic file (type jpg)
 <use imagenes/Laravel.jpg>
 Package pdftex.def Info: imagenes/Laravel.jpg  used on input line 202.
 (pdftex.def)             Requested size: 113.80379pt x 56.9055pt.
-
-
-[14 <./imagenes/java.jpg> <./imagenes/spring-boot.png> <./imagenes/php.png>]
-<imagenes/ruby.png, id=869, 353.82187pt x 187.19937pt>
+<imagenes/ruby.png, id=861, 353.82187pt x 187.19937pt>
 File: imagenes/ruby.png Graphic file (type png)
 <use imagenes/ruby.png>
 Package pdftex.def Info: imagenes/ruby.png  used on input line 211.
 (pdftex.def)             Requested size: 107.55647pt x 56.9055pt.
+
+
+[14 <./imagenes/java.jpg> <./imagenes/spring-boot.png> <./imagenes/php.png> <./imagenes/Laravel.jpg>]
 <imagenes/Ruby2.png, id=870, 481.8pt x 240.9pt>
 File: imagenes/Ruby2.png Graphic file (type png)
 <use imagenes/Ruby2.png>
 Package pdftex.def Info: imagenes/Ruby2.png  used on input line 217.
 (pdftex.def)             Requested size: 113.81114pt x 56.9055pt.
-
-
-[15 <./imagenes/Laravel.jpg> <./imagenes/ruby.png> <./imagenes/Ruby2.png>]
-<imagenes/go.png, id=882, 1204.5pt x 500.87125pt>
+<imagenes/go.png, id=874, 1204.5pt x 500.87125pt>
 File: imagenes/go.png Graphic file (type png)
 <use imagenes/go.png>
 Package pdftex.def Info: imagenes/go.png  used on input line 227.
 (pdftex.def)             Requested size: 136.83289pt x 56.9055pt.
-<imagenes/gin.png, id=883, 869.2475pt x 652.4375pt>
+<imagenes/gin.png, id=875, 869.2475pt x 652.4375pt>
 File: imagenes/gin.png Graphic file (type png)
 <use imagenes/gin.png>
 Package pdftex.def Info: imagenes/gin.png  used on input line 233.
 (pdftex.def)             Requested size: 75.81491pt x 56.9055pt.
-<imagenes/axios.png, id=886, 3854.4pt x 2168.1pt>
+
+
+[15 <./imagenes/ruby.png> <./imagenes/Ruby2.png>]
+<imagenes/axios.png, id=889, 3854.4pt x 2168.1pt>
 File: imagenes/axios.png Graphic file (type png)
 <use imagenes/axios.png>
 Package pdftex.def Info: imagenes/axios.png  used on input line 248.
@@ -1865,12 +1921,12 @@ Package pdftex.def Info: imagenes/axios.png  used on input line 248.
 
 
 [16 <./imagenes/go.png> <./imagenes/gin.png>]
-<imagenes/fetch.png, id=897, 1244.65pt x 700.6175pt>
+<imagenes/fetch.png, id=899, 1244.65pt x 700.6175pt>
 File: imagenes/fetch.png Graphic file (type png)
 <use imagenes/fetch.png>
 Package pdftex.def Info: imagenes/fetch.png  used on input line 257.
 (pdftex.def)             Requested size: 101.07439pt x 56.9055pt.
-<./imagenes/postman.png, id=900, 1510.64375pt x 603.25375pt>
+<./imagenes/postman.png, id=902, 1510.64375pt x 603.25375pt>
 File: ./imagenes/postman.png Graphic file (type png)
 <use ./imagenes/postman.png>
 Package pdftex.def Info: ./imagenes/postman.png  used on input line 266.
@@ -1878,12 +1934,12 @@ Package pdftex.def Info: ./imagenes/postman.png  used on input line 266.
 
 
 [17 <./imagenes/axios.png> <./imagenes/fetch.png>]
-<imagenes/insomnia.png, id=914, 451.6875pt x 140.02313pt>
+<imagenes/insomnia.png, id=916, 451.6875pt x 140.02313pt>
 File: imagenes/insomnia.png Graphic file (type png)
 <use imagenes/insomnia.png>
 Package pdftex.def Info: imagenes/insomnia.png  used on input line 275.
 (pdftex.def)             Requested size: 183.56651pt x 56.9055pt.
-<imagenes/curl.png, id=917, 1003.75pt x 457.71pt>
+<imagenes/curl.png, id=919, 1003.75pt x 457.71pt>
 File: imagenes/curl.png Graphic file (type png)
 <use imagenes/curl.png>
 Package pdftex.def Info: imagenes/curl.png  used on input line 284.
@@ -1911,36 +1967,30 @@ Package pdftex.def Info: imagenes/mariadb.png  used on input line 331.
 (pdftex.def)             Requested size: 110.55894pt x 56.9055pt.
 
 
-[20 <./imagenes/mysql.png> <./imagenes/postgresql.png>]
-<imagenes/mongo.png, id=962, 843.15pt x 232.61906pt>
+[20 <./imagenes/mysql.png> <./imagenes/postgresql.png> <./imagenes/mariadb.png>]
+<imagenes/mongo.png, id=963, 843.15pt x 232.61906pt>
 File: imagenes/mongo.png Graphic file (type png)
 <use imagenes/mongo.png>
 Package pdftex.def Info: imagenes/mongo.png  used on input line 342.
 (pdftex.def)             Requested size: 206.25835pt x 56.9055pt.
-<./imagenes/firebase.png, id=965, 1204.5pt x 330.23375pt>
+<./imagenes/firebase.png, id=966, 1204.5pt x 330.23375pt>
 File: ./imagenes/firebase.png Graphic file (type png)
 <use ./imagenes/firebase.png>
 Package pdftex.def Info: ./imagenes/firebase.png  used on input line 352.
 (pdftex.def)             Requested size: 207.55592pt x 56.9055pt.
-
-
-[21 <./imagenes/mariadb.png> <./imagenes/mongo.png>]
-<imagenes/Cassandra_logo.svg.png, id=978, 1204.5pt x 809.0225pt>
+<imagenes/Cassandra_logo.svg.png, id=969, 1204.5pt x 809.0225pt>
 File: imagenes/Cassandra_logo.svg.png Graphic file (type png)
 <use imagenes/Cassandra_logo.svg.png>
 Package pdftex.def Info: imagenes/Cassandra_logo.svg.png  used on input line 361.
 (pdftex.def)             Requested size: 84.70956pt x 56.9055pt.
- Excluding 'comment' comment.
-Overfull \hbox (9.39667pt too wide) in paragraph at lines 443--445
-\T1/txr/m/n/12 evolu-cionado sig-ni-fica-ti-va-mente, desde en-fo-ques rígi-dos y es-truc-tura-dos hasta metodologías
- []
 
 
+[21 <./imagenes/mongo.png> <./imagenes/firebase.png>] Excluding 'comment' comment.
 
-[22 <./imagenes/firebase.png> <./imagenes/Cassandra_logo.svg.png>] Excluding 'comment' comment.
+[22 <./imagenes/Cassandra_logo.svg.png>] Excluding 'comment' comment. Excluding 'comment' comment.
 
-[23] Excluding 'comment' comment. Excluding 'comment' comment.
-<imagenes/hinative.png, id=1006, 513.92pt x 513.92pt>
+[23] Excluding 'comment' comment.
+<imagenes/hinative.png, id=1007, 513.92pt x 513.92pt>
 File: imagenes/hinative.png Graphic file (type png)
 <use imagenes/hinative.png>
 Package pdftex.def Info: imagenes/hinative.png  used on input line 512.
@@ -1973,6 +2023,11 @@ Chapter 3.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10.95> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 44.
 
+Underfull \hbox (badness 1325) in paragraph at lines 53--54
+[]\T1/txr/m/n/10.95 (+20) Redactar los aparta-dos de re-sumen, ded-i-cación, mo-ti-vación,
+ []
+
+
 Overfull \hbox (3.8591pt too wide) in paragraph at lines 42--57
  [][] 
  []
@@ -2004,61 +2059,66 @@ Overfull \hbox (3.8591pt too wide) in paragraph at lines 127--143
  []
 
 
+Underfull \hbox (badness 2762) in paragraph at lines 158--159
+[]\T1/txr/m/n/10.95 (+20) Tras de-sar-rol-lar la apli-cación, doc-u-men-tar su es-truc-tura y
+ []
 
-[29]
+
 Overfull \hbox (3.8591pt too wide) in paragraph at lines 149--164
  [][] 
  []
 
 
+
+[29]
 Overfull \hbox (3.8591pt too wide) in paragraph at lines 170--184
+ [][] 
+ []
+
+
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 194--209
  [][] 
  []
 
 
 
 [30]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 194--209
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 215--229
  [][] 
  []
 
 
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 215--229
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 235--248
  [][] 
  []
 
 
 
 [31]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 235--248
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 258--275
  [][] 
  []
 
 
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 258--275
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 281--296
  [][] 
  []
 
 
 
 [32]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 281--296
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 302--314
  [][] 
  []
 
 
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 302--314
+Overfull \hbox (3.8591pt too wide) in paragraph at lines 324--337
  [][] 
  []
 
 
 
 [33]
-Overfull \hbox (3.8591pt too wide) in paragraph at lines 324--337
- [][] 
- []
-
-
 Overfull \hbox (3.8591pt too wide) in paragraph at lines 343--356
  [][] 
  []
@@ -2069,13 +2129,13 @@ Overfull \hbox (3.8591pt too wide) in paragraph at lines 363--376
  []
 
 
-
-[34]
 Overfull \hbox (3.8591pt too wide) in paragraph at lines 382--398
  [][] 
  []
 
 
+
+[34]
 Overfull \hbox (3.8591pt too wide) in paragraph at lines 404--418
  [][] 
  []
@@ -2100,6 +2160,11 @@ Overfull \hbox (3.8591pt too wide) in paragraph at lines 471--485
 
 
 [36]
+Underfull \hbox (badness 2469) in paragraph at lines 499--500
+[]\T1/txr/m/n/10.95 (+20) Incluir en la in-ter-faz de cor-reción un campo para añadir
+ []
+
+
 Overfull \hbox (3.8591pt too wide) in paragraph at lines 491--504
  [][] 
  []
@@ -2143,28 +2208,13 @@ Overfull \hbox (3.8591pt too wide) in paragraph at lines 616--631
 [39]
 
 [40]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 654--654
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 648--660
  [][] 
  []
 
 
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 672--672
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 666--675
  [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 691--691
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
@@ -2175,11 +2225,6 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 685--708
 
 
 [41]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 720--720
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 714--728
  [][] 
  []
@@ -2187,18 +2232,18 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 714--728
 
 
 [42]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 740--740
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+Underfull \hbox (badness 1087) in paragraph at lines 746--747
+[]\T1/txr/m/n/10.95 (+20) El sis-tema en-vía un correo elec-trónico con un código de
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 753--754
+[]\T1/txr/m/n/10.95 (+20) El usuario in-tro-duce sus nuevas cre-den-ciales y ac-cede
  []
 
 
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 734--756
  [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 769--769
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
@@ -2209,18 +2254,8 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 763--778
 
 
 [43]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 790--790
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 784--798
  [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 811--811
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
@@ -2231,28 +2266,13 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 805--819
 
 
 [44]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 833--833
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 826--839
  [][] 
  []
 
 
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 853--853
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 847--861
  [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 874--874
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
@@ -2263,8 +2283,8 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 868--888
 
 
 [45]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 901--901
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+Underfull \hbox (badness 2261) in paragraph at lines 907--908
+[]\T1/txr/m/n/10.95 (+20) El usuario re-al-iza in-ten-tos de en-vío con datos in-váli-dos
  []
 
 
@@ -2273,8 +2293,8 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 895--915
  []
 
 
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 928--928
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+Underfull \hbox (badness 1205) in paragraph at lines 936--937
+[]\T1/txr/m/n/10.95 (+20) El usuario in-tro-duce la con-traseña cor-recta y con-firma la
  []
 
 
@@ -2285,18 +2305,13 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 922--942
 
 
 [46]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 954--954
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 948--963
  [][] 
  []
 
 
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 978--978
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+Underfull \hbox (badness 1237) in paragraph at lines 984--985
+[]\T1/txr/m/n/10.95 (+20) El sis-tema impide el guardado y mues-tra un men-saje de
  []
 
 
@@ -2307,11 +2322,6 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 972--992
 
 
 [47]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1005--1005
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 999--1017
  [][] 
  []
@@ -2319,18 +2329,13 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 999--1017
 
 
 [48]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1029--1029
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 1023--1037
  [][] 
  []
 
 
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1049--1049
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+Underfull \hbox (badness 3536) in paragraph at lines 1053--1054
+[]\T1/txr/m/n/10.95 (+20) El usuario navega en-tre pági-nas y el sis-tema ac-tu-al-iza
  []
 
 
@@ -2341,18 +2346,13 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 1043--1059
 
 
 [49]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1071--1071
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+Underfull \hbox (badness 2735) in paragraph at lines 1079--1080
+[]\T1/txr/m/n/10.95 (+20) El sis-tema elim-ina las car-tas del lis-tado y del sis-tema,
  []
 
 
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 1065--1083
  [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1096--1096
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
@@ -2363,23 +2363,13 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 1090--1107
 
 
 [50]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1122--1122
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 1127--1128
-[]\T1/txr/m/n/10.95 El usuario aplica uno o var-ios fil-tros (es-tado, re-mi-tente o
+Underfull \hbox (badness 3229) in paragraph at lines 1128--1129
+[]\T1/txr/m/n/10.95 (+20) El usuario navega en-tre pági-nas y el sis-tema mantiene
  []
 
 
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 1116--1131
  [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1144--1144
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
@@ -2390,18 +2380,8 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 1138--1153
 
 
 [51]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1166--1166
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 1160--1179
  [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1192--1192
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
@@ -2412,18 +2392,8 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 1186--1199
 
 
 [52]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1214--1214
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 1208--1223
  [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1235--1235
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
@@ -2434,18 +2404,8 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 1229--1244
 
 
 [53]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1256--1256
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
- []
-
-
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 1250--1265
  [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1278--1278
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
@@ -2456,18 +2416,13 @@ Overfull \hbox (7.8591pt too wide) in paragraph at lines 1272--1288
 
 
 [54]
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1300--1300
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
+Underfull \hbox (badness 3536) in paragraph at lines 1305--1306
+[]\T1/txr/m/n/10.95 (+20) El usuario navega en-tre pági-nas y el sis-tema ac-tu-al-iza
  []
 
 
 Overfull \hbox (7.8591pt too wide) in paragraph at lines 1294--1308
  [][] 
- []
-
-
-Overfull \hbox (1.69878pt too wide) in paragraph at lines 1321--1321
- []|\T1/txr/bx/n/10.95 PROCEDIMIENTO| 
  []
 
 
@@ -2566,78 +2521,78 @@ Overfull \hbox (26.01845pt too wide) in alignment at lines 5--7
  []
 
 
-Underfull \hbox (badness 5388) in paragraph at lines 14--15
-\T1/txr/bx/n/12 Valores de sal-ida: \T1/txr/m/n/12 sta-tus, users, page,
+Underfull \hbox (badness 1057) in paragraph at lines 12--13
+[]|\T1/txr/m/n/12 (+20) Cerrar la sesión. Se limpia la cookie de
+ []
+
+
+Underfull \hbox (badness 4886) in paragraph at lines 14--15
+\T1/txr/bx/n/12 (+20) Valores de sal-ida: \T1/txr/m/n/12 (+20) sta-tus, users, page,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]|\T1/txr/m/n/12 /api/users/check-
+[]|\T1/txr/m/n/12 (+20) /api/users/check-
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 30--31
-\T1/txr/bx/n/12 Valores de en-trada: \T1/txr/m/n/12 ti-tle*, con-tent*, lan-
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 50--51
-\T1/txr/bx/n/12 Valores de sal-ida: \T1/txr/m/n/12 sta-tus, mes-sage, frien-
+Underfull \hbox (badness 1092) in paragraph at lines 50--51
+\T1/txr/bx/n/12 (+20) Valores de sal-ida: \T1/txr/m/n/12 (+20) sta-tus, mes-sage, frien-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 58--58
-[]|\T1/txr/m/n/12 /api/corrected-letters/send-
+[]|\T1/txr/m/n/12 (+20) /api/corrected-letters/send-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 59--59
-[]|\T1/txr/m/n/12 /api/corrected-
+[]|\T1/txr/m/n/12 (+20) /api/corrected-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 59--59
-\T1/txr/m/n/12 letters/corrections/:original-
+\T1/txr/m/n/12 (+20) letters/corrections/:original-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 60--60
-[]|\T1/txr/m/n/12 /api/corrected-
+[]|\T1/txr/m/n/12 (+20) /api/corrected-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 60--60
-\T1/txr/m/n/12 letters/corrected-
+\T1/txr/m/n/12 (+20) letters/corrected-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]|\T1/txr/m/n/12 /api/corrected-
+[]|\T1/txr/m/n/12 (+20) /api/corrected-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--62
-[]|\T1/txr/m/n/12 /api/corrected-
+[]|\T1/txr/m/n/12 (+20) /api/corrected-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--63
-[]|\T1/txr/m/n/12 /api/corrected-
+[]|\T1/txr/m/n/12 (+20) /api/corrected-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--63
-\T1/txr/m/n/12 letters/update/:corrected-
+\T1/txr/m/n/12 (+20) letters/update/:corrected-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 64--64
-[]|\T1/txr/m/n/12 /api/corrected-
+[]|\T1/txr/m/n/12 (+20) /api/corrected-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 65--65
-[]|\T1/txr/m/n/12 /api/corrected-
+[]|\T1/txr/m/n/12 (+20) /api/corrected-
  []
 
 
@@ -2654,12 +2609,7 @@ Overfull \hbox (26.01845pt too wide) in alignment at lines 7--69
 
 [74] Excluding 'comment' comment.
 
-[75]
-Overfull \hbox (1.76395pt too wide) in paragraph at lines 129--130
-\T1/txr/m/n/12 gación de Mon-goDB per-mite una mejora drás-tica en el rendimiento del sis-tema re-duciendo
- []
-
-Excluding 'comment' comment.) (./secciones/arquitectura_frontend.tex
+[75] Excluding 'comment' comment.) (./secciones/arquitectura_frontend.tex
 
 [76]
 
@@ -2674,6 +2624,10 @@ File: imagenes/ui/login.png Graphic file (type png)
 <use imagenes/ui/login.png>
 Package pdftex.def Info: imagenes/ui/login.png  used on input line 67.
 (pdftex.def)             Requested size: 426.79135pt x 235.23395pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 
 [78 <./imagenes/ui/dialogDeleteAll.PNG>]
@@ -2751,7 +2705,7 @@ Package pdftex.def Info: imagenes/ui/my-profile.png  used on input line 185.
 [84 <./imagenes/ui/my-profile.PNG>]
 
 [85]
-<imagenes/ui/skeleton.png, id=1535, 1241.13687pt x 705.63625pt>
+<imagenes/ui/skeleton.png, id=1536, 1241.13687pt x 705.63625pt>
 File: imagenes/ui/skeleton.png Graphic file (type png)
 <use imagenes/ui/skeleton.png>
 Package pdftex.def Info: imagenes/ui/skeleton.png  used on input line 226.
@@ -2760,19 +2714,11 @@ Package pdftex.def Info: imagenes/ui/skeleton.png  used on input line 226.
 
 [86 <./imagenes/ui/skeleton.PNG>]
 Chapter 5.
-
-LaTeX Warning: Citation 'amortizacion_lineal' on page 87 undefined on input line 13.
-
 LaTeX Font Info:    Font shape `TS1/txr/b/n' in size <12> not available
 (Font)              Font shape `TS1/txr/bx/n' tried instead on input line 33.
 
-Underfull \hbox (badness 2027) in paragraph at lines 37--37
-[]|\T1/txr/m/n/12 Lenguajes y frame-works
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 41--41
-[]|\T1/txr/m/n/12 Plataforma de co-mu-ni-cación para las re-
+Underfull \hbox (badness 4739) in paragraph at lines 35--35
+\T1/txr/m/n/12 (+20) de-sar-rollo, prue-bas y redac-ción de la
  []
 
 
@@ -2793,23 +2739,23 @@ Overfull \hbox (1.48969pt too wide) in paragraph at lines 31--46
 [90]
 Chapter 6.
 
-Underfull \hbox (badness 2435) in paragraph at lines 24--24
-[]|\T1/txr/m/n/10 Sistema de au-t-en-ti-
+Underfull \hbox (badness 2635) in paragraph at lines 24--24
+[]|\T1/txr/m/n/10 (+20) Sistema de au-t-en-ti-
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 24--24
-[]|\T1/txr/m/n/10 Interfaz para crear,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
-[]|\T1/txr/m/n/10 Sistema de so-lic-i-
+Underfull \hbox (badness 3601) in paragraph at lines 24--24
+[]|\T1/txr/m/n/10 (+20) Interfaz para crear,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 24--24
-[]|\T1/txr/m/n/10 Documentación
+[]|\T1/txr/m/n/10 (+20) Sistema de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/txr/m/n/10 (+20) so-lic-i-tudes de
  []
 
 
@@ -2826,163 +2772,57 @@ Overfull \hbox (3.02734pt too wide) in alignment at lines 24--24
 [92])
 
 [93]
-Overfull \hbox (8.36742pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Microsoft. ^^P  Vi-sual stu-dio code.^^Q Ac-ce-dido: 2026-02-27. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (4.14333pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Atlassian. ^^P  Trello.^^Q Ac-ce-dido: 2026-05-09. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / trello .
- []
-
-
 
 [94
 
 
 ]
-Overfull \hbox (0.23143pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 MDN Web Docs. ^^P  Javascript.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (5.36743pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 TypeScript Team. ^^P  Type-script.^^Q Ac-ce-dido: 2026-05-24. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (3.92393pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Meta Open Source. ^^P  Re-act doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-
- []
-
-
-Overfull \hbox (12.27943pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Vercel. ^^P  Next.js doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
+Overfull \hbox (2.01021pt too wide) in paragraph at lines 487--487
+[]\T1/txr/m/n/12 (-20) Vercel. ^^P  Next.js doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-01-15. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
  []
 
 
 
 [95]
-Overfull \hbox (4.90417pt too wide) in paragraph at lines 477--477
-\T1/txr/m/n/12 dido: 2026-05-24. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / evolve . es / blog / desarrollo -[]
- []
-
-
-Overfull \hbox (17.94974pt too wide) in paragraph at lines 477--477
-\T1/txtt/m/n/12 web / guia -[] definitiva -[] de -[] node -[] js -[] introduccion -[] para -[] desarrolladores/$[][] 
- []
-
-
-Overfull \hbox (6.03943pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 The PHP Group. ^^P  Php man-ual.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (19.93542pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Laravel. ^^P  Lar-avel doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
 
 [96]
-Overfull \hbox (17.75502pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Hostinger. ^^P  Co-mando curl: Guía.^^Q Ac-ce-dido: 2026-05-24. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (27.57983pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Amazon Web Ser-vices. ^^P  The dif-fer-ence be-tween re-la-tional and non-relational databases.^^Q
- []
-
-
-Overfull \hbox (10.13144pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Oracle. ^^P  Mysql doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (13.77171pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 OpenWebinars. ^^P  ¾qué es mysql?^^Q Ac-ce-dido: 2026-05-24. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (3.84904pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Apache Soft-ware Foun-da-tion. ^^P  Apache cas-san-dra doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-
- []
-
-
 
 [97]
-Overfull \hbox (3.19543pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Scrum.org. ^^P  The scrum guide.^^Q Ac-ce-dido: 2026-04-12. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (27.53128pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 HiNative. ^^P  Hi-na-tive.^^Q Ac-ce-dido: 2026-04-14. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / hinative .
- []
-
-
-Overfull \hbox (24.0149pt too wide) in paragraph at lines 477--477
-\T1/txr/m/n/12 line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / www . atlassian . com / es / agile / project -[] management /
- []
-
-
-Overfull \hbox (9.49542pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 ESLint. ^^P  Es-lint doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-05-24. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (18.13544pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Prettier. ^^P  Pret-tier doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-05-24. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (2.81128pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 npm. ^^P  Mul-ter.^^Q Ac-ce-dido: 2026-05-24. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https : / / www . npmjs .
- []
-
-
 
 [98]
-Overfull \hbox (18.15942pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Motion. ^^P  Mo-tion doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-05-24. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (5.75143pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 Quill. ^^P  Quill re-act play-ground.^^Q Ac-ce-dido: 2026-05-24. [On-line]. Avail-able: [][]$\T1/txtt/m/n/12 https :
- []
-
-
-Overfull \hbox (9.92393pt too wide) in paragraph at lines 477--477
-[]\T1/txr/m/n/12 React Leaflet. ^^P  Re-act leaflet doc-u-men-ta-tion.^^Q Ac-ce-dido: 2026-05-24. [On-line]. Avail-
- []
-
-
 
 [99] (./main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-24>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DD7BC5655627C58ECD7CB55F60D7CDFE;10485.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32064 strings out of 467746
- 543477 string characters out of 5431099
- 1656968 words of memory out of 5000000
- 59638 multiletter control sequences out of 15000+600000
- 702351 words of font info for 168 fonts, out of 8000000 for 9000
+ 34747 strings out of 467746
+ 584334 string characters out of 5431099
+ 1723155 words of memory out of 5000000
+ 61559 multiletter control sequences out of 15000+600000
+ 733710 words of font info for 669 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,20n,117p,1472b,3925s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 92i,20n,117p,1472b,3936s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txex.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txsy.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txsya.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (119 pages, 3996226 bytes).
+Output written on main.pdf (119 pages, 4010263 bytes).
 PDF statistics:
- 1927 PDF objects out of 2073 (max. 8388607)
+ 1922 PDF objects out of 2073 (max. 8388607)
  592 named destinations out of 1000 (max. 500000)
- 766 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141054 words of extra memory for PDF output out of 154059 (max. 10000000)
 

@@ -40,7 +40,7 @@ Respesto a la gestión del estado de la aplicación, se deben almacenar ciertos 
 
 \begin{itemize}
     \item \textbf{Local Storage}: Utilizado para datos no sensibles de la experiencia de usuario, como la preferencia de tema (modo claro u oscuro), que se establece inicialmente como el que tenga por defecto el usuario en su navegador, pero puede ser configurarse desde el menú desplegable de Letterex.
-    \item \textbf{React Hooks}: Se usan funciones especiales de React como \texttt{useState}, \texttt{useEffect} o \texttt{useRef}, para controlar el estado local de los componentes. Este último se usa para implementar una caché en memoria por página, por ejemplo, guardando resultados paginados. Cuando el usuario vuelve a una página ya consultada, los datos se leen desde caché y se muestran al instante. Así se consigue una mejora del rendimiento por la reducción de llamadas redundantes al servidor.
+    \item \textbf{React Hooks}: Se usan funciones especiales de React como \texttt{useState}, \texttt{useEffect} o \texttt{useRef}, para controlar el estado local de los componentes. Este último se usa para implementar una caché en memoria por página, por ejemplo, guardando resultados paginados. Cuando el usuario vuelve a una página ya consultada, los datos se leen desde caché y se muestran al instante. Así, se consigue una mejora del rendimiento por la reducción de llamadas redundantes al servidor.
     \item \textbf{Context API}: guarda el estado del componente para gestionar diálogos modales de forma centralizada, evitando \textit{prop drilling}, fenónemo en que los componentes se pasan datos de padres a hijos sucesivamente quedando varios hijos intermedios que no los utilizan. Con un proveedor de contexto, la app es capaz de renderizar un solo componente de diálogo que se abre y se cierra con dos funciones a las que cualquier componente puede acceder fácilmente, en este caso mediante un hook personalizado llamado \texttt{useDialog} que devuelve el contexto del diálogo. Por ejemplo, la siguiente figura muestra la función que abrirá el diálogo de error a su derecha. Esta estrategia se utiliza también para guardar los datos no sensibles del usuario autenticado.
 
     \begin{figure}[H]
@@ -189,7 +189,7 @@ La página implementa paginación para todas estas listas de usuarios y solicitu
 
 La página de perfil muestra información detallada sobre un usuario. Se utiliza la misma página para el perfil propio y para el de otros usuarios. La página incluye:
 
-\begin{itemize}
+\begin{itemize}[label={-}]
     \item Foto de perfil, nombre y biografía.
     \item Idiomas nativos y lenguas que está aprendiendo.
     \item Estadísticas de cartas escritas y corregidas en cada idioma.

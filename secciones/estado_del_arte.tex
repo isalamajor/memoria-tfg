@@ -3,7 +3,7 @@
 En este capítulo se define el contexto en que se desarrolla el proyecto, estudiando tres factores principales: el sector tecnológico, teniendo en cuenta las tecnologías actuales para el desarrollo de aplicaciones web; las metodologías vigentes empleadas en este sector; y el modelo de negocio en que se ubica la aplicación, estudiando los principales ejemplos de soluciones similares presentes en el mercado.
 
 \section{Tecnologías para el Desarrollo de Aplicaciones Web}
-En el desarrollo de una aplicación web completa, entran en juego tecnologías de varios tipos. Entre estos tipos, se han seleccionado los más relevantes dado el tipo de solución que se implementa en este proyecto, que son: tecnologías de frontend, frameworks de JavaScript, tecnologías de backend, herramientas para el consumo de APIs y bases de datos.
+En el desarrollo de una aplicación web completa, entran en juego tecnologías de varios tipos. De entre ellos, se han seleccionado los más relevantes dado el tipo de solución que se implementa en este proyecto: tecnologías de frontend, frameworks de JavaScript, tecnologías de backend, herramientas para el consumo de APIs y bases de datos.
 
 \subsection{Frontend}
 El frontend es la parte visible de una aplicación web, con la que el usuario interactúa de forma directa. Se compone de tres tecnologías principales: lenguaje de marcado de hipertexto (HTML), lenguaje de diseño gráfico y lenguaje de programación; que trabajan juntas para definir la estructura, el diseño y la interactividad de la interfaz. Estas tecnologías son esenciales para cualquier desarrollo web, desde sitios estáticos hasta aplicaciones dinámicas y complejas como la que se plantea en este proyecto.
@@ -18,7 +18,7 @@ La estructura de una etiqueta o "tag" HTML se compone de una etiqueta de apertur
     \end{itemize}
 
 
-A diferencia de otros lenguajes, HTML no tiene lógica de control (como bucles, variables o condicionales), sino que se enfoca exclusivamente en estructurar la información. Por tanto, HTML es el pilar sobre el cual se construyen las páginas. La evolución de HTML ha llevado a versiones más avanzadas, en particular HTML5, que introduce nuevas etiquetas semánticas como <article>, <section> y <nav>, mejorando la organización del contenido y optimizando su accesibilidad. También incorpora soporte para audio, video y gráficos vectoriales sin necesidad de complementos adicionales, lo que amplía las posibilidades de una aplicación web moderna.\cite{html_universidad_europea}
+A diferencia de otros lenguajes, HTML no tiene lógica de control (como bucles, variables o condicionales), sino que se enfoca exclusivamente en estructurar la información. Por tanto, HTML es el pilar sobre el cual se construyen las páginas. La evolución de HTML ha llevado a versiones más avanzadas, en particular HTML5, que introduce nuevas etiquetas semánticas como <article>, <section> y <nav>, mejorando la organización del contenido y optimizando su accesibilidad. También incorpora soporte para audio, vídeo y gráficos vectoriales sin necesidad de complementos adicionales, lo que amplía las posibilidades de una aplicación web moderna.\cite{html_universidad_europea}
 
 
 \begin{figure}[H]
@@ -48,7 +48,7 @@ Para construir el diseño y el aspecto visual de una página web, se utiliza CSS
 
 
 
-Con la introducción de CSS3, se han añadido características avanzadas como gradientes, sombras, transiciones y animaciones, así como técnicas de diseño responsivo como flexbox y grid, que permiten adaptar la interfaz a distintos tamaños de pantalla. Esto es especialmente importante para que el diseño una aplicación web sea correcto y agradable en cualquier tipo de dispositivo, tanto portátiles como tabletas, teléfonos móviles y otros..\cite{css_hostinger, tailwind_docs}
+Con la introducción de CSS3, se han añadido características avanzadas como gradientes, sombras, transiciones y animaciones, así como técnicas de diseño responsivo como flexbox y grid, que permiten adaptar la interfaz a distintos tamaños de pantalla. Esto es especialmente importante para que el diseño una aplicación web sea correcto y agradable en cualquier tipo de dispositivo, tanto portátiles como tabletas, teléfonos móviles y otros. \cite{css_hostinger, tailwind_docs}
 
 
 \begin{figure}[H]
@@ -84,13 +84,13 @@ La principal diferencia que marca TypeScript es que se trata de un lenguaje de t
 
 \subsection{Frameworks de JavaScript}
 La utilización de un framework de JavaScript para el desarrollo de una aplicación web es muy recomendable dadas las funcionalidades preprogramadas que ofrecen agilizar las tareas de programación; funcionalidades como la modularización del código, la optimización del rendimiento, la integración de servicios, la manipulación de eventos y la creación de interfaces dinámicas; además del manejo del DOM (Document Objetc Model), la interfaz de programación que permite crear, eliminar o modificar elementos de la página.
-Estudiaremos algunas de las alternativas de frameworks que hay actualmente a disposición del programador.\cite{js_framework_bridge}
+Se estudiarán algunas de las alternativas de frameworks que hay actualmente a disposición del programador.\cite{js_framework_bridge}
 
 
 \subsubsection{React}
 React.js es una de las tecnologías más utilizadas en el desarrollo de interfaces dinámicas. Creada por ingenieros de Meta, esta biblioteca de JavaScript permite construir aplicaciones modulares y eficientes gracias a su sistema basado en componentes reutilizables y la utilización de un DOM virtual, que realiza una evaluación de los cambios que se aplicarán al DOM, y los aplica solamente al elemento o los elementos que cambian o se ven afectados por la modificación. Esto mejora el rendimiento en la actualización de la interfaz.
 Aplicaciones como Facebook, Instagram y Airbnb han adoptado React debido a las facilidades que ofrece y su flexibilidad y ecosistema robusto, además de su facilidad de instalación y relativamente accesible curva de aprendizaje.
-Actualmente es uno de los frameworks web más populares y utilizados, aunque existen otra opciones también interesantes. Esto implica que existe una gran cantidad de documentación y guías para aprender y resolver dudas sobre React, además de numerosas librerías compatibles con esta tecnologías y componentes gratuitos que uno puede incorporar en sus propios proyectos y que encontramos en plataformas como 21st.dev, Aceternity ui o MUI.\cite{react_docs,ebac_react}
+Actualmente es uno de los frameworks web más populares y utilizados, aunque existen otra opciones también interesantes. Esto implica que existe una gran cantidad de documentación y guías para aprender y resolver dudas sobre React, además de numerosas librerías compatibles con esta tecnologías y componentes gratuitos que uno puede incorporar en sus propios proyectos y que se encuentran en plataformas como 21st.dev, Aceternity ui o MUI.\cite{react_docs,ebac_react}
 
 
 \begin{figure}[H]
@@ -136,8 +136,8 @@ Angular es un framework completo desarrollado por Google basado en TypeScript qu
 
 \subsection{Backend}
 El backend es la parte de una aplicación que gestiona la lógica de negocio, el procesamiento de datos,  la seguridad, y la comunicación con la base de datos y otros servicios. El backend funciona en el servidor y se encarga de recibir peticiones del cliente, procesarlas y devolver una respuesta adecuada.
-Hay diversas opciones de tecnologías que permiten llevar a cabo estos objetivos. Entre as más significativas a día de hoy se encuentran: Node.js, Django, Spring Boot, Laravel, Ruby, y Gin.
-Estas alternativas se han contrastado con sus manuales y guías oficiales para describir de forma consistente sus capacidades y su encaje en el backend moderno.
+
+Hay diversas opciones de tecnologías que permiten llevar a cabo estos objetivos. Entre las más significativas a día de hoy: Node.js, Django, Spring Boot, Laravel, Ruby, y Gin.
 
 \subsubsection{Node.js}
 Node.js es un entorno de ejecución basado en JavaScript que permite ejecutar código en el servidor. Su principal ventaja es que permite desarrollar tanto el frontend como el backend con el mismo lenguaje, lo que facilita la comunicación entre ambas partes.
@@ -166,7 +166,7 @@ Python es un lenguaje de programación conocido por su simplicidad y legibilidad
     \label{fig:python}
 \end{figure}
 
-Django tiene un Enfoque "batteries included", es decir, ofrece muchas herramientas listas para usar: cuenta con ORM (Mapeo Objeto-Relacional), integrado, una herramienta que convierte los objetos de una aplicación en un formato compatible para guardarlos en una base de datos y así permitir al desarrollador interactuar con bases de datos sin escribir código SQL; y herramientas de Seguridad avanzada, protegiendo contra ataques comunes como inyección SQL y cross-site scripting (XSS). Django es ampliamente utilizado en aplicaciones como Instagram, Spotify y Pinterest. No obstante, es un framework monolítico, es decir, todo su código está integrado en una sola estructura. Por ello, es menos flexible cuando se necesita dividir la aplicación en partes independientes que trabajen de forma autónoma, como ocurre en arquitecturas basadas en microservicios, donde cada parte de la aplicación se maneja de manera independiente y puede ser escalada o actualizada por separado.\cite{python_docs,django_docs}
+Django tiene un enfoque \textins{batteries included}, es decir, ofrece muchas herramientas listas para usar: cuenta con ORM (Mapeo Objeto-Relacional), integrado, una herramienta que convierte los objetos de una aplicación en un formato compatible para guardarlos en una base de datos y así permitir al desarrollador interactuar con bases de datos sin escribir código SQL; y herramientas de Seguridad avanzada, protegiendo contra ataques comunes como inyección SQL y cross-site scripting (XSS). Django es ampliamente utilizado en aplicaciones como Instagram, Spotify y Pinterest. No obstante, es un framework monolítico, es decir, todo su código está integrado en una sola estructura. Por ello, es menos flexible cuando se necesita dividir la aplicación en partes independientes que trabajen de forma autónoma, como ocurre en arquitecturas basadas en microservicios, donde cada parte de la aplicación se maneja de manera independiente y puede ser escalada o actualizada por separado.\cite{python_docs,django_docs}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{imagenes/django.png}
@@ -175,7 +175,7 @@ Django tiene un Enfoque "batteries included", es decir, ofrece muchas herramient
 \end{figure}
 
 \subsubsection{Java con SpringBoot}
-Java es una de las opciones más utilizadas en el desarrollo backend, especialmente en entornos empresariales, dadas la robustez de sus funciones de seguridad y su sólido rendimiento en tareas que demandan un uso intensivo del procesador como cálculos matemático avanzados o intérpretes de lenguaje. El framework más popular dentro de este ecosistema es Spring Boot, que agiliza la creación de aplicaciones escalables y distribuidas. Entre las ventajas de Spring Boot encontramos su arquitectura modular, que permite crear servicios independientes y fácilmente escalables; su alta seguridad y estabilidad, lo que lo hace ideal para aplicaciones bancarias y corporativas; y su compatibilidad con múltiples bases de datos y herramientas empresariales. Sin embargo, Java tiene una curva de aprendizaje más alta y puede ser más pesado en comparación con otras opciones como Node.js o Python.\cite{java_docs,spring_docs}
+Java es una de las opciones más utilizadas en el desarrollo backend, especialmente en entornos empresariales, dadas la robustez de sus funciones de seguridad y su sólido rendimiento en tareas que demandan un uso intensivo del procesador como cálculos matemático avanzados o intérpretes de lenguaje. El framework más popular dentro de este ecosistema es Spring Boot, que agiliza la creación de aplicaciones escalables y distribuidas. Entre las ventajas de Spring Boot se encuentran su arquitectura modular, que permite crear servicios independientes y fácilmente escalables; su alta seguridad y estabilidad, lo que lo hace ideal para aplicaciones bancarias y corporativas; y su compatibilidad con múltiples bases de datos y herramientas empresariales. Sin embargo, Java tiene una curva de aprendizaje más alta y puede ser más pesado en comparación con otras opciones como Node.js o Python.\cite{java_docs,spring_docs}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{./imagenes/java.jpg}
@@ -190,7 +190,7 @@ Java es una de las opciones más utilizadas en el desarrollo backend, especialme
 \end{figure}
 
 \subsubsection{PHP y Laravel}
-PHP ha sido históricamente uno de los lenguajes más utilizados para el desarrollo web, especialmente en sistemas de gestión de contenido como WordPress, que permite crear páginas como blogs o tiendas en línea sin apenas conocimientos técnicos. PHP nos permite agregar dinamismo a nuestros sitios web conectando el servidor y base de datos con la interfaz de usuario. En la actualidad, Laravel es el framework más moderno dentro del ecosistema PHP, ofreciendo una sintaxis elegante y herramientas avanzadas para el desarrollo de aplicaciones web. Laravel cuenta con un sistema de enrutamiento y autenticación integrado, buena documentación y comunidad activa. Además, existe ORM Eloquent, que es un Mapeador de Objetos Relacionales especialmente diseñado para Laravel, que ofrece una experiencia de conexión con la base de datos más ágil y simple. Se trata de una opción sólida para proyectos que necesitan desarrollo rápido, pero PHP no es tan popular en nuevas aplicaciones escalables como Node.js o Django. Entre sus desventajas encontramos herramientas de debugging no tan potentes, los comunes problemas de seguridad, y el hecho de que es necesario un servidor web para que la app funcione.\cite{php_docs,laravel_docs}
+PHP ha sido históricamente uno de los lenguajes más utilizados para el desarrollo web, especialmente en sistemas de gestión de contenido como WordPress, que permite crear páginas como blogs o tiendas en línea sin apenas conocimientos técnicos. PHP nos permite agregar dinamismo a nuestros sitios web conectando el servidor y base de datos con la interfaz de usuario. En la actualidad, Laravel es el framework más moderno dentro del ecosistema PHP, ofreciendo una sintaxis elegante y herramientas avanzadas para el desarrollo de aplicaciones web. Laravel cuenta con un sistema de enrutamiento y autenticación integrado, buena documentación y comunidad activa. Además, existe ORM Eloquent, que es un Mapeador de Objetos Relacionales especialmente diseñado para Laravel, que ofrece una experiencia de conexión con la base de datos más ágil y simple. Se trata de una opción sólida para proyectos que necesitan desarrollo rápido, pero PHP no es tan popular en nuevas aplicaciones escalables como Node.js o Django. Entre sus desventajas se encuentran herramientas de debugging no tan potentes, los comunes problemas de seguridad, y el hecho de que es necesario un servidor web para que la app funcione.\cite{php_docs,laravel_docs}
 \begin{figure}[H]
     \centering
     \includegraphics[height=2cm]{imagenes/php.png}
@@ -292,13 +292,13 @@ Una base de datos es una recopilación de información que se almacena en un sis
 
 En una base de datos relacional, los datos se almacenan en tablas, donde cada fila representa un registro y cada columna contiene un atributo o campo de ese registro. Cada registro suele tener un identificador único, conocido como clave primaria, que permite distinguirlo de los demás. Existen relaciones entre las tablas que permiten organizar los datos de forma lógica y estructurada siguiendo un modelo relacional. Para escribir y leer datos de este tipo de bases de datos, se utiliza un lenguaje de consulta estructurado (SQL), como MySQL, PostgreSQL o MariaDB.
 
-Por otro lado, las bases de datos no relacionales o NoSQL ofrecen un enfoque más flexible ya que, en lugar de seguir una estructura rígida de tablas, almacenan la información en formatos como documentos JSON, pares clave-valor, grafos o familias de columnas. Esta estructura es especialmente útil cuando los datos cambian con frecuencia o no requieren un esquema fijo. Esto permite insertar, modificar y obtener los datos de forma más dinámica, lo que se hace mediante lenguajes de consulta más modernos. Este tipo de bases de datos ha ganado popularidad en el campo de las aplicaciones web modernas, microservicios y sistemas que manejan grandes volúmenes de datos no estructurados. MongoDB, Cassandra, Firebase y ElasticSearch se encuentran entre las bases de datos NoSQL más utilizadas a día de hoy.
+Por su parte, las bases de datos no relacionales o NoSQL ofrecen un enfoque más flexible ya que, en lugar de seguir una estructura rígida de tablas, almacenan la información en formatos como documentos JSON, pares clave-valor, grafos o familias de columnas. Esta estructura es especialmente útil cuando los datos cambian con frecuencia o no requieren un esquema fijo. Esto permite insertar, modificar y obtener los datos de forma más dinámica, lo que se hace mediante lenguajes de consulta más modernos. Este tipo de bases de datos ha ganado popularidad en el campo de las aplicaciones web modernas, microservicios y sistemas que manejan grandes volúmenes de datos no estructurados. MongoDB, Cassandra, Firebase y ElasticSearch se encuentran entre las bases de datos NoSQL más utilizadas a día de hoy.
 La comparativa se ha realizado a partir de la documentación oficial de MySQL, PostgreSQL, MariaDB, MongoDB, Firebase y Cassandra.\cite{aws_compare_rel_nonrel}
 
 
 \subsubsection{Bases de datos relacionales}
 
-\paragraph{MySQL}
+\paragraph{MySQL:}
 
 
 MySQL es uno de los sistemas de gestión de bases de datos más populares y utilizados en aplicaciones web. Originalmente desarrollado por MySQL AB y posteriormente adquirido por Oracle, MySQL es conocido por su fiabilidad, integridad, velocidad y facilidad de uso. Su arquitectura de replicación maestro-esclavo permite distribuir la carga de trabajo y mejorar la disponibilidad. Aunque es de código abierto, también ofrece versiones comerciales con soporte adicional. MySQL ha sido fundamental en la creación de aplicaciones dentro de la pila LAMP (Linux, Apache, MySQL, PHP/Python), y grandes plataformas como Facebook y Twitter lo emplean para manejar grandes volúmenes de datos.\cite{mysql_docs,openwebinars_mysql}
@@ -309,7 +309,7 @@ MySQL es uno de los sistemas de gestión de bases de datos más populares y util
     \label{fig:mySQL}
 \end{figure}
 
-\paragraph{PostgreSQL}
+\paragraph{PostgreSQL:}
 
 PostgreSQL  destaca por su capacidad para gestionar transacciones complejas y grandes volúmenes de datos, manteniendo siempre la integridad relacional.\cite{postgresql_docs,hostinger_postgresql}
 Cuando varios usuarios acceden simultáneamente a una base de datos, los sistemas tradicionales suelen bloquear los registros para evitar conflictos entre lecturas y escrituras. Una de sus principales ventajas reside en que gestiona esta concurrencia de manera más eficiente gracias a su implementación de MVCC (Control de Concurrencia Multiversión), que permite que las operaciones de lectura no interfieran con las de escritura y viceversa. Esto se traduce en una mejora significa del rendimiento y la experiencia en entornos con múltiples usuarios accediendo a los mismos datos.
@@ -324,7 +324,7 @@ La descripción se apoya en la documentación oficial de PostgreSQL \cite{postgr
     \label{fig:postgreSql}
 \end{figure}
 
-\paragraph{Maria DB}
+\paragraph{Maria DB:}
 MariaDB es un sistema de gestión de bases de datos relacional de código abierto que nació como una bifurcación de MySQL, creado por su fundador original, Michael Widenius, después de la compra de MySQL por Oracle. Este sistema mantiene una alta compatibilidad con MySQL, lo que facilita la migración entre ambos. MariaDB ofrece mejoras en términos de rendimiento y seguridad, incorporando nuevos motores de almacenamiento como Aria y XtraDB. Además, su enfoque en la escalabilidad y la alta disponibilidad lo hace adecuado para aplicaciones que requieren un rendimiento constante. Es ampliamente utilizado por empresas de gran tamaño y cuenta con una comunidad activa que garantiza una evolución constante.\cite{mariadb_docs,wiki_mariadb}
 \begin{figure}[H]
     \centering
@@ -334,7 +334,7 @@ MariaDB es un sistema de gestión de bases de datos relacional de código abiert
 \end{figure}
 
 \subsubsection{No relacionales}
-\paragraph{MongoDB}
+\paragraph{MongoDB:}
 MongoDB es una base de datos NoSQL que ha ganado una gran popularidad en aplicaciones web modernas. Su principal característica es que almacena los datos en formato de documentos BSON, una versión de JSON en formato binario; lo que permite un enfoque flexible y escalable. JSON es el formato en el que se intercambian los datos en JavaScript, por lo que combinar estas dos tecnologías es una configuración ágil para un proyecto. Estos documentos se pueden agrupar en colecciones para facilitar la organización de los datos. MongoDB es ideal para aplicaciones que necesitan escalabilidad horizontal, ya que permite distribuir los datos entre varios servidores de manera eficiente. Además, permite modificar fácilmente los datos almacenados sin tener que realizar grandes cambios en la base de datos. Empresas como Uber, eBay y Trello utilizan MongoDB debido a su capacidad para manejar grandes cantidades de datos sin la rigidez de las bases de datos tradicionales, además de su gran fiabilidad y alto rendimiento.\cite{mongodb_docs,wiki_mongodb}
 
 \begin{figure}[H]
@@ -344,7 +344,7 @@ MongoDB es una base de datos NoSQL que ha ganado una gran popularidad en aplicac
     \label{fig:mongoDB}
 \end{figure}
 
-\paragraph{Firebase}
+\paragraph{Firebase:}
 Firebase es un servicio de base de datos de Google que almacena los datos en la nube y  está diseñado principalmente para aplicaciones web y móviles que requieren sincronización en tiempo real, dado que facilita la actualización instantánea de los datos en todas las plataformas de manera eficiente, lo que la convierte en una opción atractiva para proyectos  como aplicaciones de mensajería o colaboración. Su integración con el ecosistema de Google permite aprovechar otros servicios como Firebase Authentication y Google Cloud Storage. Además, su facilidad de uso lo hace adecuado para desarrolladores que trabajan en proyectos pequeños o medianos, dado que permite desarrollar aplicaciones de manera rápida sin la necesidad de gestionar una infraestructura compleja. No obstante, Firebase puede generar dependencia de la plataforma Google, lo que podría convertirse en un inconveniente si se desea cambiar de proveedor a largo plazo. Además, los costos asociados con su uso pueden incrementarse a medida que la aplicación escala, lo que puede ser una preocupación para proyectos de gran tamaño.\cite{firebase_docs,digital55_firebase}
 
 \begin{figure}[H]
@@ -354,7 +354,7 @@ Firebase es un servicio de base de datos de Google que almacena los datos en la 
     \label{fig:firebase}
 \end{figure}
 
-\paragraph{Cassandra}
+\paragraph{Cassandra:}
 Cassandra es una base de datos no relacional distribuida diseñada para manejar grandes volúmenes de datos en entornos de alta velocidad y disponibilidad y sin un único punto de fallo gracias a que opera mediante varios nodos o servidores cada uno de los cuales almacena una parte de los datos y responde a una parte de las consultas. Además, su arquitectura es distribuida, es decir, cada nodo tiene réplicas de los datos de los demás, y es por eso que, si uno falla, los demás pueden atender sus peticiones. Cassandra utiliza un modelo basado en columnas en lugar de filas, de forma que cada fila o registro puede tener columnas diferentes, y Cassandra puede acceder a una columna específica en lugar de obtener toda la fila, lo que aumenta la velocidad de acceso a la información. Empresas que requieren una infraestructura que pueda escalar horizontalmente y manejar grandes volúmenes de datos, como Netflix y eBay, utilizan Cassandra para gestionar su información.\cite{cassandra_docs,keepcoding_cassandra}
 \begin{figure}[H]
     \centering
@@ -449,7 +449,7 @@ Este modelo es uno de los más antiguos en el desarrollo de software y sigue un 
 
 \subsubsection{Metodología Incremental}
 
-La metodología incremental es un enfoque de desarrollo de software que consiste en construir el sistema por partes, entregando versiones más desarrolladas en cada etapa. Cada incremento añade nuevas funcionalidades al producto, se avanza de forma progresiva hasta completar el sistema final. Este método facilita la detección temprana de errores y la incorporación de cambios, ya que se obtiene retroalimentación continua del cliente. Además, permite entregar valor desde las primeras fases del proyecto. Por otro lado, el sistema requiere de una planificación inicial bastante completa, ya que los incrementos dependen de una buena definición de requisitos desde el principio.\cite{incremental_ref}
+La metodología incremental es un enfoque de desarrollo de software que consiste en construir el sistema por partes, entregando versiones más desarrolladas en cada etapa. Cada incremento añade nuevas funcionalidades al producto, se avanza de forma progresiva hasta completar el sistema final. Este método facilita la detección temprana de errores y la incorporación de cambios, ya que se obtiene retroalimentación continua del cliente. Además, permite entregar valor desde las primeras fases del proyecto. Sin embargo, el sistema requiere de una planificación inicial bastante completa, ya que los incrementos dependen de una buena definición de requisitos desde el principio.\cite{incremental_ref}
 
 \subsubsection{Metodología RAD}
 

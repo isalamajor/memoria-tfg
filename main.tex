@@ -41,6 +41,8 @@ hmargin=3cm
 % Paragraph Spacing and Line Spacing: Narrow (6 pt / 1.15 spacing) or Moderate (6 pt / 1.5 spacing)
 \renewcommand{\baselinestretch}{1.15}
 \parskip=6pt
+% Remove paragraph indentation throughout the document
+\setlength{\parindent}{0pt}
 
 % Color settings for cover and code listings
 \usepackage[table]{xcolor}
@@ -68,6 +70,14 @@ hmargin=3cm
 \usepackage{txfonts}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+
+% Improve line breaking and reduce unwanted hyphenation
+\usepackage{microtype}
+% Discourage hyphenation and avoid breaks that leave very short fragments
+\hyphenpenalty=5000
+\exhyphenpenalty=5000
+\lefthyphenmin=3
+\righthyphenmin=3
 
 % Spanish settings
 \usepackage[spanish,english]{babel}

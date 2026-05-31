@@ -232,6 +232,14 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txr.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txr.fd
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/txfonts/t1xr.tfm
 INPUT c:/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
 INPUT c:/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
 INPUT c:/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
 INPUT c:/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def
@@ -357,6 +365,9 @@ INPUT main.out
 INPUT ./main.out
 INPUT ./main.out
 OUTPUT main.out
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+INPUT c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 INPUT c:/texlive/2025/texmf-dist/tex/latex/floatrow/fr-longtable.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/floatrow/fr-longtable.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx

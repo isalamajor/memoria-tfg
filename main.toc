@@ -32,13 +32,13 @@
 \contentsline {subsubsection}{cURL}{18}{figure.caption.30}%
 \contentsline {subsection}{\numberline {2.1.5}Base de datos}{19}{subsection.2.1.5}%
 \contentsline {subsubsection}{Bases de datos relacionales}{19}{subsection.2.1.5}%
-\contentsline {paragraph}{MySQL}{19}{subsection.2.1.5}%
-\contentsline {paragraph}{PostgreSQL}{20}{figure.caption.32}%
-\contentsline {paragraph}{Maria DB}{20}{figure.caption.33}%
+\contentsline {paragraph}{MySQL:}{19}{subsection.2.1.5}%
+\contentsline {paragraph}{PostgreSQL:}{20}{figure.caption.32}%
+\contentsline {paragraph}{Maria DB:}{20}{figure.caption.33}%
 \contentsline {subsubsection}{No relacionales}{21}{figure.caption.34}%
-\contentsline {paragraph}{MongoDB}{21}{figure.caption.34}%
-\contentsline {paragraph}{Firebase}{21}{figure.caption.35}%
-\contentsline {paragraph}{Cassandra}{22}{figure.caption.36}%
+\contentsline {paragraph}{MongoDB:}{21}{figure.caption.34}%
+\contentsline {paragraph}{Firebase:}{21}{figure.caption.35}%
+\contentsline {paragraph}{Cassandra:}{22}{figure.caption.36}%
 \contentsline {section}{\numberline {2.2}Metodología}{22}{section.2.2}%
 \contentsline {subsubsection}{\textbf {Metodología en Cascada}}{22}{section.2.2}%
 \contentsline {subsubsection}{Metodología Incremental}{23}{section.2.2}%
@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {3.1}Historias de Usuario}{27}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Investigación y Documentación}{28}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Gestión de Usuarios}{31}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Gestión de Perfiles}{33}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.3}Gestión de Perfiles}{32}{subsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.1.4}Módulo de Correspondencia}{34}{subsection.3.1.4}%
 \contentsline {subsection}{\numberline {3.1.5}Módulo de Correcciones}{36}{subsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.1.6}Funcionalidad Social}{38}{subsection.3.1.6}%
