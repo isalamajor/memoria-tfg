@@ -506,6 +506,9 @@ INPUT ./secciones/estado_del_arte.tex
 INPUT ./secciones/estado_del_arte.tex
 INPUT secciones/estado_del_arte.tex
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/txfonts/t1xi.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/vf/public/txfonts/t1xi.vf
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/txfonts/rtxi.tfm
 INPUT ./imagenes/HTML5-logo.png
 INPUT ./imagenes/HTML5-logo.png
 INPUT ./imagenes/HTML5-logo.png
@@ -517,9 +520,6 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txtt.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txtt.fd
 INPUT c:/texlive/2025/texmf-dist/tex/latex/txfonts/t1txtt.fd
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/vf/public/txfonts/t1xi.vf
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/txfonts/rtxptmri.tfm
-INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/txfonts/rtxi.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/vf/public/txfonts/t1xr.vf
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/txfonts/rtxptmr.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/txfonts/rtxr.tfm

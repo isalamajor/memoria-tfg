@@ -462,6 +462,33 @@
       \verb https://developer.mozilla.org/en-US/docs/Web/JavaScript
       \endverb
     \endentry
+    \entry{gfg_fetch_vs_ajax}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhashraw}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-02-15}
+      \field{title}{Difference between AJAX and Fetch API}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/javascript/difference-between-ajax-and-fetch-api/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/javascript/difference-between-ajax-and-fetch-api/
+      \endverb
+    \endentry
     \entry{ts_handbook}{online}{}{}
       \name{author}{1}{}{%
         {{hash=d9af60f0ea132af82c45286bcc92d6d7}{%
@@ -1304,6 +1331,33 @@
       \verb https://imaginaformacion.com/tutoriales/que-es-postman-y-para-que-sirve
       \endverb
     \endentry
+    \entry{ibm_rest_apis}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=cbf44511d041dc6d1dd73cc0c033122c}{%
+           family={{IBM}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{fullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{fullhashraw}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{bibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorbibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authornamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorfullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorfullhashraw}{cbf44511d041dc6d1dd73cc0c033122c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-06-09}
+      \field{title}{What are REST APIs?}
+      \verb{urlraw}
+      \verb https://www.ibm.com/es-es/think/topics/rest-apis
+      \endverb
+      \verb{url}
+      \verb https://www.ibm.com/es-es/think/topics/rest-apis
+      \endverb
+    \endentry
     \entry{insomnia_docs}{online}{}{}
       \name{author}{1}{}{%
         {{hash=866d815adb055e7d4ed23ac402b221f1}{%
@@ -1621,8 +1675,8 @@
       \strng{authorfullhash}{206e3718af092fd1d12f80cae771ccac}
       \strng{authorfullhashraw}{206e3718af092fd1d12f80cae771ccac}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-01-15}
@@ -1649,8 +1703,8 @@
       \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
       \strng{authorfullhashraw}{9c677286866aad38f8e9b660f5411814}
       \field{extraname}{3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-01-15}
@@ -1677,8 +1731,8 @@
       \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
       \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-01-15}
@@ -1704,8 +1758,8 @@
       \strng{authornamehash}{a20cdcd381b928d63923202202c61322}
       \strng{authorfullhash}{a20cdcd381b928d63923202202c61322}
       \strng{authorfullhashraw}{a20cdcd381b928d63923202202c61322}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-01-15}
@@ -1881,8 +1935,8 @@
       \strng{authornamehash}{b9d7afa8ba0ad87b9887ad19221d9917}
       \strng{authorfullhash}{b9d7afa8ba0ad87b9887ad19221d9917}
       \strng{authorfullhashraw}{b9d7afa8ba0ad87b9887ad19221d9917}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-05-08}
@@ -1908,8 +1962,8 @@
       \strng{authornamehash}{b2c31f1087b408a573df76bc50b8b534}
       \strng{authorfullhash}{b2c31f1087b408a573df76bc50b8b534}
       \strng{authorfullhashraw}{b2c31f1087b408a573df76bc50b8b534}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-05-12}
@@ -2209,8 +2263,8 @@
       \strng{authorfullhash}{206e3718af092fd1d12f80cae771ccac}
       \strng{authorfullhashraw}{206e3718af092fd1d12f80cae771ccac}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-05-07}
@@ -2236,8 +2290,8 @@
       \strng{authornamehash}{8226588f03da49b857e5ddf8c508dd2d}
       \strng{authorfullhash}{8226588f03da49b857e5ddf8c508dd2d}
       \strng{authorfullhashraw}{8226588f03da49b857e5ddf8c508dd2d}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-01-23}

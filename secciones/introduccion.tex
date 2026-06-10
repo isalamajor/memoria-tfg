@@ -3,14 +3,14 @@ Hoy en día, la implementación de la tecnología juega un papel esencial en el 
 
 Las aplicaciones de intercambio de idiomas existentes se centran, en muchos casos, en el chat instantáneo, en videollamadas o en ejercicios preparados. Sin embargo, la práctica de la expresión escrita suele quedar en un segundo plano, a pesar de ser una habilidad fundamental tanto en contextos académicos como profesionales. La corrección detallada de textos requiere tiempo y estructura, lo cual construye una base sólida a la hora de aprender un nuevo idioma.
 
-El objetivo de este Trabajo de Fin de Grado es el de diseñar y desarrollar una aplicación web que permita la gestión integral de textos escritos por usuarios que desean practicar idiomas, así como el envío de dichos textos a otros usuarios para su corrección y devolución. Se trata de una plataforma que busca ser eficiente, práctica y agradable de usar; que facilite el acceso al aprendizaje mediante un método personal, cercano y social. Al basarse en la redacción, este sistema se presta para ser un lugar donde expresarse, compartir (o simplemente articular) ideas, y abrir paso a la imaginación y a la colección de entradas escritas por uno mismo que no solo podrán servir para la práctica de un idioma sino para conectar y colaborar con usuarios de todo el mundo.
+El objetivo de este Trabajo de Fin de Grado es diseñar y desarrollar una aplicación web que permita la gestión integral de textos escritos por usuarios que desean practicar idiomas, así como el envío de dichos textos a otros usuarios para su corrección y devolución. Se trata de una plataforma que busca ser eficiente, práctica y agradable de usar; que facilite el acceso al aprendizaje mediante un método personal, cercano y social. Al basarse en la redacción, este sistema se presta para ser un lugar donde expresarse, compartir (o simplemente articular) ideas, y abrir paso a la imaginación y a la colección de entradas escritas por uno mismo que no solo podrán servir para la práctica de un idioma sino para conectar y colaborar con usuarios de todo el mundo.
 
 En definitiva, se busca ofrecer una solución tecnológica que fomente el aprendizaje de idiomas mediante la escritura y la corrección entre pares, mejorando la calidad de la práctica escrita y facilitando la conexión entre personas con intereses comunes.
 
 \section{Motivación}
 Desarrollar una aplicación de intercambio de idiomas centrada en la redacción y corrección de textos resulta especialmente interesante por varios motivos.
 
-En primer lugar, responde a una necesidad real de muchos estudiantes de idiomas que buscan practicar la escritura y recibir correcciones de hablantes más avanzados o nativos, sin depender exclusivamente de profesores o academias. Presentar esta práctica en formato de red social lo hace considerablemente más atractivo para las nuevas generaciones, ya que ésta se torna más amena, interactiva y personal.
+En primer lugar, responde a una necesidad real de muchos estudiantes de idiomas que buscan practicar la escritura y recibir correcciones de hablantes más avanzados o nativos, sin depender exclusivamente de profesores o academias. Presentar esta práctica en formato de red social lo hace considerablemente más atractivo para las nuevas generaciones, ya que esta se torna más amena, interactiva y personal.
 
 En segundo lugar, el proyecto permite aplicar y consolidar conocimientos técnicos adquiridos durante el grado, así como ampliarlos mediante el aprendizaje de nuevos contenidos, utilizando tecnologías actuales del ecosistema JavaScript como React, Next.js, Node.js, Express, Mongoose y MongoDB. Dichas tecnologías serán presentadas y estudiadas en más profundidad más adelante en este documento, y su uso supone una oportunidad para trabajar con una arquitectura moderna, orientada a servicios y preparada para escalar.
 
@@ -44,7 +44,7 @@ Al tratarse de una aplicación que estaría alojada en Internet y que gestiona d
 
     \item Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSICE) \cite{lssice}: regula la prestación de servicios por vía electrónica, incluyendo aspectos como el acceso por parte del usuario a los datos de identificación del responsable del software, condiciones de uso y posibles comunicaciones comerciales.
 
-    \item Reglamento de Ciberresiliencia (CRA) \cite{cra_ue}: establece medidas para garantizar la seguridad de productos de software y hardware, y finalmente proteger a los consumidores. Exige la mitigación de vulnerabilidades comunes, documentación de riesgos, y actualizaciones periódicas de seguridad, entre otras cosas.
+    \item Reglamento de Ciberresiliencia (CRA) \cite{cra_ue}: establece medidas para garantizar la seguridad de productos de software y hardware, y finalmente proteger a los consumidores. Exige la mitigación de vulnerabilidades comunes, documentación de riesgos y actualizaciones periódicas de seguridad.
 
     \item Ley de Propiedad Intelectual \cite{lpi}: regula la propiedad intelectual, incluyendo los derechos de autor. Salvo excepciones, el consentimiento del autor o autores es necesario en caso de reutilización de contenidos, textos de ejemplo o recursos de terceros dentro de la aplicación.
 \end{itemize}
@@ -84,9 +84,9 @@ Los elementos de \textbf{software} son los programas informáticos que otorgan c
 Esta memoria se estructura en seis capítulos además del índice de contenidos, figuras y tablas:
 
 \begin{enumerate}
-    \item Introducción: en esta sección se introduce el contexto de este documento y del proyecto, se expone la motivación para su realización, los objetivos que ésta persigue, el marco regulador que encuadra el contexto legislativo en que se desarrolla este software y los medios tanto físicos como digitales empleados, además del apartado actual que incluye la explicación de los apartados del documento.
+    \item Introducción: en esta sección se introduce el contexto de este documento y del proyecto, se expone la motivación para su realización, los objetivos que esta persigue, el marco regulador que encuadra el contexto legislativo en que se desarrolla este software y los medios tanto físicos como digitales empleados, además del apartado actual.
 
-    \item Estado del arte: esta capítulo cuenta con cuatro secciones. En la primera, se hace un recorrido por las tecnologías presentes y más utilizadas actualmente para el desarrollo de aplicaciones web, pasando por los campos de frontend, entornos de trabajo, backend, creación y consumo de APIs y bases de datos. En la segunda sección, se exponen algunas de las metodologías principales para el desarrollo de un proyecto de software. La tercera sección presenta varios ejemplos de negocio que podrían ser similares a la aplicación aquí desarrollada y por tanto actuar como competencia. Por último, encontramos una justificación de la solución aquí documentada.
+    \item Estado del arte: este capítulo cuenta con cuatro secciones. En la primera, se hace un recorrido por las tecnologías presentes y más utilizadas actualmente para el desarrollo de aplicaciones web, pasando por los campos de frontend, entornos de trabajo, backend, creación y consumo de APIs y bases de datos. En la segunda sección, se exponen algunas de las metodologías principales para el desarrollo de un proyecto de software. La tercera sección presenta varios ejemplos de negocio que podrían ser similares a la aplicación aquí desarrollada y por tanto actuar como competencia. Por último, encontramos una justificación de la solución aquí documentada.
 
     \item Análisis y planificación: se presentan las historias de usuario y pruebas de aceptación que definen y validan la documentación y las funcionalidades de la aplicación, así como la matriz de trazabilidad que los contrapone. Tras ello, este capítulo incluye la planificación que se ha seguido para la realización del proyecto.
 
@@ -94,5 +94,5 @@ Esta memoria se estructura en seis capítulos además del índice de contenidos,
 
     \item Entorno socioeconómico: incluye tanto los costes del proyecto como su impacto socioeconómico en el sector.
 
-    \item Conclusiones: se proponen diversas mejoras como líneas de trabajo futuro, así como una conclusión final valorando el proceso de aprendizaje adquirido durante el desarrollo del trabajo.
+    \item Conclusiones: se revisa el cumplimiento de los objetivos y se proponen diversas mejoras, líneas de trabajo futuro y una conclusión final valorando el proceso de aprendizaje adquirido durante el desarrollo del trabajo.
 \end{enumerate}

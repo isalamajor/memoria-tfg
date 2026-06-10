@@ -1,6 +1,6 @@
 ﻿\section{Historias de Usuario}
 
-Las Historias de Usuario (HU) son una herramienta básica en la gestión de proyectos mediante metodologías ágiles como SCRUM. Se utilizan para definir las funciones de un sistema desde la perspectiva del usuario final, la forma que las necesidades y funcionalidades que se plantean para el proyecto estén orientadas a aportar valor real al usuario del software. No se debe confundir con los requisitos del sistema, un método más tradicional que suele resultar rígido y técnico en comparación con las Historias de Usuario, las cuales consisten en una explicación breve y directa de cada funcionalidad del sistema.\cite{atlassian_user_stories}
+Las Historias de Usuario (HU) son una herramienta básica en la gestión de proyectos mediante metodologías ágiles como Scrum. Se utilizan para definir las funciones de un sistema desde la perspectiva del usuario final, de forma que las necesidades y funcionalidades que se plantean para el proyecto estén orientadas a aportar valor real al usuario. No se debe confundir con los requisitos del sistema, un método más tradicional que suele resultar rígido y técnico en comparación con las Historias de Usuario, las cuales consisten en una explicación breve y directa de cada funcionalidad del sistema.\cite{atlassian_user_stories}
 
 Este enfoque orientado al usuario final se consigue mediante esta fórmula:
 
@@ -9,7 +9,7 @@ Este enfoque orientado al usuario final se consigue mediante esta fórmula:
     \indent \indent para \textit{[obtener un valor o beneficio]}.
 
 
-Así, se expresa el requerimiento con una descripción concisa, por ejemplo, "Como usuario registrado, quiero recuperar mi contraseña, para poder acceder a mi cuenta en caso de que la olvide". Además, no se trata de un requisito cerrado sino de plantear situaciones para que el cliente y los desarrolladores tengan una conversación sobre las funcionalidades y sus detalles.
+Así, se expresa el requerimiento con una descripción concisa, por ejemplo: "Como usuario registrado, quiero recuperar mi contraseña, para poder acceder a mi cuenta en caso de olvidarla". No se trata de un requisito cerrado sino de plantear situaciones para que el cliente y los desarrolladores tengan una conversación sobre las funcionalidades y sus detalles.
 
 \begin{comment}
 
@@ -25,7 +25,7 @@ Así, se expresa el requerimiento con una descripción concisa, por ejemplo, "Co
 
 Cada historia cuenta con un identificador (HU-XX), que facilitará reconocerlas, cuantificarlas y asociarlas con las Pruebas de Aceptación; una descripción, siguiendo la fórmula presentada anteriormente; su prioridad ('Alta', 'Media' o 'Baja'), que representa la relevancia para el cliente y el orden que ocupará en el desarrollo; la estimación, que cuantifica las horas de trabajo que requiere la compleción de la historia mediante un sistema de puntos en el que 1 punto equivale a 4 horas; las tareas a realizar para satisfacerla; y las Pruebas de Aceptación para validarla.
 
-A continuación, el listado de Historias de Usuario para el proyecto aquí desarrollado separadas en varias secciones: Investigación y Documentación, Gestión de Usuarios, Gestión de Perfiles, Módulo de Correspondencia, Módulo de Correcciones y Funcionalidad Social.
+A continuación, el listado de Historias de Usuario para el proyecto separadas en varias secciones: Investigación y Documentación, Gestión de Usuarios, Gestión de Perfiles, Módulo de Correspondencia, Módulo de Correcciones y Funcionalidad Social.
 
 \newcommand{\huPriorityEstimationRow}[2]{%
 \textbf{PRIORIDAD} &
@@ -42,7 +42,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \begin{tabular}{|P{0.2\textwidth}|P{0.75\textwidth}|}
 \hline
 \multicolumn{2}{|c|}{\textbf{HU-01}} \\ \hline
-\textbf{TÍTULO} & Redacción de apartados introductorios el documento \\ \hline
+\textbf{TÍTULO} & Redacción de apartados introductorios del documento \\ \hline
 \huPriorityEstimationRow{Baja}{1}
 \textbf{DESCRIPCIÓN} & Como desarrolladora, quiero estructurar e introducir el documento de forma clara, y presentar el marco regulador pertinente. \\ \hline
 \textbf{TAREAS} &
@@ -50,7 +50,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
         \item Investigar plantillas y normativa de la universidad
         \item Consultar ejemplos de TFG de otros compañeros
         \item Investigar sobre las leyes que componen el marco regulador que incumbe a un proyecto web de este tipo
-        \item Redactar los apartados de resumen, dedicación, motivación, objetivos, marco regulador, medios empleados y estructura del documento.
+        \item Redactar los apartados de resumen, dedicación, motivación, objetivos, marco regulador, medios empleados y estructura del documento
     \end{itemize} \\ \hline
 \textbf{PRUEBAS DE ACEPTACIÓN} & PA-02 \\ \hline
 \end{tabular}
@@ -133,9 +133,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \textbf{TAREAS} &
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Plantear las necesidades de la aplicación y del documento
-        \item Redactar este apartado de "Análisis y Planificación"
-        \item Documentar la planificación que se ha seguido y la metodología y
-        herramientas que se han utilizado para ello
+        \item Redactar este apartado de Análisis y Planificación
     \end{itemize}
 \\ \hline
 \textbf{PRUEBAS DE ACEPTACIÓN} & PA-01, PA-02 \\ \hline
@@ -149,14 +147,14 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \begin{tabular}{|P{0.2\textwidth}|P{0.75\textwidth}|}
 \hline
 \multicolumn{2}{|c|}{\textbf{HU-06}} \\ \hline
-\textbf{TÍTULO} & Documentación del prototipado, arquitectura final y modelo económico de la aplicación \\ \hline
+\textbf{TÍTULO} & Documentación de la arquitectura final y modelo económico de la aplicación \\ \hline
 \huPriorityEstimationRow{Media}{5}
-\textbf{DESCRIPCIÓN} & Como diseñadora, quiero crear prototipos para definir una línea visual representativa de la interfaz de la aplicación, y documentar tanto ese proceso como el producto final de estructura y arquitectura del proyecto de software. \\ \hline
+\textbf{DESCRIPCIÓN} & Como desarrolladora, quiero documentar el proceso de la construcción del producto de sofware final y el modelo económico, incluyendo presupuesto y marco socioeconómico. \\ \hline
 \textbf{TAREAS} &
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
-        \item Crear prototipos de las interfaces de la aplicación e incluirlos en la sección "Análisis y planificación" del documento
-        \item Tras desarrollar la aplicación, documentar su estructura y arquitectura en la sección "Arquitectura" del documento
-        \item Redacción del apartado de presupuesto del proyecto y marco socio-económico
+        \item Desarrollar y probar la aplicación: frontend, backend y base de datos.
+        \item Documentar su estructura, arquitectura y puntos de interés en la sección Arquitectura del Software
+        \item Redacción del apartado Entorno Socioeconómico
     \end{itemize}
 \\ \hline
 \textbf{PRUEBAS DE ACEPTACIÓN} & PA-02 \\ \hline
@@ -172,11 +170,11 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \multicolumn{2}{|c|}{\textbf{HU-07}} \\ \hline
 \textbf{TÍTULO} & Plantear conclusiones y líneas de trabajo futuro \\ \hline
 \huPriorityEstimationRow{Baja}{1}
-\textbf{DESCRIPCIÓN} & Como desarrolladora, al finalizar el grueso del trabajo quiero plantear aspectos del producto final a mejorar en el futuro y conclusiones para cerrar el documento. \\ \hline
+\textbf{DESCRIPCIÓN} & Como desarrolladora, al finalizar el grueso del trabajo quiero revisar el cumplimiento de los objetivos y plantear aspectos del producto final a mejorar en el futuro y conclusiones para cerrar el documento. \\ \hline
 \textbf{TAREAS} &
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
-        \item Analizar el producto final para hacer una reflexión de las posibles mejoras a futuro y del recorrido de aprendizaje en la realización de este trabajo
-        \item Redactar sección de "Líneas de Trabajo Futuro y Conclusión"
+        \item Analizar el producto final para hacer una reflexión sobre los objetivos alcanzados, las posibles mejoras a futuro y el recorrido de aprendizaje en la realización de este trabajo
+        \item Redactar la sección de Conclusiones
     \end{itemize}
 \\ \hline
 \textbf{PRUEBAS DE ACEPTACIÓN} & PA-02 \\ \hline
@@ -215,7 +213,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \begin{tabular}{|P{0.2\textwidth}|P{0.75\textwidth}|}
 \hline
 \multicolumn{2}{|c|}{\textbf{HU-09}} \\ \hline
-\textbf{TÍTULO} & Navegación entre página y Cierre de sesión \\ \hline
+\textbf{TÍTULO} & Navegación entre página y cierre de sesión \\ \hline
 \huPriorityEstimationRow{Media}{1}
 \textbf{DESCRIPCIÓN} & Como usuario registrado, quiero poder navegar fácilmente entre las páginas de la aplicación y cerrar la sesión iniciada \\ \hline
 \textbf{TAREAS} &
@@ -348,7 +346,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \textbf{DESCRIPCIÓN} & Como autor, quiero guardar mi progreso para terminar la carta en otro momento. \\ \hline
 \textbf{TAREAS} &
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
-        \item Incluir el la interfaz de creación de carta la opción de guardar la carta
+        \item Incluir en la interfaz de creación de carta la opción de guardar la carta
         \item Crear una interfaz que permita acceder a una carta, editarla y guardar los cambios
     \end{itemize}\\ \hline
 \textbf{PRUEBAS DE ACEPTACIÓN} & PA-15 \\ \hline
@@ -389,7 +387,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Crear una interfaz que muestre las cartas escritas por el usuario
         \item Añadir barras con herramientas de filtrado por título, idioma o diario
-        \item Añadir opción de visualizar la lista ordenada por diarios, y la lista de diarios.
+        \item Añadir opción de visualizar la lista ordenada por diarios, y la lista de diarios
         \item Crear el servicio para acceder al listado de cartas
         \item Implementar paginación y filtrado en este servicio
     \end{itemize}\\ \hline
@@ -436,7 +434,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Añadir a la interfaz de cartas creadas, un apartado con la lista de cartas recibidas
         \item Incluir en esta lista una distinción por colores de carta corregida o pendiente
-        \item Añadir barras con herramientas de filtrado por título, remitente o si la carta está pendiente de corregir
+        \item Añadir barras con herramientas de filtrado por título, remitente o pendiente de corregir
         \item Crear el servicio para acceder al listado de cartas recibidas
         \item Implementar paginación y filtrado en este servicio
     \end{itemize}\\ \hline
@@ -453,7 +451,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \multicolumn{2}{|c|}{\textbf{HU-20}} \\ \hline
 \textbf{TÍTULO} & Eliminación de cartas recibidas \\ \hline
 \huPriorityEstimationRow{Baja}{1}
-\textbf{DESCRIPCIÓN} & Como revisor, quiero poder borrar de mi buzón de recibidas aquellas cartas que han sido eliminadas por el usuario que me las envió, en caso de no querer conservar la carta y las correcciones que le he aplicado. \\ \hline
+\textbf{DESCRIPCIÓN} & Como revisor, quiero poder borrar de mi buzón de recibidas aquellas cartas que han sido eliminadas por el usuario que me las envió, en caso de no querer conservar la carta y las correcciones que he aplicado. \\ \hline
 \textbf{TAREAS} &
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Añadir a la interfaz con la lista de cartas recibidas la opción de eliminar una carta que ha sido eliminada por su autor
@@ -497,7 +495,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \textbf{TAREAS} &
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Incluir en la interfaz de correción un campo para añadir retroalimentación o comentarios finales
-        \item Incluir en el servicio de guardado y acceso a cartas corregidas este campo
+        \item Incluir ese campo en el servicio de guardado y acceso a cartas corregidas
     \end{itemize}\\ \hline
 \textbf{PRUEBAS DE ACEPTACIÓN} & PA-23 \\ \hline
 \end{tabular}
@@ -535,10 +533,10 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \textbf{DESCRIPCIÓN} & Como remitente, quiero recibir la corrección de la carta que envié a mi amigo una vez este la haya corregido y enviado de vuelta. \\ \hline
 \textbf{TAREAS} &
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
-        \item Añadir a las tarjetas de la interfaz de listas de cartas un botón por cada corrección recibida para esa carta.
-        \item Crear una página de visualización de corrección, similar a la de corrección pero no editable.
-        \item Añadir un link hacia esa página al click del botón mencionado anteriormente.
-        \item Crear el servicio para obtener la información de la corrección de una carta.
+        \item Añadir a las tarjetas de la interfaz de listas de cartas un botón por cada corrección recibida para esa carta
+        \item Crear una página de visualización de corrección, similar a la de corrección pero no editable
+        \item Añadir un link hacia esa página al click del botón mencionado anteriormente
+        \item Crear el servicio para obtener la información de la corrección de una carta
     \end{itemize}\\ \hline
 \textbf{PRUEBAS DE ACEPTACIÓN} & PA-24 \\ \hline
 \end{tabular}
@@ -560,7 +558,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \textbf{DESCRIPCIÓN} & Como usuario, quiero que al plataforma me sugiera usuarios que puedo añadir como amigos basándose en intereses lingüísticos comunes. \\ \hline
 \textbf{TAREAS} &
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
-        \item Crear una interfaz que muestra una lista de usuarios sugeridos
+        \item Crear una interfaz que muestre una lista de usuarios sugeridos
         \item Crear el servicio para acceder y crear dicha lista mediante un algoritmo de recomendación personalizado
     \end{itemize}\\ \hline
 \textbf{PRUEBAS DE ACEPTACIÓN} & PA-25 \\ \hline
@@ -595,7 +593,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \multicolumn{2}{|c|}{\textbf{HU-27}} \\ \hline
 \textbf{TÍTULO} & Gestión de solicitudes de amistad \\ \hline
 \huPriorityEstimationRow{Alta}{2}
-\textbf{DESCRIPCIÓN} & Como usuario, quiero solicitar amistad a alguien para intercambiar cartas y correcciones; y rechazar o aceptar las solicitudes de amistad que me lleguen. \\ \hline
+\textbf{DESCRIPCIÓN} & Como usuario, quiero solicitar amistad a otros usuarios para intercambiar cartas y correcciones; y rechazar o aceptar las solicitudes de amistad que me lleguen. \\ \hline
 \textbf{TAREAS} &
     \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item Añadir a las tarjetas de usuarios sugeridos o buscados de la interfaz de amistades un botón para enviar una solicitud de amistad
@@ -616,7 +614,7 @@ A continuación, el listado de Historias de Usuario para el proyecto aquí desar
 \begin{tabular}{|P{0.2\textwidth}|P{0.75\textwidth}|}
 \hline
 \multicolumn{2}{|c|}{\textbf{HU-28}} \\ \hline
-\textbf{TÍTULO} & Visualización y Gestión del Listado de amigos \\ \hline
+\textbf{TÍTULO} & Visualización y gestión del listado de amigos \\ \hline
 \huPriorityEstimationRow{Baja}{1}
 \textbf{DESCRIPCIÓN} & Como usuario, quiero ver quiénes son mis amigos actuales para saber con quién puedo interactuar, así como eliminar un contacto si ya no es de mi interés intercambiar cartas con él. \\ \hline
 \textbf{TAREAS} &
@@ -647,7 +645,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-01 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-01}} \\ \hline
 \textbf{TÍTULO} & Aceptación de la propuesta \\ \hline
 \textbf{HU IMPLICADAS} & HU-05 \\ \hline
 \textbf{DESCRIPCIÓN} & Obtención de una validación positiva por parte del tutor de las historias de usuario. \\ \hline
@@ -665,7 +663,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-02 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-02}} \\ \hline
 \textbf{TÍTULO} & Aceptación de la estructura y contenido del documento \\ \hline
 \textbf{HU IMPLICADAS} & HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07 \\ \hline
 \textbf{DESCRIPCIÓN} & Obtención de una validación positiva por parte del tutor de la estructura planteada en el documento, el esqueleto de las diferentes secciones y su contenido. \\ \hline
@@ -684,7 +682,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-03 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-03}} \\ \hline
 \textbf{TÍTULO} & Registro en la plataforma como nuevo usuario \\ \hline
 \textbf{HU IMPLICADAS} & HU-08 \\ \hline
 \textbf{DESCRIPCIÓN} & Asegurar que un nuevo usuario puede registrarse y que el sistema impide el registro hasta que el correo es verificado. \\ \hline
@@ -713,10 +711,10 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-04 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-04}} \\ \hline
 \textbf{TÍTULO} & Inicio de sesión en la plataforma \\ \hline
 \textbf{HU IMPLICADAS} & HU-08 \\ \hline
-\textbf{DESCRIPCIÓN} & Asegurar que un usuario puede acceder a la plataforma introduciendo sus credenciales. \\ \hline
+\textbf{DESCRIPCIÓN} & Asegurar que el usuario puede acceder a la plataforma introduciendo sus credenciales. \\ \hline
 \textbf{PROCEDIMIENTO} &
     \begin{enumerate}[itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt]
         \item El usuario selecciona el botón "Log in" para acceder al formulario de inicio de sesión.
@@ -733,7 +731,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-05 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-05}} \\ \hline
 \textbf{TÍTULO} & Flujo de Recuperación de Credenciales \\ \hline
 \textbf{HU IMPLICADAS} & HU-10 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar que un usuario que ha olvidado su contraseña puede restablecerla mediante código por email. \\ \hline
@@ -762,7 +760,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-06 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-06}} \\ \hline
 \textbf{TÍTULO} & Persistencia de sesión \\ \hline
 \textbf{HU IMPLICADAS} & HU-08 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar que el token de autenticación persiste en el navegador aunque este se cierre. \\ \hline
@@ -783,7 +781,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-07 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-07}} \\ \hline
 \textbf{TÍTULO} & Menú de Navegación \\ \hline
 \textbf{HU IMPLICADAS} & HU-09 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar la existencia y funcionamiento del menú de navegación desplegable. \\ \hline
@@ -804,7 +802,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-08 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-08}} \\ \hline
 \textbf{TÍTULO} & Cierre de sesión \\ \hline
 \textbf{HU IMPLICADAS} & HU-09 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar el cierre de sesión. \\ \hline
@@ -825,7 +823,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-09 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-09}} \\ \hline
 \textbf{TÍTULO} & Protección de rutas \\ \hline
 \textbf{HU IMPLICADAS} & HU-08 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar el correcto funcionamiento de las rutas protegidas de la aplicación, asegurando que un usuario no autenticado no puede acceder a ellas y es redirigido a la página de inicio de sesión.
@@ -846,7 +844,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-10 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-10}} \\ \hline
 \textbf{TÍTULO} & Visualización del Perfil Propio \\ \hline
 \textbf{HU IMPLICADAS} & HU-11 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar la existencia y propiedad de la página de perfil del usuario. \\ \hline
@@ -867,7 +865,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-11 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-11}} \\ \hline
 \textbf{TÍTULO} & Edición del Perfil Propio \\ \hline
 \textbf{HU IMPLICADAS} & HU-11 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar que los campos de la página de perfil de usuario pueden ser editados correctamente. \\ \hline
@@ -894,7 +892,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-12 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-12}} \\ \hline
 \textbf{TÍTULO} & Cambio de contraseña \\ \hline
 \textbf{HU IMPLICADAS} & HU-11 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar la existencia y correcto funcionamiento del panel de cambio de contraseña. \\ \hline
@@ -921,7 +919,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-13 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-13}} \\ \hline
 \textbf{TÍTULO} & Eliminación de cuenta \\ \hline
 \textbf{HU IMPLICADAS} & HU-12 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar la existencia y correcto funcionamiento del panel de eliminación de cuenta. \\ \hline
@@ -947,7 +945,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-14 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-14}} \\ \hline
 \textbf{TÍTULO} & Visualización de Perfil Ajeno \\ \hline
 \textbf{HU IMPLICADAS} & HU-13 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar la visualización del perfil de otro usuario y la restricción de edición sobre el mismo.\\ \hline
@@ -971,7 +969,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-15 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-15}} \\ \hline
 \textbf{TÍTULO} & Gestión de Borradores y Persistencia de Cartas Creadas \\ \hline
 \textbf{HU IMPLICADAS} & HU-14, HU-15 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar que una carta que se ha creado puede ser guardada parcialmente y retomada posteriormente sin perder información. \\ \hline
@@ -998,7 +996,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-16\\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-16}} \\ \hline
 \textbf{TÍTULO} & Envío de Cartas a Contactos \\ \hline
 \textbf{HU IMPLICADAS} & HU-16 \\ \hline
 \textbf{DESCRIPCIÓN} & Asegurar que una carta puede ser compartida con otros usuarios desde la página de edición. \\ \hline
@@ -1022,7 +1020,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-17 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-17}} \\ \hline
 \textbf{TÍTULO} & Recepción de Cartas Compartidas \\ \hline
 \textbf{HU IMPLICADAS} & HU-16 \\ \hline
 \textbf{DESCRIPCIÓN} & Asegurar que una carta enviada por otro usuario aparece correctamente en el buzón del usuario destinatario.  \\ \hline
@@ -1042,7 +1040,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-18 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-18}} \\ \hline
 \textbf{TÍTULO} & Filtrado y Paginación de Cartas Enviadas \\ \hline
 \textbf{HU IMPLICADAS} & HU-17 \\ \hline
 \textbf{DESCRIPCIÓN} & Verificar el correcto funcionamiento de la paginación, filtrado y ordenación del listado de cartas propias. \\ \hline
@@ -1064,7 +1062,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-19 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-19}} \\ \hline
 \textbf{TÍTULO} & Borrado de Cartas No Compartidas \\ \hline
 \textbf{HU IMPLICADAS} & HU-18 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar que al eliminar una carta no compartida, esta desaparece del listado y su registro se elimina de la base de datos (borrado físico). \\ \hline
@@ -1089,7 +1087,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-20 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-20}} \\ \hline
 \textbf{TÍTULO} & Borrado de Cartas Compartidas\\ \hline
 \textbf{HU IMPLICADAS} & HU-18 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar que al borrar una carta compartida, esta desaparece del listado del remitente pero permanece accesible para el destinatario como carta eliminada (borrado lógico). \\ \hline
@@ -1115,7 +1113,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-21 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-21}} \\ \hline
 \textbf{TÍTULO} & Gestión y Filtrado del Buzón de Cartas Recibidas\\ \hline
 \textbf{HU IMPLICADAS} & HU-19 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar que el buzón de cartas recibidas permite distinguir visualmente el estado de las cartas y aplicar filtros por estado (corregida, pendiente o eliminada por el autor), remitente y título, junto con paginación del listado. \\ \hline
@@ -1137,7 +1135,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-22 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-22}} \\ \hline
 \textbf{TÍTULO} & Borrado de Cartas Recibidas\\ \hline
 \textbf{HU IMPLICADAS} & HU-20 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar que al eliminar una carta recibida que ya ha sido eliminada por su remitente, esta desaparece del buzón del destinatario y de la base de datos (borrado físico).\\ \hline
@@ -1159,7 +1157,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-23 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-23}} \\ \hline
 \textbf{TÍTULO} & Página de Corrección y Envío de Carta Corregida \\ \hline
 \textbf{HU IMPLICADAS} & HU-21, HU-22, HU-23 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar el proceso de corrección de una carta recibida, incluyendo la adición de anotaciones sobre el texto, comentarios finales y el envío de la corrección al autor. \\ \hline
@@ -1185,7 +1183,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-24 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-24}} \\ \hline
 \textbf{TÍTULO} & Recepción de Carta Corregida y Visualización de Correcciones \\ \hline
 \textbf{HU IMPLICADAS} & HU-24 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar la recepción de una corrección, de forma que esta quede accesible desde el listado de cartas del usuario remitente. \\ \hline
@@ -1207,7 +1205,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-25 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-25}} \\ \hline
 \textbf{TÍTULO} & Interfaz de Usuarios Sugeridos\\ \hline
 \textbf{HU IMPLICADAS} & HU-25 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar que el sistema recomienda usuarios con intereses afines. \\ \hline
@@ -1228,7 +1226,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-26 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-26}} \\ \hline
 \textbf{TÍTULO} & Búsqueda de Usuarios \\ \hline
 \textbf{HU IMPLICADAS} & HU-26 \\ \hline
 \textbf{DESCRIPCIÓN} & Comprobar que el buscador por nombre de usuario  funciona correctamente. \\ \hline
@@ -1249,7 +1247,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-27 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-27}} \\ \hline
 \textbf{TÍTULO} & Flujo de Solicitud de Amistad \\ \hline
 \textbf{HU IMPLICADAS} & HU-27 \\ \hline
 \textbf{DESCRIPCIÓN} & Verificar que el envío de la solicitud de amistad queda disponible para su aceptación o rechazo por parte del usuario receptor de dicha solicitud. \\ \hline
@@ -1271,7 +1269,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-28 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-28}} \\ \hline
 \textbf{TÍTULO} & Aceptación y Rechazo de Solicitudes de Amistad \\ \hline
 \textbf{HU IMPLICADAS} & HU-27 \\ \hline
 \textbf{DESCRIPCIÓN} &  Comprobar que el usuario puede aceptar o rechazar solicitudes de amistad, actualizando correctamente su lista de amigos y eliminando la solicitud tras su gestión. \\ \hline
@@ -1293,7 +1291,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-29 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-29}} \\ \hline
 \textbf{TÍTULO} & Visualización de la Lista de Amigos \\ \hline
 \textbf{HU IMPLICADAS} & HU-28 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar que el usuario puede visualizar su lista de contactos con paginación. \\ \hline
@@ -1314,7 +1312,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \centering\small
 \begin{tabular}{|P{0.22\textwidth}|P{0.73\textwidth}|}
 \hline
-\textbf{IDENTIFICADOR} & PA-30 \\ \hline
+\multicolumn{2}{|c|}{\textbf{PA-30}} \\ \hline
 \textbf{TÍTULO} & Eliminación de Contactos \\ \hline
 \textbf{HU IMPLICADAS} & HU-28 \\ \hline
 \textbf{DESCRIPCIÓN} & Validar que el usuario puede eliminar un contacto de su lista de amigos. \\ \hline
@@ -1337,7 +1335,7 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \newpage
 \section{Matriz de Trazabilidad}
 
-En esta tabla se presenta la correspondencia entre las Historias de Usuario y las Pruebas de Aceptación. Se trata de la matriz de trazabilidad que ayuda a verificar que cada Historia de Usuario está cubierta por sus correspondientes Pruebas de Aceptación (una o varias), de forma que no se quede ninguna sin probar y validar. Como se puede observar, todas las Historias de Usuario quedan cubiertas.
+En esta tabla se presenta la correspondencia entre las Historias de Usuario y las Pruebas de Aceptación. Se trata de la matriz de trazabilidad que ayuda a verificar que cada Historia de Usuario está cubierta por sus correspondientes Pruebas de Aceptación (una o varias), de forma que no quede ninguna sin probar y validar. Como se puede observar, todas las Historias de Usuario quedan cubiertas.
 
 \begin{table}[H]
     \centering

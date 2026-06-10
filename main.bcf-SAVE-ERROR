@@ -2457,37 +2457,3 @@
     <bcf:citekey order="52" intorder="1">grammarly_ref</bcf:citekey>
     <bcf:citekey order="53" intorder="1">duolingo_ref</bcf:citekey>
     <bcf:citekey order="54" intorder="1">atlassian_user_stories</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">eslint_docs</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">prettier_docs</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">jwtio</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">llamas_multer_nd</bcf:citekey>
-    <bcf:citekey order="59" intorder="1">cloudinary_official_2026</bcf:citekey>
-    <bcf:citekey order="59" intorder="2">moge_cloudinary_2026</bcf:citekey>
-    <bcf:citekey order="59" intorder="3">cloudflare_cdn_2026</bcf:citekey>
-    <bcf:citekey order="60" intorder="1">mongodb_aggregation_2026</bcf:citekey>
-    <bcf:citekey order="61" intorder="1">framer_motion_docs</bcf:citekey>
-    <bcf:citekey order="62" intorder="1">quill_react_playground</bcf:citekey>
-    <bcf:citekey order="63" intorder="1">react_leaflet_docs</bcf:citekey>
-    <bcf:citekey order="64" intorder="1">quill_react_playground</bcf:citekey>
-  </bcf:section>
-  <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="none">
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">citeorder</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2">
-      <bcf:sortitem order="1">intciteorder</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sortingtemplate>
-  <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="none/global//global/global/global"
-                type="entry"
-                sortingtemplatename="none"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global"
-                namehashtemplatename="global">
-  </bcf:datalist>
-</bcf:controlfile>
