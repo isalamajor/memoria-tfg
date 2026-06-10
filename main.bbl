@@ -476,6 +476,7 @@
       \strng{authornamehash}{f1e069787ece74531d112559945c6871}
       \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
       \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -1481,6 +1482,7 @@
       \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
       \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
       \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -2111,6 +2113,90 @@
       \verb https://prettier.io/
       \endverb
     \endentry
+    \entry{gfg_soc}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhashraw}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-06-10}
+      \field{title}{Separation of Concerns (SoC) in Software Engineering}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/software-engineering/separation-of-concerns-soc/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/software-engineering/separation-of-concerns-soc/
+      \endverb
+    \endentry
+    \entry{aws_smtp}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-06-10}
+      \field{title}{What is SMTP?}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/es/what-is/smtp/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/es/what-is/smtp/
+      \endverb
+    \endentry
+    \entry{google_app_passwords}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={{Google}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido: 2026-06-10}
+      \field{title}{Iniciar sesión con contraseñas de aplicaciones}
+      \verb{urlraw}
+      \verb https://support.google.com/accounts/answer/185833?hl=es
+      \endverb
+      \verb{url}
+      \verb https://support.google.com/accounts/answer/185833?hl=es
+      \endverb
+    \endentry
     \entry{jwtio}{online}{}{}
       \name{author}{1}{}{%
         {{hash=2a723769d08b0732d8563ffe6bdaee7d}{%
@@ -2125,8 +2211,8 @@
       \strng{authornamehash}{2a723769d08b0732d8563ffe6bdaee7d}
       \strng{authorfullhash}{2a723769d08b0732d8563ffe6bdaee7d}
       \strng{authorfullhashraw}{2a723769d08b0732d8563ffe6bdaee7d}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-05-26}
@@ -2152,8 +2238,8 @@
       \strng{authornamehash}{bb30e85411b56df41296726ab445dc8f}
       \strng{authorfullhash}{bb30e85411b56df41296726ab445dc8f}
       \strng{authorfullhashraw}{bb30e85411b56df41296726ab445dc8f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-05-28}
@@ -2180,8 +2266,8 @@
       \strng{authorfullhash}{2420d93729403f55a9cf8f6d70dbad81}
       \strng{authorfullhashraw}{2420d93729403f55a9cf8f6d70dbad81}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-05-30}
@@ -2208,8 +2294,8 @@
       \strng{authorfullhash}{2420d93729403f55a9cf8f6d70dbad81}
       \strng{authorfullhashraw}{2420d93729403f55a9cf8f6d70dbad81}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-05-03}
@@ -2235,8 +2321,8 @@
       \strng{authornamehash}{3f07179a07b2a7661e37a3fd0e652a07}
       \strng{authorfullhash}{3f07179a07b2a7661e37a3fd0e652a07}
       \strng{authorfullhashraw}{3f07179a07b2a7661e37a3fd0e652a07}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accedido: 2026-05-05}
