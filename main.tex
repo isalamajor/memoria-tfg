@@ -84,14 +84,14 @@ hmargin=3cm
 \usepackage[babel, spanish=spanish]{csquotes}
 \addto\captionsspanish{%
 	\renewcommand{\contentsname}{Índice}%
-	\renewcommand{\listfigurename}{Lista de figuras}%
+	\renewcommand{\listfigurename}{Índice de figuras}%
 	\renewcommand{\listtablename}{Lista de tablas}%
 	\renewcommand{\bibname}{Bibliografía}%
 }
 \addto\captionsenglish{%
 	\renewcommand{\contentsname}{Índice}%
-	\renewcommand{\listfigurename}{Lista de figuras}%
-	\renewcommand{\listtablename}{Lista de tablas}%
+	\renewcommand{\listfigurename}{Índice de figuras}%
+	\renewcommand{\listtablename}{Índice de tablas}%
 }
 \AtBeginEnvironment{quote}{\small}
 
@@ -364,14 +364,14 @@ Gracias a mis amigos del Erasmus por inspirar este proyecto, a mi tutor Jesús p
 
 \rowcolors{1}{white}{white}
 \begin{longtable}{p{2.8cm}p{10.2cm}}
-API & Interfaz de Programación de Aplicaciones (Application Programming Interface). \\
 AJAX & Asynchronous JavaScript and XML. \\
+API & Application Programming Interface. \\
 AKS & Azure Kubernetes Service. \\
 AWS & Amazon Web Services. \\
 BOE & Boletín Oficial del Estado. \\
 BSON & Binary JSON. \\
 CORS & Cross-Origin Resource Sharing. \\
-CRA & Cyber Resilience Act (Ley de Ciberresiliencia). \\
+CRA & Cyber Resilience Act. \\
 CRUD & Create, Read, Update, Delete. \\
 CSRF & Cross-Site Request Forgery. \\
 CSS & Cascading Style Sheets. \\
@@ -379,16 +379,14 @@ DOM & Document Object Model. \\
 GCP & Google Cloud Platform. \\
 HTML & HyperText Markup Language. \\
 HTTP & HyperText Transfer Protocol. \\
-IA & Inteligencia Artificial. \\
-IEEE & Institute of Electrical and Electronics Engineers. \\
 JSON & JavaScript Object Notation. \\
 JWT & JSON Web Token. \\
-LAMP & Linux, Apache, MySQL y PHP/Python. \\
+LAMP & Linux, Apache, MySQL and PHP. \\
 LOPDGDD & Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales. \\
 LSSICE & Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico. \\
-MERN & MongoDB, Express, React y Node.js. \\
+MERN & MongoDB, Express, React and Node.js. \\
 MIME & Multipurpose Internet Mail Extensions. \\
-MVCC & Control de Concurrencia Multiversión (Multi-Version Concurrency Control). \\
+MVCC & Multi-Version Concurrency Control. \\
 NoSQL & Not Only SQL. \\
 ODM & Object Document Mapper. \\
 ORM & Object Relational Mapper. \\
@@ -396,7 +394,6 @@ OTP & One-Time Password. \\
 PDF & Portable Document Format. \\
 REST & Representational State Transfer. \\
 RGPD & Reglamento General de Protección de Datos. \\
-SCRUM & Marco ágil de trabajo basado en iteraciones y sprints. \\
 SEO & Search Engine Optimization. \\
 SMTP & Simple Mail Transfer Protocol. \\
 SPA & Single Page Application. \\
@@ -404,7 +401,6 @@ SQL & Structured Query Language. \\
 SSR & Server-Side Rendering. \\
 TFG & Trabajo de Fin de Grado. \\
 TTL & Time To Live. \\
-UE & Unión Europea. \\
 URL & Uniform Resource Locator. \\
 XML & eXtensible Markup Language. \\
 XP & Extreme Programming. \\
@@ -486,8 +482,7 @@ XSS & Cross-Site Scripting. \\
 
 \clearpage
 \addcontentsline{toc}{chapter}{Bibliografía}
-
-\printbibliography
+\printbibliography[title={Bibliografía}]
 
 
 %----------

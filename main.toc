@@ -1,0 +1,108 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Lista de abreviaturas}{xviii}{chapter*.6}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivación}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Marco regulador}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Medios empleados}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Estructura del documento}{4}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Estado del arte}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Tecnologías para el Desarrollo de Aplicaciones Web}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Frontend}{6}{subsection.2.1.1}%
+\contentsline {subsubsection}{HTML: la estructura de la web}{6}{subsection.2.1.1}%
+\contentsline {subsubsection}{CSS: El diseño y la presentación}{7}{figure.caption.7}%
+\contentsline {subsubsection}{JavaScript: La interactividad y la lógica}{8}{figure.caption.9}%
+\contentsline {subsection}{\numberline {2.1.2}Frameworks de JavaScript}{9}{subsection.2.1.2}%
+\contentsline {subsubsection}{React}{10}{subsection.2.1.2}%
+\contentsline {subsubsection}{Next}{10}{figure.caption.12}%
+\contentsline {subsubsection}{Vue}{11}{figure.caption.13}%
+\contentsline {subsubsection}{Angular}{11}{figure.caption.14}%
+\contentsline {subsection}{\numberline {2.1.3}Backend}{12}{subsection.2.1.3}%
+\contentsline {subsubsection}{Node.js}{12}{subsection.2.1.3}%
+\contentsline {subsubsection}{Python con Django}{12}{figure.caption.16}%
+\contentsline {subsubsection}{Java con SpringBoot}{13}{figure.caption.18}%
+\contentsline {subsubsection}{PHP y Laravel}{14}{figure.caption.20}%
+\contentsline {subsubsection}{Ruby on Rails}{15}{figure.caption.22}%
+\contentsline {subsubsection}{Golang y Gin}{15}{figure.caption.24}%
+\contentsline {subsection}{\numberline {2.1.4}Consumo de APIs}{16}{subsection.2.1.4}%
+\contentsline {subsubsection}{Axios}{16}{subsection.2.1.4}%
+\contentsline {subsubsection}{FetchAPI}{17}{figure.caption.27}%
+\contentsline {subsubsection}{Postman}{17}{figure.caption.28}%
+\contentsline {subsubsection}{Insomnia}{18}{figure.caption.29}%
+\contentsline {subsubsection}{cURL}{18}{figure.caption.30}%
+\contentsline {subsection}{\numberline {2.1.5}Base de datos}{19}{subsection.2.1.5}%
+\contentsline {subsubsection}{Bases de datos relacionales}{19}{subsection.2.1.5}%
+\contentsline {paragraph}{MySQL:}{19}{subsection.2.1.5}%
+\contentsline {paragraph}{PostgreSQL:}{20}{figure.caption.32}%
+\contentsline {paragraph}{Maria DB:}{20}{figure.caption.33}%
+\contentsline {subsubsection}{No relacionales}{21}{figure.caption.34}%
+\contentsline {paragraph}{MongoDB:}{21}{figure.caption.34}%
+\contentsline {paragraph}{Firebase:}{21}{figure.caption.35}%
+\contentsline {paragraph}{Cassandra:}{22}{figure.caption.36}%
+\contentsline {section}{\numberline {2.2}Metodología}{22}{section.2.2}%
+\contentsline {subsubsection}{\textbf {Metodología en Cascada}}{22}{section.2.2}%
+\contentsline {subsubsection}{Metodología Incremental}{23}{section.2.2}%
+\contentsline {subsubsection}{Metodología RAD}{23}{section.2.2}%
+\contentsline {subsubsection}{\textbf {Metodología Agile}}{23}{section.2.2}%
+\contentsline {subsubsection}{\textbf {Metodología Kanban}}{24}{section.2.2}%
+\contentsline {subsubsection}{\textbf {Metodología Lean}}{24}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Negocio}{24}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}HiNative}{24}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Tandem}{25}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Grammarly}{25}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Duolingo}{25}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Justificación de la solución}{26}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Análisis y planificación}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Historias de Usuario}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Investigación y Documentación}{28}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Gestión de Usuarios}{31}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Gestión de Perfiles}{32}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Módulo de Correspondencia}{34}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Módulo de Correcciones}{36}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Funcionalidad Social}{38}{subsection.3.1.6}%
+\contentsline {section}{\numberline {3.2}Pruebas de Aceptación}{41}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Investigación y Documentación}{41}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Gestión de Usuarios}{42}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Gestión de Perfiles}{45}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Módulo de Correspondencia}{48}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Módulo de Correcciones}{51}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Funcionalidad Social}{53}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Matriz de Trazabilidad}{57}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Planificación}{58}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Arquitectura del Software}{61}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Stack tecnológico seleccionado}{62}{section.4.1}%
+\contentsline {subsubsection}{Calidad del Código}{63}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Modelado de datos}{63}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Arquitectura del backend}{65}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Estructura del backend}{65}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Emails automatizados}{66}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Mecanismo de Autenticación y Autorización}{67}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Almacenamiento de imágenes con Multer y Cloudinary}{69}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Interfaz de Programación de Aplicaciones (API): Rutas y Controladores}{70}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Técnicas de optimización}{74}{subsection.4.3.6}%
+\contentsline {subsubsection}{Optimización de búsqueda datos}{74}{subsection.4.3.6}%
+\contentsline {subsubsection}{Procesamiento Avanzado de Datos: Aggregate de MongoDB}{75}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}Frontend de la aplicación}{76}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Stack Tecnológico}{76}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Arquitectura del Frontend y Gestión del Estado}{77}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Páginas de la aplicación}{78}{subsection.4.4.3}%
+\contentsline {subsubsection}{Página de Inicio y Autenticación}{79}{subsection.4.4.3}%
+\contentsline {subsubsection}{Página Principal}{80}{figure.caption.110}%
+\contentsline {subsubsection}{Páginas de Creación y Edición de Cartas}{80}{Item.190}%
+\contentsline {subsubsection}{Página de Corrección de Cartas}{81}{figure.caption.112}%
+\contentsline {subsubsection}{Página de Visualización de Correcciones Recibidas}{82}{Item.194}%
+\contentsline {subsubsection}{Página de Amigos}{83}{figure.caption.114}%
+\contentsline {subsubsection}{Página de Perfil de Usuario}{84}{Item.197}%
+\contentsline {subsection}{\numberline {4.4.4}Técnicas de Optimización}{85}{subsection.4.4.4}%
+\contentsline {chapter}{\numberline {5}Entorno socioeconómico}{87}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Presupuesto}{87}{section.5.1}%
+\contentsline {subsubsection}{Costes de herramientas}{87}{section.5.1}%
+\contentsline {subsubsection}{Costes humanos}{88}{table.caption.118}%
+\contentsline {subsubsection}{Resumen de costes}{88}{table.caption.119}%
+\contentsline {section}{\numberline {5.2}Impacto socioeconómico}{89}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{91}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Cumplimiento de Objetivos}{91}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Líneas de Trabajo Futuro y Propuestas de Mejora}{91}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Conclusión final}{92}{section.6.3}%
+\contentsline {chapter}{Bibliografía}{94}{section.6.3}%
+\contentsfinish 

@@ -1335,9 +1335,59 @@ En esta sección se detallan los procedimientos de prueba para validar las Histo
 \newpage
 \section{Matriz de Trazabilidad}
 
-En esta tabla se presenta la correspondencia entre las Historias de Usuario y las Pruebas de Aceptación. Se trata de la matriz de trazabilidad que ayuda a verificar que cada Historia de Usuario está cubierta por sus correspondientes Pruebas de Aceptación (una o varias), de forma que no quede ninguna sin probar y validar. Como se puede observar, todas las Historias de Usuario quedan cubiertas.
+En esta tabla se presenta la correspondencia entre las Historias de Usuario y las Pruebas de Aceptación. Se trata de la matriz de trazabilidad, que ayuda a verificar que cada Historia de Usuario está cubierta por sus correspondientes Pruebas de Aceptación (una o varias), de forma que no quede ninguna sin probar y validar. Como se puede observar, todas las Historias de Usuario quedan cubiertas.
 
 \begin{table}[H]
+    \centering
+    \caption{Matriz de trazabilidad de Pruebas de Aceptación por Historias de Usuario}
+    \label{tab:matriz_trazabilidad}
+
+    \footnotesize
+    \setlength{\tabcolsep}{2pt} % Un poco más de espacio entre columnas ya que ahora son estrechas
+
+    % 29 columnas: 1 para PA-NN y 28 para las HUs rotadas
+    \begin{tabularx}{\textwidth}{|c|*{28}{>{\centering\arraybackslash}X|}}
+    \hline
+    % Encabezados rotados a 90 grados para que queden verticales y no se corten
+    & \rotatebox{90}{HU-01 } & \rotatebox{90}{HU-02} & \rotatebox{90}{HU-03} & \rotatebox{90}{HU-04} & \rotatebox{90}{HU-05} & \rotatebox{90}{HU-06} & \rotatebox{90}{HU-07} & \rotatebox{90}{HU-08} & \rotatebox{90}{HU-09} & \rotatebox{90}{HU-10} & \rotatebox{90}{HU-11} & \rotatebox{90}{HU-12} & \rotatebox{90}{HU-13} & \rotatebox{90}{HU-14} & \rotatebox{90}{HU-15} & \rotatebox{90}{HU-16} & \rotatebox{90}{HU-17} & \rotatebox{90}{HU-18} & \rotatebox{90}{HU-19} & \rotatebox{90}{HU-20} & \rotatebox{90}{HU-21} & \rotatebox{90}{HU-22} & \rotatebox{90}{HU-23} & \rotatebox{90}{HU-24} & \rotatebox{90}{HU-25} & \rotatebox{90}{HU-26} & \rotatebox{90}{HU-27} & \rotatebox{90}{HU-28} \\ \hline
+
+    % Filas de las Pruebas de Aceptación
+    {PA-01} & & & & & \checkmark & & & & & & & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-02} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & & & & & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-03} & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-04} & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-05} & & & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-06} & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-07} & & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-08} & & & & & & & & \checkmark & \checkmark & & & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-09} & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-10} & & & & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-11} & & & & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-12} & & & & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & \\ \hline
+    {PA-13} & & & & & & & & & & & & \checkmark & & & & & & & & & & & & & & & & \\ \hline
+    {PA-14} & & & & & & & & & & & & & \checkmark & & & & & & & & & & & & & & & \\ \hline
+    {PA-15} & & & & & & & & & & & & & & \checkmark & \checkmark & & & & & & & & & & & & & \\ \hline
+    {PA-16} & & & & & & & & & & & & & & & & \checkmark & & & & & & & & & & & & \\ \hline
+    {PA-17} & & & & & & & & & & & & & & & & \checkmark & & & & & & & & & & & & \\ \hline
+    {PA-18} & & & & & & & & & & & & & & & & & \checkmark & & & & & & & & & & & \\ \hline
+    {PA-19} & & & & & & & & & & & & & & & & & & \checkmark & & & & & & & & & & \\ \hline
+    {PA-20} & & & & & & & & & & & & & & & & & & \checkmark & & & & & & & & & & \\ \hline
+    {PA-21} & & & & & & & & & & & & & & & & & & & \checkmark & & & & & & & & & \\ \hline
+    {PA-22} & & & & & & & & & & & & & & & & & & & & \checkmark & & & & & & & & \\ \hline
+    {PA-23} & & & & & & & & & & & & & & & & & & & & & \checkmark & \checkmark & \checkmark & & & & & \\ \hline
+    {PA-24} & & & & & & & & & & & & & & & & & & & & & & & & \checkmark & & & & \\ \hline
+    {PA-25} & & & & & & & & & & & & & & & & & & & & & & & & & \checkmark & & & \\ \hline
+    {PA-26} & & & & & & & & & & & & & & & & & & & & & & & & & & \checkmark & & \\ \hline
+    {PA-27} & & & & & & & & & & & & & & & & & & & & & & & & & & & \checkmark & \\ \hline
+    {PA-28} & & & & & & & & & & & & & & & & & & & & & & & & & & & \checkmark & \\ \hline
+    {PA-29} & & & & & & & & & & & & & & & & & & & & & & & & & & & & \checkmark \\ \hline
+    {PA-30} & & & & & & & & & & & & & & & & & & & & & & & & & & & & \checkmark \\ \hline
+    \end{tabularx}
+\end{table}
+
+\begin{comment}
+
+    \begin{table}[H]
     \centering
     \caption{Matriz de trazabilidad}
     \label{tab:matriz_trazabilidad}
@@ -1345,13 +1395,15 @@ En esta tabla se presenta la correspondencia entre las Historias de Usuario y la
     \footnotesize
     \setlength{\tabcolsep}{1.2pt}
 
+    % Asegúrate de tener en tu preámbulo: \usepackage{tabularx}, \usepackage{multirow}, \usepackage{graphicx} y \usepackage{amssymb}
     \begin{tabularx}{\textwidth}{|c|c|*{28}{>{\centering\arraybackslash}X|}}
     \hline
-    % Encabezado superior para HUs (Ahora son 28 columnas tras quitar los duplicados)
+    % Encabezado superior para HUs (Corregido el \cline para no invadir las columnas de títulos)
     \multicolumn{2}{|c|}{} & \multicolumn{28}{c|}{\textbf{Historias de Usuario (HU)}} \\ \cline{3-30}
     \multicolumn{2}{|c|}{} & 01 & 02 & 03 & 04 & 05 & 06 & 07 & 08 & 09 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 \\ \hline
-    % Columna vertical de PAs
-    \multirow{30}{*}{\rotatebox{90}{\textbf{Pruebas de Aceptaci\'on (PA)}}}
+
+    % Columna vertical de PAs (Corregido con ancho automático '*' y limpio de líneas intermedias)
+    \multirow{30}{*}{\rotatebox{90}{\textbf{Pruebas de Aceptación (PA)}}}
     & \textbf{01} & & & & & \checkmark & & & & & & & & & & & & & & & & & & & & & & & \\ \cline{2-30}
     & \textbf{02} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & & & & & & & & & & & & & & & & & & & & & \\ \cline{2-30}
     & \textbf{03} & & & & & & & & \checkmark & & & & & & & & & & & & & & & & & & & & \\ \cline{2-30}
@@ -1383,4 +1435,4 @@ En esta tabla se presenta la correspondencia entre las Historias de Usuario y la
     & \textbf{29} & & & & & & & & & & & & & & & & & & & & & & & & & & & & \checkmark \\ \cline{2-30}
     & \textbf{30} & & & & & & & & & & & & & & & & & & & & & & & & & & & & \checkmark \\ \hline
     \end{tabularx}
-\end{table}
+\end{comment}

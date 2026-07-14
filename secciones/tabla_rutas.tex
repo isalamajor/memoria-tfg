@@ -5,7 +5,7 @@
 \endhead
 \hline
 \endfoot
-\multicolumn{3}{|c|}{\textbf{User Routes}} \\
+\multicolumn{3}{|c|}{\textbf{User}} \\
 \hline
 POST & /api/users/register & Registrar un nuevo usuario. \newline \textbf{Valores de entrada:} nickname*, email*, password*, master\-Language*, learning\-Language* \newline \textbf{Valores de salida:} status, message, user \\
 POST & /api/users/login & Iniciar sesión. Si las credenciales recibidas son correctas, se crea y envía la cookie de autenticación. \newline \textbf{Valores de entrada:} email* (string, puede ser email o nickname), password* \newline \textbf{Valores de salida:} status, userData, token, cookie authToken \\
@@ -25,7 +25,7 @@ PUT & /api/users/reset-password & Restablecer contraseña con código de verific
 DELETE & /api/users/delete-account & Eliminar cuenta de usuario. \newline \textbf{Valores de salida:} status, message \\
 \hline
 \hline
-\multicolumn{3}{|c|}{\textbf{Letter Routes}} \\
+\multicolumn{3}{|c|}{\textbf{Letter}} \\
 \hline
 POST & /api/letters/new & Guardar una carta nueva. \newline \textbf{Valores de entrada:} title*, content*, language*, created\_at*, diary \newline \textbf{Valores de salida:} status, message, letter \\
 GET & /api/letters/view/:letterId & Obtener información y contenido de una carta.\newline \textbf{Valores de salida:} status, letter, sharedWithDetails \\
@@ -39,7 +39,7 @@ GET & /api/letters/diaries & Listar diarios del usuario. \newline \textbf{Valore
 GET & /api/letters/count/:id? & Contar cartas por idioma. Si no se especifica id en la ruta, se cuentan las del usuario autenticado. \newline \textbf{Valores de salida:} Array de \{language, count\} \\
 \hline
 \hline
-\multicolumn{3}{|c|}{\textbf{Follow Routes}} \\
+\multicolumn{3}{|c|}{\textbf{Follow}} \\
 \hline
 POST & /api/follow/add/:id & Mandar una solicitud de amistad a un usuario. \newline \textbf{Valores de salida:} status, message \\
 DELETE & /api/follow/unfollow/:id & Dejar de seguir a un usuario. \newline \textbf{Valores de salida:} status, message \\
@@ -53,7 +53,7 @@ POST & /api/follow/accept/:id & Aceptar solicitud de amistad. \newline \textbf{V
 POST & /api/follow/decline/:id & Rechazar solicitud de amistad. \newline \textbf{Valores de salida:} status, message \\
 \hline
 \hline
-\multicolumn{3}{|c|}{\textbf{Corrected Letter Routes}} \\
+\multicolumn{3}{|c|}{\textbf{Corrected Letter}} \\
 \hline
 PATCH & /api/corrected-letters/send-back/:corrected\-Letter\-Id & Mandar de vuelta su autor la carta corregida. \newline \textbf{Valores de salida:} status, message, correctedLetter \\
 GET & /api/corrected-letters/corrections/:original\-Letter\-Id & Obtener correcciones de una carta. \newline \textbf{Valores de salida:} status, corrections \\

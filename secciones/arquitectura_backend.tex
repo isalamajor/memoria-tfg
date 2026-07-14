@@ -33,7 +33,7 @@ Este token se envia desde el backend y se almacena en el navegador mediante \tex
 
 Sobre el refuerzo de la seguridad de la cookie, hay dos puntos interesantes a mencionar. En primer lugar, la cookie es HttpOnly, es decir, no se puede leer mediante JavaScript sino que solo puede leerla el navegador. De esta forma, el token está protegido contra ataques maliciosos como \textbf{Cross-Site Scripting (XSS)}, una vulnerabilidad en la que un atacante inyecta y ejecuta código malicioso (generalmente de JavaScript) en el navegador de otros usuarios que usan la aplicación.
 
-En segundo lugar, se ha implementado el atributo \textbf{SameSite} con el valor \texttt{"Strict"}. Esta configuración es una medida de seguridad crítica para prevenir ataques de tipo \textbf{CSRF (Cross-Site Request Forgery)}, que aprovechan la naturaleza automática de los navegadores, dado que estos adjuntan las cookies de sesión a cualquier petición dirigida al dominio de origen. El atacante podría engañar a un usuario autenticado para que haga clic en un enlace malicioso en una pestaña diferente, y dicho enlace dispararía una petición a nuestra API (por ejemplo, para borrar una carta o cambiar la contraseña). Con la configuración de SameSite, este tipo de ataques son mitigados.
+En segundo lugar, se ha implementado el atributo \textbf{SameSite} con el valor \texttt{"Strict"}. Esta configuración es una medida de seguridad crítica para prevenir ataques de tipo \textbf{Cross-Site Request Forgery (CSRF)}, que aprovechan la naturaleza automática de los navegadores, dado que estos adjuntan las cookies de sesión a cualquier petición dirigida al dominio de origen. El atacante podría engañar a un usuario autenticado para que haga clic en un enlace malicioso en una pestaña diferente, y dicho enlace dispararía una petición a nuestra API (por ejemplo, para borrar una carta o cambiar la contraseña). Con la configuración de SameSite, este tipo de ataques son mitigados.
 
 Al llegar una solicitud HTTP al sistema, si se trata de una ruta protegida se ejecuta el \textbf{Middleware de Autenticación}. Este componente intercepta la solicitud, extrae el token JWT de la cookie y verifica su validez. Si es válido, el middleware decodifica la información del usuario y la inyecta en el objeto de la petición, permitiendo que el resto del flujo identifique al autor de la acción, es decir, el usuario autenticado en la aplicación.
 
@@ -49,11 +49,11 @@ El módulo de subida de archivos se exporta como un middleware independiente, lo
 Su configuración se divide en tres pilares fundamentales:
 
 \begin{itemize}
-    \item Filtrado de seguridad: Para prevenir la subida de archivos maliciosos (como \textit{scripts} ejecutables disfrazados), se ha implementado un filtro por tipo MIME y extensión. El sistema solo acepta formatos de imagen estándar (\texttt{JPEG, JPG, PNG}), verificando tanto la extensión del archivo como su tipo MIME real para asegurar la integridad del recurso. También, se establece un máximo de tamaño del archivo de 5 MB para evitar \textbf{ataques de denegación de servicio (DoS)} por agotamiento de almacenamiento o ancho de banda.
+    \item Filtrado de seguridad: para prevenir la subida de archivos maliciosos (como \textit{scripts} ejecutables disfrazados), se ha implementado un filtro por tipo MIME y extensión. El sistema solo acepta formatos de imagen estándar (\texttt{JPEG, JPG, PNG}), verificando tanto la extensión del archivo como su tipo MIME real para asegurar la integridad del recurso. También, se establece un máximo de tamaño del archivo de 5 MB para evitar \textbf{ataques de denegación de servicio (DoS)} por agotamiento de almacenamiento o ancho de banda.
 
-    \item Procesamiento en memoria: Se utiliza Multer para interceptar y procesar la subida de archivos directamente en memoria con un búfer, evitando la necesidad de almacenamiento temporal en disco. Una decisión de diseño clave ha sido el renombrado del archivo por el identificador del usuario y la normalización de formato a JPG, de modo que cada usuario posea una única imagen de perfil en Cloudinary. Al combinar esta transformación con el parámetro \texttt{overwrite:true}, se reemplaza el recurso anterior automáticamente en caso de actualización, eliminando la necesidad de gestionar manualmente archivos obsoletos. Adicionalmente, el uso de \texttt{invalidate:true} garantiza que la actualización se propague correctamente al invalidar las versiones previas almacenadas en la caché de la CDN.
+    \item Procesamiento en memoria: se utiliza Multer para interceptar y procesar la subida de archivos directamente en memoria con un búfer, evitando la necesidad de almacenamiento temporal en disco. Una decisión de diseño clave ha sido el renombrado del archivo por el identificador del usuario y la normalización de formato a JPG, de modo que cada usuario posea una única imagen de perfil en Cloudinary. Al combinar esta transformación con el parámetro \texttt{overwrite:true}, se reemplaza el recurso anterior automáticamente en caso de actualización, eliminando la necesidad de gestionar manualmente archivos obsoletos. Adicionalmente, el uso de \texttt{invalidate:true} garantiza que la actualización se propague correctamente al invalidar las versiones previas almacenadas en la caché de la CDN.
 
-    \item Almacenamiento en la nube: Una vez procesado el búfer, la imagen se sube directamente a Cloudinary. El sistema almacena la URL segura retornada por Cloudinary en la base de datos, facilitando un acceso rápido sin depender del almacenamiento local del servidor. Además, Cloudinary permite aplicar transformaciones automáticas, como la limitación de dimensiones a 800x800 píxeles, para garantizar consistencia visual y reducir consumo de ancho de banda. La CDN de Cloudinary se encarga de que, cuando alguien quiera ver la imagen, esta cargue en cuestión de milisegundos.
+    \item Almacenamiento en la nube: una vez procesado el búfer, la imagen se sube directamente a Cloudinary. El sistema almacena la URL segura retornada por Cloudinary en la base de datos, facilitando un acceso rápido sin depender del almacenamiento local del servidor. Además, Cloudinary permite aplicar transformaciones automáticas, como la limitación de dimensiones a 800x800 píxeles, para garantizar consistencia visual y reducir consumo de ancho de banda. La CDN de Cloudinary se encarga de que, cuando alguien quiera ver la imagen, esta cargue en cuestión de milisegundos.
 
 \end{itemize}
 
@@ -71,10 +71,10 @@ El backend de la plataforma actúa como una capa de servicios diseñada para que
 La lógica de interacción se fundamenta en las operaciones \textbf{CRUD} (\textit{Create, Read, Update, Delete}), que representan las acciones esenciales para la gestión de persistencia de datos. En este proyecto, dichas acciones se mapean directamente con los métodos del protocolo \textbf{HTTP}, garantizando una arquitectura estandarizada:
 
 \begin{itemize}
-    \item \textbf{POST (Create)}: Utilizado para la creación de nuevos documentos, como el registro de un usuario o el envío de una nueva carta.
-    \item \textbf{GET (Read)}: Empleado para la recuperación de información, ya sea una lista de recursos o un documento específico identificado por su ID.
-    \item \textbf{PUT / PATCH (Update)}: Destinados a la actualización de registros existentes. Se utiliza \texttt{PUT} para sustituciones integrales y \texttt{PATCH} para modificaciones parciales, como marcar una carta como "leída".
-    \item \textbf{DELETE (Delete)}: Encargado de la eliminación de recursos o, en el caso de las cartas, de la activación del borrado lógico mencionado anteriormente.
+    \item \textbf{POST (Create)}: utilizado para la creación de nuevos documentos, como el registro de un usuario o el envío de una nueva carta.
+    \item \textbf{GET (Read)}: empleado para la recuperación de información, ya sea una lista de recursos o un documento específico identificado por su ID.
+    \item \textbf{PUT / PATCH (Update)}: destinados a la actualización de registros existentes. Se utiliza \texttt{PUT} para sustituciones integrales y \texttt{PATCH} para modificaciones parciales, como marcar una carta como "leída".
+    \item \textbf{DELETE (Delete)}: encargado de la eliminación de recursos o, en el caso de las cartas, de la activación del borrado lógico mencionado anteriormente.
 \end{itemize}
 
 Cada ruta definida en el servidor está vinculada a un \textbf{controlador} específico, el cual contiene la lógica final para procesar la solicitud. Una vez superada la fase de autenticación, la ejecución pasa al controlador específico correspondiente, cuya función es extraer los parámetros de la consulta, utilizar la identidad del usuario ya validada para aplicar reglas de negocio, ejecutar las operaciones correspondientes en MongoDB mediante los modelos de Mongoose, y devolver una respuesta HTTP con los datos en formato JSON y un código de éxito o error.
@@ -92,9 +92,9 @@ La lógica de filtrado se procesa íntegramente en el servidor para garantizar l
 Además, para mejorar la usabilidad en la búsqueda y filtrado de cartas, se ha implementado un sistema de comunicación eficiente entre el cliente y el servidor. En las barras de búsqueda, en lugar de realizar peticiones por cada pulsación de tecla (lo cual derivaría en un consumo excesivo de recursos y latencia en la red), se ha aplicado la técnica de \textbf{debouncing}, que sigue la siguiente lógica:
 
 \begin{itemize}
-    \item Control de Eventos: Cuando el usuario escribe en el campo de búsqueda, se inicia un temporizador interno.
-    \item Retraso Controlado: Si el usuario sigue escribiendo antes de que transcurran un intervalo definido de tiempo (500ms), el temporizador se reinicia.
-    \item Petición Asíncrona: Solo cuando el usuario deja de escribir durante el tiempo estipulado, se dispara la solicitud formal a la API.
+    \item Control de Eventos: cuando el usuario escribe en el campo de búsqueda, se inicia un temporizador interno.
+    \item Retraso Controlado: si el usuario sigue escribiendo antes de que transcurran un intervalo definido de tiempo (500ms), el temporizador se reinicia.
+    \item Petición Asíncrona: solo cuando el usuario deja de escribir durante el tiempo estipulado, se dispara la solicitud formal a la API.
 \end{itemize}
 
 Así, se logra un consumo y envío de recursos mucho más eficiente.
@@ -118,13 +118,13 @@ Un ejemplo real implementado es el flujo de trabajo para la búsqueda de cartas,
 Un ejemplo representativo es el flujo de obtención de cartas junto con la información de sus correcciones y usuarios asociados. La tubería de agregación de MongoDB permite resolver estas múltiples relaciones en una única consulta. El proceso se estructura en las siguientes etapas:
 
 \begin{enumerate}
-    \item \textbf{Filtrado y paginación}: Se seleccionan únicamente las cartas del usuario autenticado que no han sido eliminadas, aplicando además ordenación cronológica y paginación. Realizar esto al inicio asegura que las operaciones posteriores, más costosas, solo se apliquen a los resultados deseados.
+    \item \textbf{Filtrado y paginación}: se seleccionan únicamente las cartas del usuario autenticado que no han sido eliminadas, aplicando además ordenación cronológica y paginación. Realizar esto al inicio asegura que las operaciones posteriores, más costosas, solo se apliquen a los resultados deseados.
 
-    \item \textbf{Enriquecimiento de datos}: Se incorporan los datos de los usuarios relacionados, aquellos con los que se ha compartido la carta, mediante operaciones equivalentes a uniones (\textit{joins}), resolviendo los identificadores almacenados en el campo \texttt{sharedWith}.
+    \item \textbf{Enriquecimiento de datos}: se incorporan los datos de los usuarios relacionados, aquellos con los que se ha compartido la carta, mediante operaciones equivalentes a uniones (\textit{joins}), resolviendo los identificadores almacenados en el campo \texttt{sharedWith}.
 
-    \item \textbf{Obtención de correcciones}: Se recuperan las correcciones asociadas a cada carta, filtrando para obtener solamente aquellas que han sido enviadas de vuelta al autor.
+    \item \textbf{Obtención de correcciones}: se recuperan las correcciones asociadas a cada carta, filtrando para obtener solamente aquellas que han sido enviadas de vuelta al autor.
 
-    \item \textbf{Transformación de la respuesta}: Finalmente, se construye la estructura de salida combinando la información obtenida, de forma que cada carta incluye los datos necesarios para su representación en la interfaz.
+    \item \textbf{Transformación de la respuesta}: finalmente se construye la estructura de salida combinando la información obtenida, de forma que cada carta incluye los datos necesarios para su representación en la interfaz.
 \end{enumerate}
 
 Aunque construir esta lógica requiere mayor tiempo de desarrollo, el uso de la Agregación de MongoDB permite una mejora drástica en el rendimiento del sistema reduciendo el tráfico de red entre el servidor y la base de datos.

@@ -14,7 +14,7 @@ Una petición HTTP sigue esta secuencia: el cliente consume una ruta (endpoint),
     \label{fig:cors}
     \end{figure}
 
-    \item \textbf{Lógica de negocio}: la lógica de negocio se organiza en una estructura con tres partes, basándose en el principio de separación por responsabilidades ("SoC" o \textit{Separation of Concerns} \cite{gfg_soc}), que busca dividir sistemas complejos en partes más pequeñas y manejables cada una de las cuales cubre una funcionalidad. Dichas partes son: la definición de los puntos de acceso (\texttt{routes/}), la implementación de las reglas de negocio (\texttt{controllers/}) y la definición de los modelos de datos (\texttt{models/}).
+    \item \textbf{Lógica de negocio}: la lógica de negocio se organiza en una estructura con tres partes, basándose en el principio de separación por responsabilidades (\textit{Separation of Concerns} \cite{gfg_soc}), que busca dividir sistemas complejos en partes más pequeñas y manejables cada una de las cuales cubre una funcionalidad. Dichas partes son: la definición de los puntos de acceso (\texttt{routes/}), la implementación de las reglas de negocio (\texttt{controllers/}) y la definición de los modelos de datos (\texttt{models/}).
 
     \item \textbf{Middlewares}: la carpeta (\texttt{middlewares/}) incluye las configuraciones de autenticación de usuario y de subida de archivos, que se explicarán en detalle más adelante.
 \end{itemize}

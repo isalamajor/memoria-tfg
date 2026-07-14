@@ -37,7 +37,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-02}
+      \field{note}{Accedido: 2026-01-02}
       \field{title}{Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo: Reglamento General de Protección de Datos (RGPD)}
       \field{year}{2016}
       \verb{urlraw}
@@ -66,7 +66,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-04}
+      \field{note}{Accedido: 2026-01-04}
       \field{title}{Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD)}
       \field{year}{2018}
       \verb{urlraw}
@@ -95,7 +95,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-06}
+      \field{note}{Accedido: 2026-01-06}
       \field{title}{Ley 34/1988, de 11 de noviembre, sobre la Sociedad de la Información y de Comercio Electrónico (LSSICE)}
       \field{year}{1988}
       \verb{urlraw}
@@ -123,7 +123,7 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-08}
+      \field{note}{Accedido: 2026-01-08}
       \field{title}{Reglamento (UE) 2024/2847 del Parlamento Europeo y del Consejo, de 23 de octubre de 2024, relativo a los requisitos horizontales de ciberseguridad para productos con elementos digitales (Ley de Ciberresiliencia)}
       \field{year}{2024}
       \verb{urlraw}
@@ -152,7 +152,7 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-10}
+      \field{note}{Accedido: 2026-01-10}
       \field{title}{Texto refundido de la Ley de Propiedad Intelectual}
       \field{year}{1996}
       \verb{urlraw}
@@ -180,7 +180,7 @@
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-12}
+      \field{note}{Accedido: 2026-01-12}
       \field{title}{Visual Studio Code}
       \verb{urlraw}
       \verb https://code.visualstudio.com/
@@ -207,7 +207,7 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-14}
+      \field{note}{Accedido: 2026-01-14}
       \field{title}{Firefox Developer Edition}
       \verb{urlraw}
       \verb https://www.mozilla.org/es/firefox/developer/
@@ -234,7 +234,7 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-16}
+      \field{note}{Accedido: 2026-01-16}
       \field{title}{MongoDB Compass}
       \verb{urlraw}
       \verb https://www.mongodb.com/products/compass
@@ -261,7 +261,7 @@
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-18}
+      \field{note}{Accedido: 2026-01-18}
       \field{title}{Postman}
       \verb{urlraw}
       \verb https://www.postman.com/
@@ -288,7 +288,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-20}
+      \field{note}{Accedido: 2026-01-20}
       \field{title}{GitHub}
       \verb{urlraw}
       \verb https://github.com/
@@ -315,7 +315,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-24}
+      \field{note}{Accedido: 2026-01-24}
       \field{title}{Google Meet}
       \verb{urlraw}
       \verb https://meet.google.com/
@@ -343,7 +343,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-22}
+      \field{note}{Accedido: 2026-01-22}
       \field{title}{Trello}
       \verb{urlraw}
       \verb https://trello.com/
@@ -1828,25 +1828,88 @@
       \endverb
     \endentry
     \entry{waterfall_ref}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=a8fd8cd0b6d2cfda939a8ef257e60192}{%
+           family={{Atlassian}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{fullhash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{fullhashraw}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{bibnamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authorbibnamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authornamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authorfullhash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authorfullhashraw}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \field{extraname}{2}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Referencia de metodología}
+      \field{note}{{Accedido: 2026-01-16}}
       \field{title}{Modelo en Cascada}
+      \verb{urlraw}
+      \verb https://www.atlassian.com/es/agile/project-management/waterfall-methodology
+      \endverb
+      \verb{url}
+      \verb https://www.atlassian.com/es/agile/project-management/waterfall-methodology
+      \endverb
     \endentry
     \entry{incremental_ref}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=22f43e3a6be1da60fd038e3ee0b29e89}{%
+           family={{Guru99}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{fullhash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{fullhashraw}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{bibnamehash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{authorbibnamehash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{authornamehash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{authorfullhash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{authorfullhashraw}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \field{extraname}{1}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Referencia de metodología}
+      \field{note}{{Accedido: 2026-01-16}}
       \field{title}{Metodología Incremental}
+      \verb{urlraw}
+      \verb https://www.guru99.com/es/what-is-incremental-model-in-sdlc-advantages-disadvantages.html
+      \endverb
+      \verb{url}
+      \verb https://www.guru99.com/es/what-is-incremental-model-in-sdlc-advantages-disadvantages.html
+      \endverb
     \endentry
     \entry{rad_ref}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=22f43e3a6be1da60fd038e3ee0b29e89}{%
+           family={{Guru99}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{fullhash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{fullhashraw}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{bibnamehash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{authorbibnamehash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{authornamehash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{authorfullhash}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \strng{authorfullhashraw}{22f43e3a6be1da60fd038e3ee0b29e89}
+      \field{extraname}{2}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Referencia de metodología}
+      \field{note}{{Accedido: 2026-01-17}}
       \field{title}{RAD: Desarrollo Rápido de Aplicaciones}
+      \verb{urlraw}
+      \verb https://www.guru99.com/es/what-is-rad-rapid-software-development-model-advantages-disadvantages.html
+      \endverb
+      \verb{url}
+      \verb https://www.guru99.com/es/what-is-rad-rapid-software-development-model-advantages-disadvantages.html
+      \endverb
     \endentry
     \entry{agile_manifesto}{online}{}{}
       \name{author}{1}{}{%
@@ -1866,7 +1929,7 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-02}
+      \field{note}{Accedido: 2026-01-18}
       \field{title}{Manifesto for Agile Software Development}
       \verb{urlraw}
       \verb https://agilemanifesto.org/
@@ -1893,7 +1956,7 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-04}
+      \field{note}{Accedido: 2026-01-18}
       \field{title}{The Scrum Guide}
       \verb{urlraw}
       \verb https://scrumguides.org/
@@ -1903,25 +1966,71 @@
       \endverb
     \endentry
     \entry{xp_ref}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d6a3b4cad9040d2582b4636e32fb9706}{%
+           family={{Teaching Agile}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6a3b4cad9040d2582b4636e32fb9706}
+      \strng{fullhash}{d6a3b4cad9040d2582b4636e32fb9706}
+      \strng{fullhashraw}{d6a3b4cad9040d2582b4636e32fb9706}
+      \strng{bibnamehash}{d6a3b4cad9040d2582b4636e32fb9706}
+      \strng{authorbibnamehash}{d6a3b4cad9040d2582b4636e32fb9706}
+      \strng{authornamehash}{d6a3b4cad9040d2582b4636e32fb9706}
+      \strng{authorfullhash}{d6a3b4cad9040d2582b4636e32fb9706}
+      \strng{authorfullhashraw}{d6a3b4cad9040d2582b4636e32fb9706}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Referencia de metodología}
+      \field{note}{Accedido: 2026-01-20}
       \field{title}{Extreme Programming (XP)}
+      \verb{urlraw}
+      \verb https://teachingagile.com/es/extreme-programming-xp
+      \endverb
+      \verb{url}
+      \verb https://teachingagile.com/es/extreme-programming-xp
+      \endverb
     \endentry
     \entry{kanban_guide}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=210e82f3786b5596589259afe064c074}{%
+           family={{Kanban Tool}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{210e82f3786b5596589259afe064c074}
+      \strng{fullhash}{210e82f3786b5596589259afe064c074}
+      \strng{fullhashraw}{210e82f3786b5596589259afe064c074}
+      \strng{bibnamehash}{210e82f3786b5596589259afe064c074}
+      \strng{authorbibnamehash}{210e82f3786b5596589259afe064c074}
+      \strng{authornamehash}{210e82f3786b5596589259afe064c074}
+      \strng{authorfullhash}{210e82f3786b5596589259afe064c074}
+      \strng{authorfullhashraw}{210e82f3786b5596589259afe064c074}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Referencia de metodología}
+      \field{note}{Accedido: 2026-01-20}
       \field{title}{Kanban Guide}
+      \verb{urlraw}
+      \verb https://kanbantool.com/es/metodologia-kanban
+      \endverb
+      \verb{url}
+      \verb https://kanbantool.com/es/metodologia-kanban
+      \endverb
     \endentry
     \entry{lean_ref}{misc}{}{}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
-      \field{note}{Referencia de metodología}
+      \field{note}{Accedido: 2026-01-20}
       \field{title}{Lean Methodology}
+      \verb{urlraw}
+      \verb https://www.atlassian.com/es/agile/project-management/lean-methodology
+      \endverb
+      \verb{url}
+      \verb https://www.atlassian.com/es/agile/project-management/lean-methodology
+      \endverb
     \endentry
     \entry{hinative_ref}{online}{}{}
       \name{author}{1}{}{%
@@ -1941,7 +2050,7 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-08}
+      \field{note}{Accedido: 2026-01-21}
       \field{title}{HiNative}
       \verb{urlraw}
       \verb https://hinative.com/
@@ -1968,7 +2077,7 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-12}
+      \field{note}{Accedido: 2026-01-21}
       \field{title}{Tandem}
       \verb{urlraw}
       \verb https://www.tandem.net/
@@ -1995,7 +2104,7 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-14}
+      \field{note}{Accedido: 2026-01-21}
       \field{title}{Grammarly}
       \verb{urlraw}
       \verb https://www.grammarly.com/
@@ -2022,7 +2131,7 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-16}
+      \field{note}{Accedido: 2026-01-21}
       \field{title}{Duolingo}
       \verb{urlraw}
       \verb https://www.duolingo.com/
@@ -2045,12 +2154,12 @@
       \strng{authornamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
       \strng{authorfullhash}{a8fd8cd0b6d2cfda939a8ef257e60192}
       \strng{authorfullhashraw}{a8fd8cd0b6d2cfda939a8ef257e60192}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accedido: 2026-05-06}
+      \field{note}{Accedido: 2026-01-20}
       \field{title}{User stories - Project management guide}
       \verb{urlraw}
       \verb https://www.atlassian.com/es/agile/project-management/user-stories
