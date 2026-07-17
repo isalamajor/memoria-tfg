@@ -1,6 +1,6 @@
 ## Trabajo de Fin de Grado: “Plataforma Colaborativa para el Intercambio y Corrección Lingüística”
 
-TFG del Grado en Ingeniería Informática 
+Mi TFG para el Grado en Ingeniería Informática 
 Documento final disponible en **main.pdf**
 
 
