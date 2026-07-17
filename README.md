@@ -1,5 +1,11 @@
 ## Trabajo de Fin de Grado: “Plataforma Colaborativa para el Intercambio y Corrección Lingüística”
 
+TFG del Grado en Ingeniería Informática 
+Documento final disponible en **main.pdf**
+
+
+### Abstract
+
 Nowadays, the digital transformation of education and language learning has become
 essential for global communication and international activity. In this context, the creation
 of a specialized web application for language exchange through written correspondence is
